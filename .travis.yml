@@ -10,6 +10,6 @@ cache:
     - node_modules
 script:
   - npm test
-  - npm run buildg
+  - npm run build
 after_success:
   - sh .travis/deploy_dockerhub.sh
