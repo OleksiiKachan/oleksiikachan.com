@@ -10,7 +10,7 @@ class GeneralInformationContainer extends Component {
 
         this.generalInformation = {
             name: 'Oleksii Kachan',
-            title: 'Fullstack Software Engineer',
+            title: 'UI/UX Developer & Fullstack Software Engineer',
             photo: '../images/avatar.png',
             dob: '03 April 1996',
             phone: '+1 (437) 778-5921',
