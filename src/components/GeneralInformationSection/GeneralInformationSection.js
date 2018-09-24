@@ -6,12 +6,12 @@ import GeneralInformationBio from '../GeneralInformationBio/GeneralInformationBi
 import PersonalInformation from '../PersonalInformation/PersonalInformation'
 
 /*
-    <GeneralInformationSection generalInformation = {}/>
+    <GeneralInformationSection generalInformation={} className=''/>
 */
 class GeneralInformationSection extends Component {
     render() {
         return (
-            <div className={classNames('generalInformation')}>
+            <div id='about' className={classNames('generalInformation', this.props.className)}>
                 <GeneralInformationHeader generalInformation = {this.props.generalInformation} className={classNames('generalInformation_header')}/>
                 <div className={classNames('mainInformation', 'generalInformation__mainInformation')}>
                     <PersonalInformation information={this.props.generalInformation} className={classNames('generalInformation__personalInformation')}/>
