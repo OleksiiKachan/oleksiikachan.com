@@ -14,16 +14,27 @@ class App extends Component {
             phone: '+1 (437) 778-5921',
             email: 'alexkachan.lutsk@gmail.com',
             bio: 'Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also Helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.',
-            skills: [
-                'UI/UX Design',
-                'Branding',
-                'Software Architecture',
-                'Enterprise Software Engineering',
-                'API Development',
-                'Windows & Web Service Development',
-                'Software Testing & Deployment',
-                'Database Design & Implementation'
-            ],
+            skills: {
+                skillSet1: [
+                    'UI/UX Design',
+                    'Prototyping',
+                    'Software Architecture',
+                    'Enterprise Software Engineering',
+                    'API Development',
+                    'Windows & Web Service Development',
+                    'Software Testing & Deployment',
+                    'Database Design & Implementation'
+                ],
+                skillSet2: [
+                    'Logo Design',
+                    'Business Card Design',
+                    'Landing Page Design & Development',
+                    'NoSQL Databases',
+                    'Project Management',
+                    'Web 3.0 Marketing',
+                    'Design Systems'
+                ]
+            },
             languages: [
                 {
                     language: 'English',
