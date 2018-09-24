@@ -1,0 +1,24 @@
+.smPanel {
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.smCall {	
+    font-size: 20pt;
+	font-weight: 300;
+	color: #c2c2c4;
+}
+
+.smPanel__call {
+    margin-right: 18px;
+}
+
+.smButtonList {
+    list-style: none;
+	display: flex;
+}
+
+.smButtonList__listItem {
+    margin-right: 5px;
+}
