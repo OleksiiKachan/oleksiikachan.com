@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import './SkillsSection.css';
 import FilledCircle from './filledCircle.svg';
 import BlankCircle from './blankCircle.svg';
+import CheckIcon from './checkmark.png';
 
 /*
     <SkillsSection skills={} languages={}/>
@@ -31,9 +32,24 @@ class SkillsSection extends Component {
                     <div className={classNames('skillsContent__skills')}>
                         <ul className={classNames('skillsList')}>
                         {
-                            this.props.skills.map(skill => {
+                            this.props.skills.skillSet1.map(skill => {
                                 return(
-                                    <li className={classNames('skillList__item')}>{skill}</li>
+                                    <li className={classNames('skillList__item')}>
+                                        <img src={CheckIcon} alt='Checkmark'className={classNames('skillList__checkmark')} />
+                                        {skill}
+                                    </li>
+                                );
+                            })
+                        }
+                        </ul>
+                        <ul className={classNames('skillsList')}>
+                        {
+                            this.props.skills.skillSet2.map(skill => {
+                                return(
+                                    <li className={classNames('skillList__item')}>
+                                        <img src={CheckIcon} alt='Checkmark'className={classNames('skillList__checkmark')} />
+                                        {skill}
+                                    </li>
                                 );
                             })
                         }
