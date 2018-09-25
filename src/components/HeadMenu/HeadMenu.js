@@ -17,10 +17,10 @@ class HeadMenu extends Component {
                             <a href='#portfolio' className={classNames('headMenu__link')}>Portfolio</a>
                         </li>
                         <li className={classNames('headMenu__listItem')}>
-                            <a href='#skills' className={classNames('headMenu__link')}>Skills</a>
+                            <a href='#competencies' className={classNames('headMenu__link')}>Competencies</a>
                         </li>
                         <li className={classNames('headMenu__listItem')}>
-                            <a href='#education' className={classNames('headMenu__link')}>Education</a>
+                            <a href='#education' className={classNames('headMenu__link')}>Education & Experience</a>
                         </li>
                         <li className={classNames('headMenu__listItem')}>
                             <a href='#contact' className={classNames('headMenu__link')}>Contact</a>

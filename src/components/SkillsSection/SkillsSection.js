@@ -26,8 +26,8 @@ class SkillsSection extends Component {
 
     render() {
         return (
-            <div className={classNames('skillsSection')}>
-                <h2 className={classNames('skillsSection__header')}>My Skills</h2>
+            <div id='competencies' className={classNames('skillsSection')}>
+                <h2 className={classNames('skillsSection__header')}>Core Competencies</h2>
                 <div className={classNames('skillsSection__content')}>
                     <div className={classNames('skillsContent__skills')}>
                         <ul className={classNames('skillsList')}>
