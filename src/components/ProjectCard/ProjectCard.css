@@ -1,7 +1,7 @@
 .projectCard {
     width: 45%;
     min-width: 300px;
-    min-height: 305px;
+    min-height: 320px;
     margin: 5px;
 	padding: 0;
     color: white;
@@ -9,8 +9,13 @@
     perspective: 1000px;
 }
 
+.projectCard__description {
+    font-weight: lighter;
+    font-size: smaller;
+}
+
 .projectCard__innerArea {
-    min-height: 305px;
+    min-height: 320px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -85,6 +90,8 @@
 .projectCard__back {
     transform: rotateY(180deg);
     padding: 20px;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
 	display: flex;
 	flex-direction: column;
     justify-content: space-between;
@@ -147,4 +154,23 @@
 
 .projectCard__downloadIcon_hidden {
     display: none;
+}
+
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
 }
