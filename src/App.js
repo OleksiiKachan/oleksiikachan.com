@@ -45,7 +45,7 @@ class App extends Component {
                 },
                 {
                     projectType: 'reverseEngineering',
-                    name: 'Corrugated Cardboard Productio System',
+                    name: 'Corrugated Cardboard Production System',
                     description: 'I did reverse engineering of corrugated industrial cardboard manufacturing system. System was creatoed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C.',
                     tools: ['visio'],
                     fileName: 'corrugatedCardboard',
