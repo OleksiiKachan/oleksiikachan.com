@@ -30,6 +30,11 @@
     box-shadow: 0 0 0 0 rgba(0,0,0,0.29);
 }
 
+.projectCard:hover .projectCard__shader {
+    transition: visibility 0.5s;
+    visibility: collapse;
+}
+
 .projectCard__front, .projectCard__back {
     position: absolute;
     width: 100%;
