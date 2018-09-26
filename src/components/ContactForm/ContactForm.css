@@ -1,0 +1,83 @@
+.contactFormContainer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contactForm {
+    padding: 25px;
+}
+
+.contactForm__title {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contactForm__contactField {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contactForm__contactField_button {
+	width: calc(100% + 20px);
+}
+
+.contactForm__contactControl {
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+.contactForm__contactControl:hover {
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.contactForm__contactControl_multipleRow {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.contactForm__submitButton {
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.contactForm__submitButton:hover {
+    background-color: #43A047;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contactForm__submitButton:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contactForm__contactControl:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
