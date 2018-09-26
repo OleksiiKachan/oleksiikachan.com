@@ -9,8 +9,11 @@ class App extends Component {
             title: 'UI/UX Developer & Fullstack Software Engineer',
             photo: '../images/avatar.png',
             dob: '03 April 1996',
-            phone: '+1 (437) 778-5921',
-            email: 'alexkachan.lutsk@gmail.com',
+            contacts: {
+                phone: '+1 (437) 778-5921',
+                email: 'alexkachan.lutsk@gmail.com',
+                location: 'Toronto, ON, Canada'
+            },
             bio: 'Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also Helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.',
             projects: [
                 {
@@ -136,12 +139,16 @@ class App extends Component {
                 {
                     language: 'Korean',
                     stars: '1'
-                },
+                }
             ],
             resources: [
                 {
                     link: 'http://www.linkedin.com/in/oleksiikachan',
                     resource: 'linkedin',
+                },
+                {
+                    link: 'https://github.com/OleksiiKachan',
+                    resource: 'github',
                 },
                 {
                     link: 'https://www.facebook.com/oleksiikachan',
