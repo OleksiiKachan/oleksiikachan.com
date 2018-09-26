@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './SkillsSection.css';
-import FilledCircle from './filledCircle.svg';
-import BlankCircle from './blankCircle.svg';
+import FilledStar from './filledStar.png';
+import BlankStar from './blankStar.png';
 import CheckIcon from './checkmark.png';
 
 /*
@@ -14,11 +14,11 @@ class SkillsSection extends Component {
         rate = rate > 5 ? 5 : rate;
 
         for (let i = 0; i < rate; i++) {
-            visualRate.push(<img src={FilledCircle} alt='Filled blue circle.' className={classNames('circleRate')}/>)
+            visualRate.push(<img src={FilledStar} alt='Filled blue star.' className={classNames('circleRate')}/>)
         }
 
         for (let i = 0; i < 5-rate; i++) {
-            visualRate.push(<img src={BlankCircle} alt='Blank blue circle.'  className={classNames('circleRate')}/>)
+            visualRate.push(<img src={BlankStar} alt='Blank blue star.'  className={classNames('circleRate')}/>)
         }
 
         return visualRate;
