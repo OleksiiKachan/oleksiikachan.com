@@ -6,6 +6,8 @@ import HeaderContainer from '../HeaderContainer/HeaderContainer.js';
 import SkillsContainer from '../SkillsContainer/SkillsContainer.js';
 import ProjectsContainer from '../ProjectsContainer/ProjectsContainer.js';
 import ExperienceTimelineContainer from '../ExperienceTimelineContainer/ExperienceTimelineContainer.js';
+import ContactContainer from '../ContactContainer/ContactContainer.js';
+import FooterContainer from '../FooterContainer/FooterContainer.js';
 
 /*
     <MainContainer generalInformation={} />
@@ -35,6 +37,13 @@ class MainContainer extends Component {
                 <ExperienceTimelineContainer 
                     timeline={this.props.generalInformation.timeline}
                     className={classNames('section')}
+                />
+                <ContactContainer 
+                    contacts={this.props.generalInformation.contacts}
+                    className={classNames('section')}
+                />
+                <FooterContainer 
+                    resources={this.props.generalInformation.resources}
                 />
             </div>
         );
