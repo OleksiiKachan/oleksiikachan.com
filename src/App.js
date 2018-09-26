@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import GeneralInformationContainer from './containers/GeneralInformationContainer/GeneralInformationContainer.js'
-import HeaderContainer from './containers/HeaderContainer/HeaderContainer.js'
-import SkillsContainer from './containers/SkillsContainer/SkillsContainer.js'
-import ProjectsContainer from './containers/ProjectsContainer/ProjectsContainer.js'
+import MainContainer from './containers/MainContainer/MainContainer.js';
 
 class App extends Component {
     render() {
@@ -158,16 +155,38 @@ class App extends Component {
                     link: 'https://vk.com/oleksiikachan',
                     resource: 'vk',
                 }
+            ],
+            timeline: [
+                {
+                    time: '2014',
+                    title: 'Technician Programmer of administrative and economic department',
+                    description: 'Ltd. "Kontynium-Treyd"'
+                },
+                {
+                    time: '2016-2017',
+                    title: 'Software and Systems Engineer',
+                    description: 'rLoop Incorporated'
+                },
+                {
+                    time: '2013-2017',
+                    title: 'Bachelor of Software Engineering',
+                    description: 'National Technical Uniescity of Ukraine \'Kyiv Polytechnic Institute\', Faculty of Informatics and Computer Science, Technical Cybernetics Department'
+                },
+                {
+                    time: '2017',
+                    title: 'Software Engineer',
+                    description: 'OLSOM L.L.C'
+                },
+                {
+                    time: '2017-2019',
+                    title: 'Postgraduate Degree',
+                    description: 'The Humber Institute of Technology and Advanced Learning,School of Media Studies & Information Technology, Information Technology Solutions'
+                }
             ]
         };
     
         return (
-            <div>
-                <HeaderContainer name={generalInformation.name} title={generalInformation.title}/>
-                <GeneralInformationContainer generalInformation={generalInformation}/>
-                <ProjectsContainer projects={generalInformation.projects}/>
-                <SkillsContainer skills={generalInformation.skills} languages={generalInformation.languages}/>
-            </div>
+            <MainContainer generalInformation={generalInformation}/>
         );
     }
 }
