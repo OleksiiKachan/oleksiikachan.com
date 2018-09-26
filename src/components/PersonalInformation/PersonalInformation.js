@@ -21,11 +21,11 @@ class PersonalInformation extends Component {
                         </li>
                         <li className={classNames('personalInformation__listItem')}>
                             <p>Phone:</p>
-                            <p>{this.props.information.phone}</p>
+                            <p>{this.props.information.contacts.phone}</p>
                         </li>
                         <li className={classNames('personalInformation__listItem')}>
                             <p>Email:</p>
-                            <p>{this.props.information.email}</p>
+                            <p>{this.props.information.contacts.email}</p>
                         </li>
                     </ul>
                 </div>
