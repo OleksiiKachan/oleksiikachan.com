@@ -7,7 +7,7 @@ import Header from '../../components/Header/Header.js'
 class HeaderContainer extends Component {
     render() {
         return (
-            <Header name={this.props.name} title={this.props.title}/>
+            <Header name={this.props.name} title={this.props.title} className={this.props.className} />
         );
     }
 }

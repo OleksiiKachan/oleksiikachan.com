@@ -7,7 +7,7 @@ import SkillsSection from '../../components/SkillsSection/SkillsSection.js'
 class SkillsContainer extends Component {
     render() {
         return (
-            <SkillsSection skills={this.props.skills} languages={this.props.languages}/>
+            <SkillsSection skills={this.props.skills} languages={this.props.languages} className={this.props.className} />
         );
     }
 }

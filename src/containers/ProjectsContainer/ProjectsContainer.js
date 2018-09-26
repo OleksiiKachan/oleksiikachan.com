@@ -7,7 +7,7 @@ import ProjectsSection from '../../components/ProjectsSection/ProjectsSection.js
 class ProjectsContainer extends Component {
     render() {
         return (
-            <ProjectsSection projects={this.props.projects}/>
+            <ProjectsSection projects={this.props.projects} className={this.props.className} />
         );
     }
 }

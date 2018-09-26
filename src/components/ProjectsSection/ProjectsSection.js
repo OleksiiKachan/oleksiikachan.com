@@ -9,7 +9,7 @@ import ProjectCard from '../ProjectCard/ProjectCard.js';
 class ProjectsSection extends Component {
     render() {
         return (
-            <div id='portfolio' className={classNames('projectsSection')}>
+            <div id='portfolio' className={classNames('projectsSection', this.props.className)}>
                 <h2 className={classNames('projectsSection__header')}>Portfolio</h2>
                 <div className={classNames('projectsSection__content')}>
                 {
