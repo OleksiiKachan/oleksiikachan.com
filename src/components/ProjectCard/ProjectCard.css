@@ -1,0 +1,150 @@
+.projectCard {
+    width: 45%;
+    min-width: 300px;
+    min-height: 305px;
+    margin: 5px;
+	padding: 0;
+    color: white;
+    box-sizing: border-box;
+    perspective: 1000px;
+}
+
+.projectCard__innerArea {
+    min-height: 305px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.29);
+}
+
+.projectCard:hover .projectCard__innerArea {
+    transform: rotateY(180deg);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.29);
+}
+
+.projectCard__front, .projectCard__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.projectCard__front {
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projectCard__shader {
+    background-color: black;
+    opacity: 0.3;
+	position: relative;
+    height: 100%;
+}
+
+.projectCard_hyperloop {
+    background-image: url('../../images/projects/hyperloop.png');
+}
+
+.projectCard_branding_oleksiiKachan {
+    background-image: url('../../images/projects/branding_oleksiiKachan.png');
+}
+
+.projectCard_branding_irynaKachan {
+    background-image: url('../../images/projects/branding_irynaKachan.png');
+}
+
+.projectCard_branding_oleksandrGorchakov {
+    background-image: url('../../images/projects/branding_oleksandrGorchakov.png');
+}
+
+.projectCard_ui_networkControl {
+    background-image: url('../../images/projects/ui_networkControl.png');
+}
+
+.projectCard_corrugatedCardboard {
+    background-image: url('../../images/projects/corrugatedCardboard.png');
+}
+
+.projectCard_ftpService {
+    background-image: url('../../images/projects/ftpService.png');
+}
+
+.projectCard_agw {
+    background-image: url('../../images/projects/agw.png');
+}
+
+.projectCard_tdm {
+    background-image: url('../../images/projects/tdm.png');
+}
+
+
+.projectCard__back {
+    transform: rotateY(180deg);
+    padding: 20px;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectCard__solidBackground_red {
+    background-color: #7e0000;
+}
+
+.projectCard__solidBackground_blue {
+    background-color: #00187e;
+}
+
+.projectCard__solidBackground_grey {
+    background-color: #474747;
+}
+
+.projectCard__solidBackground_green {
+    background-color: #004a02;
+}
+
+.projectCard__solidBackground_yellow {
+    background-color: #514704;
+}
+
+.projectCard__title {
+    margin-bottom: 10px;
+}
+
+.projectCard__description {
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.toolsList {
+    list-style-type: none;
+    display: flex;
+}
+
+.toolsList__toolIcon {
+    margin-right: 5px;
+}
+
+.projectCard__downloadFile {
+    text-align: left;
+}
+
+.projectCard__downloadLink {
+    text-decoration: none;
+    color: #647ac3;
+}
+
+.projectCard__downloadLink:hover {
+    text-decoration: underline;
+}
+
+.projectCard__downloadIcon {
+    margin-left: 15px;
+}
+
+.projectCard__downloadIcon_hidden {
+    display: none;
+}
