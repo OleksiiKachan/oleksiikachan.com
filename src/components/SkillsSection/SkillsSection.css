@@ -20,7 +20,8 @@
 .skillsContent__skills {
     background-color: #0f82f9;
 	color: white;
-    width: 60%;
+	width: 60%;
+	min-width: 365px;
 	padding: 30px;
 	display: flex;
 	justify-content: space-between;
@@ -64,6 +65,7 @@
 	justify-content: center;
     align-items: center;
 	padding: 6px;
+	min-width: 120px;
 	background-color: #e9e9e9;
 	-webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.29);
