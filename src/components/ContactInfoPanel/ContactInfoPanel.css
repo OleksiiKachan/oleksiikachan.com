@@ -6,13 +6,3 @@
     display: block;
     margin-bottom: 10px;
 }
-
-.contactInfo__contactItem {
-    margin: 30px 0;
-	display: flex;
-	align-items: center;
-}
-
-.contactInfo__icon {
-    margin-right: 25px;
-}

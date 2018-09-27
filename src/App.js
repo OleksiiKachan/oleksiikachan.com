@@ -98,27 +98,23 @@ class App extends Component {
                     downloadText: 'Open first stage draft file'
                 }
             ],
-            skills: {
-                skillSet1: [
-                    'UI/UX Design',
-                    'Prototyping',
-                    'Software Architecture',
-                    'Enterprise Software Engineering',
-                    'API Development',
-                    'Windows & Web Service Development',
-                    'Software Testing & Deployment',
-                    'Database Design & Implementation'
-                ],
-                skillSet2: [
-                    'Logo Design',
-                    'Business Card Design',
-                    'Landing Page Design & Development',
-                    'NoSQL Databases',
-                    'Project Management',
-                    'Web 3.0 Marketing',
-                    'Design Systems'
-                ]
-            },
+            skills: [
+                'UI/UX Design',
+                'Prototyping',
+                'Software Architecture',
+                'Enterprise Software Engineering',
+                'API Development',
+                'Windows & Web Service Development',
+                'Software Testing & Deployment',
+                'Database Design & Implementation',
+                'Logo Design',
+                'Business Card Design',
+                'Landing Page Design & Development',
+                'RDBS & NoSQL Databases',
+                'Project Management',
+                'Web 3.0 Marketing',
+                'Design Systems'
+            ],
             languages: [
                 {
                     language: 'English',

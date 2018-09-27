@@ -32,17 +32,7 @@ class SkillsSection extends Component {
                     <div className={classNames('skillsContent__skills')}>
                         <ul className={classNames('skillsList')}>
                         {
-                            this.props.skills.skillSet1.map(skill => {
-                                return(
-                                    <li className={classNames('skillList__item')}>
-                                        <img src={CheckIcon} alt='Checkmark'className={classNames('skillList__checkmark')} />
-                                        {skill}
-                                    </li>
-                                );
-                            })
-                        }
-                        {
-                            this.props.skills.skillSet2.map(skill => {
+                            this.props.skills.map(skill => {
                                 return(
                                     <li className={classNames('skillList__item')}>
                                         <img src={CheckIcon} alt='Checkmark'className={classNames('skillList__checkmark')} />
