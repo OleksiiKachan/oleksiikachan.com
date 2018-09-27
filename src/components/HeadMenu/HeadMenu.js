@@ -6,25 +6,51 @@ import './HeadMenu.css';
     <HeadMenu className=''/>
 */
 class HeadMenu extends Component {
+    constructor(props) {
+        super(props);
+
+        this.menu = [
+            {
+                title: 'About Me',
+                sectionId: '#about',
+                isSelected: true
+            },
+            {
+                title: 'Portfolio',
+                sectionId: '#portfolio',
+                isSelected: false
+            },
+            {
+                title: 'Competencies',
+                sectionId: '#competencies',
+                isSelected: false
+            },
+            {
+                title: 'Education & Experience',
+                sectionId: '#education',
+                isSelected: false
+            },
+            {
+                title: 'Contact',
+                sectionId: '#contact',
+                isSelected: false
+            }
+        ];
+    }
+
     render() {
         return (
             <nav className={classNames('headMenu', this.props.className)}>
                 <ul className={classNames('headMenu__list')}>
-                    <li className={classNames('headMenu__listItem', 'headMenu__listItem_selected')}>
-                        <a href='#about' className={classNames('headMenu__link')}>About Me</a>
-                    </li>
-                    <li className={classNames('headMenu__listItem')}>
-                        <a href='#portfolio' className={classNames('headMenu__link')}>Portfolio</a>
-                    </li>
-                    <li className={classNames('headMenu__listItem')}>
-                        <a href='#competencies' className={classNames('headMenu__link')}>Competencies</a>
-                    </li>
-                    <li className={classNames('headMenu__listItem')}>
-                        <a href='#education' className={classNames('headMenu__link')}>Education & Experience</a>
-                    </li>
-                    <li className={classNames('headMenu__listItem')}>
-                        <a href='#contact' className={classNames('headMenu__link')}>Contact</a>
-                    </li>
+                {
+                    this.menu.map(menuItem => {
+                        return(
+                            <li className={classNames('headMenu__listItem', menuItem.isSelected ? 'headMenu__listItem_selected' : '')}>
+                                <a href={menuItem.sectionId} className={classNames('headMenu__link')}>{menuItem.title}</a>
+                            </li>
+                        );
+                    })
+                }
                 </ul>
             </nav>
         );
