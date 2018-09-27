@@ -1,17 +1,19 @@
 .headMenu {
     background-color: #0f82f9;
+    min-height: 35px;
 }
 
 .headMenu__list {
     display: flex;
 	justify-content: space-around;
 	padding: 8px 0 8px 25px;
-    width: 60%;
+    width: 90%;
     list-style-type: none;
 }
 
 .headMenu__listItem {
 	font-weight: lighter;
+	margin-right: 15px;
 }
 
 .headMenu__listItem_selected {
@@ -28,4 +30,11 @@
 .headMenu__link:visited {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width : 480px) {
+
+    .headMenu__list {
+        display: none;
+    }
 }

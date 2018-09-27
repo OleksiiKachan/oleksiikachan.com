@@ -16,5 +16,18 @@
 }
 
 .contactSection__contactColumn {
-    width: 35%;
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .contactSection__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactSection__contactColumn {
+        width: 80%;
+        font-size: smaller;
+    }
 }

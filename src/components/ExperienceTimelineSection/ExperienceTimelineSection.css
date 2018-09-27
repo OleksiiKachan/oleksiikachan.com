@@ -14,6 +14,7 @@
 }
 
 .experienceTimelineSection__timeline {
+	width: 90%;
     padding: 25px 0;
     position: relative;
     max-width: 1200px;
@@ -101,7 +102,7 @@
     font-size: smaller;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .experienceTimelineSection__timeline::after {
         left: 31px;
     }

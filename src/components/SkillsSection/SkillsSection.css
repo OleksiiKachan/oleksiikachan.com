@@ -21,7 +21,6 @@
     background-color: #0f82f9;
 	color: white;
 	width: 60%;
-	min-width: 365px;
 	padding: 30px;
 	display: flex;
 	justify-content: space-between;
@@ -33,7 +32,7 @@
 .skillsList {
 	list-style: none;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	height: 100%;
 }
@@ -44,6 +43,7 @@
 	margin-bottom: 10px;
 	display: flex;
 	align-items: center;
+	width: 50%;
 }
 
 .skillList__checkmark {
@@ -80,4 +80,32 @@
 .circleRate {
 	width: 15px;
 	margin: 3px;
+}
+
+@media only screen and (max-width : 768px) {
+
+	.skillsSection__content {
+		flex-direction: column;
+	}
+
+	.skillsContent__skills {
+		width: calc(100% - 60px);
+		margin-bottom: 10px;
+	}
+	
+	.skillsList {
+		justify-content: center;
+	}
+
+	.skillList__item {
+		width: 80%;
+	}
+
+	.skillsContent__languages {
+		width: 100%;
+	}
+
+	.languageItem {
+		margin-bottom: 10px;
+	}
 }

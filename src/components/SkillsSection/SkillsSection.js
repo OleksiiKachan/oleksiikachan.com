@@ -41,8 +41,6 @@ class SkillsSection extends Component {
                                 );
                             })
                         }
-                        </ul>
-                        <ul className={classNames('skillsList')}>
                         {
                             this.props.skills.skillSet2.map(skill => {
                                 return(

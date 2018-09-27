@@ -15,11 +15,10 @@ import FooterContainer from '../FooterContainer/FooterContainer.js';
 class MainContainer extends Component {
     render() {
         return (
-            <div>
+            <div className={'mainContainer'}>
                 <HeaderContainer 
                     name={this.props.generalInformation.name}
                     title={this.props.generalInformation.title}
-                    className={classNames('section')}
                 />
                 <GeneralInformationContainer 
                     generalInformation={this.props.generalInformation}

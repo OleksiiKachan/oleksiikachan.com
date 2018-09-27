@@ -7,13 +7,10 @@
 
 .avatar__image {
     width: 300px;
-    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.52);
-    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.52);
     box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.52);
 }
 
 .avatar__filter {
-    -webkit-filter: contrast(66%) brightness(73%) sepia(17%);
     filter: contrast(66%) brightness(73%) sepia(17%);
 }
 
@@ -23,10 +20,8 @@
 
 .generalInformationHeader__head {
     background-color: #ffffff;
-    -webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.29);
-    -moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.29);
     box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.29);
-    padding: 15px 0 15px 50px;
+    padding: 15px 50px 15px 50px;
 	width: 100%;
 	margin-bottom: 8px;
 }
@@ -46,4 +41,38 @@
 
 .generalInformationHeader__placeHolder {
 	height: 185px;
+}
+
+@media only screen and (max-width : 768px) {
+    
+    .generalInformationHeader {
+        flex-wrap: wrap;
+    }
+
+    .generalInformationHeader__placeHolder {
+        display: none;
+    }
+
+    .generalInformationHeader__head {
+        width: calc(100% - 100px);
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+    .generalInformationHeader_side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .generalInformationHeader__head {
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .generalInformationHeader__socialMedia {
+        padding-left: 0;
+    }
 }
