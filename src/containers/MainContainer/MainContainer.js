@@ -8,6 +8,7 @@ import ProjectsContainer from '../ProjectsContainer';
 import ExperienceTimelineContainer from '../ExperienceTimelineContainer';
 import ContactContainer from '../ContactContainer';
 import FooterContainer from '../FooterContainer';
+import BackToTopButton from '../BackToTopButton';
 
 /*
     <MainContainer generalInformation={} />
@@ -23,6 +24,7 @@ class MainContainer extends Component {
                 <ExperienceTimelineContainer timeline={this.props.generalInformation.timeline} className={classNames('section')} />
                 <ContactContainer contacts={this.props.generalInformation.contacts} className={classNames('section')} />
                 <FooterContainer resources={this.props.generalInformation.resources} />
+                <BackToTopButton topId='#header' />
             </div>
         );
     }

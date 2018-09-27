@@ -9,7 +9,7 @@ import HeadMenu from '../HeadMenu'
 class Header extends Component {
     render() {
         return (
-            <header className={classNames('header', this.props.className)}>
+            <header id='header' className={classNames('header', this.props.className)}>
                 <div className={classNames('headContent', 'header__content')}>
                     <div className={classNames('headContent__filter')}>
                         <div className={classNames('headTitle header__title')}>
