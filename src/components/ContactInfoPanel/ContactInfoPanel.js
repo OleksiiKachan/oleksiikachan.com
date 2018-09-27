@@ -10,8 +10,10 @@ import LocationIcon from './location.svg';
     <ContactInfoPanel contact={} />
 */
 class ContactInfoPanel extends Component {
-    render() {
-        const contacts = [
+    constructor(props) {
+        super(props);
+
+        this.contacts = [
             {
                 icon: PhoneIcon,
                 text: this.props.contacts.phone
@@ -25,11 +27,14 @@ class ContactInfoPanel extends Component {
                 text: this.props.contacts.location
             }
         ];
+    }
+
+    render() {
         return (
             <div className={classNames('contactInfoContainer')}>
                 <h3 className={classNames('contactInfo__title')}>Contacts</h3>
                 {
-                    contacts.map(contact => {
+                    this.contacts.map(contact => {
                         return(
                             <ContactInfoItem icon={contact.icon} text={contact.text} />
                         );
