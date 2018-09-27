@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SkillsSection from '../../components/SkillsSection/SkillsSection.js'
+import SkillsSection from '../../components/SkillsSection'
 
 /*
     <SkillsContainer skills={} languages={}/>

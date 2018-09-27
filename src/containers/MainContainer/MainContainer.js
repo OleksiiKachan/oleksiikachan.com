@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './MainContainer.css';
-import GeneralInformationContainer from '../GeneralInformationContainer/GeneralInformationContainer.js';
-import HeaderContainer from '../HeaderContainer/HeaderContainer.js';
-import SkillsContainer from '../SkillsContainer/SkillsContainer.js';
-import ProjectsContainer from '../ProjectsContainer/ProjectsContainer.js';
-import ExperienceTimelineContainer from '../ExperienceTimelineContainer/ExperienceTimelineContainer.js';
-import ContactContainer from '../ContactContainer/ContactContainer.js';
-import FooterContainer from '../FooterContainer/FooterContainer.js';
+import GeneralInformationContainer from '../GeneralInformationContainer';
+import HeaderContainer from '../HeaderContainer';
+import SkillsContainer from '../SkillsContainer';
+import ProjectsContainer from '../ProjectsContainer';
+import ExperienceTimelineContainer from '../ExperienceTimelineContainer';
+import ContactContainer from '../ContactContainer';
+import FooterContainer from '../FooterContainer';
 
 /*
     <MainContainer generalInformation={} />

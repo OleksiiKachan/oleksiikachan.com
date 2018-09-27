@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './ContactSection.css';
-import ContactForm from '../ContactForm/ContactForm.js';
-import ContactInfoPanel from '../ContactInfoPanel/ContactInfoPanel.js';
+import ContactForm from '../ContactForm';
+import ContactInfoPanel from '../ContactInfoPanel';
 
 /*
     <ContactSection contacts={} className='' />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Footer from '../../components/Footer/Footer.js'
+import Footer from '../../components/Footer'
 
 /*
     <FooterContainer resources={} className=''/>

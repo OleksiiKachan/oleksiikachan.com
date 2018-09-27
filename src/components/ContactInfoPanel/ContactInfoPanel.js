@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './ContactInfoPanel.css';
-import ContactInfoItem from '../ContactInfoItem/ContactInfoItem.js';
+import ContactInfoItem from '../ContactInfoItem';
 import PhoneIcon from './phone.svg';
 import EmailIcon from './email.svg';
 import LocationIcon from './location.svg';

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './GeneralInformationSection.css';
-import GeneralInformationHeader from '../GeneralInformationHeader/GeneralInformationHeader'
-import GeneralInformationBio from '../GeneralInformationBio/GeneralInformationBio'
-import PersonalInformation from '../PersonalInformation/PersonalInformation'
+import GeneralInformationHeader from '../GeneralInformationHeader'
+import GeneralInformationBio from '../GeneralInformationBio'
+import PersonalInformation from '../PersonalInformation'
 
 /*
     <GeneralInformationSection generalInformation={} className=''/>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './SkillsSection.css';
-import LanguagesPanel from '../LanguagesPanel/LanguagesPanel.js';
-import SkillsPanel from '../SkillsPanel/SkillsPanel.js';
+import LanguagesPanel from '../LanguagesPanel';
+import SkillsPanel from '../SkillsPanel';
 
 /*
     <SkillsSection skills={} languages={}/>

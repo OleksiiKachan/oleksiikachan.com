@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './GeneralInformationHeader.css';
-import SocialMediaButtonPanel from '../SocialMediaButtonPanel/SocialMediaButtonPanel'
-import avatar from '../../images/avatar.png'
+import SocialMediaButtonPanel from '../SocialMediaButtonPanel'
+import Avatar from '../../images/avatar.png'
 
 /*
     <GeneralInformationHeader generalInformation = {} className='' />
@@ -13,7 +13,7 @@ class GeneralInformationHeader extends Component {
             <div className={classNames('generalInformationHeader', this.props.className)}>
                 <div className={classNames('avatar', 'generalInformationHeader__avatar')}>
                     <figure className={classNames('avatar__filter')}>
-                        <img alt='Oleksii Kachan' src={avatar} className={classNames('avatar__image')}/>
+                        <img alt='Oleksii Kachan' src={Avatar} className={classNames('avatar__image')}/>
                     </figure>
                 </div>
                 <div className={classNames('generalInformationHeader_side')}>

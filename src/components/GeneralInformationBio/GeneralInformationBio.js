@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './GeneralInformationBio.css';
-import cv from '../../downloadables/oleksiikachan.pdf'
+import CV from '../../downloadables/oleksiikachan.pdf'
 
 /*
     <GeneralInformationBio bio = '' className = ''/>
@@ -15,7 +15,7 @@ class GeneralInformationBio extends Component {
                     {this.props.bio}
                 </div>
                 <div className={classNames('biography__downloadCV')}>
-                    <a target='_blank' href={cv} className={classNames('biograpghy__downloadLink')}>Download CV <i className={classNames('biograpghy__downloadIcon', 'fa', 'fa-download')} aria-hidden="true"></i></a>
+                    <a target='_blank' href={CV} className={classNames('biograpghy__downloadLink')}>Download CV <i className={classNames('biograpghy__downloadIcon', 'fa', 'fa-download')} aria-hidden="true"></i></a>
                 </div>
             </div>
         );

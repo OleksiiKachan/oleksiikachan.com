@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ExperienceTimelineSection from '../../components/ExperienceTimelineSection/ExperienceTimelineSection.js'
+import ExperienceTimelineSection from '../../components/ExperienceTimelineSection'
 
 /*
     <ExperienceTimelineContainer timeline={} />

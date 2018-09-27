@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjectsSection from '../../components/ProjectsSection/ProjectsSection.js'
+import ProjectsSection from '../../components/ProjectsSection'
 
 /*
     <ProjectsContainer projects={} />

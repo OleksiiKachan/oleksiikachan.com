@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header/Header.js'
+import Header from '../../components/Header'
 
 /*
     <HeaderContainer name='' title=''/>

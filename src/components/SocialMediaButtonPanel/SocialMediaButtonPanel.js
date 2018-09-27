@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './SocialMediaButtonPanel.css';
-import SocialMediaButton from '../SocialMediaButton/SocialMediaButton.js'
+import SocialMediaButton from '../SocialMediaButton'
 
 /*
     <SocialMediaButtonPanel resources='{link, resource}' className=''/>

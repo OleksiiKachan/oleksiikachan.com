@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './ProjectDescription.css';
-import ToolIcon from '../ToolIcon/ToolIcon.js';
+import ToolIcon from '../ToolIcon';
 import branding_oleksiiKachan from '../../downloadables/projects/branding_oleksiiKachan.pdf';
 import branding_irynaKachan from '../../downloadables/projects/branding_irynaKachan.pdf';
 import branding_oleksandrGorchakov from '../../downloadables/projects/branding_oleksandrGorchakov.pdf';

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './ProjectsSection.css';
-import ProjectCard from '../ProjectCard/ProjectCard.js';
+import ProjectCard from '../ProjectCard';
 
 /*
     <ProjectsSection projects={}/>

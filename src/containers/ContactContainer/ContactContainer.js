@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ContactSection from '../../components/ContactSection/ContactSection.js'
+import ContactSection from '../../components/ContactSection'
 
 
 /*

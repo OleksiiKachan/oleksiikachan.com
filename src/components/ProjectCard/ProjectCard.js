@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './ProjectCard.css';
-import ProjectDescription from '../ProjectDescription/ProjectDescription.js';
+import ProjectDescription from '../ProjectDescription';
 
 /*
     <ProjectCard project={} className=''/>

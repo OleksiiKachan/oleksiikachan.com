@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GeneralInformationSection from '../../components/GeneralInformationSection/GeneralInformationSection.js'
+import GeneralInformationSection from '../../components/GeneralInformationSection'
 
 /*
     <GeneralInformationContainer generalInformation={}/>
