@@ -21,7 +21,8 @@
 
 .projectsSection__projectsFilterItem {
     margin: 0 10px;
-    padding: 10px;
+	padding: 10px;
+	cursor: pointer;
 }
 
 .projectsSection__projectsFilterItem_clicked {
