@@ -9,11 +9,6 @@
     perspective: 1000px;
 }
 
-.projectCard__description {
-    font-weight: lighter;
-    font-size: smaller;
-}
-
 .projectCard__innerArea {
     min-height: 320px;
     position: relative;
@@ -35,7 +30,7 @@
     visibility: collapse;
 }
 
-.projectCard__front, .projectCard__back {
+.projectCard__front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -89,74 +84,4 @@
 
 .projectCard_tdm {
     background-image: url('../../images/projects/tdm.png');
-}
-
-
-.projectCard__back {
-    transform: rotateY(180deg);
-    padding: 20px;
-    height: calc(100% - 40px);
-    width: calc(100% - 40px);
-	display: flex;
-	flex-direction: column;
-    justify-content: space-between;
-}
-
-.projectCard__solidBackground_red {
-    background-color: #7e0000;
-}
-
-.projectCard__solidBackground_blue {
-    background-color: #00187e;
-}
-
-.projectCard__solidBackground_grey {
-    background-color: #474747;
-}
-
-.projectCard__solidBackground_green {
-    background-color: #004a02;
-}
-
-.projectCard__solidBackground_yellow {
-    background-color: #514704;
-}
-
-.projectCard__title {
-    margin-bottom: 10px;
-}
-
-.projectCard__description {
-    font-weight: lighter;
-    margin-bottom: 10px;
-}
-
-.toolsList {
-    list-style-type: none;
-    display: flex;
-}
-
-.toolsList__toolIcon {
-    margin-right: 5px;
-}
-
-.projectCard__downloadFile {
-    text-align: left;
-}
-
-.projectCard__downloadLink {
-    text-decoration: none;
-    color: #647ac3;
-}
-
-.projectCard__downloadLink:hover {
-    text-decoration: underline;
-}
-
-.projectCard__downloadIcon {
-    margin-left: 15px;
-}
-
-.projectCard__downloadIcon_hidden {
-    display: none;
 }
