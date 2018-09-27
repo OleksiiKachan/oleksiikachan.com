@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import MainContainer from './containers/MainContainer/MainContainer.js';
+import MainContainer from '../MainContainer/MainContainer';
 
 class App extends Component {
     render() {
-        const dataStore = require('./data.json');
+        const dataStore = require('../../data.json');
         return (
             <MainContainer generalInformation={dataStore}/>
         );
