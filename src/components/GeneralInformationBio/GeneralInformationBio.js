@@ -10,7 +10,7 @@ class GeneralInformationBio extends Component {
     render() {
         return (
             <div className={classNames('biography', this.props.className)}>
-                <h3 className={classNames('mainInformation__header')}>BIOGRAHPY</h3>
+                <h3 className={classNames('mainInformation__header')}>BIOGRAPHY</h3>
                 <div className={classNames('biography__text')}>
                     {this.props.bio}
                 </div>
