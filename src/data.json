@@ -8,7 +8,7 @@
         "email": "alexkachan.lutsk@gmail.com",
         "location": "Toronto, ON, Canada"
     },
-    "bio": "Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also Helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.",
+    "bio": "Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.",
     "projects": [
         {
             "projectType": "development",
@@ -38,7 +38,7 @@
             "downloadText": "Open file with UI"
         },
         {
-            "projectType": "reverseEngineering",
+            "projectType": "development",
             "name": "Corrugated Cardboard Production System",
             "description": "I did reverse engineering of corrugated industrial cardboard manufacturing system. System was creatoed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C.",
             "tools": ["visio"],
@@ -81,15 +81,6 @@
             "fileName": "branding_oleksandrGorchakov",
             "alternativeImageText": "Business cards",
             "downloadText": "Open presentation file"
-        },
-        {
-            "projectType": "design",
-            "name": "Network Control Simulation System",
-            "description": "Project is a desktop system that simulates network behaviour. I was UI developer on it. I created dashboard that displayes connected devices and their indicators.",
-            "tools": ["photoshop", "dotnet"],
-            "fileName": "ui_networkControl",
-            "alternativeImageText": "UI with network parameters",
-            "downloadText": "Open first stage draft file"
         }
     ],
     "skills": [
