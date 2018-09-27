@@ -16,34 +16,13 @@ class MainContainer extends Component {
     render() {
         return (
             <div className={'mainContainer'}>
-                <HeaderContainer 
-                    name={this.props.generalInformation.name}
-                    title={this.props.generalInformation.title}
-                />
-                <GeneralInformationContainer 
-                    generalInformation={this.props.generalInformation}
-                    className={classNames('section')}
-                    />
-                <ProjectsContainer 
-                    projects={this.props.generalInformation.projects}
-                    className={classNames('section')}
-                />
-                <SkillsContainer 
-                    skills={this.props.generalInformation.skills}
-                    languages={this.props.generalInformation.languages}
-                    className={classNames('section')}
-                />
-                <ExperienceTimelineContainer 
-                    timeline={this.props.generalInformation.timeline}
-                    className={classNames('section')}
-                />
-                <ContactContainer 
-                    contacts={this.props.generalInformation.contacts}
-                    className={classNames('section')}
-                />
-                <FooterContainer 
-                    resources={this.props.generalInformation.resources}
-                />
+                <HeaderContainer name={this.props.generalInformation.name} title={this.props.generalInformation.title} />
+                <GeneralInformationContainer generalInformation={this.props.generalInformation} className={classNames('section')} />
+                <ProjectsContainer projects={this.props.generalInformation.projects} className={classNames('section')} />
+                <SkillsContainer skills={this.props.generalInformation.skills} languages={this.props.generalInformation.languages} className={classNames('section')} />
+                <ExperienceTimelineContainer timeline={this.props.generalInformation.timeline} className={classNames('section')} />
+                <ContactContainer contacts={this.props.generalInformation.contacts} className={classNames('section')} />
+                <FooterContainer resources={this.props.generalInformation.resources} />
             </div>
         );
     }
