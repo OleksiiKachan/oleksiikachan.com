@@ -5,7 +5,6 @@ import ToolIcon from '../ToolIcon';
 import branding_oleksiiKachan from '../../downloadables/projects/branding_oleksiiKachan.pdf';
 import branding_irynaKachan from '../../downloadables/projects/branding_irynaKachan.pdf';
 import branding_oleksandrGorchakov from '../../downloadables/projects/branding_oleksandrGorchakov.pdf';
-import ui_networkControl from '../../downloadables/projects/ui_networkControl.pdf';
 import hyperloop from '../../downloadables/projects/hyperloop.pdf';
 
 /*
@@ -17,7 +16,6 @@ class ProjectDescription extends Component {
             case 'branding_oleksiiKachan': return branding_oleksiiKachan;
             case 'branding_irynaKachan': return branding_irynaKachan;
             case 'branding_oleksandrGorchakov': return branding_oleksandrGorchakov;
-            case 'ui_networkControl': return ui_networkControl;
             case 'hyperloop': return hyperloop;
             case 'agw': return 'http://olsom.net/agw-mes/';
             case 'tdm': return 'http://www.catalystsi.com/index.php?option=com_content&view=article&id=8&Itemid=12'
