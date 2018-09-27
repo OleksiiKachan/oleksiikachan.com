@@ -18,22 +18,18 @@ class HeadMenu extends Component {
             {
                 title: 'Portfolio',
                 sectionId: '#portfolio',
-                isSelected: false
             },
             {
                 title: 'Competencies',
                 sectionId: '#competencies',
-                isSelected: false
             },
             {
                 title: 'Education & Experience',
                 sectionId: '#education',
-                isSelected: false
             },
             {
                 title: 'Contact',
                 sectionId: '#contact',
-                isSelected: false
             }
         ];
     }
