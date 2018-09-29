@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './GeneralInformationBio.css';
+import BiographyText from '../BiographyText'
 import CV from '../../downloadables/oleksiikachan.pdf'
 
 /*
@@ -11,9 +12,7 @@ class GeneralInformationBio extends Component {
         return (
             <div className={classNames('biography', this.props.className)}>
                 <h3 className={classNames('mainInformation__header')}>BIOGRAPHY</h3>
-                <div className={classNames('biography__text')}>
-                    {this.props.bio}
-                </div>
+                <BiographyText bio={this.props.bio} className={classNames('biography__text')}/>
                 <div className={classNames('biography__downloadCV')}>
                     <a target='_blank' href={CV} className={classNames('biograpghy__downloadLink')}>Download CV <i className={classNames('biograpghy__downloadIcon', 'fa', 'fa-download')} aria-hidden="true"></i></a>
                 </div>
