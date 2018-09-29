@@ -8,7 +8,20 @@
         "email": "alexkachan.lutsk@gmail.com",
         "location": "Toronto, ON, Canada"
     },
-    "bio": "Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.",
+    "bio_legacy": "Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.",
+    "bio": {
+        "introduction": "Hello there! I am a professional software engineer.",
+        "passionIntroduction": "I have 2 greatest passions:",
+        "passions": [
+            "Helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development",
+            "Helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages"
+        ],
+        "stackIntroduction": "I am an Enterprise Software Developer. Mainly I use 2 stacks of technologies:",
+        "techStacks": [
+            ".NET Stack (C#, ASP.NET, WPF, Win. Forms, WCF, MS SQL Server etc.)",
+            "Javascript: ReactJS, Node.js, Express, SASS"
+        ]
+    },
     "projects": [
         {
             "projectType": "development",
