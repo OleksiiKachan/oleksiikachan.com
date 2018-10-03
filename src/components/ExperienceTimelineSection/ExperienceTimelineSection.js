@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ExperienceTimelineSection.css';
+import './ExperienceTimelineSection.scss';
 
 /*
     <ExperienceTimelineSection timeline={}/>

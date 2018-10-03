@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './BackToTopButton.css';
+import './BackToTopButton.scss';
 
 /*
     <BackToTopButton topId=''/>

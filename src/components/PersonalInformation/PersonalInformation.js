@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './PersonalInformation.css';
+import './PersonalInformation.scss';
 
 /*
     <PersonalInformation information={} className='' />

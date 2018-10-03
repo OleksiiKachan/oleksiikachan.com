@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './SocialMediaButtonPanel.css';
+import './SocialMediaButtonPanel.scss';
 import SocialMediaButton from '../SocialMediaButton'
 
 /*

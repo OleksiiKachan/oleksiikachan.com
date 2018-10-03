@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './GeneralInformationHeader.css';
+import './GeneralInformationHeader.scss';
 import SocialMediaButtonPanel from '../SocialMediaButtonPanel'
 import Avatar from '../../images/avatar.png'
 

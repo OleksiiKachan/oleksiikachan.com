@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ContactForm.css';
+import './ContactForm.scss';
 
 /*
     <ContactForm />

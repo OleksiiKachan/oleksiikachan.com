@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './Header.css';
+import './Header.scss';
 import HeadMenu from '../HeadMenu'
 
 /*

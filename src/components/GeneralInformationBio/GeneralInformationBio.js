@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './GeneralInformationBio.css';
+import './GeneralInformationBio.scss';
 import BiographyText from '../BiographyText'
 import CV from '../../downloadables/oleksiikachan.pdf'
 
@@ -14,7 +14,7 @@ class GeneralInformationBio extends Component {
                 <h3 className={classNames('mainInformation__header')}>BIOGRAPHY</h3>
                 <BiographyText bio={this.props.bio} className={classNames('biography__text')}/>
                 <div className={classNames('biography__downloadCV')}>
-                    <a target='_blank' href={CV} className={classNames('biograpghy__downloadLink')}>Download CV <i className={classNames('biograpghy__downloadIcon', 'fa', 'fa-download')} aria-hidden="true"></i></a>
+                    <a target='_blank' rel='noopener noreferrer' href={CV} className={classNames('biograpghy__downloadLink')}>Download CV <i className={classNames('biograpghy__downloadIcon', 'fa', 'fa-download')} aria-hidden="true"></i></a>
                 </div>
             </div>
         );

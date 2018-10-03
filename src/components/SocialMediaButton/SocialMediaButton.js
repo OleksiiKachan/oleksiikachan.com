@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './SocialMediaButton.css';
+import './SocialMediaButton.scss';
 
 /*
     <SocialMediaButton link='' resource='' />
@@ -11,7 +11,8 @@ class SocialMediaButton extends Component {
             <a 
                 href={this.props.link} 
                 className={classNames('smButton', `smButton_${this.props.resource}`, 'fa', `fa-${this.props.resource}`)}
-                target='_blank'>
+                target='_blank'
+                rel='noopener noreferrer'>
             </a>
         );
     }

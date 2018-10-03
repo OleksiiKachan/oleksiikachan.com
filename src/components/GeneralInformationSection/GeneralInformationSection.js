@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './GeneralInformationSection.css';
+import './GeneralInformationSection.scss';
 import GeneralInformationHeader from '../GeneralInformationHeader'
 import GeneralInformationBio from '../GeneralInformationBio'
 import PersonalInformation from '../PersonalInformation'

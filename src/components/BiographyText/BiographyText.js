@@ -1,36 +1,38 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './BiographyText.css';
+import './BiographyText.scss';
 
 /*
     <BiographyText bio={}  className=''/>
 */
 class BiographyText extends Component {
+    renderList = (list) => {
+        return(
+            <ol className={classNames('biography__list')}>
+                {
+                    list.map(listItem => {
+                        return(
+                            <li>{listItem}</li>
+                        );
+                    })
+                }
+                </ol>
+        );
+    }
+
     render() {
         return (
             <div className={classNames(this.props.className)}>
                 <span>{this.props.bio.introduction}</span>
                 <br/>
                 <span>{this.props.bio.passionIntroduction}</span>
-                <ol className={classNames('biography__list')}>
                 {
-                    this.props.bio.passions.map(passion => {
-                        return(
-                            <li>{passion}</li>
-                        );
-                    })
+                    this.renderList(this.props.bio.passions)
                 }
-                </ol>
                 <span>{this.props.bio.stackIntroduction}</span>
-                <ol className={classNames('biography__list')}>
                 {
-                    this.props.bio.techStacks.map(stack => {
-                        return(
-                            <li>{stack}</li>
-                        );
-                    })
+                    this.renderList(this.props.bio.techStacks)
                 }
-                </ol>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './LanguagesPanel.css';
+import './LanguagesPanel.scss';
 import FilledStar from './filledStar.png';
 import BlankStar from './blankStar.png';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ProjectDescription.css';
+import './ProjectDescription.scss';
 import ToolIcon from '../ToolIcon';
 import branding_oleksiiKachan from '../../downloadables/projects/branding_oleksiiKachan.pdf';
 import branding_irynaKachan from '../../downloadables/projects/branding_irynaKachan.pdf';
@@ -44,7 +44,7 @@ class ProjectDescription extends Component {
                     }
                     </ul>
                     <div className={classNames('projectDescription__downloadFile')}>
-                        <a target='_blank' href={this.getDownloadableFile(this.props.project.fileName)} className={classNames('projectDescription__downloadLink')}>{this.props.project.downloadText} <i className={classNames('projectDescription__downloadIcon', `${this.props.project.downloadText && this.props.project.downloadText !== 'Go to product site' ? '' : 'projectDescription__downloadIcon_hidden'}`, 'fa', 'fa-download')} aria-hidden="true"></i></a>
+                        <a target='_blank' rel='noopener noreferrer' href={this.getDownloadableFile(this.props.project.fileName)} className={classNames('projectDescription__downloadLink')}>{this.props.project.downloadText} <i className={classNames('projectDescription__downloadIcon', `${this.props.project.downloadText && this.props.project.downloadText !== 'Go to product site' ? '' : 'projectDescription__downloadIcon_hidden'}`, 'fa', 'fa-download')} aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

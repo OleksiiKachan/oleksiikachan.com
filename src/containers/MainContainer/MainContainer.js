@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './MainContainer.css';
+import './MainContainer.scss';
 import GeneralInformationContainer from '../GeneralInformationContainer';
 import HeaderContainer from '../HeaderContainer';
 import SkillsContainer from '../SkillsContainer';

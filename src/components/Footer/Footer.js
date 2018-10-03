@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './Footer.css';
+import './Footer.scss';
 import Logo from '../../images/logo.png';
 
 /*

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ContactInfoItem.css';
+import './ContactInfoItem.scss';
 
 /*
     <ContactInfoItem icon='' text='' className />

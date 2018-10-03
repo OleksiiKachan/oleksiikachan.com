@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ContactSection.css';
+import './ContactSection.scss';
 import ContactForm from '../ContactForm';
 import ContactInfoPanel from '../ContactInfoPanel';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './SkillsSection.css';
+import './SkillsSection.scss';
 import LanguagesPanel from '../LanguagesPanel';
 import SkillsPanel from '../SkillsPanel';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ProjectsSection.css';
+import './ProjectsSection.scss';
 import ProjectCard from '../ProjectCard';
 
 /*

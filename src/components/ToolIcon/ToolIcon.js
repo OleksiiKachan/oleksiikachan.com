@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ToolIcon.css';
+import './ToolIcon.scss';
 import photoshopIcon from './images/photoshop.svg';
 import illustratorIcon from './images/illustrator.svg';
 import dotnetIcon from './images/dotnet.svg';
