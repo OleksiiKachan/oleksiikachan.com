@@ -1,40 +1,39 @@
 .headMenu {
-    background-color: #0f82f9;
-    min-height: 35px;
+  background-color: #0f82f9;
+  min-height: 35px;
 }
 
 .headMenu__list {
-    display: flex;
-	justify-content: space-around;
-	padding: 8px 0 8px 25px;
-    width: 90%;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 8px 25px;
+  width: 90%;
+  list-style-type: none;
 }
 
 .headMenu__listItem {
-	font-weight: lighter;
-	margin-right: 15px;
+  font-weight: lighter;
+  margin-right: 15px;
 }
 
 .headMenu__listItem_selected {
-    font-weight: bolder;
-    border-style: solid;
-    border-width: 0 0 1px 0;
+  font-weight: bolder;
+  border-style: solid;
+  border-width: 0 0 1px 0;
 }
 
 .headMenu__link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .headMenu__link:visited {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-@media only screen and (max-width : 480px) {
-
-    .headMenu__list {
-        display: none;
-    }
+@media only screen and (max-width: 480px) {
+  .headMenu__list {
+    display: none;
+  }
 }

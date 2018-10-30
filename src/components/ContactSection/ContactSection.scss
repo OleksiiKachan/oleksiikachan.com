@@ -1,33 +1,32 @@
 .contactSection {
-    display: flex;
-    flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contactSection__title {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .contactSection__content {
-    display: flex;
-	justify-content: space-around;
-	align-items: stretch;
-	width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 80%;
 }
 
 .contactSection__contactColumn {
-    width: 40%;
+  width: 40%;
 }
 
 @media screen and (max-width: 768px) {
-    
-    .contactSection__content {
-        flex-direction: column;
-        align-items: center;
-    }
+  .contactSection__content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .contactSection__contactColumn {
-        width: 80%;
-        font-size: smaller;
-    }
+  .contactSection__contactColumn {
+    width: 80%;
+    font-size: smaller;
+  }
 }

@@ -1,130 +1,131 @@
 .experienceTimelineSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .experienceTimelineSection * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .experienceTimelineSection__title {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .experienceTimelineSection__timeline {
-	width: 90%;
-    padding: 25px 0;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: white;
+  width: 90%;
+  padding: 25px 0;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
 }
 
 .experienceTimelineSection__timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #474e5d;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #474e5d;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
 .timelineItem__container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
 }
 
 .timelineItem__container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: rgb(187, 45, 45);
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(187, 45, 45);
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .timelineItem__container_left {
-    left: 0;
+  left: 0;
 }
 
 .timelineItem__container_right {
-    left: 50%;
+  left: 50%;
 }
 
 .timelineItem__container_left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #474e5d;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #474e5d;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #474e5d;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #474e5d;
 }
 
 .timelineItem__container_right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #474e5d;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #474e5d transparent transparent;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #474e5d;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #474e5d transparent transparent;
 }
 
 .timelineItem__container_right::after {
-    left: -16px;
+  left: -16px;
 }
 
 .timelineItem__content {
-    padding: 20px 30px;
-    background-color: #474e5d;
-    position: relative;
-    border-radius: 6px;
+  padding: 20px 30px;
+  background-color: #474e5d;
+  position: relative;
+  border-radius: 6px;
 }
 
 .timelineItem__description {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 @media screen and (max-width: 768px) {
-    .experienceTimelineSection__timeline::after {
-        left: 31px;
-    }
+  .experienceTimelineSection__timeline::after {
+    left: 31px;
+  }
 
-    .timelineItem__container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
+  .timelineItem__container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
 
-    .timelineItem__container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
+  .timelineItem__container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
 
-    .timelineItem__container_left::after, .timelineItem__container_right::after {
-        left: 15px;
-    }
+  .timelineItem__container_left::after,
+  .timelineItem__container_right::after {
+    left: 15px;
+  }
 
-    .timelineItem__container_right {
-        left: 0%;
-    }
+  .timelineItem__container_right {
+    left: 0%;
+  }
 }

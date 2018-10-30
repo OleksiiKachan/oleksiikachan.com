@@ -15,25 +15,39 @@ import oracleIcon from './images/oracle.svg';
     <ToolIcon tool='' className=''/>
 */
 class ToolIcon extends Component {
-    getToolIcon = (tool) => {
-        switch(tool) {
-            case 'photoshop': return photoshopIcon;
-            case 'illustrator': return illustratorIcon;
-            case 'dotnet': return dotnetIcon;
-            case 'visio': return visioIcon;
-            case 'windows': return windowsIcon;
-            case 'linux': return linuxIcon;
-            case 'js': return jsIcon;
-            case 'mssql': return mssqlIcon;
-            case 'oracle': return oracleIcon;
-            default: return null;
-        }
+  getToolIcon = tool => {
+    switch (tool) {
+      case 'photoshop':
+        return photoshopIcon;
+      case 'illustrator':
+        return illustratorIcon;
+      case 'dotnet':
+        return dotnetIcon;
+      case 'visio':
+        return visioIcon;
+      case 'windows':
+        return windowsIcon;
+      case 'linux':
+        return linuxIcon;
+      case 'js':
+        return jsIcon;
+      case 'mssql':
+        return mssqlIcon;
+      case 'oracle':
+        return oracleIcon;
+      default:
+        return null;
     }
-    render() {
-        return(
-            <img alt={this.props.tool} className={classNames('toolIcon', this.props.className)} src={this.getToolIcon(this.props.tool)}/>
-        );
-    }
+  };
+  render() {
+    return (
+      <img
+        alt={this.props.tool}
+        className={classNames('toolIcon', this.props.className)}
+        src={this.getToolIcon(this.props.tool)}
+      />
+    );
+  }
 }
 
 export default ToolIcon;

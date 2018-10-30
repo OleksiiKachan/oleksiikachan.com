@@ -1,45 +1,45 @@
 .projectsSection {
-    padding: 30px 5%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .projectsSection__header {
-    align-self: center;
-    margin-bottom: 25px;
+  align-self: center;
+  margin-bottom: 25px;
 }
 
 .projectsSection__projectsFilter {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 25px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .projectsSection__projectsFilterItem {
-    margin: 0 10px;
-	padding: 10px;
+  margin: 0 10px;
+  padding: 10px;
 }
 
 .projectsSection__projectsFilterItem_clicked {
-    border-bottom: 2px solid #0f82f9;
+  border-bottom: 2px solid #0f82f9;
 }
 
 .projectsSection__projectsFilterButton {
-	background: none;
-	border: none;
-	font-size: 10pt;
-	font-weight: 700;
-	color: #0f82f9;
-	cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #0f82f9;
+  cursor: pointer;
 }
 
 .projectsSection__content {
-    display: flex;
-	justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }

@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header'
+import Header from '../../components/Header';
 
 /*
     <HeaderContainer name='' title=''/>
 */
 class HeaderContainer extends Component {
-    render() {
-        return (
-            <Header name={this.props.name} title={this.props.title} className={this.props.className} />
-        );
-    }
+  render() {
+    return (
+      <Header
+        name={this.props.name}
+        title={this.props.title}
+        className={this.props.className}
+      />
+    );
+  }
 }
 
 export default HeaderContainer;

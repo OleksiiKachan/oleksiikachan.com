@@ -1,67 +1,65 @@
 .generalInformation {
-    background-color: #f8f9fb;
-    padding: 50px 0 50px 0;
-	padding-left: 20%;
-	padding-right: 20%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+  background-color: #f8f9fb;
+  padding: 50px 0 50px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .generalInformation_header {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .generalInformation__mainInformation {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .mainInformation__header {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .generalInformation__personalInformation {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-	width: 40%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 40%;
 }
 
 .generalInformation__bio {
-    width: 45%;
+  width: 45%;
 }
 
-@media only screen and (max-width : 768px) {
-    
-    .generalInformation {
-		padding: 50px 0 50px 0;
-	}
-	
-	.mainInformation {
-		display: flex;
-		flex-direction: column;
-		padding: 0 10%;
-		width: 80%;
-	}
-	
-	.generalInformation__personalInformation, .generalInformation__bio {
-		width: 100%;
-	}
+@media only screen and (max-width: 768px) {
+  .generalInformation {
+    padding: 50px 0 50px 0;
+  }
+
+  .mainInformation {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    width: 80%;
+  }
+
+  .generalInformation__personalInformation,
+  .generalInformation__bio {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width : 480px) {
-
-	.mainInformation__header {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		justify-content: center;
-		align-items: stretch;
-	}
-
+@media only screen and (max-width: 480px) {
+  .mainInformation__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+  }
 }
