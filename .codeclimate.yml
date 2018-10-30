@@ -1,8 +1,11 @@
-version: "2"         # required to adjust maintainability checks
+version: '2' # required to adjust maintainability checks
 checks:
+  method-lines:
+    config:
+      treshold: 100
   similar-code:
     config:
-      threshold: 100
+      threshold: 200
   identical-code:
     config:
-      threshold: 100
+      threshold: 200
