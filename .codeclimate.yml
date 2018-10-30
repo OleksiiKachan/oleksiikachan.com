@@ -2,10 +2,10 @@ version: '2' # required to adjust maintainability checks
 checks:
   method-lines:
     config:
-      treshold: 100
+      threshold: 100
   similar-code:
     config:
-      threshold: 200
+      threshold: 150
   identical-code:
     config:
-      threshold: 200
+      threshold: 150
