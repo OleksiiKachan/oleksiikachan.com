@@ -26,7 +26,7 @@
     {
       "projectType": "development",
       "name": "AGW MES / WMS for automotive industry.",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for AGW system (which is the MES/WMS for manufacturing). Also I did deployment on new manufacturies and support tickets.",
+      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for AGW system (which is the MES/WMS for manufacturing). Also I did deployment on new manufactories and support tickets.",
       "tools": ["dotnet", "js", "mssql", "oracle"],
       "fileName": "agw",
       "alternativeImageText": "Automotive manufacturing",
@@ -35,7 +35,7 @@
     {
       "projectType": "development",
       "name": "TDM (Tools Data Manager) for automotive industry.",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for TDM system. TDM - Tools Data Manager - solution that gets and analyse statistical data from automatic screwdrivers on production lines. Prouct was developed in collaboration with OLSOM L.L.C Catalyst Solutions Inc.",
+      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for TDM system. TDM - Tools Data Manager - solution that gets and analyse statistical data from automatic screwdrivers on production lines. Product was developed in collaboration with OLSOM L.L.C Catalyst Solutions Inc.",
       "tools": ["dotnet", "js", "mssql", "oracle"],
       "fileName": "tdm",
       "alternativeImageText": "Automotive manufacturing",
@@ -44,7 +44,7 @@
     {
       "projectType": "design",
       "name": "Hyperloop",
-      "description": "I was a volonteering member of rLoop team on SpaceX Hyperloop Contest. I was in System Team & Software Team. I took part in creating Final Design Resource document as a system engineer. UI development was lead by me. I created UI mockups and then in colloboration with one designer we created UI for ground station.",
+      "description": "I was a volunteering member of rLoop team on SpaceX Hyperloop Contest. I was in System Team & Software Team. I took part in creating Final Design Resource document as a system engineer. UI development was lead by me. I created UI mockups and then in collaboration with one designer we created UI for ground station.",
       "tools": ["visio", "illustrator", "photoshop"],
       "fileName": "hyperloop",
       "alternativeImageText": "Hyperloop",
@@ -53,7 +53,7 @@
     {
       "projectType": "development",
       "name": "Corrugated Cardboard Production System",
-      "description": "I did reverse engineering of corrugated industrial cardboard manufacturing system. System was creatoed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C.",
+      "description": "I did reverse engineering of corrugated industrial cardboard manufacturing system. System was created using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C.",
       "tools": ["visio"],
       "fileName": "corrugatedCardboard",
       "alternativeImageText": "Corrugated Cardboard",
@@ -61,11 +61,11 @@
     },
     {
       "projectType": "development",
-      "name": "FTP File Transer Service",
+      "name": "FTP File Transfer Service",
       "description": "I created FTP File Transfer Service - windows service that transfers files in multiple threads via FTP to remoter & local locations. Service uses .ini file with configuration",
       "tools": ["dotnet", "windows", "linux"],
       "fileName": "ftpService",
-      "alternativeImageText": "Two laptops and file transfering between them",
+      "alternativeImageText": "Two laptops and file transferring between them",
       "downloadText": ""
     },
     {
@@ -89,7 +89,7 @@
     {
       "projectType": "design",
       "name": "Logo & Card Design",
-      "description": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displayes that person is connected with advanced financial operations.",
+      "description": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations.",
       "tools": ["photoshop", "illustrator"],
       "fileName": "branding_oleksandrGorchakov",
       "alternativeImageText": "Business cards",
@@ -170,7 +170,7 @@
     {
       "time": "2013-2017",
       "title": "Bachelor of Software Engineering",
-      "description": "National Technical Uniescity of Ukraine \"Kyiv Polytechnic Institute\", Faculty of Informatics and Computer Science, Technical Cybernetics Department"
+      "description": "National Technical University of Ukraine \"Kyiv Polytechnic Institute\", Faculty of Information and Computer Science, Technical Cybernetics Department"
     },
     {
       "time": "2017",
