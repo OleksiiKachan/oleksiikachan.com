@@ -8,14 +8,20 @@ import ProjectDescription from '../ProjectDescription';
 */
 class ProjectCard extends Component {
   render() {
+    var cardBackground = {
+      backgroundImage: `url(https://res.cloudinary.com/oleksiikachan/image/upload/v1543467854/portfolio/images/projects/${
+        this.props.project.fileName
+      }.png)`,
+    };
+
+    console.log(cardBackground);
+
     return (
       <div className={classNames('projectCard', this.props.className)}>
         <div className={classNames('projectCard__innerArea')}>
           <div
-            className={classNames(
-              'projectCard__front',
-              `projectCard_${this.props.project.fileName}`
-            )}
+            className={classNames('projectCard__front')}
+            style={cardBackground}
           >
             <div className={classNames('projectCard__shader')} />
           </div>

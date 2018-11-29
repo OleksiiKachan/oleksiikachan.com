@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './Footer.scss';
-import Logo from '../../images/logo.png';
 
 /*
     <Footer resources={} className='' />
@@ -29,7 +28,7 @@ class Footer extends Component {
         <div className={classNames('footer__section', 'footer__logoSection')}>
           <img
             className={classNames('footer__logo')}
-            src={Logo}
+            src="https://res.cloudinary.com/oleksiikachan/image/upload/v1543467884/portfolio/images/logo.png"
             alt="Oleksii Kachan Logo"
           />
         </div>

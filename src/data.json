@@ -30,6 +30,7 @@
       "tools": ["dotnet", "js", "mssql", "oracle"],
       "fileName": "agw",
       "alternativeImageText": "Automotive manufacturing",
+      "url": "http://olsom.net/agw-mes/",
       "downloadText": "Go to product site"
     },
     {
@@ -39,6 +40,7 @@
       "tools": ["dotnet", "js", "mssql", "oracle"],
       "fileName": "tdm",
       "alternativeImageText": "Automotive manufacturing",
+      "url": "http://www.catalystsi.com/index.php?option=com_content&view=article&id=8&Itemid=12",
       "downloadText": "Go to product site"
     },
     {
@@ -48,6 +50,7 @@
       "tools": ["visio", "illustrator", "photoshop"],
       "fileName": "hyperloop",
       "alternativeImageText": "Hyperloop",
+      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/hyperloop.pdf",
       "downloadText": "Open file with UI"
     },
     {
@@ -75,6 +78,7 @@
       "tools": ["photoshop"],
       "fileName": "branding_oleksiiKachan",
       "alternativeImageText": "Business cards",
+      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_oleksiiKachan.pdf",
       "downloadText": "Open presentation file"
     },
     {
@@ -84,6 +88,7 @@
       "tools": ["photoshop", "illustrator"],
       "fileName": "branding_irynaKachan",
       "alternativeImageText": "Business cards",
+      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_irynaKachan.pdf",
       "downloadText": "Open presentation file"
     },
     {
@@ -93,6 +98,7 @@
       "tools": ["photoshop", "illustrator"],
       "fileName": "branding_oleksandrGorchakov",
       "alternativeImageText": "Business cards",
+      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_oleksandrGorchakov.pdf",
       "downloadText": "Open presentation file"
     }
   ],

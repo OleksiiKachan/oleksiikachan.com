@@ -2,34 +2,11 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import './ProjectDescription.scss';
 import ToolIcon from '../ToolIcon';
-import branding_oleksiiKachan from '../../downloadables/projects/branding_oleksiiKachan.pdf';
-import branding_irynaKachan from '../../downloadables/projects/branding_irynaKachan.pdf';
-import branding_oleksandrGorchakov from '../../downloadables/projects/branding_oleksandrGorchakov.pdf';
-import hyperloop from '../../downloadables/projects/hyperloop.pdf';
 
 /*
     <ProjectDescription project={} className=''/>
 */
 class ProjectDescription extends Component {
-  getDownloadableFile = fileName => {
-    switch (fileName) {
-      case 'branding_oleksiiKachan':
-        return branding_oleksiiKachan;
-      case 'branding_irynaKachan':
-        return branding_irynaKachan;
-      case 'branding_oleksandrGorchakov':
-        return branding_oleksandrGorchakov;
-      case 'hyperloop':
-        return hyperloop;
-      case 'agw':
-        return 'http://olsom.net/agw-mes/';
-      case 'tdm':
-        return 'http://www.catalystsi.com/index.php?option=com_content&view=article&id=8&Itemid=12';
-      default:
-        return '';
-    }
-  };
-
   render() {
     const colors = ['red', 'blue', 'grey', 'green', 'yellow'];
     return (
@@ -66,7 +43,7 @@ class ProjectDescription extends Component {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={this.getDownloadableFile(this.props.project.fileName)}
+              href={this.props.project.url}
               className={classNames('projectDescription__downloadLink')}
             >
               {this.props.project.downloadText}{' '}

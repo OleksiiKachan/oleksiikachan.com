@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import './GeneralInformationHeader.scss';
 import SocialMediaButtonPanel from '../SocialMediaButtonPanel';
-import Avatar from '../../images/avatar.png';
 
 /*
     <GeneralInformationHeader generalInformation = {} className='' />
@@ -19,7 +18,7 @@ class GeneralInformationHeader extends Component {
           <figure className={classNames('avatar__filter')}>
             <img
               alt="Oleksii Kachan"
-              src={Avatar}
+              src="https://res.cloudinary.com/oleksiikachan/image/upload/v1543467885/portfolio/images/avatar.png"
               className={classNames('avatar__image')}
             />
           </figure>

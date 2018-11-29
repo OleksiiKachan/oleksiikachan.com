@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import './GeneralInformationBio.scss';
 import BiographyText from '../BiographyText';
-import CV from '../../downloadables/oleksiikachan.pdf';
 
 /*
     <GeneralInformationBio bio = '' className = ''/>
@@ -20,7 +19,7 @@ class GeneralInformationBio extends Component {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={CV}
+            href="https://res.cloudinary.com/oleksiikachan/image/upload/v1543469418/portfolio/downloadables/oleksiikachan.pdf"
             className={classNames('biograpghy__downloadLink')}
           >
             Download CV{' '}
