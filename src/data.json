@@ -18,8 +18,8 @@
     ],
     "stackIntroduction": "I am an Enterprise Software Developer. Mainly I use 2 stacks of technologies:",
     "techStacks": [
-      ".NET Stack (C#, ASP.NET, WPF, Win. Forms, WCF, MS SQL Server etc.)",
-      "ReactJS, Node.js, Express, SASS"
+      "ReactJS, Node.js, Express, SASS",
+      ".NET Stack (C#, ASP.NET, WPF, Win. Forms, WCF, MS SQL Server etc.)"
     ]
   },
   "projects": [
