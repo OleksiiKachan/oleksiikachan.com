@@ -1,6 +1,6 @@
 {
   "name": "Oleksii Kachan",
-  "title": "Fullstack Software Engineer & UI/UX Developer",
+  "title": "Full Stack Software Engineer & UI/UX Developer",
   "photo": "../images/avatar.png",
   "dob": "03 April 1996",
   "contacts": {
@@ -18,7 +18,7 @@
     ],
     "stackIntroduction": "I am an Enterprise Software Developer. Mainly I use 2 stacks of technologies:",
     "techStacks": [
-      "ReactJS, Node.js, Express, SASS",
+      "MERN Stack (MongoDB, Express.js, React.js, Node.js)",
       ".NET Stack (C#, ASP.NET, WPF, Win. Forms, WCF, MS SQL Server etc.)"
     ]
   },
