@@ -1,59 +1,59 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  color: white;
+  height: 75vh;
+  width: 100%;
 }
 
-.headContent {
-  height: 450px;
+.headCover {
+  height: 85%;
   width: 100%;
   background-image: url('https://res.cloudinary.com/oleksiikachan/image/upload/v1544127238/portfolio/images/header.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  display: flex;
-  flex-direction: column;
 }
 
-.headContent__filter {
-  background-color: #0f82f9;
+.headCover_scrolled {
+  display: none;
+}
+
+.headCover_filter {
+  content: '';
+  background-color: #424242;
   opacity: 0.7;
   height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headCover__logo {
+  width: 30%;
+}
+
+.headCover__titleWrapper {
+  width: 40%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 16%;
+  align-items: stretch;
+  text-align: center;
 }
 
-.headTitle {
-  margin-bottom: 40px;
-  width: 80%;
-}
-
-.headTitle__title {
-  font-weight: 200;
-}
-
-.header__button {
-  width: 80%;
-}
-
-.actionButton {
-  background-color: transparent;
-  border-radius: 25px;
-  border: 1px solid #ffffff;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 13px;
-  padding: 6px 20px;
+.headCover__title {
+  color: #dddddd;
   font-weight: lighter;
-  text-decoration: none;
+  font-size: 26pt;
+  margin-bottom: 5%;
 }
 
-@media screen and (max-width: 768px) {
-  .headContent {
-    background-attachment: unset;
-  }
+.headCover__link {
+  color: #0f82f9;
+  font-size: 12pt;
+}
+
+.headCover__link:visited {
+  color: #0f82f9;
 }
