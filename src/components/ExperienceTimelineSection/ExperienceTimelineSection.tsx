@@ -6,15 +6,14 @@ import './ExperienceTimelineSection.scss';
     <ExperienceTimelineSection timeline={}/>
 */
 class ExperienceTimelineSection extends Component<any, any> {
-  previousSide: string;
+  previousSide: string = 'right';
 
   constructor(props: any) {
     super(props);
-
-    this.previousSide = 'right';
   }
 
   render() {
+    this.previousSide = 'right';
     return (
       <div
         id="education"
