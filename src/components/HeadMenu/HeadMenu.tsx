@@ -43,18 +43,20 @@ class HeadMenu extends Component<any, any> {
   render() {
     return (
       <nav className={classNames('headMenu', this.props.className)}>
+        <img
+          src="https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_horizontal_light.svg"
+          className={classNames('headMenu__logo')}
+        />
         <ul className={classNames('headMenu__list')}>
           {this.menu.map(menuItem => {
             return (
-              <li
-                className={classNames(
-                  'headMenu__listItem',
-                  menuItem.isSelected ? 'headMenu__listItem_selected' : ''
-                )}
-              >
+              <li className={classNames('headMenu__listItem')}>
                 <a
                   href={menuItem.sectionId}
-                  className={classNames('headMenu__link')}
+                  className={classNames(
+                    'headMenu__link',
+                    menuItem.isSelected ? 'headMenu__link_selected' : ''
+                  )}
                 >
                   {menuItem.title}
                 </a>
