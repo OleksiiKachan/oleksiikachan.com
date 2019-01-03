@@ -1,10 +1,55 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
+import classnames from 'classnames';
 
 /*
     <HeaderContainer name='' title=''/>
 */
 class HeaderContainer extends Component<any, any> {
+  private navigationItems: Array<{
+    key: string;
+    title: string;
+    sectionId: string;
+    isSelected: boolean;
+  }>;
+
+  constructor(props: any) {
+    super(props);
+
+    this.navigationItems = [
+      {
+        key: 'mi_about',
+        title: 'About Me',
+        sectionId: '#about',
+        isSelected: true,
+      },
+      {
+        key: 'mi_portfolio',
+        title: 'Portfolio',
+        sectionId: '#portfolio',
+        isSelected: false,
+      },
+      {
+        key: 'mi_competencies',
+        title: 'Competencies',
+        sectionId: '#competencies',
+        isSelected: false,
+      },
+      {
+        key: 'mi_education',
+        title: 'Education & Experience',
+        sectionId: '#education',
+        isSelected: false,
+      },
+      {
+        key: 'mi_contact',
+        title: 'Contact',
+        sectionId: '#contact',
+        isSelected: false,
+      },
+    ];
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -14,26 +59,20 @@ class HeaderContainer extends Component<any, any> {
   }
 
   handleScroll() {
-    const headCover: any = document.getElementsByClassName('headCover')[0];
-    const headCoverHeight: number = headCover!.clientHeight;
+    if (document.body.clientWidth > 864) {
+      const headCover = document.getElementsByClassName('headCover')[0];
+      const headCoverHeight = headCover.clientHeight;
 
-    const headMenu: any = document.getElementsByClassName('headMenu')[0];
-    const headMenuHeight: number = headMenu!.clientHeight;
-    const headMenu__logo: any = document.getElementsByClassName(
-      'headMenu__logo'
-    )[0];
-    const headMenu__list: any = document.getElementsByClassName(
-      'headMenu__list'
-    )[0];
-    console.log(`${window.pageYOffset} - ${headCoverHeight}`);
-    if (window.pageYOffset > headCoverHeight) {
-      headMenu!.classList.add('headMenu_scrolled');
-      headMenu__logo!.classList.add('headMenu__logo_scrolled');
-      headMenu__list!.classList.add('headMenu__list_scrolled');
-    } else if (window.pageYOffset < headCoverHeight + headMenuHeight) {
-      headMenu!.classList.remove('headMenu_scrolled');
-      headMenu__logo!.classList.remove('headMenu__logo_scrolled');
-      headMenu__list!.classList.remove('headMenu__list_scrolled');
+      const headMenu = document.getElementsByClassName('navigation')[0];
+      const headMenuHeight = headMenu.clientHeight;
+
+      if (window.pageYOffset > headCoverHeight) {
+        headMenu.classList.add('headMenu_scrolled');
+        headMenu.classList.add('navigation_scrolled');
+      } else if (window.pageYOffset < headCoverHeight + headMenuHeight) {
+        headMenu.classList.remove('headMenu_scrolled');
+        headMenu.classList.remove('navigation_scrolled');
+      }
     }
   }
 
@@ -42,7 +81,8 @@ class HeaderContainer extends Component<any, any> {
       <Header
         name={this.props.name}
         title={this.props.title}
-        className={this.props.className}
+        navigationItems={this.navigationItems}
+        className={classnames(this.props.className)}
       />
     );
   }
