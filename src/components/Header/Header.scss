@@ -1,59 +1,9 @@
 .header {
-  height: 75vh;
   width: 100%;
 }
 
-.headCover {
-  height: 85%;
-  width: 100%;
-  background-image: url('https://res.cloudinary.com/oleksiikachan/image/upload/v1544127238/portfolio/images/header.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.headCover_scrolled {
-  display: none;
-}
-
-.headCover_filter {
-  content: '';
-  background-color: #424242;
-  opacity: 0.7;
-  height: 100%;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.headCover__logo {
-  width: 30%;
-}
-
-.headCover__titleWrapper {
-  width: 40%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  text-align: center;
-}
-
-.headCover__title {
-  color: #dddddd;
-  font-weight: lighter;
-  font-size: 26pt;
-  margin-bottom: 5%;
-}
-
-.headCover__link {
-  color: #0f82f9;
-  font-size: 12pt;
-}
-
-.headCover__link:visited {
-  color: #0f82f9;
+@media screen and (min-width: 865px) {
+  .header {
+    height: 75vh;
+  }
 }
