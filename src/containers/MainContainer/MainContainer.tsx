@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './MainContainer.scss';
-import GeneralInformationContainer from '../GeneralInformationContainer';
-import HeaderContainer from '../HeaderContainer';
-import SkillsContainer from '../SkillsContainer';
-import ProjectsContainer from '../ProjectsContainer';
-import ExperienceTimelineContainer from '../ExperienceTimelineContainer';
-import ContactContainer from '../ContactContainer';
-import FooterContainer from '../FooterContainer';
-import BackToTopButton from '../BackToTopButton';
+// import GeneralInformationContainer from '../GeneralInformationContainer';
+// import HeaderContainer from '../HeaderContainer';
+// import SkillsContainer from '../SkillsContainer';
+// import ProjectsContainer from '../ProjectsContainer';
+// import ExperienceTimelineContainer from '../ExperienceTimelineContainer';
+// import ContactContainer from '../ContactContainer';
+// import FooterContainer from '../FooterContainer';
+// import BackToTopButton from '../BackToTopButton';
+import MaintenanceModeContainer from '../MaintenanceModeContainer';
 
 /*
     <MainContainer generalInformation={} />
@@ -17,7 +18,8 @@ class MainContainer extends Component<any, any> {
   render() {
     return (
       <div className={'mainContainer'}>
-        <HeaderContainer
+        <MaintenanceModeContainer />
+        {/* <HeaderContainer
           name={this.props.generalInformation.name}
           title={this.props.generalInformation.title}
         />
@@ -43,7 +45,7 @@ class MainContainer extends Component<any, any> {
           className={classNames('section')}
         />
         <FooterContainer resources={this.props.generalInformation.resources} />
-        <BackToTopButton topId="#header" />
+        <BackToTopButton topId="#header" /> */}
       </div>
     );
   }

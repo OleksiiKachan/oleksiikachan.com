@@ -1,0 +1,30 @@
+.maintenanceModeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+  background: url(background.png);
+  background-size: cover;
+}
+
+.maintenanceModeContainer__contactForm {
+  width: 30%;
+}
+
+.maintenanceModeContainer__imageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.maintainImage_message {
+  width: 40%;
+}
+
+.maintainImage_arrow {
+  width: 30%;
+}
