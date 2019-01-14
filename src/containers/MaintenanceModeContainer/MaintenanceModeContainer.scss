@@ -41,3 +41,22 @@
 .maintainImage_arrowText {
   width: 60%;
 }
+
+@media only screen and (max-width: 1024px) {
+  .maintenanceModeContainer {
+    flex-direction: column-reverse;
+  }
+
+  .maintenanceModeContainer__contactForm {
+    width: 75%;
+    height: 65%;
+  }
+
+  .maintenanceModeContainer__imageSection {
+    width: 80%;
+  }
+
+  .maintainImage_arrowSection {
+    flex-direction: column-reverse;
+  }
+}
