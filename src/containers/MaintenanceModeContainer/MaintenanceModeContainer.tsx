@@ -3,6 +3,7 @@ import './MaintenanceModeContainer.scss';
 import ContactForm from '../../components/ContactForm';
 import message from './message.png';
 import arrow from './arrow.png';
+import arrowText from './arrow_text.png';
 import classNames from 'classnames';
 
 /*
@@ -20,14 +21,21 @@ class MaintenanceModeContainer extends Component<any, any> {
         <div className={classNames('maintenanceModeContainer__imageSection')}>
           <img
             src={message}
-            alt="man working on laptop"
+            alt="Site is on maintainance"
             className={classNames('maintainImage_message')}
           />
-          <img
-            src={arrow}
-            alt="man working on laptop"
-            className={classNames('maintainImage_arrow')}
-          />
+          <div className={classNames('maintainImage_arrowSection')}>
+            <img
+              src={arrow}
+              alt="arrow head"
+              className={classNames('maintainImage_arrow')}
+            />
+            <img
+              src={arrowText}
+              alt="but you still can contact me"
+              className={classNames('maintainImage_arrowText')}
+            />
+          </div>
         </div>
       </div>
     );
