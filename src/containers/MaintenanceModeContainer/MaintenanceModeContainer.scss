@@ -34,16 +34,17 @@
 }
 
 .maintainImage_arrow {
-  width: 10%;
-  margin-right: 15px;
+  width: 5%;
+  margin-right: 8px;
 }
 
 .maintainImage_arrowText {
-  width: 60%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 1024px) {
   .maintenanceModeContainer {
+    padding: 15px 0;
     flex-direction: column-reverse;
   }
 
@@ -53,10 +54,24 @@
   }
 
   .maintenanceModeContainer__imageSection {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .maintainImage_message {
     width: 80%;
   }
 
   .maintainImage_arrowSection {
     flex-direction: column-reverse;
+  }
+
+  .maintainImage_arrowText {
+    width: 90%;
+  }
+
+  .maintainImage_arrow {
+    transform: rotate(-90deg);
+    width: 8%;
   }
 }
