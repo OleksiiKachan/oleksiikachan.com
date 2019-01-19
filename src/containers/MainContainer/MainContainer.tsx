@@ -26,12 +26,12 @@ class MainContainer extends Component<any, any> {
         <GeneralInformationContainer
           generalInformation={this.props.generalInformation}
           className={classNames('section')}
-        />
-        <ProjectsContainer
+        /> */}
+        {/* <ProjectsContainer
           projects={this.props.generalInformation.projects}
           className={classNames('section')}
-        />
-        <SkillsContainer
+        /> */}
+        {/* <SkillsContainer
           skills={this.props.generalInformation.skills}
           languages={this.props.generalInformation.languages}
           className={classNames('section')}
