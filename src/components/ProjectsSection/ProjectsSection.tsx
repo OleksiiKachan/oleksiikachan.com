@@ -81,7 +81,7 @@ class ProjectsSection extends Component<any, any> {
               onClick={() => this.setProjectType('development')}
               className={classNames('projectsSection__projectsFilterButton')}
             >
-              Development
+              Software Engineering
             </button>
           </li>
           <li className={classNames('projectsSection__projectsFilterItem')}>
@@ -90,13 +90,13 @@ class ProjectsSection extends Component<any, any> {
               onClick={() => this.setProjectType('design')}
               className={classNames('projectsSection__projectsFilterButton')}
             >
-              Design
+              Graphic Design
             </button>
           </li>
         </ul>
         <div className={classNames('projectsSection__content')}>
           {this.state.projects.map((project: any) => {
-            return <ProjectCard project={project} />;
+            return <ProjectCard project={project} key={project.fileName} />;
           })}
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 import './MainContainer.scss';
 // import GeneralInformationContainer from '../GeneralInformationContainer';
 // import HeaderContainer from '../HeaderContainer';
@@ -9,7 +9,9 @@ import './MainContainer.scss';
 // import ContactContainer from '../ContactContainer';
 // import FooterContainer from '../FooterContainer';
 // import BackToTopButton from '../BackToTopButton';
+
 import MaintenanceModeContainer from '../MaintenanceModeContainer';
+// import ProjectDetailsContainer from '../ProjectDetailsContainer';
 
 /*
     <MainContainer generalInformation={} />
@@ -19,6 +21,9 @@ class MainContainer extends Component<any, any> {
     return (
       <div className={'mainContainer'}>
         <MaintenanceModeContainer />
+        {/* <ProjectDetailsContainer
+          project={this.props.generalInformation.projects[0]}
+        /> */}
         {/* <HeaderContainer
           name={this.props.generalInformation.name}
           title={this.props.generalInformation.title}
@@ -26,12 +31,12 @@ class MainContainer extends Component<any, any> {
         <GeneralInformationContainer
           generalInformation={this.props.generalInformation}
           className={classNames('section')}
-        />
-        <ProjectsContainer
+        /> */}
+        {/* <ProjectsContainer
           projects={this.props.generalInformation.projects}
           className={classNames('section')}
-        />
-        <SkillsContainer
+        /> */}
+        {/* <SkillsContainer
           skills={this.props.generalInformation.skills}
           languages={this.props.generalInformation.languages}
           className={classNames('section')}
