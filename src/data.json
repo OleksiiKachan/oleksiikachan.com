@@ -26,10 +26,22 @@
     {
       "projectType": "development",
       "title": "AGW MES / WMS for automotive industry.",
+      "clientType": "Partner:",
+      "client": "OLSOM LLC",
       "displayTechnologies": ".NET + JS + MS SQL + OracleDB",
       "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for AGW system (which is the MES/WMS for manufacturing). Also I did deployment on new manufactories and support tickets.",
       "tools": ["dotnet", "js", "mssql", "oracle"],
       "fileName": "agw",
+      "images": [
+        {
+          "url": "agw",
+          "description": "Automotive manufacturing 1"
+        },
+        {
+          "url": "tdm",
+          "description": "Automotive manufacturing 2"
+        }
+      ],
       "alternativeImageText": "Automotive manufacturing",
       "url": "http://olsom.net/agw-mes/",
       "downloadText": "Go to product site"
