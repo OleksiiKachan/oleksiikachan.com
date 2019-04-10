@@ -1,0 +1,142 @@
+.timelineItem {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  z-index: 1;
+
+  &__circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    background-color: #fff;
+    border: 4px solid #474e5d;
+    top: 27px;
+    border-radius: 50%;
+    z-index: 1;
+    transform: scale(0);
+    animation: timelineCircle 700ms ease-in-out forwards;
+
+    &_right {
+      left: -15px;
+    }
+  }
+
+  &__arrow {
+    &_left {
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: -10px;
+      border: medium solid #474e5d;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #474e5d;
+    }
+
+    &_right {
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: -10px;
+      border: medium solid #474e5d;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #474e5d transparent transparent;
+    }
+  }
+
+  &_right {
+    left: 50%;
+  }
+
+  &__content {
+    padding: 20px 30px;
+    background-color: #474e5d;
+    position: relative;
+    border-radius: 6px;
+    opacity: 0;
+
+    &_left {
+      left: -50%;
+      animation: timelineCardOpacity 700ms ease-in-out forwards,
+        timelineCard_left 700ms ease-in-out forwards;
+    }
+
+    &_right {
+      left: 50%;
+      animation: timelineCardOpacity 700ms ease-in-out forwards,
+        timelineCard_right 700ms ease-in-out forwards;
+    }
+  }
+
+  &__description {
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timelineItem {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+
+    &::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    &_left,
+    &_right {
+      left: 15px;
+    }
+
+    &_right {
+      left: 0%;
+    }
+  }
+}
+
+@keyframes timelineCardOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes timelineCard_left {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes timelineCard_right {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes timelineCircle {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
