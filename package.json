@@ -4,19 +4,19 @@
   "private": true,
   "dependencies": {
     "@types/classnames": "^2.2.6",
-    "@types/jest": "^23.3.10",
-    "@types/node": "^10.12.15",
-    "@types/react": "^16.7.17",
-    "@types/react-dom": "^16.0.11",
+    "@types/jest": "^23.3.14",
+    "@types/node": "^10.14.4",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.3",
     "@types/react-router-dom": "^4.3.1",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "node-sass": "^4.11.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.1",
-    "typescript": "^3.2.2"
+    "react-scripts": "^2.1.8",
+    "typescript": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,7 +27,9 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm test"
     }
   },
   "browserslist": [
@@ -37,13 +39,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^7.2.1",
-    "cz-customizable": "^5.3.0",
+    "@commitlint/cli": "^7.5.2",
+    "cz-customizable": "^5.10.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.2.1",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.15.3",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
     "pretty-quick": "^1.8.0"
   },
   "config": {
