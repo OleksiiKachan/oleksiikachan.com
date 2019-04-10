@@ -5,11 +5,11 @@ import './MainContainer.scss';
 // import HeaderContainer from '../HeaderContainer';
 // import SkillsContainer from '../SkillsContainer';
 // import ProjectsContainer from '../ProjectsContainer';
-import ExperienceTimelineContainer from '../ExperienceTimelineContainer';
+// import ExperienceTimelineContainer from '../ExperienceTimelineContainer';
 // import ContactContainer from '../ContactContainer';
 // import FooterContainer from '../FooterContainer';
 // import BackToTopButton from '../BackToTopButton';
-// import MaintenanceModeContainer from '../MaintenanceModeContainer';
+import MaintenanceModeContainer from '../MaintenanceModeContainer';
 
 /*
     <MainContainer generalInformation={} />
@@ -18,7 +18,7 @@ class MainContainer extends Component<any, any> {
   render() {
     return (
       <div className={'mainContainer'}>
-        {/* <MaintenanceModeContainer /> */}
+        <MaintenanceModeContainer />
         {/* <HeaderContainer
           name={this.props.generalInformation.name}
           title={this.props.generalInformation.title}
@@ -35,12 +35,12 @@ class MainContainer extends Component<any, any> {
           skills={this.props.generalInformation.skills}
           languages={this.props.generalInformation.languages}
           className={classNames('section')}
-        /> */}
+        />
         <ExperienceTimelineContainer
           timeline={this.props.generalInformation.timeline}
           className={classNames('section')}
         />
-        {/*<ContactContainer
+        <ContactContainer
           contacts={this.props.generalInformation.contacts}
           className={classNames('section')}
         />
