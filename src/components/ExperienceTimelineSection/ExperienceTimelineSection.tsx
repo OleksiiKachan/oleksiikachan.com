@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import TimelineItem from './TimelineItem';
 import './ExperienceTimelineSection.scss';
 
 /*
@@ -27,25 +28,14 @@ export default ({ timeline, className }: PropsType) => {
             title: string;
             description: string;
           }) => {
-            const sideClass =
-              previousSide === 'right'
-                ? 'timelineItem__container_left'
-                : 'timelineItem__container_right';
             previousSide = previousSide === 'right' ? 'left' : 'right';
             return (
-              <div className={classNames('timelineItem__container', sideClass)}>
-                <div className={classNames('timelineItem__content')}>
-                  <h3 className={classNames('timelineItem__time')}>
-                    {timelineItem.time}
-                  </h3>
-                  <h4 className={classNames('timelineItem__title')}>
-                    {timelineItem.title}
-                  </h4>
-                  <p className={classNames('timelineItem__description')}>
-                    {timelineItem.description}
-                  </p>
-                </div>
-              </div>
+              <TimelineItem
+                key={timeline.indexOf(timelineItem)}
+                index={timeline.indexOf(timelineItem)}
+                timelineItem={timelineItem}
+                timelineSide={previousSide}
+              />
             );
           }
         )}
