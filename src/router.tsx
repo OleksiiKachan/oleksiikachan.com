@@ -10,19 +10,19 @@ import App from './containers/App';
 // General styles
 import './style/general.scss';
 
-// const isDevelopment = process.env.NODE_ENV === 'development';
+const isDevelopment = process.env.NODE_ENV === 'development';
 
-// let TestRoutes;
-// if (isDevelopment) {
-//   TestRoutes = require('./test/routes').default;
-// }
+let TestRoutes;
+if (isDevelopment) {
+  TestRoutes = require('./test/routes').default;
+}
 
 export default (
   <BrowserRouter>
     <Switch>
       <MainLayout>
         <Switch>
-          {/* {isDevelopment ? <Route path="/test" component={TestRoutes} /> : null} */}
+          {isDevelopment ? <Route path="/test" component={TestRoutes} /> : null}
           <Route exact path="/" component={App} />
         </Switch>
       </MainLayout>
