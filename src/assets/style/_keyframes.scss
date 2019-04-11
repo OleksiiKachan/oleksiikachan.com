@@ -20,19 +20,25 @@
 }
 
 @keyframes fromLeftToCenter {
-  from {
+  0% {
     left: -50%;
   }
-  to {
+  80% {
+    left: 2%;
+  }
+  100% {
     left: 0;
   }
 }
 
 @keyframes fromRightToCenter {
-  from {
+  0% {
     left: 50%;
   }
-  to {
+  80% {
+    left: -2%;
+  }
+  100% {
     left: 0;
   }
 }
