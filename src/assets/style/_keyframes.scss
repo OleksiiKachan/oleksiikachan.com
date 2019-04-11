@@ -33,12 +33,24 @@
 
 @keyframes fromRightToCenter {
   0% {
-    left: 50%;
+    right: -110%;
   }
   80% {
-    left: -2%;
+    right: -58%;
   }
   100% {
-    left: 0;
+    right: -60%;
+  }
+}
+
+@keyframes fromRightToCenter-mobile {
+  0% {
+    left: 110%;
+  }
+  80% {
+    left: 23%;
+  }
+  100% {
+    left: 25%;
   }
 }
