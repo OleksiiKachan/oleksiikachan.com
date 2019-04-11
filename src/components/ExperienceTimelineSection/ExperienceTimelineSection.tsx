@@ -7,7 +7,12 @@ import './ExperienceTimelineSection.scss';
     <ExperienceTimelineSection timeline={}/>
 */
 type PropsType = {
-  timeline: Array<{ time: string; title: string; description: string }>;
+  timeline: Array<{
+    title: string;
+    subtitle: string;
+    dates: string;
+    type: string;
+  }>;
   className?: string;
 };
 
@@ -24,17 +29,18 @@ export default ({ timeline, className }: PropsType) => {
       <div className={classNames('experienceTimelineSection__timeline')}>
         {timeline.map(
           (timelineItem: {
-            time: string;
             title: string;
-            description: string;
+            subtitle: string;
+            dates: string;
+            type: string;
           }) => {
             previousSide = previousSide === 'right' ? 'left' : 'right';
             return (
               <TimelineItem
                 key={timeline.indexOf(timelineItem)}
                 index={timeline.indexOf(timelineItem)}
-                timelineItem={timelineItem}
-                timelineSide={previousSide}
+                item={timelineItem}
+                side={previousSide}
               />
             );
           }
