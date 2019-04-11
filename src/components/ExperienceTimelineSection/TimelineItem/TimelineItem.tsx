@@ -1,67 +1,50 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './TimelineItem.scss';
+import OutlineButton from '../../OutlineButton';
 
 /*
     <TimelineItem timelineItem={} timelineSide='' className=''/>
 */
 type PropsType = {
   index: number;
-  timelineItem: { time: string; title: string; description: string };
-  timelineSide: string;
+  item: { title: string; subtitle: string; dates: string; type: string };
+  side: string;
   className?: string;
 };
 
-export default ({
-  index,
-  timelineItem,
-  timelineSide,
-  className,
-}: PropsType) => {
+export default ({ index, item, side, className }: PropsType) => {
   const animationDelay = {
     animationDelay: `${200 + (index / 1.5) * 100}ms`,
   };
   return (
-    <>
+    <div
+      className={classNames('timelineItem', `timelineItem_${side}`, className)}
+    >
+      {/* <img
+        className={classNames('timelineItem__icon')}
+        src={`https://res.cloudinary.com/oleksiikachan/image/upload/v1555010635/portfolio/images/icons/icon_${
+          item.type
+        }.svg`}
+      /> */}
       <div
-        className={classNames(
-          'timelineItem',
-          `timelineItem_${timelineSide}`,
-          className
-        )}
+        className={classNames('timelineItem__circle')}
+        style={{ animationDelay: `${600 + (index / 1.5) * 100}ms` }}
+      />
+      <div
+        className={classNames('timelineItem__content')}
         style={animationDelay}
       >
-        <div
-          className={classNames(
-            'timelineItem__content',
-            `timelineItem__content_${timelineSide}`
-          )}
-          style={animationDelay}
+        <h3 className={classNames('timelineItem__title')}>{item.title}</h3>
+        <p className={classNames('timelineItem__dates')}>{item.dates}</p>
+        <p className={classNames('timelineItem__subtitle')}>{item.subtitle}</p>
+        <OutlineButton
+          onClick={() => {}}
+          className={classNames('timelineItem__button')}
         >
-          <div
-            className={classNames(
-              'timelineItem__arrow',
-              `timelineItem__arrow_${timelineSide}`
-            )}
-          />
-          <h3 className={classNames('timelineItem__time')}>
-            {timelineItem.time}
-          </h3>
-          <h4 className={classNames('timelineItem__title')}>
-            {timelineItem.title}
-          </h4>
-          <p className={classNames('timelineItem__description')}>
-            {timelineItem.description}
-          </p>
-        </div>
-        <div
-          className={classNames(
-            'timelineItem__circle',
-            `timelineItem__circle_${timelineSide}`
-          )}
-          style={{ animationDelay: `${600 + (index / 1.5) * 100}ms` }}
-        />
+          See More
+        </OutlineButton>
       </div>
-    </>
+    </div>
   );
 };
