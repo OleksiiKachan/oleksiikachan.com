@@ -16,7 +16,9 @@
 
     .timelineItem__content {
       align-items: flex-end;
-      left: -50%;
+      left: 0;
+      transform: translateX(-100%);
+      opacity: 0;
       animation: opacity 700ms ease-in-out forwards,
         fromLeftToCenter 700ms ease-in-out forwards;
     }
@@ -24,8 +26,10 @@
 
   &_right {
     .timelineItem__content {
-      right: -110%;
+      right: -60%;
       align-items: flex-start;
+      transform: translateX(100%);
+      opacity: 0;
       animation: opacity 700ms ease-in-out forwards,
         fromRightToCenter 700ms ease-in-out forwards;
     }
@@ -87,8 +91,9 @@
       .timelineItem__content {
         left: 25%;
         align-items: flex-start;
+        transform: translateX(100%);
         animation: opacity 700ms ease-in-out forwards,
-          fromRightToCenter-mobile 700ms ease-in-out forwards;
+          fromRightToCenter 700ms ease-in-out forwards;
       }
     }
 
