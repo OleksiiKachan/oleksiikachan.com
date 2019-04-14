@@ -15,7 +15,7 @@ type PropsType = {
 
 export default ({ index, item, side, className }: PropsType) => {
   const animationDelay = {
-    animationDelay: `${200 + (index / 1.5) * 100}ms`,
+    animationDelay: `${400 + (index / 1.5) * 100}ms`,
   };
   return (
     <div
