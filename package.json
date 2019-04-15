@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@types/classnames": "^2.2.6",
-    "@types/jest": "^23.3.14",
     "@types/node": "^10.14.4",
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.3",
@@ -22,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "pretty-quick --staged",
     "coverage": "react-scripts test --env=jsdom --coverage"
@@ -31,7 +30,7 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm test"
+      "pre-push": "cross-env CI=true npm test"
     }
   },
   "browserslist": [
@@ -42,7 +41,13 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.11",
     "cz-customizable": "^5.10.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "enzyme-to-json": "^3.3.5",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.2.1",
@@ -57,5 +62,10 @@
     "cz-customizable": {
       "config": "config/git/commitizen.js"
     }
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
