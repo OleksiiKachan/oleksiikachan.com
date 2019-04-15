@@ -4,7 +4,7 @@ import './TimelineItem.scss';
 import OutlineButton from '../../OutlineButton';
 
 /*
-    <TimelineItem timelineItem={} timelineSide='' className=''/>
+    <TimelineItem index=number item={} side='' className=''/>
 */
 type PropsType = {
   index: number;
