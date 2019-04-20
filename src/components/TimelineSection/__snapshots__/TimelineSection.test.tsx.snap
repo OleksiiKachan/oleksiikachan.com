@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelineSection Snapshot 1`] = `
+<div
+  className="experienceTimelineSection"
+  id="education"
+>
+  <h2
+    className="experienceTimelineSection__title"
+  >
+    Education & Experience
+  </h2>
+  <div
+    className="experienceTimelineSection__timeline"
+  >
+    <_default
+      index={0}
+      item={
+        Object {
+          "dates": "2013-2017",
+          "subtitle": "Bachelor of Software Engineering",
+          "title": "National Technical University of Ukraine \\"Kyiv Polytechnic Institute\\"",
+          "type": "education",
+        }
+      }
+      key="0"
+      side="left"
+    />
+    <_default
+      index={1}
+      item={
+        Object {
+          "dates": "2014",
+          "subtitle": "Technician Programmer of administrative and economic department",
+          "title": "Ltd. \\"Kontynium-Treyd\\"",
+          "type": "work",
+        }
+      }
+      key="1"
+      side="right"
+    />
+    <_default
+      index={2}
+      item={
+        Object {
+          "dates": "2016-2017",
+          "subtitle": "Software and Systems Engineer",
+          "title": "rLoop Incorporated",
+          "type": "work",
+        }
+      }
+      key="2"
+      side="left"
+    />
+    <_default
+      index={3}
+      item={
+        Object {
+          "dates": "2017",
+          "subtitle": "Software Engineer",
+          "title": "OLSOM L.L.C",
+          "type": "work",
+        }
+      }
+      key="3"
+      side="right"
+    />
+    <_default
+      index={4}
+      item={
+        Object {
+          "dates": "2017-2019",
+          "subtitle": "Ontario Graduate Certificate",
+          "title": "The Humber Institute of Technology and Advanced Learning",
+          "type": "education",
+        }
+      }
+      key="4"
+      side="left"
+    />
+  </div>
+</div>
+`;
