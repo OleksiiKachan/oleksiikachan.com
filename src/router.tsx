@@ -8,6 +8,7 @@ import MainLayout from './layouts/MainLayout';
 import App from './containers/App';
 
 // General styles
+import './assets/style/_fonts.scss';
 import './assets/style/index.scss';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
