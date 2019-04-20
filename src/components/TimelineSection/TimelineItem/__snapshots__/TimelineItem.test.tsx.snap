@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelineItem Left side 1`] = `
+<div
+  className="timelineItem timelineItem_left"
+>
+  <div
+    className="timelineItem__circle"
+    style={
+      Object {
+        "animationDelay": "666.6666666666666ms",
+      }
+    }
+  />
+  <div
+    className="timelineItem__content"
+    style={
+      Object {
+        "animationDelay": "466.66666666666663ms",
+      }
+    }
+  >
+    <h3
+      className="timelineItem__title"
+    >
+      Title-left
+    </h3>
+    <p
+      className="timelineItem__dates"
+    >
+      Dates-left
+    </p>
+    <p
+      className="timelineItem__subtitle"
+    >
+      Subtitle-left
+    </p>
+    <_default
+      className="timelineItem__button"
+      onClick={[Function]}
+    >
+      See More
+    </_default>
+  </div>
+</div>
+`;
+
+exports[`TimelineItem Right side 1`] = `
+<div
+  className="timelineItem timelineItem_right"
+>
+  <div
+    className="timelineItem__circle"
+    style={
+      Object {
+        "animationDelay": "666.6666666666666ms",
+      }
+    }
+  />
+  <div
+    className="timelineItem__content"
+    style={
+      Object {
+        "animationDelay": "466.66666666666663ms",
+      }
+    }
+  >
+    <h3
+      className="timelineItem__title"
+    >
+      Title-right
+    </h3>
+    <p
+      className="timelineItem__dates"
+    >
+      Dates-right
+    </p>
+    <p
+      className="timelineItem__subtitle"
+    >
+      Subtitle-right
+    </p>
+    <_default
+      className="timelineItem__button"
+      onClick={[Function]}
+    >
+      See More
+    </_default>
+  </div>
+</div>
+`;
