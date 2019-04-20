@@ -1,0 +1,56 @@
+@import '../../assets/style/variables';
+
+.experienceTimelineSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  background-color: $color-grey;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    color: $color-white;
+    font-size: 18pt;
+  }
+
+  &__timeline {
+    position: relative;
+    padding: 25px 0;
+  }
+
+  &__timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: $color-white;
+    top: 0;
+    left: 50%;
+    bottom: 150%;
+    animation: timelineLine 1500ms ease-in-out forwards;
+  }
+
+  @keyframes timelineLine {
+    from {
+      bottom: 150%;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .experienceTimelineSection {
+    &__title {
+      font-size: 15pt;
+    }
+
+    &__timeline::before {
+      left: 15%;
+    }
+  }
+}
