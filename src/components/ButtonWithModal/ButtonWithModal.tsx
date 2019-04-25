@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import OutlineButton from '../OutlineButton';
-import TimelinePopup from '../TimelinePopup';
+import TimelineModal from '../TimelineModal';
 import { EducationType, ExperienceType } from '../../lib/types';
 
 type PropsType = {
@@ -22,7 +22,7 @@ export default class ButtonWithModal extends Component<PropsType> {
   render() {
     return (
       <>
-        <TimelinePopup
+        <TimelineModal
           show={this.state.show}
           handleClose={this.hideModal}
           item={this.props.item}

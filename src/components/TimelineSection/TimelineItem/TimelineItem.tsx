@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import './TimelineItem.scss';
-import OutlineButton from '../../OutlineButton';
 import {
   TimelineItemType,
   EducationType,
   ExperienceType,
 } from '../../../lib/types';
-import TimelinePopup from '../../TimelinePopup';
 import ButtonWithModal from '../../ButtonWithModal';
 
 /*

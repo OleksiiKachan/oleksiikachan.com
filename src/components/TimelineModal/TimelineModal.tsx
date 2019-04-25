@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
-import './TimelinePopup.scss';
+import './TimelineModal.scss';
 import { EducationType, ExperienceType } from '../../lib/types';
 import EducationPage from './EducationPage';
 
 const icon_close = require('../../assets/icons/icon_close.svg');
 
 /*
-    <TimelinePopup experience=[] education=[]/>
+    <TimelineModal experience=[] education=[]/>
 */
 
 type PropsType = {
@@ -19,7 +19,7 @@ type PropsType = {
   modalRootID: string;
 };
 
-export default class TimelinePopup extends Component<PropsType> {
+export default class TimelineModal extends Component<PropsType> {
   render() {
     const portalContent = [
       <div
