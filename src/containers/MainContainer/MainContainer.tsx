@@ -6,6 +6,7 @@ import './MainContainer.scss';
 // import SkillsContainer from '../SkillsContainer';
 // import ProjectsContainer from '../ProjectsContainer';
 import TimelineSection from '../../components/TimelineSection';
+import ProjectSection from '../../components/ProjectsSection';
 // import ContactContainer from '../ContactContainer';
 // import FooterContainer from '../FooterContainer';
 // import BackToTopButton from '../BackToTopButton';
@@ -17,9 +18,14 @@ class MainContainer extends Component<any, any> {
   render() {
     return (
       <div className={'mainContainer'}>
+        <ProjectSection
+          projects={this.props.generalInformation.projects}
+          className={classNames('section')}
+        />
         <TimelineSection
           experience={this.props.generalInformation.experience}
           education={this.props.generalInformation.education}
+          className={classNames('section')}
         />
         {/* <HeaderContainer
           name={this.props.generalInformation.name}
