@@ -2,6 +2,7 @@
 
 .modal {
   position: fixed;
+  display: inline-block;
   z-index: 2;
   top: 0;
   left: 0;
@@ -14,7 +15,7 @@
   position: fixed;
   background-color: $color-black;
   color: $color-white;
-  width: 80%;
+  min-width: 80%;
   height: auto;
   top: 50%;
   left: 50%;
@@ -27,10 +28,10 @@
   margin: 10px;
 }
 
-.display-block {
-  display: block;
-}
-
-.display-none {
-  display: none;
+@media screen and (max-width: 825px) {
+  .modal-main {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+  }
 }

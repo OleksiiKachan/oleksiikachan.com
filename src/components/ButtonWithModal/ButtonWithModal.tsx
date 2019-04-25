@@ -22,14 +22,15 @@ export default class ButtonWithModal extends Component<PropsType> {
   render() {
     return (
       <>
-        <TimelineModal
-          show={this.state.show}
-          handleClose={this.hideModal}
-          item={this.props.item}
-          type={this.props.type}
-          modalRootID="root"
-        />
         <OutlineButton onClick={this.showModal}>See More</OutlineButton>
+        {this.state.show && (
+          <TimelineModal
+            handleClose={this.hideModal}
+            item={this.props.item}
+            type={this.props.type}
+            modalRootID="root"
+          />
+        )}
       </>
     );
   }
