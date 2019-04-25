@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import './TimelineItem.scss';
 import OutlineButton from '../../OutlineButton';
-import { TimelineItemType } from '../../../lib/types';
+import {
+  TimelineItemType,
+  EducationType,
+  ExperienceType,
+} from '../../../lib/types';
+import TimelinePopup from '../../TimelinePopup';
+import ButtonWithModal from '../../ButtonWithModal';
 
 /*
     <TimelineItem index=number item={} side='' className=''/>
@@ -11,11 +17,12 @@ import { TimelineItemType } from '../../../lib/types';
 type PropsType = {
   index: number;
   item: TimelineItemType;
+  detailedItem?: EducationType | ExperienceType;
   side: string;
   className?: string;
 };
 
-export default ({ index, item, side, className }: PropsType) => {
+export default ({ index, item, detailedItem, side, className }: PropsType) => {
   return (
     <div
       className={classNames('timelineItem', `timelineItem_${side}`, className)}
@@ -33,12 +40,7 @@ export default ({ index, item, side, className }: PropsType) => {
         <h3 className={classNames('timelineItem__title')}>{item.title}</h3>
         <p className={classNames('timelineItem__dates')}>{item.dates}</p>
         <p className={classNames('timelineItem__subtitle')}>{item.subtitle}</p>
-        <OutlineButton
-          onClick={() => {}}
-          className={classNames('timelineItem__button')}
-        >
-          See More
-        </OutlineButton>
+        <ButtonWithModal item={detailedItem} type={item.type} />
       </div>
     </div>
   );
