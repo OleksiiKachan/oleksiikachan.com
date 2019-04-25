@@ -25,81 +25,60 @@
   "projects": [
     {
       "projectType": "development",
-      "name": "AGW MES / WMS for automotive industry.",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for AGW system (which is the MES/WMS for manufacturing). Also I did deployment on new manufactories and support tickets.",
-      "tools": ["dotnet", "js", "mssql", "oracle"],
-      "fileName": "agw",
-      "alternativeImageText": "Automotive manufacturing",
-      "url": "http://olsom.net/agw-mes/",
-      "downloadText": "Go to product site"
+      "title": "AGW MES / WMS for automotive industry",
+      "shortStack": ".NET Framework",
+      "coverImage": "https://picsum.photos/4212/2768",
+      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for AGW system (which is the MES/WMS for manufacturing). Also I did deployment on new manufactories and support tickets."
     },
     {
       "projectType": "development",
-      "name": "TDM (Tools Data Manager) for automotive industry.",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for TDM system. TDM - Tools Data Manager - solution that gets and analyse statistical data from automatic screwdrivers on production lines. Product was developed in collaboration with OLSOM L.L.C Catalyst Solutions Inc.",
-      "tools": ["dotnet", "js", "mssql", "oracle"],
-      "fileName": "tdm",
-      "alternativeImageText": "Automotive manufacturing",
-      "url": "http://www.catalystsi.com/index.php?option=com_content&view=article&id=8&Itemid=12",
-      "downloadText": "Go to product site"
+      "title": "TDM (Tools Data Manager) for automotive industry.",
+      "shortStack": ".NET Framework",
+      "coverImage": "https://picsum.photos/4302/2568",
+      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for TDM system. TDM - Tools Data Manager - solution that gets and analyse statistical data from automatic screwdrivers on production lines. Product was developed in collaboration with OLSOM L.L.C Catalyst Solutions Inc."
     },
     {
       "projectType": "design",
-      "name": "Hyperloop",
+      "title": "Hyperloop",
+      "shortStack": "UI & UX Design & Development",
+      "coverImage": "https://picsum.photos/4312/2468",
       "description": "I was a volunteering member of rLoop team on SpaceX Hyperloop Contest. I was in System Team & Software Team. I took part in creating Final Design Resource document as a system engineer. UI development was lead by me. I created UI mockups and then in collaboration with one designer we created UI for ground station.",
-      "tools": ["visio", "illustrator", "photoshop"],
-      "fileName": "hyperloop",
-      "alternativeImageText": "Hyperloop",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/hyperloop.pdf",
-      "downloadText": "Open file with UI"
+      "tools": ["visio", "illustrator", "photoshop"]
     },
     {
       "projectType": "development",
-      "name": "Corrugated Cardboard Production System",
-      "description": "I did reverse engineering of corrugated industrial cardboard manufacturing system. System was created using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C.",
-      "tools": ["visio"],
-      "fileName": "corrugatedCardboard",
-      "alternativeImageText": "Corrugated Cardboard",
-      "downloadText": ""
+      "title": "Corrugated Cardboard Production System",
+      "coverImage": "https://picsum.photos/4312/2869",
+      "shortStack": "Ladder Logic",
+      "description": "I did reverse engineering of corrugated industrial cardboard manufacturing system. System was created using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C."
     },
     {
       "projectType": "development",
-      "name": "FTP File Transfer Service",
-      "description": "I created FTP File Transfer Service - windows service that transfers files in multiple threads via FTP to remoter & local locations. Service uses .ini file with configuration",
-      "tools": ["dotnet", "windows", "linux"],
-      "fileName": "ftpService",
-      "alternativeImageText": "Two laptops and file transferring between them",
-      "downloadText": ""
+      "title": "FTP File Transfer Service",
+      "shortStack": ".NET Framework",
+      "coverImage": "https://picsum.photos/4312/2668",
+      "description": "I created FTP File Transfer Service - windows service that transfers files in multiple threads via FTP to remoter & local locations. Service uses .ini file with configuration"
     },
     {
       "projectType": "design",
-      "name": "Logo & Card Design",
-      "description": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be.",
-      "tools": ["photoshop"],
-      "fileName": "branding_oleksiiKachan",
-      "alternativeImageText": "Business cards",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_oleksiiKachan.pdf",
-      "downloadText": "Open presentation file"
+      "title": "Logo & Card Design",
+      "shortStack": "Personal Branding",
+      "coverImage": "https://picsum.photos/4232/2868",
+      "description": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be."
     },
     {
       "projectType": "design",
-      "name": "Logo & Card Design",
-      "description": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card.",
-      "tools": ["photoshop", "illustrator"],
-      "fileName": "branding_irynaKachan",
-      "alternativeImageText": "Business cards",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_irynaKachan.pdf",
-      "downloadText": "Open presentation file"
+      "title": "Logo & Card Design",
+      "shortStack": "Personal Branding",
+      "coverImage": "https://picsum.photos/4313/2868",
+      "description": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card."
     },
     {
       "projectType": "design",
-      "name": "Logo & Card Design",
-      "description": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations.",
-      "tools": ["photoshop", "illustrator"],
-      "fileName": "branding_oleksandrGorchakov",
-      "alternativeImageText": "Business cards",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_oleksandrGorchakov.pdf",
-      "downloadText": "Open presentation file"
+      "title": "Logo & Card Design",
+      "shortStack": "Personal Branding",
+      "coverImage": "https://picsum.photos/4312/2860",
+      "description": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
     }
   ],
   "skills": [
