@@ -14,9 +14,14 @@ type PropsType = {
 export default ({ item }: PropsType) => {
   return (
     <div className={classNames('educationPage')}>
+      <div className={classNames('educationPage__header')}>{item.school}</div>
+      <div className={classNames('educationPage__subheader')}>
+        <div className={classNames('educationPage__label')}>Degree:</div>
+        <div className={classNames('educationPage__value')}>{item.degree}</div>
+      </div>
       <div className={classNames('educationPage__field')}>
-        <div className={classNames('educationPage__label')}>School:</div>
-        <div className={classNames('educationPage__value')}>{item.school}</div>
+        <div className={classNames('educationPage__label')}>Dates:</div>
+        <div className={classNames('educationPage__value')}>{item.dates}</div>
       </div>
       <div className={classNames('educationPage__field')}>
         <div className={classNames('educationPage__label')}>Department:</div>
@@ -25,16 +30,8 @@ export default ({ item }: PropsType) => {
         </div>
       </div>
       <div className={classNames('educationPage__field')}>
-        <div className={classNames('educationPage__label')}>Degree:</div>
-        <div className={classNames('educationPage__value')}>{item.degree}</div>
-      </div>
-      <div className={classNames('educationPage__field')}>
         <div className={classNames('educationPage__label')}>Program:</div>
         <div className={classNames('educationPage__value')}>{item.program}</div>
-      </div>
-      <div className={classNames('educationPage__field')}>
-        <div className={classNames('educationPage__label')}>Dates:</div>
-        <div className={classNames('educationPage__value')}>{item.dates}</div>
       </div>
     </div>
   );
