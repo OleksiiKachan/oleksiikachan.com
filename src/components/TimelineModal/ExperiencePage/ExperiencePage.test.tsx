@@ -17,7 +17,21 @@ describe('ExperiencePage', () => {
             'Development of outsourced minor projects',
             'Development of internal tools',
           ],
-          projects: ['agw', 'ftp-service', 'tdm', 'cardboard-prod'],
+          projects: [
+            {
+              id: 'agw',
+              title: 'AGW modular complex solution for automotive industry',
+            },
+            { id: 'ftp-service', title: 'FTP Transfer Service' },
+            {
+              id: 'tdm',
+              title: 'TDM (Tools Data Manager) for automotive industry',
+            },
+            {
+              id: 'cardboard-prod',
+              title: 'Corrugated Cardboard Production System',
+            },
+          ],
         }}
       />
     );

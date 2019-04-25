@@ -84,33 +84,49 @@ exports[`ExperiencePage Snapshot 1`] = `
       className="experiencePage__value experiencePage__value_list"
     >
       <ul>
-        <li>
+        <li
+          key="agw"
+        >
           <a
             className="experiencePage__link"
-            href="https://oleksiikachan.com/projects/undefined"
+            href="https://oleksiikachan.com/projects/agw"
             target="_blank"
-          />
+          >
+            AGW modular complex solution for automotive industry
+          </a>
         </li>
-        <li>
+        <li
+          key="ftp-service"
+        >
           <a
             className="experiencePage__link"
-            href="https://oleksiikachan.com/projects/undefined"
+            href="https://oleksiikachan.com/projects/ftp-service"
             target="_blank"
-          />
+          >
+            FTP Transfer Service
+          </a>
         </li>
-        <li>
+        <li
+          key="tdm"
+        >
           <a
             className="experiencePage__link"
-            href="https://oleksiikachan.com/projects/undefined"
+            href="https://oleksiikachan.com/projects/tdm"
             target="_blank"
-          />
+          >
+            TDM (Tools Data Manager) for automotive industry
+          </a>
         </li>
-        <li>
+        <li
+          key="cardboard-prod"
+        >
           <a
             className="experiencePage__link"
-            href="https://oleksiikachan.com/projects/undefined"
+            href="https://oleksiikachan.com/projects/cardboard-prod"
             target="_blank"
-          />
+          >
+            Corrugated Cardboard Production System
+          </a>
         </li>
       </ul>
     </div>
