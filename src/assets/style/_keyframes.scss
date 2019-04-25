@@ -42,3 +42,16 @@
     transform: translateX(0);
   }
 }
+
+@keyframes widthGrow {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 130%;
+  }
+  100% {
+    width: 120%;
+    transform: translateX(-10%);
+  }
+}
