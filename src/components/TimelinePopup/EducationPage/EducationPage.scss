@@ -1,0 +1,22 @@
+@import '../../../assets/style/variables';
+
+.educationPage {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 3rem;
+
+  &__field {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  &__label {
+    font-family: $head-font;
+    margin-right: 1rem;
+  }
+
+  &__value {
+    font-family: $body-font;
+  }
+}
