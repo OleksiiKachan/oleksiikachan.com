@@ -43,6 +43,18 @@
   }
 }
 
+@keyframes fromBottomToCenter {
+  0% {
+    transform: translateY(100%);
+  }
+  80% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes widthGrow {
   0% {
     width: 0;
