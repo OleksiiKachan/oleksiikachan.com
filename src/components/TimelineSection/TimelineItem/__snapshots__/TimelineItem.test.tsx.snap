@@ -35,12 +35,9 @@ exports[`TimelineItem Left side 1`] = `
     >
       Subtitle-left
     </p>
-    <_default
-      className="timelineItem__button"
-      onClick={[Function]}
-    >
-      See More
-    </_default>
+    <ButtonWithModal
+      type="education"
+    />
   </div>
 </div>
 `;
@@ -80,12 +77,9 @@ exports[`TimelineItem Right side 1`] = `
     >
       Subtitle-right
     </p>
-    <_default
-      className="timelineItem__button"
-      onClick={[Function]}
-    >
-      See More
-    </_default>
+    <ButtonWithModal
+      type="education"
+    />
   </div>
 </div>
 `;
