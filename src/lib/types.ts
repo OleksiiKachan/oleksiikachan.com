@@ -4,7 +4,7 @@ export type ExperienceType = {
   position: string;
   dates: string;
   responsibilities: Array<string>;
-  projects?: Array<string>;
+  projects?: Array<{ id: string; title: string }>;
 };
 
 export type EducationType = {
