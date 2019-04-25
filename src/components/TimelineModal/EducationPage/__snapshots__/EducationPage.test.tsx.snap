@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EducationPage Snapshot 1`] = `
+<div
+  className="educationPage"
+>
+  <div
+    className="educationPage__field"
+  >
+    <div
+      className="educationPage__label"
+    >
+      School:
+    </div>
+    <div
+      className="educationPage__value"
+    >
+      National Technical University of Ukraine "Kyiv Polytechnic Institute"
+    </div>
+  </div>
+  <div
+    className="educationPage__field"
+  >
+    <div
+      className="educationPage__label"
+    >
+      Department:
+    </div>
+    <div
+      className="educationPage__value"
+    >
+      Faculty of Informatics and Computer Science, Department of Technical Cybernetics
+    </div>
+  </div>
+  <div
+    className="educationPage__field"
+  >
+    <div
+      className="educationPage__label"
+    >
+      Degree:
+    </div>
+    <div
+      className="educationPage__value"
+    >
+      Bachelor of Software Engineering
+    </div>
+  </div>
+  <div
+    className="educationPage__field"
+  >
+    <div
+      className="educationPage__label"
+    >
+      Program:
+    </div>
+    <div
+      className="educationPage__value"
+    >
+      Software Engineering
+    </div>
+  </div>
+  <div
+    className="educationPage__field"
+  >
+    <div
+      className="educationPage__label"
+    >
+      Dates:
+    </div>
+    <div
+      className="educationPage__value"
+    >
+      2013-2017
+    </div>
+  </div>
+</div>
+`;

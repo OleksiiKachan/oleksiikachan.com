@@ -33,11 +33,15 @@ export default ({ experience, education, className }: PropsType) => {
       <div className={classNames('experienceTimelineSection__timeline')}>
         {timeline.map((timelineItem: TimelineItemType) => {
           previousSide = previousSide === 'right' ? 'left' : 'right';
+          const detailedItem =
+            experience.find(item => item.companyTitle === timelineItem.title) ||
+            education.find(item => item.school === timelineItem.title);
           return (
             <TimelineItem
               key={timeline.indexOf(timelineItem)}
               index={timeline.indexOf(timelineItem)}
               item={timelineItem}
+              detailedItem={detailedItem}
               side={previousSide}
             />
           );

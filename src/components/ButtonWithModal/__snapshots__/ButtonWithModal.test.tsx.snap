@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonWithModal Snapshot 1`] = `
+<Fragment>
+  <TimelineModal
+    handleClose={[Function]}
+    item={
+      Object {
+        "dates": "2013-2017",
+        "degree": "Bachelor of Software Engineering",
+        "department": "Faculty of Informatics and Computer Science, Department of Technical Cybernetics",
+        "id": "kpi",
+        "program": "Software Engineering",
+        "school": "National Technical University of Ukraine \\"Kyiv Polytechnic Institute\\"",
+      }
+    }
+    modalRootID="root"
+    show={false}
+    type="education"
+  />
+  <_default
+    onClick={[Function]}
+  >
+    See More
+  </_default>
+</Fragment>
+`;

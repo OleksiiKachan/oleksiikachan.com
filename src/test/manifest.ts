@@ -1,6 +1,22 @@
 // components added to the manifest can be accessed in browser via /test/{componentName}
 
 export default {
+  ButtonWithModal: {
+    components: require('../components/ButtonWithModal'),
+    props: {
+      item: {
+        id: 'kpi',
+        school:
+          'National Technical University of Ukraine "Kyiv Polytechnic Institute"',
+        degree: 'Bachelor of Software Engineering',
+        department:
+          'Faculty of Informatics and Computer Science, Department of Technical Cybernetics',
+        program: 'Software Engineering',
+        dates: '2013-2017',
+      },
+      type: 'education',
+    },
+  },
   OutlineButton: {
     components: require('../components/OutlineButton'),
     props: {
@@ -8,7 +24,7 @@ export default {
       children: 'See More',
     },
   },
-  ExperienceTimelineSection: {
+  TimelineSection: {
     components: require('../components/TimelineSection'),
     props: {
       experience: [
