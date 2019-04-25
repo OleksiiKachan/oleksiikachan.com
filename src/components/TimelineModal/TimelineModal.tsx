@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import './TimelineModal.scss';
 import { EducationType, ExperienceType } from '../../lib/types';
 import EducationPage from './EducationPage';
+import ExperiencePage from './ExperiencePage';
 
 const icon_close = require('../../assets/icons/icon_close.svg');
 
@@ -13,7 +14,6 @@ const icon_close = require('../../assets/icons/icon_close.svg');
 
 type PropsType = {
   handleClose: () => void;
-  show: boolean;
   item?: EducationType | ExperienceType;
   type: string;
   modalRootID: string;
@@ -22,11 +22,7 @@ type PropsType = {
 export default class TimelineModal extends Component<PropsType> {
   render() {
     const portalContent = [
-      <div
-        className={
-          this.props.show ? 'modal display-block' : 'modal display-none'
-        }
-      >
+      <div className={classNames('modal')}>
         <section className="modal-main">
           <img
             src={icon_close}
@@ -36,9 +32,7 @@ export default class TimelineModal extends Component<PropsType> {
           {this.props.type === 'education' ? (
             <EducationPage item={this.props.item as EducationType} />
           ) : (
-            <div className={classNames('timelinePopup')}>
-              {(this.props.item as ExperienceType).companyTitle}
-            </div>
+            <ExperiencePage item={this.props.item as ExperienceType} />
           )}
         </section>
       </div>,
