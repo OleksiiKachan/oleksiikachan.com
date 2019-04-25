@@ -22,3 +22,11 @@ export type TimelineItemType = {
   subtitle: string;
   dates: string;
 };
+
+export type ProjectType = {
+  projectType: 'design' | 'development';
+  title: string;
+  description: string;
+  shortStack: string;
+  coverImage: string;
+};
