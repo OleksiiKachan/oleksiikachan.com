@@ -1,6 +1,10 @@
 // components added to the manifest can be accessed in browser via /test/{componentName}
 
 export default {
+  Header: {
+    components: require('../containers/HeaderContainer'),
+    props: {},
+  },
   ProjectsSection: {
     components: require('../components/ProjectsSection'),
     props: {
