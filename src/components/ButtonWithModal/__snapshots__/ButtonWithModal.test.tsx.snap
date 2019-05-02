@@ -4,6 +4,7 @@ exports[`ButtonWithModal Snapshot 1`] = `
 <Fragment>
   <_default
     onClick={[Function]}
+    type="dark"
   >
     See More
   </_default>

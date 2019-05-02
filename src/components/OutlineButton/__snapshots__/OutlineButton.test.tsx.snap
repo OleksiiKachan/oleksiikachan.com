@@ -2,7 +2,7 @@
 
 exports[`OutlineButton should render correctly in "debug" mode 1`] = `
 <button
-  className="outlineButton"
+  className="outlineButton outlineButton_undefined"
   onClick={[Function]}
   type="button"
 >

@@ -7,16 +7,21 @@ import './OutlineButton.scss';
 */
 type PropsType = {
   onClick: () => void;
+  type: string;
   children: ReactNode;
   className?: string;
 };
 
-export default ({ onClick, children, className }: PropsType) => {
+export default ({ onClick, type, children, className }: PropsType) => {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={classNames('outlineButton', className)}
+      className={classNames(
+        'outlineButton',
+        `outlineButton_${type}`,
+        className
+      )}
     >
       {children}
     </button>

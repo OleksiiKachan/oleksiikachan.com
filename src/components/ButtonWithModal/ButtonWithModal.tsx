@@ -22,7 +22,9 @@ export default class ButtonWithModal extends Component<PropsType> {
   render() {
     return (
       <>
-        <OutlineButton onClick={this.showModal}>See More</OutlineButton>
+        <OutlineButton onClick={this.showModal} type="dark">
+          See More
+        </OutlineButton>
         {this.state.show && (
           <TimelineModal
             handleClose={this.hideModal}
