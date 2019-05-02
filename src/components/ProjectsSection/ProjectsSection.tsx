@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import './ProjectsSection.scss';
+import { ProjectType } from '../../lib/types';
 import ProjectCard from './ProjectCard';
 import ProjectsFilter from './ProjectsFilter/ProjectsFilter';
-import { ProjectType } from '../../lib/types';
+import './ProjectsSection.scss';
 
 /*
-    <ProjectsSection projects={} projectFilterMethod={}/>
+    <ProjectsSection
+      projects={} 
+      className=''
+    />
 */
 
 type PropsType = {
@@ -20,7 +23,7 @@ type StateType = {
   projects: Array<ProjectType>;
 };
 
-class ProjectsSection extends Component<PropsType, StateType> {
+export default class ProjectsSection extends Component<PropsType, StateType> {
   constructor(props: PropsType) {
     super(props);
 
@@ -96,5 +99,3 @@ class ProjectsSection extends Component<PropsType, StateType> {
     );
   }
 }
-
-export default ProjectsSection;

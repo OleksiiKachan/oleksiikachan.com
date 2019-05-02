@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import TimelineSection from '../../components/TimelineSection';
 
 /*
-    <TimelineContainer projects={} />
+    <TimelineContainer />
 */
-export default class ProjectsContainer extends Component<any, any> {
+
+export default class ProjectsContainer extends Component<{}> {
   render() {
     const dataStore = require('../../data.json');
     return (

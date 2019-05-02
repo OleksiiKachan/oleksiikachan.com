@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import TimelineItem from './';
+import TimelineItem from '..';
 
 describe('TimelineItem', () => {
   it('Left side', () => {

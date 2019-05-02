@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ButtonWithModal from './';
+import ButtonWithModal from '..';
 
 describe('ButtonWithModal', () => {
   const component = shallow(

@@ -1,14 +1,28 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
+import { NavigationItemType } from '../../../lib/types';
 
 /*
-    <NavigationList navigationItems=[] onLinkClick={}/>
+    <NavigationList
+      navigationItems=[]
+      onLinkClick={}
+      className=''
+    />
 */
-class NavigationList extends Component<any, any> {
+
+type PropsType = {
+  navigationItems: Array<NavigationItemType>;
+  onLinkClick: (selectedItemKey: string) => void;
+  className?: string;
+};
+
+export default class NavigationList extends Component<PropsType, any> {
   render() {
     return (
-      <div className={classnames('navigation__listWrapper')}>
+      <div
+        className={classnames('navigation__listWrapper', this.props.className)}
+      >
         <ul className={classnames('navigation__list')}>
           {this.props.navigationItems.map(
             (navigationItem: {
@@ -43,5 +57,3 @@ class NavigationList extends Component<any, any> {
     );
   }
 }
-
-export default NavigationList;

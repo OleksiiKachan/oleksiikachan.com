@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import OutlineButton from './';
+import OutlineButton from '../';
 
 describe('OutlineButton', () => {
   it('should render correctly in "debug" mode', () => {

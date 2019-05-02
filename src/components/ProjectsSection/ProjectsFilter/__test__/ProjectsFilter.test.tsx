@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ProjectsFilter from './';
+import ProjectsFilter from '..';
 
 describe('TimelineItem', () => {
   it('Active all', () => {

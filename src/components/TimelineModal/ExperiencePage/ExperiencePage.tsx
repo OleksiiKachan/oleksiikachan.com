@@ -1,10 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-import './ExperiencePage.scss';
 import { ExperienceType } from '../../../lib/types';
+import './ExperiencePage.scss';
 
 /*
-    <ExperiencePage item={}>
+    <ExperiencePage
+      item={}
+    />
 */
 
 type PropsType = {

@@ -30,3 +30,10 @@ export type ProjectType = {
   shortStack: string;
   coverImage: string;
 };
+
+export type NavigationItemType = {
+  key: string;
+  title: string;
+  sectionUrl: string;
+  isSelected: boolean;
+};

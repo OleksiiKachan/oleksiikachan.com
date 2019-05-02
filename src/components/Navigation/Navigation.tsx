@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import { NavigationItemType } from '../../lib/types';
+import NavigationLogo from './NavigationLogo';
+import MenuIconToggle from './MenuIconToggle';
+import NavigationList from './NavigationList';
 import './Navigation.scss';
-import NavigationLogo from '../NavigationLogo';
-import MenuIconToggle from '../MenuIconToggle';
-import NavigationList from '../NavigationList';
 
 /*
-    <Navigation navigationItems=[]/>
+    <Navigation
+      navigationItems=[]
+      onLinkClick=() => {}
+      className=''
+    />
 */
 
 type PropsType = {
-  navigationItems: Array<{
-    key: string;
-    title: string;
-    sectionUrl: string;
-    isSelected: boolean;
-  }>;
+  navigationItems: Array<NavigationItemType>;
   onLinkClick: (selectedItemKey: string) => void;
   className?: string;
 };
 
-class Navigation extends Component<PropsType> {
+export default class Navigation extends Component<PropsType> {
   render() {
     return (
       <nav className={classnames('header__navigation', 'navigation')}>
@@ -34,5 +34,3 @@ class Navigation extends Component<PropsType> {
     );
   }
 }
-
-export default Navigation;

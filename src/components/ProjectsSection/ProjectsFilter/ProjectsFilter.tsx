@@ -3,7 +3,11 @@ import classNames from 'classnames';
 import './ProjectsFilter.scss';
 
 /*
-    <ProjectsFilter activeType='' onClick=() className='' />
+    <ProjectsFilter
+      activeType=''
+      onClick=()
+      className=''
+    />
 */
 
 type PropsType = {

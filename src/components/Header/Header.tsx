@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import './Header.scss';
+import { NavigationItemType } from '../../lib/types';
 import Navigation from '../Navigation';
+import './Header.scss';
 
 /*
-    <Header name='' title='' navigationItems=[]/>
+    <Header
+      navigationItems=[]
+      onLinkClick=() => {}
+      className=''
+    />
 */
-class Header extends Component<any, any> {
+
+type PropsType = {
+  navigationItems: Array<NavigationItemType>;
+  onLinkClick: (selectedItemKey: string) => void;
+  className?: string;
+};
+
+export default class Header extends Component<PropsType> {
   render() {
     return (
       <header
@@ -21,5 +33,3 @@ class Header extends Component<any, any> {
     );
   }
 }
-
-export default Header;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ExperiencePage from './';
+import ExperiencePage from '..';
 
 describe('ExperiencePage', () => {
   it('Snapshot', () => {

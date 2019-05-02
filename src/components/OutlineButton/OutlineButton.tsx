@@ -1,10 +1,17 @@
-import React, { Component, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import classNames from 'classnames';
 import './OutlineButton.scss';
 
 /*
-    <OutlineButton onClick=() className=''/>
+    <OutlineButton
+      onClick=() => void
+      type=''
+      className=''
+    >
+      children
+    </OutlineButton>
 */
+
 type PropsType = {
   onClick: () => void;
   type: string;

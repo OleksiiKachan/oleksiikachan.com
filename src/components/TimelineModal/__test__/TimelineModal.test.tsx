@@ -1,11 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import EducationPage from './';
+import TimelineModal from '..';
 
-describe('EducationPage', () => {
+describe('TimelineModal', () => {
   it('Snapshot', () => {
     const component = shallow(
-      <EducationPage
+      <TimelineModal
+        handleClose={() => {}}
+        show={true}
         item={{
           id: 'kpi',
           school:
@@ -16,6 +18,8 @@ describe('EducationPage', () => {
           program: 'Software Engineering',
           dates: '2013-2017',
         }}
+        type="education"
+        modalRootID="root"
       />
     );
     expect(component).toMatchSnapshot();

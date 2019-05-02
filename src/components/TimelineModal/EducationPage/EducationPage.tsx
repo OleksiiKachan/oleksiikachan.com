@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
-import './EducationPage.scss';
 import { EducationType } from '../../../lib/types';
+import './EducationPage.scss';
 
 /*
-    <EducationPage item={}>
+    <EducationPage
+      item={}
+    />
 */
 
 type PropsType = {

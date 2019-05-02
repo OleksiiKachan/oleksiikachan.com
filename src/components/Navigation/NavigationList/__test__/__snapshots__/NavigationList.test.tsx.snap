@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationList Snapshot 1`] = `
+<div
+  className="navigation__listWrapper"
+>
+  <ul
+    className="navigation__list"
+  >
+    <li
+      className="navigation__listItem"
+      key="mi_education"
+    >
+      <Link
+        className="navigation__listLink"
+        onClick={[Function]}
+        replace={false}
+        to="/experience"
+      >
+        Education & Experience
+      </Link>
+    </li>
+    <li
+      className="navigation__listItem"
+      key="mi_contact"
+    >
+      <Link
+        className="navigation__listLink"
+        onClick={[Function]}
+        replace={false}
+        to="/contact"
+      >
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
+`;

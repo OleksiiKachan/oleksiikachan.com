@@ -1,10 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
-import './ProjectCard.scss';
 import OutlineButton from '../../OutlineButton';
+import './ProjectCard.scss';
 
 /*
-    <ProjectCard title='' stack='' coverImage='' className='' />
+    <ProjectCard
+      title=''
+      stack=''
+      coverImage=''
+      className=''
+    />
 */
 
 type PropsType = {

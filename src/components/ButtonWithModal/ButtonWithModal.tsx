@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+import { EducationType, ExperienceType } from '../../lib/types';
 import OutlineButton from '../OutlineButton';
 import TimelineModal from '../TimelineModal';
-import { EducationType, ExperienceType } from '../../lib/types';
 
 type PropsType = {
   item?: EducationType | ExperienceType;
   type: string;
 };
+
+/*
+  <ButtonWithModal
+    item={}
+    type=''
+  />
+*/
 
 export default class ButtonWithModal extends Component<PropsType> {
   state = { show: false };

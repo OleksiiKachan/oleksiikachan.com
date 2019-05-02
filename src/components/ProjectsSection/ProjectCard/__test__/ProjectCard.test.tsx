@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ProjectCard from './';
+import ProjectCard from '..';
 
 describe('ProjectCard', () => {
   it('Snapshot', () => {

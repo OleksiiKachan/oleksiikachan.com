@@ -1,15 +1,20 @@
 import React, { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
-import './TimelineModal.scss';
 import { EducationType, ExperienceType } from '../../lib/types';
 import EducationPage from './EducationPage';
 import ExperiencePage from './ExperiencePage';
+import './TimelineModal.scss';
 
 const icon_close = require('../../assets/icons/icon_close.svg');
 
 /*
-    <TimelineModal experience=[] education=[]/>
+    <TimelineModal
+      handleClose=() => void
+      item={}
+      type=''
+      modalRootID=''
+    />
 */
 
 type PropsType = {

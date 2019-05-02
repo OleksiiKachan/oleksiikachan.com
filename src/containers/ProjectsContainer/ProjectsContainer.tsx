@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import ProjectsSection from '../../components/ProjectsSection';
 
 /*
-    <ProjectsContainer projects={} />
+    <ProjectsContainer />
 */
-class ProjectsContainer extends Component<any, any> {
+export default class ProjectsContainer extends Component<{}> {
   render() {
     const dataStore = require('../../data.json');
     return <ProjectsSection projects={dataStore.projects} />;
   }
 }
-
-export default ProjectsContainer;

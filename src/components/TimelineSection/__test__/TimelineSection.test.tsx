@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import TimelineSection from './';
+import TimelineSection from '..';
 
 describe('TimelineSection', () => {
   it('Snapshot', () => {

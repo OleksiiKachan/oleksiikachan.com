@@ -1,17 +1,19 @@
 import React, { Component, ReactNode } from 'react';
 import classNames from 'classnames';
-import './MainLayout.scss';
 import HeaderContainer from '../../containers/HeaderContainer';
+import './MainLayout.scss';
 
 /*
-  <MainLayout className=''>
+  <MainLayout
+    className=''
+  >
     {children}
   </MainLayout>
 */
 
 type PropsType = {
-  className?: string;
   children: ReactNode;
+  className?: string;
 };
 
 class MainLayout extends Component<PropsType> {
