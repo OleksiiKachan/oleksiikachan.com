@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 import './TimelineModal.scss';
@@ -20,10 +20,30 @@ type PropsType = {
 };
 
 export default class TimelineModal extends Component<PropsType> {
+  private modalRef = createRef<HTMLDivElement>();
+  state = { show: false };
+
+  componentDidMount() {
+    document.addEventListener('mousedown', e => this.handleClickOutside(e));
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', e => this.handleClickOutside(e));
+  }
+
+  handleClickOutside(event: MouseEvent) {
+    if (
+      this.modalRef &&
+      this.modalRef.current &&
+      !this.modalRef.current.contains(event.target as Node)
+    ) {
+      this.props.handleClose();
+    }
+  }
   render() {
     const portalContent = [
       <div className={classNames('modal')}>
-        <section className="modal-main">
+        <section className="modal-main" ref={this.modalRef}>
           <img
             src={icon_close}
             onClick={this.props.handleClose}
