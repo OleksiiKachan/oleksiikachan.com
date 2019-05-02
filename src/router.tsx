@@ -5,7 +5,8 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 
 // Containers
-import App from './containers/App';
+import TimelineContainer from './containers/TimelineContainer';
+import ProjectsContainer from './containers/ProjectsContainer';
 
 // General styles
 import './assets/style/_fonts.scss';
@@ -21,10 +22,11 @@ if (isDevelopment) {
 export default (
   <BrowserRouter>
     <Switch>
+      {isDevelopment ? <Route path="/test" component={TestRoutes} /> : null}
       <MainLayout>
         <Switch>
-          {isDevelopment ? <Route path="/test" component={TestRoutes} /> : null}
-          <Route exact path="/" component={App} />
+          <Route exact path="/projects" component={ProjectsContainer} />
+          <Route exact path="/experience" component={TimelineContainer} />
         </Switch>
       </MainLayout>
     </Switch>
