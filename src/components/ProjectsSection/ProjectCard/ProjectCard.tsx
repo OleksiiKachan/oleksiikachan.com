@@ -25,6 +25,7 @@ export default ({ title, stack, coverImage, className }: PropsType) => {
         <div className={classNames('projectCard__stack')}>{stack}</div>
         <OutlineButton
           className={classNames('projectCard__button')}
+          type="gold"
           onClick={() => {}}
         >
           See More
