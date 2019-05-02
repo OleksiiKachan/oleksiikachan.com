@@ -6,12 +6,8 @@ import ProjectsSection from '../../components/ProjectsSection';
 */
 class ProjectsContainer extends Component<any, any> {
   render() {
-    return (
-      <ProjectsSection
-        projects={this.props.projects}
-        className={this.props.className}
-      />
-    );
+    const dataStore = require('../../data.json');
+    return <ProjectsSection projects={dataStore.projects} />;
   }
 }
 
