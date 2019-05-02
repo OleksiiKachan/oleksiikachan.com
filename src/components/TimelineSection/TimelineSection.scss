@@ -1,19 +1,20 @@
 @import '../../assets/style/variables';
 
 .experienceTimelineSection {
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   overflow: hidden;
-  background-color: $color-grey;
+  background-color: $color-surface;
 
   &__title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
-    color: $color-white;
+    color: $color-grey;
     font-size: 18pt;
   }
 
@@ -26,7 +27,7 @@
     content: '';
     position: absolute;
     width: 2px;
-    background-color: $color-white;
+    background-color: $color-grey;
     top: 0;
     left: 50%;
     bottom: 150%;

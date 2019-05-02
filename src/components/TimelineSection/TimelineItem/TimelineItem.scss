@@ -9,7 +9,7 @@
   justify-content: stretch;
   align-items: flex-start;
   margin: 20px 0;
-  color: $color-white;
+  color: $color-grey;
 
   &_left {
     text-align: right;
@@ -43,8 +43,8 @@
   &__circle {
     width: 36px;
     height: 36px;
-    background-color: $color-white;
-    border: 8px solid $color-grey;
+    background-color: $color-grey;
+    border: 8px solid $color-surface;
     border-radius: 50%;
     z-index: 1;
     transform: scale(0);
