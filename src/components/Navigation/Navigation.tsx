@@ -8,20 +8,26 @@ import NavigationList from '../NavigationList';
 /*
     <Navigation navigationItems=[]/>
 */
-class Navigation extends Component<any, any> {
-  render() {
-    var onClick = () => {
-      (document.getElementById(
-        'navigation__input'
-      )! as HTMLInputElement).checked = false;
-    };
 
+type PropsType = {
+  navigationItems: Array<{
+    key: string;
+    title: string;
+    sectionUrl: string;
+    isSelected: boolean;
+  }>;
+  onLinkClick: (selectedItemKey: string) => void;
+  className?: string;
+};
+
+class Navigation extends Component<PropsType> {
+  render() {
     return (
       <nav className={classnames('header__navigation', 'navigation')}>
         <NavigationLogo />
         <MenuIconToggle />
         <NavigationList
-          onLinkClick={onClick}
+          onLinkClick={this.props.onLinkClick}
           navigationItems={this.props.navigationItems}
         />
       </nav>

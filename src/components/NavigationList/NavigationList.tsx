@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import { Link } from 'react-router-dom';
 
 /*
     <NavigationList navigationItems=[] onLinkClick={}/>
@@ -12,21 +13,27 @@ class NavigationList extends Component<any, any> {
           {this.props.navigationItems.map(
             (navigationItem: {
               key: string;
-              sectionId: string;
+              sectionUrl: string;
               title: string;
+              isSelected: boolean;
             }) => {
               return (
                 <li
-                  className={classnames('navigation__listItem')}
+                  className={classnames(
+                    'navigation__listItem',
+                    navigationItem.isSelected && 'navigation__listItem_selected'
+                  )}
                   key={navigationItem.key}
                 >
-                  <a
-                    onClick={this.props.onLinkClick}
-                    href={navigationItem.sectionId}
+                  <Link
+                    to={navigationItem.sectionUrl}
+                    onClick={() => {
+                      this.props.onLinkClick(navigationItem.key);
+                    }}
                     className={classnames('navigation__listLink')}
                   >
                     {navigationItem.title}
-                  </a>
+                  </Link>
                 </li>
               );
             }
