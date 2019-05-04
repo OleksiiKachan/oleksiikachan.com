@@ -7,6 +7,7 @@ import MainLayout from './layouts/MainLayout';
 // Containers
 import TimelineContainer from './containers/TimelineContainer';
 import ProjectsContainer from './containers/ProjectsContainer';
+import ProjectDetailsContainer from './containers/ProjectDetailsContainer';
 
 // General styles
 import './assets/style/_fonts.scss';
@@ -25,6 +26,11 @@ export default (
       {isDevelopment ? <Route path="/test" component={TestRoutes} /> : null}
       <MainLayout>
         <Switch>
+          <Route
+            exact
+            path="/projects/:projectId"
+            component={ProjectDetailsContainer}
+          />
           <Route exact path="/projects" component={ProjectsContainer} />
           <Route exact path="/experience" component={TimelineContainer} />
         </Switch>
