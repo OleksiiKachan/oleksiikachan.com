@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import OutlineButton from '../../OutlineButton';
 import './ProjectCard.scss';
+import { Link } from 'react-router-dom';
 
 /*
     <ProjectCard
@@ -13,13 +14,14 @@ import './ProjectCard.scss';
 */
 
 type PropsType = {
+  id: string;
   title: string;
   stack: string;
   coverImage: string;
   className?: string;
 };
 
-export default ({ title, stack, coverImage, className }: PropsType) => {
+export default ({ id, title, stack, coverImage, className }: PropsType) => {
   return (
     <div
       className={classNames('projectCard', className)}
@@ -33,7 +35,7 @@ export default ({ title, stack, coverImage, className }: PropsType) => {
           type="gold"
           onClick={() => {}}
         >
-          See More
+          <Link to={`projects/${id}`}>See More</Link>
         </OutlineButton>
       </div>
     </div>

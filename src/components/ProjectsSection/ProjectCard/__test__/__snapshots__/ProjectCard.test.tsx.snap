@@ -27,7 +27,12 @@ exports[`ProjectCard Snapshot 1`] = `
       onClick={[Function]}
       type="gold"
     >
-      See More
+      <Link
+        replace={false}
+        to="projects/undefined"
+      >
+        See More
+      </Link>
     </_default>
   </div>
 </div>
