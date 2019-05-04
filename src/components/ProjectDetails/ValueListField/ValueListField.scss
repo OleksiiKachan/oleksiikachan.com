@@ -1,0 +1,31 @@
+@import '../../../assets/style/variables';
+
+.valueListField {
+  &__label {
+    color: $color-black;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__listItem {
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin-right: 12px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../../../assets/icons/icon_list-checked.svg');
+    }
+  }
+}
