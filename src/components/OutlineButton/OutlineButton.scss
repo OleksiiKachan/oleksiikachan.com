@@ -14,15 +14,6 @@
     &:hover {
       background: $color-gold;
       color: $color-surface;
-      & a {
-        text-decoration: none;
-        color: $color-surface;
-      }
-    }
-
-    & a {
-      color: $color-white;
-      text-decoration: none;
     }
   }
 

@@ -22,18 +22,18 @@ exports[`ProjectCard Snapshot 1`] = `
     >
       .NET Framework
     </div>
-    <_default
-      className="projectCard__button"
-      onClick={[Function]}
-      type="gold"
+    <Link
+      replace={false}
+      to="projects/undefined"
     >
-      <Link
-        replace={false}
-        to="projects/undefined"
+      <_default
+        className="projectCard__button"
+        onClick={[Function]}
+        type="gold"
       >
         See More
-      </Link>
-    </_default>
+      </_default>
+    </Link>
   </div>
 </div>
 `;

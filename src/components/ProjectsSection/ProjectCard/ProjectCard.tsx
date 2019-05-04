@@ -30,13 +30,15 @@ export default ({ id, title, stack, coverImage, className }: PropsType) => {
       <div className={classNames('projectCard__inner')}>
         <div className={classNames('projectCard__title')}>{title}</div>
         <div className={classNames('projectCard__stack')}>{stack}</div>
-        <OutlineButton
-          className={classNames('projectCard__button')}
-          type="gold"
-          onClick={() => {}}
-        >
-          <Link to={`projects/${id}`}>See More</Link>
-        </OutlineButton>
+        <Link to={`projects/${id}`}>
+          <OutlineButton
+            className={classNames('projectCard__button')}
+            type="gold"
+            onClick={() => {}}
+          >
+            See More
+          </OutlineButton>
+        </Link>
       </div>
     </div>
   );
