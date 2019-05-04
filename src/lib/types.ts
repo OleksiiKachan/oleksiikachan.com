@@ -24,11 +24,21 @@ export type TimelineItemType = {
 };
 
 export type ProjectType = {
+  id: string;
+  teamSize?: string;
+  partner?: Array<{ name: string; url?: string }>;
+  client?: Array<{ name: string; url?: string }>;
   projectType: 'design' | 'development';
   title: string;
-  description: string;
-  shortStack: string;
   coverImage: string;
+  shortStack: string;
+  longStack: Array<string>;
+  projectDescription: string;
+
+  // images: Array<{imageUrl: string; imageDescription: string;}>
+  // externalResources?: Array<{resourceUrl: string; resourceName: string;}>
+  // achivements?: Array<string>;
+  // persnalContribution: string;
 };
 
 export type NavigationItemType = {

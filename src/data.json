@@ -24,63 +24,41 @@
   },
   "projects": [
     {
+      "id": "ftp-serivce",
+      "teamSize": "2 people",
+      "partner": [{ "name": "OLSOM LLC", "url": "http://olsom.net/" }],
       "projectType": "development",
-      "title": "AGW MES / WMS for automotive industry",
+      "title": "FTP File Transfer Service",
+      "coverImage": "https://picsum.photos/4312/2668",
       "shortStack": ".NET Framework",
-      "coverImage": "https://picsum.photos/4212/2768",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for AGW system (which is the MES/WMS for manufacturing). Also I did deployment on new manufactories and support tickets."
+      "longStack": [
+        ".NET Framework",
+        "C#",
+        "Windows Service",
+        "Windows OS",
+        "Linux OS"
+      ],
+      "projectDescription": "Multi-threaded windows service that transfers files locally and/or remotely via FTP protocol and is configured with *.ini file. All the service events, faults, warnings are logged into local txt file and windows system log."
     },
     {
-      "projectType": "development",
-      "title": "TDM (Tools Data Manager) for automotive industry.",
-      "shortStack": ".NET Framework",
-      "coverImage": "https://picsum.photos/4302/2568",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for TDM system. TDM - Tools Data Manager - solution that gets and analyse statistical data from automatic screwdrivers on production lines. Product was developed in collaboration with OLSOM L.L.C Catalyst Solutions Inc."
-    },
-    {
-      "projectType": "design",
-      "title": "Hyperloop",
-      "shortStack": "UI & UX Design & Development",
-      "coverImage": "https://picsum.photos/4312/2468",
-      "description": "I was a volunteering member of rLoop team on SpaceX Hyperloop Contest. I was in System Team & Software Team. I took part in creating Final Design Resource document as a system engineer. UI development was lead by me. I created UI mockups and then in collaboration with one designer we created UI for ground station.",
-      "tools": ["visio", "illustrator", "photoshop"]
-    },
-    {
+      "id": "cardboard-prod",
+      "teamSize": "2 people",
+      "partner": [
+        { "name": "OLSOM LLC", "url": "http://olsom.net/" },
+        {
+          "name": "Agile Automation Technology LLC  ",
+          "url": "http://www.agileautomation.net/"
+        }
+      ],
       "projectType": "development",
       "title": "Corrugated Cardboard Production System",
       "coverImage": "https://picsum.photos/4312/2869",
       "shortStack": "Ladder Logic",
-      "description": "I did reverse engineering of corrugated industrial cardboard manufacturing system. System was created using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C."
-    },
-    {
-      "projectType": "development",
-      "title": "FTP File Transfer Service",
-      "shortStack": ".NET Framework",
-      "coverImage": "https://picsum.photos/4312/2668",
-      "description": "I created FTP File Transfer Service - windows service that transfers files in multiple threads via FTP to remoter & local locations. Service uses .ini file with configuration"
-    },
-    {
-      "projectType": "design",
-      "title": "Logo & Card Design",
-      "shortStack": "Personal Branding",
-      "coverImage": "https://picsum.photos/4232/2868",
-      "description": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be."
-    },
-    {
-      "projectType": "design",
-      "title": "Logo & Card Design",
-      "shortStack": "Personal Branding",
-      "coverImage": "https://picsum.photos/4313/2868",
-      "description": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card."
-    },
-    {
-      "projectType": "design",
-      "title": "Logo & Card Design",
-      "shortStack": "Personal Branding",
-      "coverImage": "https://picsum.photos/4312/2860",
-      "description": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
+      "longStack": ["Ladder Logic", "Microsoft Visio"],
+      "projectDescription": "Reverse engineering of ladder-logic based corrugated industrial cardboard production software to get complete networking system. System was developed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works."
     }
   ],
+
   "skills": [
     "UI/UX Design",
     "Prototyping",
