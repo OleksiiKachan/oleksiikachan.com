@@ -58,3 +58,31 @@
     transform: translateY(100%);
   }
 }
+
+@media screen and (max-width: 825px) {
+  .projectCard {
+    margin: 1rem;
+    width: 80%;
+
+    &__inner {
+      opacity: 1;
+      background-color: rgba($color-black, 0.85);
+
+      &:hover {
+        animation: none;
+      }
+    }
+
+    &__title {
+      transform: translateX(0);
+    }
+
+    &__stack {
+      transform: translateX(0);
+    }
+
+    &__button {
+      transform: translateY(0);
+    }
+  }
+}
