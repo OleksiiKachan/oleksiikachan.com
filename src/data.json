@@ -35,7 +35,21 @@
       ],
       "projectType": "development",
       "title": "AGW MES / WMS for automotive industry",
-      "coverImage": "https://picsum.photos/4212/2768",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
+      "images": [
+        {
+          "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
+          "imageDescription": "AGW IP - a heart of OLSOM software for manufacturing."
+        },
+        {
+          "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557087290/portfolio/images/projects/agw/agw_mes.jpg",
+          "imageDescription": "AGW MES - a powerful, flexible and scalable Manufacturing Execution System that is easily expanded with business requirements to maximize performance."
+        },
+        {
+          "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557087290/portfolio/images/projects/agw/agw_wms.jpg",
+          "imageDescription": "AGW WMS provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse."
+        }
+      ],
       "shortStack": ".NET Framework",
       "longStack": [
         ".NET Framework",
@@ -48,7 +62,59 @@
         "Oracle",
         "Windows Service"
       ],
-      "projectDescription": "AGW MES is an ISA95 compliant web-based product that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, AGW MES manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. Visualization capabilities give you real-time visibility and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. AGW MES is a powerful, flexible and scalable Manufacturing Execution System that is easily expanded with business requirements to maximize performance."
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "AGW MES is an ISA95 compliant web-based product that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, AGW MES manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. Visualization capabilities give you real-time visibility and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. AGW MES is a powerful, flexible and scalable Manufacturing Execution System that is easily expanded with business requirements to maximize performance."
+        },
+        {
+          "type": "string",
+          "content": "AGW WMS provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse. AGW WMS is designed to optimize movement of your inventory across your facility. From materials receiving down through the manufacturing process until packing and shipping to the customer AGW WMS helps to direct your inventory in an optimal way providing up-to-the-minute information on the quantity, location, status, and history of every item including work-in-process and finished goods."
+        }
+      ],
+      "persnalContribution": [
+        {
+          "type": "string",
+          "content": "The project work consisted of two parallel streams: development and support."
+        },
+        {
+          "type": "list",
+          "header": "Development",
+          "list": [
+            "Implementing new features",
+            "Overriding / Supporting legacy code (transfering one of the services from ASP.NET Forms to ASP.NET MVC)",
+            "Implement different settings storage methods (as xml configuration, as database entity)",
+            "Adjust database structure"
+          ]
+        },
+        {
+          "type": "list",
+          "header": "Support",
+          "list": [
+            "Configuring & Deploying system on customers side",
+            "Implement 'on demand' customer-specific features (batch loading, specific production routing)",
+            "Production bug fixing"
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "http://olsom.net/agw-mes/",
+          "name": "Product Page. AGW MES"
+        },
+        {
+          "url": "http://olsom.net/agw-wms/",
+          "name": "Product Page. AGW WMS"
+        },
+        {
+          "url": "http://olsom.net/agw-ip/",
+          "name": "Product Page. AGW IP"
+        },
+        {
+          "url": "http://olsom.net/",
+          "name": "Company Page. OLSOM LLC"
+        }
+      ]
     },
     {
       "id": "tdm",
@@ -80,7 +146,36 @@
         "MS SQL Server",
         "Windows Service"
       ],
-      "projectDescription": "Tools Data Manager (\"TDM\") is an advanced manufacturing data collection and management solution that features comprehensive functionality for torque data capture and management.  TDM is designed to simplify the challenge of connecting, extracting, associating, archiving, analyzing and mobilizing manufacturing data generated by localized shop-floor devices; such as, torque assembly systems, process PLCs, testing systems such as Labview, quality systems and etc. From quality & test data to critical process data, TDM aggregates all disparate localized manufacturing data into a single, central database and operating tool offering total control and collaboration."
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "Tools Data Manager (\"TDM\") is an advanced manufacturing data collection and management solution that features comprehensive functionality for torque data capture and management. TDM is designed to simplify the challenge of connecting, extracting, associating, archiving, analyzing and mobilizing manufacturing data generated by localized shop-floor devices; such as, torque assembly systems, process PLCs, testing systems such as Labview, quality systems and etc. From quality & test data to critical process data, TDM aggregates all disparate localized manufacturing data into a single, central database and operating tool offering total control and collaboration."
+        },
+        {
+          "type": "string",
+          "content": "TDM is one of the first commercially designed software tools that integrates the function of device connectivity into the core software tool including connectivity, data selection, data identity and many other useful functions."
+        }
+      ],
+      "persnalContribution": [
+        {
+          "type": "string",
+          "content": "The project work consisted of two parallel streams: development and support."
+        },
+        {
+          "type": "list",
+          "header": "Development",
+          "list": ["Implementing new features", "Adjust database structure"]
+        },
+        {
+          "type": "list",
+          "header": "Support",
+          "list": [
+            "Configuring & Deploying system on customers side",
+            "Implement 'on demand' customer-specific features (implement agw-like routing)",
+            "Production bug fixing"
+          ]
+        }
+      ]
     },
     {
       "id": "rpod",
@@ -92,8 +187,13 @@
       "title": "Hyperloop",
       "coverImage": "https://picsum.photos/4312/2468",
       "shortStack": "UI & UX Design & Development",
-      "projectDescription": "Hyperloop is a conceptual, high-speed transportation system initially proposed by Elon Musk. The concept consists of passenger and cargo pods being propelled at up to 760 mph in a low pressure tube using sustainable and cost-efficient energy. To accelerate its development, SpaceX is hosted a competition for engineering teams to design their own hyperloop pods and test them at their facility in Hawthorne, California.",
-      "longStack": ["Adobe Illustrator", "Adobe Photoshop"]
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "Hyperloop is a conceptual, high-speed transportation system initially proposed by Elon Musk. The concept consists of passenger and cargo pods being propelled at up to 760 mph in a low pressure tube using sustainable and cost-efficient energy. To accelerate its development, SpaceX is hosted a competition for engineering teams to design their own hyperloop pods and test them at their facility in Hawthorne, California."
+        }
+      ]
     },
     {
       "id": "cardboard-prod",
@@ -110,7 +210,12 @@
       "coverImage": "https://picsum.photos/4312/2869",
       "shortStack": "Ladder Logic",
       "longStack": ["Ladder Logic", "Microsoft Visio"],
-      "projectDescription": "Reverse engineering of ladder-logic based corrugated industrial cardboard production software to get complete networking system. System was developed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works."
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "Reverse engineering of ladder-logic based corrugated industrial cardboard production software to get complete networking system. System was developed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works."
+        }
+      ]
     },
     {
       "id": "ftp-serivce",
@@ -127,7 +232,12 @@
         "Windows OS",
         "Linux OS"
       ],
-      "projectDescription": "Multi-threaded windows service that transfers files locally and/or remotely via FTP protocol and is configured with *.ini file. All the service events, faults, warnings are logged into local txt file and windows system log."
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "Multi-threaded windows service that transfers files locally and/or remotely via FTP protocol and is configured with *.ini file. All the service events, faults, warnings are logged into local txt file and windows system log."
+        }
+      ]
     },
     {
       "id": "branding-oleksii-kachan",
@@ -141,7 +251,12 @@
       "coverImage": "https://picsum.photos/4232/2868",
       "shortStack": "Personal Branding",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
-      "projectDescription": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be."
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be."
+        }
+      ]
     },
     {
       "id": "branding-iryna-kachan",
@@ -155,7 +270,12 @@
       "coverImage": "https://picsum.photos/4313/2868",
       "shortStack": "Personal Branding",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
-      "projectDescription": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card."
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card."
+        }
+      ]
     },
     {
       "id": "branding-oleksandr-grochakov",
@@ -169,7 +289,12 @@
       "coverImage": "https://picsum.photos/4312/2860",
       "shortStack": "Personal Branding",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
-      "projectDescription": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
+        }
+      ]
     }
   ],
 

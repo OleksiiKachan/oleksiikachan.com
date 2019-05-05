@@ -11,8 +11,40 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "url": "https://www.hmmausa.com/",
           },
         ],
-        "coverImage": "https://picsum.photos/4212/2768",
+        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
+        "externalResources": Array [
+          Object {
+            "name": "Product Page. AGW MES",
+            "url": "http://olsom.net/agw-mes/",
+          },
+          Object {
+            "name": "Product Page. AGW WMS",
+            "url": "http://olsom.net/agw-wms/",
+          },
+          Object {
+            "name": "Product Page. AGW IP",
+            "url": "http://olsom.net/agw-ip/",
+          },
+          Object {
+            "name": "Company Page. OLSOM LLC",
+            "url": "http://olsom.net/",
+          },
+        ],
         "id": "agw",
+        "images": Array [
+          Object {
+            "imageDescription": "AGW IP - a heart of OLSOM software for manufacturing.",
+            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
+          },
+          Object {
+            "imageDescription": "AGW MES - a powerful, flexible and scalable Manufacturing Execution System that is easily expanded with business requirements to maximize performance.",
+            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557087290/portfolio/images/projects/agw/agw_mes.jpg",
+          },
+          Object {
+            "imageDescription": "AGW WMS provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse.",
+            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557087290/portfolio/images/projects/agw/agw_wms.jpg",
+          },
+        ],
         "longStack": Array [
           ".NET Framework",
           "C#",
@@ -30,7 +62,41 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "url": "http://olsom.net/",
           },
         ],
-        "projectDescription": "AGW MES is an ISA95 compliant web-based product that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, AGW MES manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. Visualization capabilities give you real-time visibility and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. AGW MES is a powerful, flexible and scalable Manufacturing Execution System that is easily expanded with business requirements to maximize performance.",
+        "persnalContribution": Array [
+          Object {
+            "content": "The project work consisted of two parallel streams: development and support.",
+            "type": "string",
+          },
+          Object {
+            "header": "Development",
+            "list": Array [
+              "Implementing new features",
+              "Overriding / Supporting legacy code (transfering one of the services from ASP.NET Forms to ASP.NET MVC)",
+              "Implement different settings storage methods (as xml configuration, as database entity)",
+              "Adjust database structure",
+            ],
+            "type": "list",
+          },
+          Object {
+            "header": "Support",
+            "list": Array [
+              "Configuring & Deploying system on customers side",
+              "Implement 'on demand' customer-specific features (batch loading, specific production routing)",
+              "Production bug fixing",
+            ],
+            "type": "list",
+          },
+        ],
+        "projectDescription": Array [
+          Object {
+            "content": "AGW MES is an ISA95 compliant web-based product that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, AGW MES manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. Visualization capabilities give you real-time visibility and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. AGW MES is a powerful, flexible and scalable Manufacturing Execution System that is easily expanded with business requirements to maximize performance.",
+            "type": "string",
+          },
+          Object {
+            "content": "AGW WMS provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse. AGW WMS is designed to optimize movement of your inventory across your facility. From materials receiving down through the manufacturing process until packing and shipping to the customer AGW WMS helps to direct your inventory in an optimal way providing up-to-the-minute information on the quantity, location, status, and history of every item including work-in-process and finished goods.",
+            "type": "string",
+          },
+        ],
         "projectType": "development",
         "shortStack": ".NET Framework",
         "teamSize": "> 10 people",
@@ -65,7 +131,39 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "url": "http://www.catalystsi.com/",
           },
         ],
-        "projectDescription": "Tools Data Manager (\\"TDM\\") is an advanced manufacturing data collection and management solution that features comprehensive functionality for torque data capture and management.  TDM is designed to simplify the challenge of connecting, extracting, associating, archiving, analyzing and mobilizing manufacturing data generated by localized shop-floor devices; such as, torque assembly systems, process PLCs, testing systems such as Labview, quality systems and etc. From quality & test data to critical process data, TDM aggregates all disparate localized manufacturing data into a single, central database and operating tool offering total control and collaboration.",
+        "persnalContribution": Array [
+          Object {
+            "content": "The project work consisted of two parallel streams: development and support.",
+            "type": "string",
+          },
+          Object {
+            "header": "Development",
+            "list": Array [
+              "Implementing new features",
+              "Adjust database structure",
+            ],
+            "type": "list",
+          },
+          Object {
+            "header": "Support",
+            "list": Array [
+              "Configuring & Deploying system on customers side",
+              "Implement 'on demand' customer-specific features (implement agw-like routing)",
+              "Production bug fixing",
+            ],
+            "type": "list",
+          },
+        ],
+        "projectDescription": Array [
+          Object {
+            "content": "Tools Data Manager (\\"TDM\\") is an advanced manufacturing data collection and management solution that features comprehensive functionality for torque data capture and management. TDM is designed to simplify the challenge of connecting, extracting, associating, archiving, analyzing and mobilizing manufacturing data generated by localized shop-floor devices; such as, torque assembly systems, process PLCs, testing systems such as Labview, quality systems and etc. From quality & test data to critical process data, TDM aggregates all disparate localized manufacturing data into a single, central database and operating tool offering total control and collaboration.",
+            "type": "string",
+          },
+          Object {
+            "content": "TDM is one of the first commercially designed software tools that integrates the function of device connectivity into the core software tool including connectivity, data selection, data identity and many other useful functions.",
+            "type": "string",
+          },
+        ],
         "projectType": "development",
         "shortStack": ".NET Framework",
         "teamSize": "> 10 people",
@@ -84,7 +182,12 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "url": "https://www.rloop.org/",
           },
         ],
-        "projectDescription": "Hyperloop is a conceptual, high-speed transportation system initially proposed by Elon Musk. The concept consists of passenger and cargo pods being propelled at up to 760 mph in a low pressure tube using sustainable and cost-efficient energy. To accelerate its development, SpaceX is hosted a competition for engineering teams to design their own hyperloop pods and test them at their facility in Hawthorne, California.",
+        "projectDescription": Array [
+          Object {
+            "content": "Hyperloop is a conceptual, high-speed transportation system initially proposed by Elon Musk. The concept consists of passenger and cargo pods being propelled at up to 760 mph in a low pressure tube using sustainable and cost-efficient energy. To accelerate its development, SpaceX is hosted a competition for engineering teams to design their own hyperloop pods and test them at their facility in Hawthorne, California.",
+            "type": "string",
+          },
+        ],
         "projectType": "design",
         "shortStack": "UI & UX Design & Development",
         "teamSize": "> 20 people",
@@ -107,7 +210,12 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "url": "http://www.agileautomation.net/",
           },
         ],
-        "projectDescription": "Reverse engineering of ladder-logic based corrugated industrial cardboard production software to get complete networking system. System was developed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works.",
+        "projectDescription": Array [
+          Object {
+            "content": "Reverse engineering of ladder-logic based corrugated industrial cardboard production software to get complete networking system. System was developed using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works.",
+            "type": "string",
+          },
+        ],
         "projectType": "development",
         "shortStack": "Ladder Logic",
         "teamSize": "2 people",
@@ -129,7 +237,12 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "url": "http://olsom.net/",
           },
         ],
-        "projectDescription": "Multi-threaded windows service that transfers files locally and/or remotely via FTP protocol and is configured with *.ini file. All the service events, faults, warnings are logged into local txt file and windows system log.",
+        "projectDescription": Array [
+          Object {
+            "content": "Multi-threaded windows service that transfers files locally and/or remotely via FTP protocol and is configured with *.ini file. All the service events, faults, warnings are logged into local txt file and windows system log.",
+            "type": "string",
+          },
+        ],
         "projectType": "development",
         "shortStack": ".NET Framework",
         "teamSize": "2 people",
@@ -147,7 +260,12 @@ exports[`ProjectsContainer Snapshot 1`] = `
           "Adobe Illustrator",
           "Adobe Photoshop",
         ],
-        "projectDescription": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be.",
+        "projectDescription": Array [
+          Object {
+            "content": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be.",
+            "type": "string",
+          },
+        ],
         "projectType": "design",
         "shortStack": "Personal Branding",
         "title": "Logo & Card Design",
@@ -164,7 +282,12 @@ exports[`ProjectsContainer Snapshot 1`] = `
           "Adobe Illustrator",
           "Adobe Photoshop",
         ],
-        "projectDescription": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card.",
+        "projectDescription": Array [
+          Object {
+            "content": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card.",
+            "type": "string",
+          },
+        ],
         "projectType": "design",
         "shortStack": "Personal Branding",
         "title": "Logo & Card Design",
@@ -181,7 +304,12 @@ exports[`ProjectsContainer Snapshot 1`] = `
           "Adobe Illustrator",
           "Adobe Photoshop",
         ],
-        "projectDescription": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations.",
+        "projectDescription": Array [
+          Object {
+            "content": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations.",
+            "type": "string",
+          },
+        ],
         "projectType": "design",
         "shortStack": "Personal Branding",
         "title": "Logo & Card Design",

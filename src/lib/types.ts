@@ -33,12 +33,21 @@ export type ProjectType = {
   coverImage: string;
   shortStack: string;
   longStack: Array<string>;
-  projectDescription: string;
-
-  // images: Array<{imageUrl: string; imageDescription: string;}>
-  // externalResources?: Array<{resourceUrl: string; resourceName: string;}>
+  projectDescription: Array<{
+    type: string;
+    content?: string;
+    header?: string;
+    list?: Array<string>;
+  }>;
+  persnalContribution?: Array<{
+    type: string;
+    content?: string;
+    header?: string;
+    list?: Array<string>;
+  }>;
+  images?: Array<{ imageUrl: string; imageDescription?: string }>;
+  externalResources?: Array<{ url: string; name: string }>;
   // achivements?: Array<string>;
-  // persnalContribution: string;
 };
 
 export type NavigationItemType = {
