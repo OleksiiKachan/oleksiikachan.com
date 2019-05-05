@@ -1,11 +1,12 @@
-@import '../../../assets/style/variables';
+.paragraphField {
+  &__content {
+    margin: 1.3rem 0;
+  }
 
-.valueListField {
-  &__label {
-    color: $color-black;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    font-size: 1.2em;
+  &__listHeader {
+    margin-bottom: 0.75rem;
+    font-style: italic;
+    font-size: 1.1rem;
   }
 
   &__list {
@@ -13,10 +14,10 @@
   }
 
   &__listItem {
-    font-size: 0.85rem;
     margin-bottom: 0.7rem;
     display: flex;
     align-items: center;
+    font-size: 1rem;
 
     &::before {
       content: '';
@@ -27,14 +28,6 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url('../../../assets/icons/icon_list-checked.svg');
-    }
-  }
-}
-
-@media screen and (max-width: 825px) {
-  .valueListField {
-    &__label {
-      font-size: 1rem;
     }
   }
 }

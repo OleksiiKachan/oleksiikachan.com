@@ -13,12 +13,24 @@ import './UrlListField.scss';
 type PropsType = {
   fieldLabel: string;
   list: Array<{ name: string; url?: string }>;
+  alignment?: string;
   className?: string;
 };
 
-export default ({ fieldLabel, list, className }: PropsType) => {
+export default ({
+  fieldLabel,
+  list,
+  alignment = 'row',
+  className,
+}: PropsType) => {
   return (
-    <div className={classNames('urlListField', className)}>
+    <div
+      className={classNames(
+        'urlListField',
+        `urlListField_${alignment}`,
+        className
+      )}
+    >
       <p className={classNames('urlListField__label')}>{fieldLabel}:</p>
       <ul className={classNames('urlListField__list')}>
         {list.map(item => {

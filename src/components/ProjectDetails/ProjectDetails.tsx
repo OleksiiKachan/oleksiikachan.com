@@ -4,6 +4,8 @@ import { ProjectType } from '../../lib/types';
 import './ProjectDetails.scss';
 import UrlListField from './UrlListField';
 import ValueListField from './ValueListField';
+import ParagraphField from './ParagraphField';
+import ImageField from './ImageField';
 
 /*
     <ProjectDetails
@@ -20,34 +22,61 @@ type PropsType = {
 export default ({ project, className }: PropsType) => {
   return (
     <div className={classNames('projectDetails', className)}>
-      <h2 className={classNames('projectDetails__title')}>{project.title}</h2>
-      {project.teamSize && (
-        <div className={classNames('projectDetails__teamSize')}>
-          Team size: {project.teamSize}
-        </div>
-      )}
-      {project.partner && (
-        <UrlListField
-          fieldLabel={`Partner${project.partner.length > 1 ? 's' : ''}`}
-          list={project.partner}
-          className={classNames('projectDetails__listField')}
-        />
-      )}
-      {project.client && (
-        <UrlListField
-          fieldLabel={`Client${project.client.length > 1 ? 's' : ''}`}
-          list={project.client}
-          className={classNames('projectDetails__listField')}
-        />
-      )}
-      <div className={classNames('projectDetails__description')}>
-        {project.projectDescription}
-      </div>
-      <ValueListField
-        fieldLabel="Technologies"
-        list={project.longStack}
-        className={classNames('projectDetails__listField')}
+      <ImageField
+        images={project.images || [{ imageUrl: project.coverImage }]}
+        className={classNames('projectDetails__images')}
       />
+      <div className={classNames('projectDetails__content')}>
+        <h2 className={classNames('projectDetails__title')}>{project.title}</h2>
+        {project.teamSize && (
+          <div className={classNames('projectDetails__teamSize')}>
+            Team size: {project.teamSize}
+          </div>
+        )}
+        {project.partner && (
+          <UrlListField
+            fieldLabel={`Partner${project.partner.length > 1 ? 's' : ''}`}
+            list={project.partner}
+            className={classNames('projectDetails__listField')}
+          />
+        )}
+        {project.client && (
+          <UrlListField
+            fieldLabel={`Client${project.client.length > 1 ? 's' : ''}`}
+            list={project.client}
+            className={classNames('projectDetails__listField')}
+          />
+        )}
+        <ParagraphField
+          content={project.projectDescription}
+          className={classNames('projectDetails__paragraphField')}
+        />
+        {project.persnalContribution && (
+          <ParagraphField
+            content={project.persnalContribution}
+            className={classNames('projectDetails__paragraphField')}
+          />
+        )}
+        <ValueListField
+          fieldLabel="Technologies"
+          list={project.longStack}
+          className={classNames(
+            'projectDetails__listField',
+            'projectDetails__listField_isolated'
+          )}
+        />
+        {project.externalResources && (
+          <UrlListField
+            fieldLabel="External Resources"
+            list={project.externalResources}
+            alignment="column"
+            className={classNames(
+              'projectDetails__listField',
+              'projectDetails__listField_isolated'
+            )}
+          />
+        )}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,13 @@
 @import '../../assets/style/variables';
 
 .projectDetails {
-  padding: 3rem 6rem;
+  &__images {
+    height: 50vh;
+  }
+
+  &__content {
+    padding: 3rem 6rem;
+  }
 
   &__title {
     display: flex;
@@ -21,21 +27,31 @@
     font-style: italic;
   }
 
-  &__description {
-    margin: 3rem 0;
-    text-align: justify;
-    font-size: 1.2rem;
-  }
-
   &__listField {
     margin: 2rem 0;
     font-size: 0.9rem;
+
+    &_isolated {
+      margin: 4rem 0;
+    }
+  }
+
+  &__paragraphField {
+    margin: 3rem 0;
+    text-align: justify;
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 825px) {
   .projectDetails {
-    padding: 1rem 2rem;
+    &__images {
+      height: 30vh;
+    }
+
+    &__content {
+      padding: 1rem 2rem;
+    }
 
     &__title {
       font-size: 1.2rem;
@@ -43,7 +59,7 @@
     &__teamSize {
       font-size: 0.65rem;
     }
-    &__description {
+    &__paragraphField {
       font-size: 1rem;
     }
   }

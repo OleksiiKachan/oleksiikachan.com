@@ -4,55 +4,68 @@ exports[`ProjectDetails Snapshot 1`] = `
 <div
   className="projectDetails"
 >
-  <h2
-    className="projectDetails__title"
-  >
-    title
-  </h2>
   <_default
-    className="projectDetails__listField"
-    fieldLabel="Partners"
-    list={
+    className="projectDetails__images"
+    images={
       Array [
         Object {
-          "name": "partnerWithUrl",
-          "url": "url",
-        },
-        Object {
-          "name": "partnerWithoutUrl",
-        },
-      ]
-    }
-  />
-  <_default
-    className="projectDetails__listField"
-    fieldLabel="Clients"
-    list={
-      Array [
-        Object {
-          "name": "clientWithUrl",
-          "url": "url",
-        },
-        Object {
-          "name": "clientWithoutUrl",
+          "imageUrl": "coverImageUrl",
         },
       ]
     }
   />
   <div
-    className="projectDetails__description"
+    className="projectDetails__content"
   >
-    project description.
+    <h2
+      className="projectDetails__title"
+    >
+      title
+    </h2>
+    <_default
+      className="projectDetails__listField"
+      fieldLabel="Partners"
+      list={
+        Array [
+          Object {
+            "name": "partnerWithUrl",
+            "url": "url",
+          },
+          Object {
+            "name": "partnerWithoutUrl",
+          },
+        ]
+      }
+    />
+    <_default
+      className="projectDetails__listField"
+      fieldLabel="Clients"
+      list={
+        Array [
+          Object {
+            "name": "clientWithUrl",
+            "url": "url",
+          },
+          Object {
+            "name": "clientWithoutUrl",
+          },
+        ]
+      }
+    />
+    <_default
+      className="projectDetails__paragraphField"
+      content="project description."
+    />
+    <_default
+      className="projectDetails__listField projectDetails__listField_isolated"
+      fieldLabel="Technologies"
+      list={
+        Array [
+          "tech1",
+          "tech2",
+        ]
+      }
+    />
   </div>
-  <_default
-    className="projectDetails__listField"
-    fieldLabel="Technologies"
-    list={
-      Array [
-        "tech1",
-        "tech2",
-      ]
-    }
-  />
 </div>
 `;

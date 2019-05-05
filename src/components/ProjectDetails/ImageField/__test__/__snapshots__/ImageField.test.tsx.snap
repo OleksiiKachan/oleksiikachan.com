@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageField Snapshot 1`] = `
+<div
+  className="imageField"
+>
+  <div
+    className="imageField__imageSlide"
+    style={
+      Object {
+        "backgroundImage": "url(imageUrlWithDescription)",
+      }
+    }
+  >
+    <div
+      className="imageField__imageShader"
+    >
+      <span
+        className="imageField__imageDescription"
+      >
+        description
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -3,6 +3,14 @@
 .urlListField {
   display: flex;
 
+  &_column {
+    flex-direction: column;
+
+    .urlListField__label {
+      margin-bottom: 1rem;
+    }
+  }
+
   &__label {
     color: $color-black;
     margin-right: 2rem;

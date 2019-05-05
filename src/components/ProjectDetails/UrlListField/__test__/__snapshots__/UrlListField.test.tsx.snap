@@ -2,7 +2,7 @@
 
 exports[`UrlListField Snapshot 1`] = `
 <div
-  className="urlListField"
+  className="urlListField urlListField_row"
 >
   <p
     className="urlListField__label"
