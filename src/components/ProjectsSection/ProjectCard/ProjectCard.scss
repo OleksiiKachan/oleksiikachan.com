@@ -70,6 +70,16 @@
 
       &:hover {
         animation: none;
+
+        .projectCard__title {
+          animation: none;
+        }
+        .projectCard__stack {
+          animation: none;
+        }
+        .projectCard__button {
+          animation: none;
+        }
       }
     }
 
