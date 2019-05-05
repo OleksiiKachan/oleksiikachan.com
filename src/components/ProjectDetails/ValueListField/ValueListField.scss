@@ -29,3 +29,11 @@
     }
   }
 }
+
+@media screen and (max-width: 825px) {
+  .valueListField {
+    &__label {
+      font-size: 1rem;
+    }
+  }
+}

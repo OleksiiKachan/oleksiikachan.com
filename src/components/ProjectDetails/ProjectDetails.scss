@@ -32,3 +32,19 @@
     font-size: 0.9rem;
   }
 }
+
+@media screen and (max-width: 825px) {
+  .projectDetails {
+    padding: 1rem 2rem;
+
+    &__title {
+      font-size: 1.2rem;
+    }
+    &__teamSize {
+      font-size: 0.65rem;
+    }
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}
