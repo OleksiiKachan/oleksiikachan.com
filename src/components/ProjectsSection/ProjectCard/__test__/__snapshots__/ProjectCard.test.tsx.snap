@@ -10,30 +10,34 @@ exports[`ProjectCard Snapshot 1`] = `
   }
 >
   <div
-    className="projectCard__inner"
+    className="projectCard__shader"
   >
     <div
-      className="projectCard__title"
+      className="projectCard__inner"
     >
-      AGW MES / WMS for automotive industry
-    </div>
-    <div
-      className="projectCard__stack"
-    >
-      .NET Framework
-    </div>
-    <Link
-      replace={false}
-      to="projects/undefined"
-    >
-      <_default
-        className="projectCard__button"
-        onClick={[Function]}
-        type="gold"
+      <div
+        className="projectCard__title"
       >
-        See More
-      </_default>
-    </Link>
+        AGW MES / WMS for automotive industry
+      </div>
+      <div
+        className="projectCard__stack"
+      >
+        .NET Framework
+      </div>
+      <Link
+        replace={false}
+        to="projects/undefined"
+      >
+        <_default
+          className="projectCard__button"
+          onClick={[Function]}
+          type="gold"
+        >
+          See More
+        </_default>
+      </Link>
+    </div>
   </div>
 </div>
 `;
