@@ -43,6 +43,16 @@
   }
 }
 
+.paragraphValue {
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_italic {
+    font-style: italic;
+  }
+}
+
 @media screen and (max-width: 825px) {
   .projectDetails {
     &__images {

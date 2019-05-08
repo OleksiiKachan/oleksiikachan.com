@@ -54,7 +54,14 @@ exports[`ProjectDetails Snapshot 1`] = `
     />
     <_default
       className="projectDetails__paragraphField"
-      content="project description."
+      content={
+        Array [
+          Object {
+            "content": "string content",
+            "type": "strting",
+          },
+        ]
+      }
     />
     <_default
       className="projectDetails__listField projectDetails__listField_isolated"

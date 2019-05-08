@@ -31,7 +31,7 @@ describe('ProjectDetails', () => {
           coverImage: 'coverImageUrl',
           shortStack: 'shortStack',
           longStack: ['tech1', 'tech2'],
-          projectDescription: 'project description.',
+          projectDescription: [{ type: 'strting', content: 'string content' }],
         }}
       />
     );

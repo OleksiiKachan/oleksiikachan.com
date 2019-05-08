@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import ReactHtmlParser from 'react-html-parser';
 import './ParagraphField.scss';
 
 /*
@@ -30,7 +31,7 @@ export default ({ content, className }: PropsType) => {
                 key={content.indexOf(item)}
                 className={classNames('paragraphField__content')}
               >
-                {item.content}
+                {ReactHtmlParser(item.content || '')}
               </p>
             );
           case 'list':
@@ -40,17 +41,18 @@ export default ({ content, className }: PropsType) => {
                 className={classNames('paragraphField__content')}
               >
                 <p className={classNames('paragraphField__listHeader')}>
-                  {item.header}
+                  {ReactHtmlParser(item.header || '')}
                 </p>
                 <ul className={classNames('paragraphField__list')}>
                   {item.list &&
                     item.list.map(listItem => {
+                      console.log(listItem);
                       return (
                         <li
                           key={item.list && item.list.indexOf(listItem)}
                           className={classNames('paragraphField__listItem')}
                         >
-                          {listItem}
+                          {ReactHtmlParser(listItem || '')}
                         </li>
                       );
                     })}

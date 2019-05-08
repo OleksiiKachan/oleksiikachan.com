@@ -58,15 +58,15 @@ exports[`TimelineContainer Snapshot 1`] = `
         "projects": Array [
           Object {
             "id": "agw",
-            "title": "AGW modular complex solution for automotive industry",
+            "title": "AGW. Automitive Manufacturing Solution",
+          },
+          Object {
+            "id": "tdm",
+            "title": "TDM (Tools Data Manager). Manufacturing data collection and management solution",
           },
           Object {
             "id": "ftp-service",
             "title": "FTP Transfer Service",
-          },
-          Object {
-            "id": "tdm",
-            "title": "TDM (Tools Data Manager) for automotive industry",
           },
           Object {
             "id": "cardboard-prod",
@@ -74,7 +74,7 @@ exports[`TimelineContainer Snapshot 1`] = `
           },
         ],
         "responsibilities": Array [
-          "Development and support of the company's products: AGW modular complex solution for automotive industry; TDM (Tools Data Manager) for automotive industry",
+          "Development and support of the company's products: AGW Automitive Manufacturing Solution; TDM (Tools Data Manager) for automotive industry",
           "Development and support of the client projects based on company's products (1-3-tier automotive manufacturers (Volkswagen, Opel, Tesla, etc.)",
           "Development of outsourced minor projects",
           "Development of internal tools",

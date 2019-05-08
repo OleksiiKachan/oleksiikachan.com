@@ -20,6 +20,59 @@ type PropsType = {
 };
 
 export default ({ project, className }: PropsType) => {
+  const projectDescription = project.projectDescription.map(item => {
+    switch (item.type) {
+      case 'string':
+        if (item.content) {
+          const content = item.content
+            .split('|bold|')
+            .join(`<span class='${classNames('paragraphValue_bold')}'>`)
+            .split('|italic|')
+            .join(`<span class='${classNames('paragraphValue_italic')}'>`)
+            .split('|-|')
+            .join('</span>');
+          return { type: item.type, content: content };
+        }
+      case 'list':
+        return item;
+    }
+
+    return item;
+  });
+
+  const personalContribution = project.persnalContribution
+    ? project.persnalContribution.map(item => {
+        switch (item.type) {
+          case 'string':
+            if (item.content) {
+              const content = item.content
+                .split('|bold|')
+                .join(`<span class='${classNames('paragraphValue_bold')}'>`)
+                .split('|italic|')
+                .join(`<span class='${classNames('paragraphValue_italic')}'>`)
+                .split('|-|')
+                .join('</span>');
+              return { ...item, content };
+            }
+          case 'list':
+            if (item.list) {
+              const list = item.list.map(listItem => {
+                return listItem
+                  .split('|bold|')
+                  .join(`<span class='${classNames('paragraphValue_bold')}'>`)
+                  .split('|italic|')
+                  .join(`<span class='${classNames('paragraphValue_italic')}'>`)
+                  .split('|-|')
+                  .join('</span>');
+              });
+              return { ...item, list };
+            }
+        }
+
+        return item;
+      })
+    : [];
+
   return (
     <div className={classNames('projectDetails', className)}>
       <ImageField
@@ -48,12 +101,12 @@ export default ({ project, className }: PropsType) => {
           />
         )}
         <ParagraphField
-          content={project.projectDescription}
+          content={projectDescription}
           className={classNames('projectDetails__paragraphField')}
         />
         {project.persnalContribution && (
           <ParagraphField
-            content={project.persnalContribution}
+            content={personalContribution}
             className={classNames('projectDetails__paragraphField')}
           />
         )}
