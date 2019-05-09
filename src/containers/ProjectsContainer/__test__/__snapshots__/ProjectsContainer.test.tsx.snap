@@ -184,7 +184,7 @@ exports[`ProjectsContainer Snapshot 1`] = `
         "title": "TDM (Tools Data Manager). Manufacturing data collection and management solution",
       },
       Object {
-        "coverImage": "https://picsum.photos/4312/2468",
+        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557369266/portfolio/images/projects/rpod/card.jpg",
         "externalResources": Array [
           Object {
             "name": "Official web site",
@@ -200,6 +200,11 @@ exports[`ProjectsContainer Snapshot 1`] = `
           },
         ],
         "id": "rpod",
+        "images": Array [
+          Object {
+            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557369266/portfolio/images/projects/rpod/cover.jpg",
+          },
+        ],
         "longStack": Array [
           "Adobe Illustrator",
           "Adobe Photoshop",

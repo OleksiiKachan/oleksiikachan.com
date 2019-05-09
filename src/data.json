@@ -199,7 +199,12 @@
       ],
       "projectType": "design",
       "title": "Hyperloop rPod",
-      "coverImage": "https://picsum.photos/4312/2468",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557369266/portfolio/images/projects/rpod/card.jpg",
+      "images": [
+        {
+          "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557369266/portfolio/images/projects/rpod/cover.jpg"
+        }
+      ],
       "shortStack": "UI & UX Design & Development",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
       "projectDescription": [

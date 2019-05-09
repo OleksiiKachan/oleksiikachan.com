@@ -14,13 +14,7 @@ exports[`ImageField Snapshot 1`] = `
   >
     <div
       className="imageField__imageShader"
-    >
-      <span
-        className="imageField__imageDescription"
-      >
-        description
-      </span>
-    </div>
+    />
   </div>
 </div>
 `;

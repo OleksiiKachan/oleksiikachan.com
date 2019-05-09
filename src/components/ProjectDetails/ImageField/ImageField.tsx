@@ -21,13 +21,7 @@ export default ({ images, className }: PropsType) => {
         style={{ backgroundImage: `url(${images[0].imageUrl})` }}
         className={classNames('imageField__imageSlide')}
       >
-        {images[0].imageDescription && (
-          <div className={classNames('imageField__imageShader')}>
-            <span className={classNames('imageField__imageDescription')}>
-              {images[0].imageDescription}
-            </span>
-          </div>
-        )}
+        <div className={classNames('imageField__imageShader')} />
       </div>
     </div>
   );
