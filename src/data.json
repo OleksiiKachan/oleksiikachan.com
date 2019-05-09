@@ -74,9 +74,7 @@
         {
           "type": "string",
           "content": "|italic|AGW WMS|-| provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse. |italic|AGW WMS|-| is designed to |bold|optimize movement|-| of your inventory across your facility. From materials receiving down through the manufacturing process until packing and shipping to the customer |italic|AGW WMS|-| helps to direct your inventory in an optimal way providing |bold|up-to-the-minute information|-| on the quantity, location, status, and history of every item including work-in-process and finished goods."
-        }
-      ],
-      "persnalContribution": [
+        },
         {
           "type": "string",
           "content": "The project work consisted of two parallel streams: development and support."
@@ -158,9 +156,7 @@
         {
           "type": "string",
           "content": "|italic|TDM|-| is one of the first commercially designed software tools that integrates the function of |bold|device connectivity|-| into the core software tool including connectivity, data selection, data identity and many other useful functions."
-        }
-      ],
-      "persnalContribution": [
+        },
         {
           "type": "string",
           "content": "The project work consisted of two parallel streams: development and support."
@@ -210,9 +206,7 @@
         {
           "type": "string",
           "content": "|bold|Hyperloop|-| is a conceptual, high-speed transportation system initially proposed by |bold|Elon Musk|-|. The concept consists of passenger and cargo pods being propelled at up to 760 mph in a low pressure tube using sustainable and cost-efficient energy. To accelerate its development, |bold|SpaceX|-| is hosted a competition for engineering teams to |bold|design|-| their own hyperloop pods and test them at their facility in |italic|Hawthorne, California|-|."
-        }
-      ],
-      "persnalContribution": [
+        },
         {
           "type": "string",
           "content": "rLoop is |bold|open-sourced|-|, |bold|crowd-sourced|-| & |bold|crowsfunded|-| |italic|community|-|. I was a member of 2 teams: |bold|Systems Team|-| & |bold|Software Team|-| "
@@ -235,12 +229,37 @@
             "System Documentation creation",
             "Writing Human-Machine Interface section for Telemetry and Control stations in System Design Document (SDD)"
           ]
+        },
+        {
+          "type": "string",
+          "content": "I researched our processes and defined the sets of trackable data. Based on that I developed low-fidelity mock-ups."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557366977/portfolio/images/projects/rpod/telemetry_mock.svg",
+              "alt": "Telemetry Station low-fidelity mock-up"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557356129/portfolio/images/projects/rpod/telemetry_ui.jpg",
+              "alt": "Telemetry Station final UI"
+            }
+          ]
         }
       ],
       "externalResources": [
         {
           "url": "https://rloop.org",
           "name": "Official web site"
+        },
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557356132/portfolio/images/projects/rpod/telemetry_mock.png",
+          "name": "Telemetry Station low-fidelity mock-up"
+        },
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557356129/portfolio/images/projects/rpod/telemetry_ui.jpg",
+          "name": "Telemetry Station final UI"
         }
       ]
     },

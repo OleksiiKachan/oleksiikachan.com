@@ -38,12 +38,7 @@ export type ProjectType = {
     content?: string;
     header?: string;
     list?: Array<string>;
-  }>;
-  persnalContribution?: Array<{
-    type: string;
-    content?: string;
-    header?: string;
-    list?: Array<string>;
+    images?: Array<{ url: string; alt: string }>;
   }>;
   images?: Array<{ imageUrl: string; imageDescription?: string }>;
   externalResources?: Array<{ url: string; name: string }>;

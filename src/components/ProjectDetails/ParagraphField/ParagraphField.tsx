@@ -16,6 +16,7 @@ type PropsType = {
     content?: string;
     header?: string;
     list?: Array<string>;
+    images?: Array<{ url: string; alt: string }>;
   }>;
   className?: string;
 };
@@ -46,7 +47,6 @@ export default ({ content, className }: PropsType) => {
                 <ul className={classNames('paragraphField__list')}>
                   {item.list &&
                     item.list.map(listItem => {
-                      console.log(listItem);
                       return (
                         <li
                           key={item.list && item.list.indexOf(listItem)}
@@ -57,6 +57,34 @@ export default ({ content, className }: PropsType) => {
                       );
                     })}
                 </ul>
+              </div>
+            );
+          case 'images':
+            return (
+              <div
+                key={content.indexOf(item)}
+                className={classNames(
+                  'paragraphField__content',
+                  'imageSection'
+                )}
+              >
+                {item.images &&
+                  item.images.map(imageItem => {
+                    return (
+                      <div className={classNames('imageSection__imageItem')}>
+                        <img
+                          src={imageItem.url}
+                          alt={imageItem.alt}
+                          className={classNames('imageSection__image')}
+                        />
+                        <span
+                          className={classNames('imageSection__description')}
+                        >
+                          {imageItem.alt}
+                        </span>
+                      </div>
+                    );
+                  })}
               </div>
             );
         }

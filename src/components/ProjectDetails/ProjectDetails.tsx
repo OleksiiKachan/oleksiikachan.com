@@ -31,47 +31,38 @@ export default ({ project, className }: PropsType) => {
             .join(`<span class='${classNames('paragraphValue_italic')}'>`)
             .split('|-|')
             .join('</span>');
-          return { type: item.type, content: content };
+          return { ...item, content: content };
         }
       case 'list':
-        return item;
+        if (item.list) {
+          const list = item.list.map(listItem => {
+            return listItem
+              .split('|bold|')
+              .join(`<span class='${classNames('paragraphValue_bold')}'>`)
+              .split('|italic|')
+              .join(`<span class='${classNames('paragraphValue_italic')}'>`)
+              .split('|-|')
+              .join('</span>');
+          });
+          return { ...item, list };
+        }
+      case 'image':
+        if (item.content) {
+          const content = item.content
+            .split('|bold|')
+            .join(`<span class='${classNames('paragraphValue_bold')}'>`)
+            .split('|italic|')
+            .join(`<span class='${classNames('paragraphValue_italic')}'>`)
+            .split('|-|')
+            .join('</span>');
+          return { ...item, content: content };
+        } else {
+          return item;
+        }
     }
 
     return item;
   });
-
-  const personalContribution = project.persnalContribution
-    ? project.persnalContribution.map(item => {
-        switch (item.type) {
-          case 'string':
-            if (item.content) {
-              const content = item.content
-                .split('|bold|')
-                .join(`<span class='${classNames('paragraphValue_bold')}'>`)
-                .split('|italic|')
-                .join(`<span class='${classNames('paragraphValue_italic')}'>`)
-                .split('|-|')
-                .join('</span>');
-              return { ...item, content };
-            }
-          case 'list':
-            if (item.list) {
-              const list = item.list.map(listItem => {
-                return listItem
-                  .split('|bold|')
-                  .join(`<span class='${classNames('paragraphValue_bold')}'>`)
-                  .split('|italic|')
-                  .join(`<span class='${classNames('paragraphValue_italic')}'>`)
-                  .split('|-|')
-                  .join('</span>');
-              });
-              return { ...item, list };
-            }
-        }
-
-        return item;
-      })
-    : [];
 
   return (
     <div className={classNames('projectDetails', className)}>
@@ -104,12 +95,6 @@ export default ({ project, className }: PropsType) => {
           content={projectDescription}
           className={classNames('projectDetails__paragraphField')}
         />
-        {project.persnalContribution && (
-          <ParagraphField
-            content={personalContribution}
-            className={classNames('projectDetails__paragraphField')}
-          />
-        )}
         <ValueListField
           fieldLabel="Technologies"
           list={project.longStack}
