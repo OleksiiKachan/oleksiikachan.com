@@ -72,7 +72,7 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "alignment": "right",
             "content": "|italic|AGW MES|-| is an |bold|ISA95|-| compliant |bold|web-based product|-| that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, |italic|AGW MES|-| manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. |bold|Visualization|-| capabilities give you |bold|real-time visibility|-| and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. |italic|AGW MES|-| is a powerful, flexible and scalable |bold|Manufacturing Execution System|-| that is easily expanded with business requirements to maximize performance.",
             "type": "imageWithText",
-            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_mes.png",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557522646/portfolio/images/projects/agw/agw_mes.png",
           },
           Object {
             "alignment": "left",
