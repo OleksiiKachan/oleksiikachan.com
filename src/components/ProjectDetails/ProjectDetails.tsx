@@ -22,17 +22,6 @@ type PropsType = {
 export default ({ project, className }: PropsType) => {
   const projectDescription = project.projectDescription.map(item => {
     switch (item.type) {
-      case 'string':
-        if (item.content) {
-          const content = item.content
-            .split('|bold|')
-            .join(`<span class='${classNames('paragraphValue_bold')}'>`)
-            .split('|italic|')
-            .join(`<span class='${classNames('paragraphValue_italic')}'>`)
-            .split('|-|')
-            .join('</span>');
-          return { ...item, content: content };
-        }
       case 'list':
         if (item.list) {
           const list = item.list.map(listItem => {
@@ -46,7 +35,7 @@ export default ({ project, className }: PropsType) => {
           });
           return { ...item, list };
         }
-      case 'image':
+      default:
         if (item.content) {
           const content = item.content
             .split('|bold|')

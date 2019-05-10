@@ -17,6 +17,8 @@ type PropsType = {
     header?: string;
     list?: Array<string>;
     images?: Array<{ url: string; alt: string }>;
+    url?: string;
+    alignment?: string;
   }>;
   className?: string;
 };
@@ -57,6 +59,25 @@ export default ({ content, className }: PropsType) => {
                       );
                     })}
                 </ul>
+              </div>
+            );
+          case 'imageWithText':
+            return (
+              <div
+                key={content.indexOf(item)}
+                className={classNames(
+                  'paragraphField__content',
+                  'imageWithTextSection',
+                  `imageWithTextSection_${item.alignment}`
+                )}
+              >
+                <img
+                  src={item.url}
+                  className={classNames('imageWithTextSection__image')}
+                />
+                <p className={classNames('imageWithTextSection__description')}>
+                  {ReactHtmlParser(item.content || '')}
+                </p>
               </div>
             );
           case 'images':

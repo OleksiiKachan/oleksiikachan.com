@@ -35,6 +35,27 @@
   }
 }
 
+.imageWithTextSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+
+  &_left {
+    flex-direction: row;
+  }
+
+  &_right {
+    flex-direction: row-reverse;
+  }
+
+  &__image,
+  &__description {
+    width: 45%;
+    margin: 0.5rem;
+  }
+}
+
 .imageSection {
   display: flex;
   justify-content: space-between;
@@ -80,6 +101,15 @@
       width: 95%;
       margin-bottom: 0.5rem;
       pointer-events: none;
+    }
+  }
+  .imageWithTextSection {
+    flex-direction: column;
+    margin: 3rem 0;
+
+    &__image,
+    &__description {
+      width: 100%;
     }
   }
 }
