@@ -66,19 +66,19 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "alignment": "left",
             "content": "|italic|AGW IP|-| is a complex manufacturing environment that deals with significant volumes of heterogeneous design and production data. Efficient collection, consolidation, transformation and delivery of these data in secure and timely manner is a key task of manufacturing IT on the way of organization towards |bold|cloud infrastructure|-|. ",
             "type": "imageWithText",
-            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557523594/portfolio/images/projects/agw/agw_ip.jpg",
           },
           Object {
             "alignment": "right",
             "content": "|italic|AGW MES|-| is an |bold|ISA95|-| compliant |bold|web-based product|-| that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, |italic|AGW MES|-| manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. |bold|Visualization|-| capabilities give you |bold|real-time visibility|-| and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. |italic|AGW MES|-| is a powerful, flexible and scalable |bold|Manufacturing Execution System|-| that is easily expanded with business requirements to maximize performance.",
             "type": "imageWithText",
-            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557522646/portfolio/images/projects/agw/agw_mes.png",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557523623/portfolio/images/projects/agw/agw_mes.jpg",
           },
           Object {
             "alignment": "left",
             "content": "|italic|AGW WMS|-| provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse. |italic|AGW WMS|-| is designed to |bold|optimize movement|-| of your inventory across your facility. From materials receiving down through the manufacturing process until packing and shipping to the customer |italic|AGW WMS|-| helps to direct your inventory in an optimal way providing |bold|up-to-the-minute information|-| on the quantity, location, status, and history of every item including work-in-process and finished goods.",
             "type": "imageWithText",
-            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_wms.png",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557523594/portfolio/images/projects/agw/agw_wms.jpg",
           },
           Object {
             "content": "The project work consisted of two parallel streams: development and support.",
