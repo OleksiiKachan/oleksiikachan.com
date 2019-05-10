@@ -92,7 +92,7 @@ export default class ProjectsSection extends Component<PropsType, StateType> {
                 id={project.id}
                 title={project.title}
                 stack={project.shortStack}
-                coverImage={project.coverImage}
+                cardImage={project.cardImage}
               />
             );
           })}

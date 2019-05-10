@@ -5,7 +5,7 @@ exports[`ProjectCard Snapshot 1`] = `
   className="projectCard"
   style={
     Object {
-      "backgroundImage": "url(imageUrl)",
+      "backgroundImage": "url(undefined)",
     }
   }
 >

@@ -18,12 +18,10 @@ exports[`OutlineButton Snapshot 1`] = `
     className="projectsSection__content"
   >
     <_default
-      coverImage="https://picsum.photos/4212/2768"
       stack=".NET Framework"
       title="AGW MES / WMS for automotive industry"
     />
     <_default
-      coverImage="https://picsum.photos/4212/2768"
       stack=".NET Framework"
       title="AGW MES / WMS for automotive industry"
     />

@@ -56,7 +56,7 @@ export default ({ project, className }: PropsType) => {
   return (
     <div className={classNames('projectDetails', className)}>
       <ImageField
-        images={project.images || [{ imageUrl: project.coverImage }]}
+        image={project.coverImage || project.cardImage}
         className={classNames('projectDetails__images')}
       />
       <div className={classNames('projectDetails__content')}>

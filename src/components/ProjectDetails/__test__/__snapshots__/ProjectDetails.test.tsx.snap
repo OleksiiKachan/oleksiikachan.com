@@ -6,13 +6,7 @@ exports[`ProjectDetails Snapshot 1`] = `
 >
   <_default
     className="projectDetails__images"
-    images={
-      Array [
-        Object {
-          "imageUrl": "coverImageUrl",
-        },
-      ]
-    }
+    image="coverImageUrl"
   />
   <div
     className="projectDetails__content"

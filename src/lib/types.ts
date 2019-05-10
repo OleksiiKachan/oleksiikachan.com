@@ -30,6 +30,7 @@ export type ProjectType = {
   client?: Array<{ name: string; url?: string }>;
   projectType: 'design' | 'development';
   title: string;
+  cardImage: string;
   coverImage: string;
   shortStack: string;
   longStack: Array<string>;
@@ -40,7 +41,6 @@ export type ProjectType = {
     list?: Array<string>;
     images?: Array<{ url: string; alt: string }>;
   }>;
-  images?: Array<{ imageUrl: string; imageDescription?: string }>;
   externalResources?: Array<{ url: string; name: string }>;
   // achivements?: Array<string>;
 };

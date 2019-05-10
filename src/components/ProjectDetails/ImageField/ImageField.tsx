@@ -4,21 +4,21 @@ import './ImageField.scss';
 
 /*
     <ImageField
-      images=[]
+      image=''
       className=''
     />
 */
 
 type PropsType = {
-  images: Array<{ imageUrl: string; imageDescription?: string }>;
+  image: string;
   className?: string;
 };
 
-export default ({ images, className }: PropsType) => {
+export default ({ image, className }: PropsType) => {
   return (
     <div className={classNames('imageField', className)}>
       <div
-        style={{ backgroundImage: `url(${images[0].imageUrl})` }}
+        style={{ backgroundImage: `url(${image})` }}
         className={classNames('imageField__imageSlide')}
       >
         <div className={classNames('imageField__imageShader')} />

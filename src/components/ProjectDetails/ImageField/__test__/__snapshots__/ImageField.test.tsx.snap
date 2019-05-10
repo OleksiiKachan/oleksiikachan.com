@@ -8,7 +8,7 @@ exports[`ImageField Snapshot 1`] = `
     className="imageField__imageSlide"
     style={
       Object {
-        "backgroundImage": "url(imageUrlWithDescription)",
+        "backgroundImage": "url(undefined)",
       }
     }
   >

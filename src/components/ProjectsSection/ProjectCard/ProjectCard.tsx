@@ -17,15 +17,15 @@ type PropsType = {
   id: string;
   title: string;
   stack: string;
-  coverImage: string;
+  cardImage: string;
   className?: string;
 };
 
-export default ({ id, title, stack, coverImage, className }: PropsType) => {
+export default ({ id, title, stack, cardImage, className }: PropsType) => {
   return (
     <div
       className={classNames('projectCard', className)}
-      style={{ backgroundImage: `url(${coverImage})` }}
+      style={{ backgroundImage: `url(${cardImage})` }}
     >
       <div className={classNames('projectCard__shader')}>
         <div className={classNames('projectCard__inner')}>
