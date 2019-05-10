@@ -11,7 +11,7 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "url": "https://www.hmmausa.com/",
           },
         ],
-        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
+        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557516569/portfolio/images/projects/agw/card.png",
         "externalResources": Array [
           Object {
             "name": "Product Page. AGW MES",
@@ -33,16 +33,7 @@ exports[`ProjectsContainer Snapshot 1`] = `
         "id": "agw",
         "images": Array [
           Object {
-            "imageDescription": "AGW IP - a heart of OLSOM software for manufacturing.",
-            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
-          },
-          Object {
-            "imageDescription": "AGW MES - a powerful, flexible and scalable Manufacturing Execution System that is easily expanded with business requirements to maximize performance.",
-            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557087290/portfolio/images/projects/agw/agw_mes.jpg",
-          },
-          Object {
-            "imageDescription": "AGW WMS provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse.",
-            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557087290/portfolio/images/projects/agw/agw_wms.jpg",
+            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557517324/portfolio/images/projects/agw/cover.png",
           },
         ],
         "longStack": Array [
@@ -64,16 +55,30 @@ exports[`ProjectsContainer Snapshot 1`] = `
         ],
         "projectDescription": Array [
           Object {
+            "content": "|italic|AGW|-| software addresses the challenges of |bold|workflow automation, real-time data collection, system integration|-| and business insight. It offers scalable, high-performance, reliable and |bold|flexible solutions|-| that meet the demand of intelligent process automation for manufacturers, 3PLs, distributors and other spheres of business.",
+            "type": "string",
+          },
+          Object {
+            "content": "Ranging a wide set of solutions from a small tailored operator support systems or system integration platforms to powerful business decision-making support environments AGW offers scalable execution network for enterprise.",
+            "type": "string",
+          },
+          Object {
+            "alignment": "left",
             "content": "|italic|AGW IP|-| is a complex manufacturing environment that deals with significant volumes of heterogeneous design and production data. Efficient collection, consolidation, transformation and delivery of these data in secure and timely manner is a key task of manufacturing IT on the way of organization towards |bold|cloud infrastructure|-|. ",
-            "type": "string",
+            "type": "imageWithText",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_ip.png",
           },
           Object {
+            "alignment": "right",
             "content": "|italic|AGW MES|-| is an |bold|ISA95|-| compliant |bold|web-based product|-| that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, |italic|AGW MES|-| manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. |bold|Visualization|-| capabilities give you |bold|real-time visibility|-| and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. |italic|AGW MES|-| is a powerful, flexible and scalable |bold|Manufacturing Execution System|-| that is easily expanded with business requirements to maximize performance.",
-            "type": "string",
+            "type": "imageWithText",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_mes.png",
           },
           Object {
+            "alignment": "left",
             "content": "|italic|AGW WMS|-| provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse. |italic|AGW WMS|-| is designed to |bold|optimize movement|-| of your inventory across your facility. From materials receiving down through the manufacturing process until packing and shipping to the customer |italic|AGW WMS|-| helps to direct your inventory in an optimal way providing |bold|up-to-the-minute information|-| on the quantity, location, status, and history of every item including work-in-process and finished goods.",
-            "type": "string",
+            "type": "imageWithText",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557089948/portfolio/images/projects/agw/agw_wms.png",
           },
           Object {
             "content": "The project work consisted of two parallel streams: development and support.",
@@ -327,8 +332,13 @@ exports[`ProjectsContainer Snapshot 1`] = `
             "name": "Oleksii Kachan",
           },
         ],
-        "coverImage": "https://picsum.photos/4232/2868",
+        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557512481/portfolio/images/projects/branding-oleksii-kachan/logo_square_light.png",
         "id": "branding-oleksii-kachan",
+        "images": Array [
+          Object {
+            "imageUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557511177/portfolio/images/projects/branding-oleksii-kachan/details.png",
+          },
+        ],
         "longStack": Array [
           "Adobe Illustrator",
           "Adobe Photoshop",
