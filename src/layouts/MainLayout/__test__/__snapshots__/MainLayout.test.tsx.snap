@@ -4,7 +4,7 @@ exports[`MainLayout Snapshot 1`] = `
 <div
   className="app"
 >
-  <HeaderContainer />
+  <withRouter(HeaderContainer) />
   <main
     className="app__mainContent"
   >

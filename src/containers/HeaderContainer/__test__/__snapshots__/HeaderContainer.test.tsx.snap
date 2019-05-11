@@ -1,41 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HeaderContainer Snapshot 1`] = `
-<Header
-  navigationItems={
-    Array [
-      Object {
-        "isSelected": true,
-        "key": "mi_about",
-        "sectionUrl": "/about",
-        "title": "About Me",
-      },
-      Object {
-        "isSelected": false,
-        "key": "mi_projects",
-        "sectionUrl": "/projects",
-        "title": "Projects",
-      },
-      Object {
-        "isSelected": false,
-        "key": "mi_competencies",
-        "sectionUrl": "/competencies",
-        "title": "Competencies",
-      },
-      Object {
-        "isSelected": false,
-        "key": "mi_education",
-        "sectionUrl": "/experience",
-        "title": "Education & Experience",
-      },
-      Object {
-        "isSelected": false,
-        "key": "mi_contact",
-        "sectionUrl": "/contact",
-        "title": "Contact",
-      },
-    ]
-  }
-  onLinkClick={[Function]}
-/>
+<Route>
+  <Component />
+</Route>
 `;

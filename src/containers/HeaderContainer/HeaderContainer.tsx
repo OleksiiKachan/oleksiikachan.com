@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
+import { withRouter, RouteComponentProps } from 'react-router';
 
 /*
     <HeaderContainer />
 */
 
-export default class HeaderContainer extends Component<{}> {
+class HeaderContainer extends Component<RouteComponentProps> {
   private navigationItems = [
     {
       key: 'mi_about',
@@ -39,6 +40,15 @@ export default class HeaderContainer extends Component<{}> {
     },
   ];
 
+  componentWillMount() {
+    const selected = this.props.location.pathname.split('/')[1];
+    this.navigationItems = this.navigationItems.map(item => {
+      return item.sectionUrl === `/${selected}`
+        ? { ...item, isSelected: true }
+        : { ...item, isSelected: false };
+    });
+  }
+
   onLinkClick = (selectedItemKey: string) => {
     (document.getElementById(
       'navigation__input'
@@ -60,3 +70,5 @@ export default class HeaderContainer extends Component<{}> {
     );
   }
 }
+
+export default withRouter(HeaderContainer);
