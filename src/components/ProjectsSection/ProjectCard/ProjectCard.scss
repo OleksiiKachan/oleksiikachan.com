@@ -6,13 +6,13 @@
   height: 20rem;
   width: 20rem;
   overflow: hidden;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   &__shader {
     height: 100%;
-    background-color: rgba($color-black, 0.35);
+    background-color: rgba($color-black, 0.15);
   }
 
   &__inner {
