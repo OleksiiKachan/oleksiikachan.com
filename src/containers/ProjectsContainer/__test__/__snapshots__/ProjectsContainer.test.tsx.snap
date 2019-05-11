@@ -8,8 +8,20 @@ exports[`ProjectsContainer Snapshot 1`] = `
         "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557516569/portfolio/images/projects/agw/card.png",
         "client": Array [
           Object {
-            "name": "Hyundai Motor Manufacturing Alabama",
-            "url": "https://www.hmmausa.com/",
+            "name": "Tesla, Inc.",
+            "url": "https://www.tesla.com/",
+          },
+          Object {
+            "name": "Hyundai Motor Company",
+            "url": "https://www.hyundai.com",
+          },
+          Object {
+            "name": "Varroc Group",
+            "url": "http://www.varrocgroup.com/",
+          },
+          Object {
+            "name": "Daimler Trucks North America LLC.",
+            "url": "https://daimler-trucksnorthamerica.com/",
           },
         ],
         "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557517324/portfolio/images/projects/agw/cover.png",
@@ -106,13 +118,22 @@ exports[`ProjectsContainer Snapshot 1`] = `
         "title": "AGW. Automitive Manufacturing Solution",
       },
       Object {
-        "cardImage": "https://picsum.photos/4302/2568",
+        "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531546/portfolio/images/projects/tdm/card.png",
         "client": Array [
           Object {
-            "name": "Hyundai Motor Manufacturing Alabama",
-            "url": "https://www.hmmausa.com/",
+            "name": "Tesla, Inc.",
+            "url": "https://www.tesla.com/",
+          },
+          Object {
+            "name": "Hyundai Motor Company",
+            "url": "https://www.hyundai.com",
+          },
+          Object {
+            "name": "Varroc Group",
+            "url": "http://www.varrocgroup.com/",
           },
         ],
+        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531547/portfolio/images/projects/tdm/cover.png",
         "externalResources": Array [
           Object {
             "name": "Product Page",
@@ -293,7 +314,8 @@ exports[`ProjectsContainer Snapshot 1`] = `
         "title": "Corrugated Cardboard Production System",
       },
       Object {
-        "cardImage": "https://picsum.photos/4312/2668",
+        "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534995/portfolio/images/projects/ftp-service/card.png",
+        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557535138/portfolio/images/projects/ftp-service/cover.png",
         "id": "ftp-serivce",
         "longStack": Array [
           ".NET Framework",
@@ -385,6 +407,35 @@ exports[`ProjectsContainer Snapshot 1`] = `
         "projectType": "design",
         "shortStack": "Personal Branding",
         "title": "Logo & Card Design",
+      },
+      Object {
+        "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534199/portfolio/images/projects/elf_landing/card.png",
+        "client": Array [
+          Object {
+            "name": "Private Company \\"Elf\\"",
+          },
+        ],
+        "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534200/portfolio/images/projects/elf_landing/cover.png",
+        "externalResources": Array [
+          Object {
+            "name": "Landing Page Design",
+            "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534410/portfolio/pdfs/elf-landing_page_design.pdf",
+          },
+        ],
+        "id": "elf-landing",
+        "longStack": Array [
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+        ],
+        "projectDescription": Array [
+          Object {
+            "content": "Company started it's way on digitalization and I was responsible for representation on the Internet inmprovement. After interviews with the company I desided to redesign company's brand site. Unfortunatelly, project is on pause due to other higher company's priorities.",
+            "type": "string",
+          },
+        ],
+        "projectType": "design",
+        "shortStack": "Landing Page Design",
+        "title": "Landing Page Design for agricultural machinery parts reseller",
       },
     ]
   }
