@@ -29,8 +29,20 @@
       "partner": [{ "name": "OLSOM LLC", "url": "http://olsom.net/" }],
       "client": [
         {
-          "name": "Hyundai Motor Manufacturing Alabama",
-          "url": "https://www.hmmausa.com/"
+          "name": "Tesla, Inc.",
+          "url": "https://www.tesla.com/"
+        },
+        {
+          "name": "Hyundai Motor Company",
+          "url": "https://www.hyundai.com"
+        },
+        {
+          "name": "Varroc Group",
+          "url": "http://www.varrocgroup.com/"
+        },
+        {
+          "name": "Daimler Trucks North America LLC.",
+          "url": "https://daimler-trucksnorthamerica.com/"
         }
       ],
       "projectType": "development",
@@ -131,13 +143,22 @@
       ],
       "client": [
         {
-          "name": "Hyundai Motor Manufacturing Alabama",
-          "url": "https://www.hmmausa.com/"
+          "name": "Tesla, Inc.",
+          "url": "https://www.tesla.com/"
+        },
+        {
+          "name": "Hyundai Motor Company",
+          "url": "https://www.hyundai.com"
+        },
+        {
+          "name": "Varroc Group",
+          "url": "http://www.varrocgroup.com/"
         }
       ],
       "projectType": "development",
       "title": "TDM (Tools Data Manager). Manufacturing data collection and management solution",
-      "cardImage": "https://picsum.photos/4302/2568",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531546/portfolio/images/projects/tdm/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531547/portfolio/images/projects/tdm/cover.png",
       "shortStack": ".NET Framework",
       "longStack": [
         ".NET Framework",
@@ -294,7 +315,8 @@
       "partner": [{ "name": "OLSOM LLC", "url": "http://olsom.net/" }],
       "projectType": "development",
       "title": "FTP File Transfer Service",
-      "cardImage": "https://picsum.photos/4312/2668",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534995/portfolio/images/projects/ftp-service/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557535138/portfolio/images/projects/ftp-service/cover.png",
       "shortStack": ".NET Framework",
       "longStack": [
         ".NET Framework",
@@ -365,6 +387,32 @@
         {
           "type": "string",
           "content": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
+        }
+      ]
+    },
+    {
+      "id": "elf-landing",
+      "client": [
+        {
+          "name": "Private Company \"Elf\""
+        }
+      ],
+      "projectType": "design",
+      "title": "Landing Page Design for agricultural machinery parts reseller",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534199/portfolio/images/projects/elf_landing/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534200/portfolio/images/projects/elf_landing/cover.png",
+      "shortStack": "Landing Page Design",
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "Company started it's way on digitalization and I was responsible for representation on the Internet inmprovement. After interviews with the company I desided to redesign company's brand site. Unfortunatelly, project is on pause due to other higher company's priorities."
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534410/portfolio/pdfs/elf-landing_page_design.pdf",
+          "name": "Landing Page Design"
         }
       ]
     }
