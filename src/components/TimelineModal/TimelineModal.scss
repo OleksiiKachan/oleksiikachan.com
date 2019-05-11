@@ -12,6 +12,8 @@
 }
 
 .modal-main {
+  max-height: 95vh;
+  overflow: overlay;
   position: fixed;
   background-color: $color-black;
   color: $color-white;
