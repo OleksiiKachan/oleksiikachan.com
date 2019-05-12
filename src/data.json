@@ -97,18 +97,18 @@
           "header": "Development",
           "list": [
             "Implementing new features",
-            "Overriding / Supporting legacy code (transfering one of the services from ASP.NET Forms to ASP.NET MVC)",
-            "Implement different settings storage methods (as xml configuration, as database entity)",
-            "Adjust database structure"
+            "Overriding / Supporting legacy code (transferring one of the services from ASP.NET Forms to ASP.NET MVC)",
+            "Implementing different settings storage methods (as xml configuration, as database entity)",
+            "Adjusting database structure"
           ]
         },
         {
           "type": "list",
           "header": "Support",
           "list": [
-            "Configuring & Deploying system on customers side",
-            "Implement 'on demand' customer-specific features (batch loading, specific production routing)",
-            "Production bug fixing"
+            "Configuring & Deploying system on customer's side",
+            "Implementing 'on demand' customer-specific features (batch loading, specific production routing)",
+            "Fixing in-production bugs"
           ]
         }
       ],
@@ -186,15 +186,15 @@
         {
           "type": "list",
           "header": "Development",
-          "list": ["Implementing new features", "Adjust database structure"]
+          "list": ["Implementing new features", "Adjusting database structure"]
         },
         {
           "type": "list",
           "header": "Support",
           "list": [
-            "Configuring & Deploying system on customers side",
-            "Implement 'on demand' customer-specific features (implement agw-like routing)",
-            "Production bug fixing"
+            "Configuring & Deploying system on customer's side",
+            "Implementing 'on demand' customer-specific features (implement agw-like routing)",
+            "Fixing in-production bugs"
           ]
         }
       ],
@@ -221,8 +221,8 @@
       ],
       "projectType": "design",
       "title": "Hyperloop rPod",
-      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557369266/portfolio/images/projects/rpod/card.jpg",
-      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557369266/portfolio/images/projects/rpod/cover.jpg",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557599879/portfolio/images/projects/rpod/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557599880/portfolio/images/projects/rpod/cover.png",
       "shortStack": "UI & UX Design & Development",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
       "projectDescription": [
@@ -232,7 +232,7 @@
         },
         {
           "type": "string",
-          "content": "rLoop is |bold|open-sourced|-|, |bold|crowd-sourced|-| & |bold|crowsfunded|-| |italic|community|-|. I was a member of 2 teams: |bold|Systems Team|-| & |bold|Software Team|-| "
+          "content": "rLoop is |bold|open-sourced|-|, |bold|crowd-sourced|-| & |bold|crowd-funded|-| |italic|community|-|. I was a member of 2 teams: |bold|Systems Team|-| & |bold|Software Team|-|."
         },
         {
           "type": "list",
@@ -249,7 +249,7 @@
           "type": "list",
           "header": "Systems Team Member",
           "list": [
-            "System Documentation creation",
+            "Creating System Documentation",
             "Writing Human-Machine Interface section for Telemetry and Control stations in System Design Document (SDD)"
           ]
         },
@@ -305,7 +305,7 @@
       "projectDescription": [
         {
           "type": "string",
-          "content": "|bold|Reverse engineering|-| of |italic|ladder-logic|-| based corrugated industrial cardboard |bold|production software|-| to get complete networking system. System was developed using ladder logic so I had to understand what is going on there and then create some |bold|technical documentation|-| on how this system works."
+          "content": "|bold|Reverse engineering|-| of |italic|ladder-logic|-| based corrugated industrial cardboard |bold|production software|-| to get a complete networking system. The System was developed using ladder logic so I had to understand what is going on there and then create some |bold|technical documentation|-| on how this system works."
         }
       ]
     },
@@ -328,7 +328,7 @@
       "projectDescription": [
         {
           "type": "string",
-          "content": "|bold|Multi-threaded|-| Windows |italic|service|-| that transfers files locally and/or remotely via |bold|FTP|-| and is configured with *.ini file. All the service events, faults, warnings are logged into local txt file and |bold|Windows system log|-|."
+          "content": "|bold|Multi-threaded|-| Windows |italic|service|-| that transfers files locally and/or remotely via |bold|FTP|-| and is configured with *.ini file. All the service events, faults, warnings are logged in to the local txt file and |bold|Windows system log|-|."
         }
       ]
     },
@@ -341,14 +341,56 @@
       ],
       "projectType": "design",
       "title": "Logo & Card Design",
-      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557512481/portfolio/images/projects/branding-oleksii-kachan/logo_square_light.png",
-      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557511177/portfolio/images/projects/branding-oleksii-kachan/details.png",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557600879/portfolio/images/projects/branding-oleksii-kachan/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557600879/portfolio/images/projects/branding-oleksii-kachan/cover.png",
       "shortStack": "Personal Branding",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
       "projectDescription": [
         {
           "type": "string",
-          "content": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be."
+          "content": "My very first branding project was creating a brand for myself. I defined 2 main colors, created logo, designed 2-side business card."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557601887/portfolio/images/projects/branding-oleksii-kachan/logo_versions.png",
+          "content": "I created 4 types of logo: |italic|horizontal, vertical, square and portrait|-|. Each of them exist in 2 versions: |bold|dark & light|-| (based on defined brand colors)."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557511177/portfolio/images/projects/branding-oleksii-kachan/adaptability.png",
+              "alt": "Logo on different backgrounds"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557511177/portfolio/images/projects/branding-oleksii-kachan/details.png",
+              "alt": "Logo process details"
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "content": "After finishing logo I switched to |bold|business card|-| design. I do not want to have |italic|position, title, profession|-| (no matter how you call it) to be on my card, so I have only previously designed |bold|horizontal logo|-| on |italic|front-side|-|. The most important contact information is on |italic|back-side|-|."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557627946/portfolio/images/projects/branding-oleksii-kachan/business_card-both_sides.png",
+              "alt": "Front an Back sides of the Business Card"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557628474/portfolio/images/projects/branding-oleksii-kachan/business_card-mock.png",
+              "alt": "Business Cards stacks mockup"
+            }
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557630136/portfolio/pdfs/presentation_oleksii_kachan.pdf",
+          "name": "Presentation File"
         }
       ]
     },
