@@ -9,9 +9,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  animation: popOnHover-leave-15 400ms ease-in-out forwards;
 
   &:hover {
-    animation: popOnHover-15 400ms ease-in-out forwards;
+    animation: popOnHover-enter-15 400ms ease-in-out forwards;
   }
 
   &__shader {
@@ -76,9 +77,10 @@
 @media screen and (max-width: 825px) {
   .projectCard {
     margin: 1rem;
+    animation: none;
 
     &:hover {
-      transform: none;
+      animation: none;
     }
 
     &__inner {

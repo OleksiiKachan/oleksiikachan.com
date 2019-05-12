@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes popOnHover-15 {
+@keyframes popOnHover-enter-15 {
   0% {
     transform: scale(1);
   }
@@ -28,6 +28,36 @@
   }
   100% {
     transform: scale(1.15);
+  }
+}
+
+@keyframes popOnHover-leave-15 {
+  from {
+    transform: scale(1.15);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes popOnHover-enter-3 {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes popOnHover-leave-3 {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
