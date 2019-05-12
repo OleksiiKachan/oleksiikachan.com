@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &:hover {
+    animation: popOnHover-15 400ms ease-in-out forwards;
+  }
+
   &__shader {
     height: 100%;
     background-color: rgba($color-black, 0.15);
@@ -72,6 +76,10 @@
 @media screen and (max-width: 825px) {
   .projectCard {
     margin: 1rem;
+
+    &:hover {
+      transform: none;
+    }
 
     &__inner {
       opacity: 1;
