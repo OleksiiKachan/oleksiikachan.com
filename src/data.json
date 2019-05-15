@@ -403,13 +403,43 @@
       ],
       "projectType": "design",
       "title": "Logo & Card Design",
-      "cardImage": "https://picsum.photos/4313/2868",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557696111/portfolio/images/projects/branding-iryna-kachan/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557696327/portfolio/images/projects/branding-iryna-kachan/cover.png",
       "shortStack": "Personal Branding",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
       "projectDescription": [
         {
           "type": "string",
           "content": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557696842/portfolio/images/projects/branding-iryna-kachan/logo_square.png",
+          "content": "I created 2 versions of logo: |bold|dark & light|-| (based on defined brand colors)."
+        },
+        {
+          "type": "string",
+          "content": "After finishing logo I switched to |bold|business card|-| design."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557698625/portfolio/images/projects/branding-iryna-kachan/business_card-both_sides.png",
+              "alt": "Front an Back sides of the Business Card"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557698288/portfolio/images/projects/branding-iryna-kachan/business_card-mock.png",
+              "alt": "Business Cards stacks mockup"
+            }
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557698171/portfolio/pdfs/presentation_iryna_kachan.pdf",
+          "name": "Presentation File"
         }
       ]
     },
