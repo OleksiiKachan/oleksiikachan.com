@@ -14,7 +14,6 @@ exports[`NavigationList Snapshot 1`] = `
       <Link
         className="navigation__listLink"
         onClick={[Function]}
-        replace={false}
         to="/experience"
       >
         Education & Experience
@@ -27,7 +26,6 @@ exports[`NavigationList Snapshot 1`] = `
       <Link
         className="navigation__listLink"
         onClick={[Function]}
-        replace={false}
         to="/contact"
       >
         Contact

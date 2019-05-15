@@ -6,6 +6,7 @@ import UrlListField from './UrlListField';
 import ValueListField from './ValueListField';
 import ParagraphField from './ParagraphField';
 import ImageField from './ImageField';
+import ProjectsNavigation from './ProjectsNavigation';
 
 /*
     <ProjectDetails
@@ -16,10 +17,17 @@ import ImageField from './ImageField';
 
 type PropsType = {
   project: ProjectType;
+  previousProject?: { id: string; name: string };
+  nextProject?: { id: string; name: string };
   className?: string;
 };
 
-export default ({ project, className }: PropsType) => {
+export default ({
+  project,
+  previousProject,
+  nextProject,
+  className,
+}: PropsType) => {
   const projectDescription = project.projectDescription.map(item => {
     switch (item.type) {
       case 'list':
@@ -55,6 +63,7 @@ export default ({ project, className }: PropsType) => {
 
   return (
     <div className={classNames('projectDetails', className)}>
+      <ProjectsNavigation />
       <ImageField
         image={project.coverImage || project.cardImage}
         className={classNames('projectDetails__images')}

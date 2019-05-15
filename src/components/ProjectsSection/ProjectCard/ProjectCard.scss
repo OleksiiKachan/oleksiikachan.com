@@ -9,7 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: popOnHover-leave-15 400ms ease-in-out forwards;
 
   &:hover {
     animation: popOnHover-enter-15 400ms ease-in-out forwards;

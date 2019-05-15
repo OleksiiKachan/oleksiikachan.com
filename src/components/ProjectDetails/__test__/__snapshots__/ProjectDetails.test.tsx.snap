@@ -4,6 +4,7 @@ exports[`ProjectDetails Snapshot 1`] = `
 <div
   className="projectDetails"
 >
+  <_default />
   <_default
     className="projectDetails__images"
     image="coverImageUrl"

@@ -61,7 +61,7 @@
     padding: 5px;
     background-color: $color-surface;
     cursor: pointer;
-    animation: popOnHover-leave-3 400ms ease-in-out forwards;
+
     &:hover {
       box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.29);
       animation: popOnHover-enter-3 400ms ease-in-out forwards;
@@ -86,7 +86,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: popOnHover-leave-3 400ms ease-in-out forwards;
 
     &:hover {
       box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.29);
