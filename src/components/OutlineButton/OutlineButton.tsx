@@ -16,13 +16,20 @@ type PropsType = {
   onClick: () => void;
   type: string;
   children: ReactNode;
+  isSubmit?: boolean;
   className?: string;
 };
 
-export default ({ onClick, type, children, className }: PropsType) => {
+export default ({
+  onClick,
+  type,
+  children,
+  isSubmit = false,
+  className,
+}: PropsType) => {
   return (
     <button
-      type="button"
+      type={isSubmit ? 'submit' : 'button'}
       onClick={onClick}
       className={classNames(
         'outlineButton',
