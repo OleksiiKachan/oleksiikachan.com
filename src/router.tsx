@@ -8,6 +8,7 @@ import MainLayout from './layouts/MainLayout';
 import TimelineContainer from './containers/TimelineContainer';
 import ProjectsContainer from './containers/ProjectsContainer';
 import ProjectDetailsContainer from './containers/ProjectDetailsContainer';
+import ContactContainer from './containers/ContactContainer';
 
 // General styles
 import './assets/style/_fonts.scss';
@@ -33,6 +34,7 @@ export default (
           />
           <Route exact path="/projects" component={ProjectsContainer} />
           <Route exact path="/experience" component={TimelineContainer} />
+          <Route exact path="/contact" component={ContactContainer} />
         </Switch>
       </MainLayout>
     </Switch>
