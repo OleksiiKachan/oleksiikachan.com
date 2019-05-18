@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textbox Snapshot 1`] = `
+<div
+  className="textbox"
+>
+  <input
+    autoComplete="off"
+    className="textbox__input"
+    id="fieldName"
+    name="fieldName"
+    required={true}
+    type="text"
+  />
+  <label
+    className="textbox__label"
+    htmlFor="fieldName"
+  >
+    Field Label
+  </label>
+</div>
+`;

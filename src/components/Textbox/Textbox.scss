@@ -1,0 +1,46 @@
+@import '../../assets/style/variables';
+
+.textbox {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: $color-white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid $color-white;
+    outline: none;
+    background: transparent;
+    letter-spacing: 1px;
+
+    &:focus ~ .textbox__label,
+    &:valid ~ .textbox__label {
+      top: -18px;
+      left: 0;
+      color: #03a9f4;
+      font-size: 10px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    color: $color-white;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textbox {
+    &__label {
+      font-size: 0.7rem;
+    }
+  }
+}
