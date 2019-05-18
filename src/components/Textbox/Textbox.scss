@@ -2,7 +2,6 @@
 
 .textbox {
   position: relative;
-
   &__input {
     width: 100%;
     padding: 10px 0;
@@ -12,7 +11,7 @@
     border: none;
     border-bottom: 1px solid $color-white;
     outline: none;
-    background: transparent;
+    background-color: transparent;
     letter-spacing: 1px;
 
     &:focus ~ .textbox__label,
