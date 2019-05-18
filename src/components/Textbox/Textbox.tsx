@@ -35,7 +35,7 @@ export default ({
         id={fieldName}
         type={type}
         name={fieldName}
-        autoComplete="off"
+        autoComplete={autoComplete ? 'yes' : 'no'}
         required={required}
         className={classNames('textbox__input')}
       />

@@ -5,7 +5,7 @@ exports[`Textbox Snapshot 1`] = `
   className="textbox"
 >
   <input
-    autoComplete="off"
+    autoComplete="no"
     className="textbox__input"
     id="fieldName"
     name="fieldName"
