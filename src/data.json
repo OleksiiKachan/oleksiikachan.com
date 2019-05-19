@@ -444,7 +444,7 @@
       ]
     },
     {
-      "id": "branding-oleksandr-grochakov",
+      "id": "branding-oleksandr-gorchakov",
       "client": [
         {
           "name": "Oleksandr Gorchakov"
@@ -452,13 +452,43 @@
       ],
       "projectType": "design",
       "title": "Logo & Card Design",
-      "cardImage": "https://picsum.photos/4312/2860",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/cover.png",
       "shortStack": "Personal Branding",
       "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
       "projectDescription": [
         {
           "type": "string",
-          "content": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
+          "content": "I created logo & business card for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274609/portfolio/images/projects/branding-oleksandr-gorchakov/logo_square.png",
+          "content": "I created 2 versions of logo: |bold|dark & light|-| (based on defined brand colors)."
+        },
+        {
+          "type": "string",
+          "content": "After finishing logo I switched to |bold|business card|-| design."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/business_card-both_sides.png",
+              "alt": "Front an Back sides of the Business Card"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/business_card-mock.png",
+              "alt": "Business Cards stacks mockup"
+            }
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274694/portfolio/pdfs/presentation_oleksandr_gorchakov.pdf",
+          "name": "Presentation File"
         }
       ]
     },
