@@ -1,43 +1,66 @@
-.smButton {
-  padding: 7px;
-  font-size: 8px;
-  width: 8px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
+.socialMediaButton {
+  width: 36px;
+  height: 36px;
+  margin: 0.5rem;
 
-.smButton:hover {
-  opacity: 0.7;
-}
+  &__icon {
+    width: 36px;
+    height: 36px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    transition: all 300ms ease-in-out;
 
-.smButton__text_hidden {
-  display: none;
-}
+    &:hover {
+      transform: scale(1.25);
+    }
 
-.smButton_linkedin {
-  background-color: #007bb5;
-  color: white;
-}
+    &-linkedin {
+      background-image: url('../../assets/icons/icon_linkedin-blank.svg');
 
-.smButton_facebook {
-  background-color: #3b5998;
-  color: white;
-}
+      &:hover {
+        background-image: url('../../assets/icons/icon_linkedin-filled.svg');
+      }
+    }
 
-.smButton_vk {
-  background-color: #45668e;
-  color: white;
-}
+    &-github {
+      background-image: url('../../assets/icons/icon_github-blank.svg');
 
-.smButton_instagram {
-  background-color: #125688;
-  color: white;
-}
+      &:hover {
+        background-image: url('../../assets/icons/icon_github-filled.svg');
+      }
+    }
 
-.smButton_github {
-  font-size: 23px;
-  width: 23px;
-  padding: 0;
-  padding-top: 3px;
+    &-instagram {
+      background-image: url('../../assets/icons/icon_instagram-blank.svg');
+
+      &:hover {
+        background-image: url('../../assets/icons/icon_instagram-filled.svg');
+      }
+    }
+
+    &-telegram {
+      background-image: url('../../assets/icons/icon_telegram-blank.png');
+
+      &:hover {
+        background-image: url('../../assets/icons/icon_telegram-filled.png');
+      }
+    }
+
+    &-facebook {
+      background-image: url('../../assets/icons/icon_facebook-blank.svg');
+
+      &:hover {
+        background-image: url('../../assets/icons/icon_facebook-filled.svg');
+      }
+    }
+
+    &-vk {
+      background-image: url('../../assets/icons/icon_vk-blank.svg');
+
+      &:hover {
+        background-image: url('../../assets/icons/icon_vk-filled.svg');
+      }
+    }
+  }
 }
