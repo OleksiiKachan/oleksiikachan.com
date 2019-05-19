@@ -1,3 +1,5 @@
+@import '../../assets/style/variables';
+
 .contactSection {
   display: flex;
   flex-direction: column;
@@ -26,9 +28,10 @@
   width: 40%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint-tablet) {
   .contactSection {
     padding: 1rem 0;
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .contactSection__title {

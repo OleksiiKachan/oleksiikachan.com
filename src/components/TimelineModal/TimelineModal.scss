@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: $breakpoint-tablet) {
   .modal-main {
     top: 50%;
     left: 50%;

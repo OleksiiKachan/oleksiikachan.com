@@ -104,7 +104,8 @@
     margin: 1rem;
   }
 }
-@media screen and (max-width: 825px) {
+
+@media screen and (max-width: $breakpoint-tablet) {
   .imageSection {
     flex-direction: column;
     margin: 0;

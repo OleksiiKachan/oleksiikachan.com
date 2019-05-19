@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: $breakpoint-tablet) {
   .projectDetails {
     &__images {
       height: 30vh;
