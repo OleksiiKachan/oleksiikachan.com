@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoverImage Snapshot 1`] = `
+<div
+  className="coverImage"
+>
+  <div
+    className="coverImage__text"
+  >
+    <h1
+      className="coverImage__title"
+    >
+      name
+    </h1>
+    <h2
+      className="coverImage__subtitle"
+    >
+      title
+    </h2>
+    <a
+      className="coverImage__resumeLink"
+      href="resume.url"
+      target="_blank"
+    >
+      Printable CV
+    </a>
+  </div>
+  <div
+    className="coverImage__contacts"
+  >
+    <_default
+      key="0"
+      type="type1"
+      url="url1"
+    />
+    <_default
+      key="1"
+      type="type2"
+      url="url2"
+    />
+  </div>
+</div>
+`;

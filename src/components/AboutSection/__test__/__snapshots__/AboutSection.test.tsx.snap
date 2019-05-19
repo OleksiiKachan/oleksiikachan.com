@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutSection Snapshot 1`] = `
+<div
+  className="aboutSection"
+  id="about"
+>
+  <_default
+    contacts={
+      Array [
+        Object {
+          "type": "type1",
+          "url": "url1",
+        },
+        Object {
+          "type": "type2",
+          "url": "url2",
+        },
+      ]
+    }
+    name="name"
+    resumeUrl="resume.url"
+    title="title"
+  />
+  <div
+    className="aboutSection__introduction"
+  >
+    <p
+      className="aboutSection__introductionParagraph"
+      key="0"
+    >
+      introduction string 1
+    </p>
+    <p
+      className="aboutSection__introductionParagraph"
+      key="1"
+    >
+      introduction string 2
+    </p>
+  </div>
+  <div
+    className="aboutSection__rightColumn"
+  >
+    <p
+      className="aboutSection__availabilityLabel"
+    >
+      Available for work:
+       
+      <span
+        className="aboutSection__availabilityDate"
+      >
+        availability information
+      </span>
+    </p>
+  </div>
+</div>
+`;
