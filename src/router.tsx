@@ -1,10 +1,11 @@
 import React from 'react';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
 
 // Layouts
 import MainLayout from './layouts/MainLayout';
 
 // Containers
+import AboutContainer from './containers/AboutContainer';
 import TimelineContainer from './containers/TimelineContainer';
 import ProjectsContainer from './containers/ProjectsContainer';
 import ProjectDetailsContainer from './containers/ProjectDetailsContainer';
@@ -27,14 +28,18 @@ export default (
       {isDevelopment ? <Route path="/test" component={TestRoutes} /> : null}
       <MainLayout>
         <Switch>
+          <Route exact path="/about" component={AboutContainer} />
+          <Route exact path="/projects" component={ProjectsContainer} />
           <Route
             exact
             path="/projects/:projectId"
             component={ProjectDetailsContainer}
           />
-          <Route exact path="/projects" component={ProjectsContainer} />
           <Route exact path="/experience" component={TimelineContainer} />
           <Route exact path="/contact" component={ContactContainer} />
+          <Route exact path="/">
+            <Redirect to="/about" />
+          </Route>
         </Switch>
       </MainLayout>
     </Switch>
