@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectDetails Snapshot 1`] = `
+<div
+  className="projectDetails"
+>
+  <_default />
+  <_default
+    className="projectDetails__images"
+    image="coverImageUrl"
+  />
+  <div
+    className="projectDetails__content"
+  >
+    <h2
+      className="projectDetails__title"
+    >
+      title
+    </h2>
+    <_default
+      className="projectDetails__listField"
+      fieldLabel="Partners"
+      list={
+        Array [
+          Object {
+            "name": "partnerWithUrl",
+            "url": "url",
+          },
+          Object {
+            "name": "partnerWithoutUrl",
+          },
+        ]
+      }
+    />
+    <_default
+      className="projectDetails__listField"
+      fieldLabel="Clients"
+      list={
+        Array [
+          Object {
+            "name": "clientWithUrl",
+            "url": "url",
+          },
+          Object {
+            "name": "clientWithoutUrl",
+          },
+        ]
+      }
+    />
+    <_default
+      className="projectDetails__paragraphField"
+      content={
+        Array [
+          Object {
+            "content": "string content",
+            "type": "strting",
+          },
+        ]
+      }
+    />
+    <_default
+      className="projectDetails__listField projectDetails__listField_isolated"
+      fieldLabel="Technologies"
+      list={
+        Array [
+          "tech1",
+          "tech2",
+        ]
+      }
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelineModal Snapshot 1`] = `
+<div
+  className="modal"
+>
+  <section
+    className="modal-main"
+  >
+    <img
+      className="modal-closeButton"
+      onClick={[Function]}
+      src={
+        Object {
+          "ReactComponent": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+          "__esModule": true,
+          "default": "icon_close.svg",
+        }
+      }
+    />
+    <_default
+      item={
+        Object {
+          "dates": "2013-2017",
+          "degree": "Bachelor of Software Engineering",
+          "department": "Faculty of Informatics and Computer Science, Department of Technical Cybernetics",
+          "id": "kpi",
+          "program": "Software Engineering",
+          "school": "National Technical University of Ukraine \\"Kyiv Polytechnic Institute\\"",
+        }
+      }
+    />
+  </section>
+</div>
+`;

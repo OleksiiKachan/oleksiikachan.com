@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import './SocialMediaButton.scss';
 
 /*
-    <SocialMediaButton link='' resource='' />
+    <SocialMediaButton
+      type=''
+      url=''
+    `className=''
+    />
 */
-class SocialMediaButton extends Component<any, any> {
-  render() {
-    return (
-      <a
-        href={this.props.link}
-        className={classNames(
-          'smButton',
-          `smButton_${this.props.resource}`,
-          'fa',
-          `fa-${this.props.resource}`
-        )}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span className={classNames('smButton__text_hidden')}>
-          {this.props.resource}
-        </span>
-      </a>
-    );
-  }
-}
 
-export default SocialMediaButton;
+type PropsType = {
+  type: string;
+  url: string;
+  className?: string;
+};
+
+export default ({ type, url, className }: PropsType) => {
+  return (
+    <a href={url} target="_blank" className={classNames('socialMediaButton')}>
+      <i
+        className={classNames(
+          'socialMediaButton__icon',
+          `socialMediaButton__icon-${type}`
+        )}
+      />
+    </a>
+  );
+};

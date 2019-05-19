@@ -1,0 +1,21 @@
+@import './mixins';
+
+$color-gold: #d5d288;
+$color-white: #dddddd;
+$color-black: #424242;
+$color-grey: #474e5d;
+$color-link: #659fec;
+$color-surface: #ffffff;
+
+$head-font: 'Poppins', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
+$breakpoint-giant-px: 1170px;
+$breakpoint-desktop-px: 992px;
+$breakpoint-tablet-px: 768px;
+$breakpoint-phone-px: 376px;
+
+$breakpoint-giant: calculateRem($breakpoint-giant-px);
+$breakpoint-desktop: calculateRem($breakpoint-desktop-px);
+$breakpoint-tablet: calculateRem($breakpoint-tablet-px);
+$breakpoint-phone: calculateRem($breakpoint-phone-px);

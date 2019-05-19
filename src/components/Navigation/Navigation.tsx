@@ -1,32 +1,36 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import { NavigationItemType } from '../../lib/types';
+import NavigationLogo from './NavigationLogo';
+import MenuIconToggle from './MenuIconToggle';
+import NavigationList from './NavigationList';
 import './Navigation.scss';
-import NavigationLogo from '../NavigationLogo';
-import MenuIconToggle from '../MenuIconToggle';
-import NavigationList from '../NavigationList';
 
 /*
-    <Navigation navigationItems=[]/>
+    <Navigation
+      navigationItems=[]
+      onLinkClick=() => {}
+      className=''
+    />
 */
-class Navigation extends Component<any, any> {
-  render() {
-    var onClick = () => {
-      (document.getElementById(
-        'navigation__input'
-      )! as HTMLInputElement).checked = false;
-    };
 
+type PropsType = {
+  navigationItems: Array<NavigationItemType>;
+  onLinkClick: (selectedItemKey: string) => void;
+  className?: string;
+};
+
+export default class Navigation extends Component<PropsType> {
+  render() {
     return (
       <nav className={classnames('header__navigation', 'navigation')}>
         <NavigationLogo />
         <MenuIconToggle />
         <NavigationList
-          onLinkClick={onClick}
+          onLinkClick={this.props.onLinkClick}
           navigationItems={this.props.navigationItems}
         />
       </nav>
     );
   }
 }
-
-export default Navigation;

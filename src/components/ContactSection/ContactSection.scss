@@ -1,11 +1,20 @@
+@import '../../assets/style/variables';
+
 .contactSection {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5rem;
+  background: url('https://res.cloudinary.com/oleksiikachan/image/upload/v1558029957/portfolio/images/contact_background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contactSection__title {
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 .contactSection__content {
@@ -19,14 +28,24 @@
   width: 40%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint-tablet) {
+  .contactSection {
+    padding: 1rem 0;
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .contactSection__title {
+    font-size: 1.2rem;
+  }
+
   .contactSection__content {
     flex-direction: column;
     align-items: center;
+    width: 90%;
   }
 
   .contactSection__contactColumn {
-    width: 80%;
-    font-size: smaller;
+    width: 100%;
+    font-size: 0.8rem;
   }
 }

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OutlineButton Snapshot 1`] = `
+<div
+  className="projectsSection"
+  id="portfolio"
+>
+  <h2
+    className="projectsSection__header"
+  >
+    Projects
+  </h2>
+  <_default
+    activeType="all"
+    onClick={[Function]}
+  />
+  <div
+    className="projectsSection__content"
+  >
+    <_default
+      key="0"
+      stack=".NET Framework"
+      title="AGW MES / WMS for automotive industry"
+    />
+    <_default
+      key="1"
+      stack=".NET Framework"
+      title="AGW MES / WMS for automotive industry"
+    />
+  </div>
+</div>
+`;

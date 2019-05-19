@@ -1,107 +1,605 @@
 {
   "name": "Oleksii Kachan",
-  "title": "Full Stack Software Engineer & UI/UX Developer",
-  "photo": "../images/avatar.png",
-  "dob": "03 April 1996",
+  "title": "Full Stack Software Engineer & Graphic Designer",
+  "introduction": [
+    "Hello there! Welcome to my space...",
+    "My passion about IT industry is helping businesses to focus on customers & community. I do it by creating different types of affordable enterprise software (e.g. MES, ERP, CRM solutions).",
+    "I am sure that technologies are not as important as concepts & principles behind those technologies."
+  ],
+  "smContacts": [
+    { "type": "linkedin", "url": "http://www.linkedin.com/in/oleksiikachan" },
+    { "type": "github", "url": "https://github.com/OleksiiKachan" },
+    { "type": "instagram", "url": "https://www.instagram.com/oleksii.kachan/" },
+    { "type": "telegram", "url": "https://t.me/OleksiiKachan" },
+    { "type": "facebook", "url": "https://www.facebook.com/oleksiikachan" },
+    { "type": "vk", "url": "https://vk.com/oleksiikachan" }
+  ],
+  "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558297243/portfolio/pdfs/oleksii-kachan_resume.pdf",
+  "availabilityDate": "Summer 19'",
   "contacts": {
     "phone": "+1 (437) 778-5921",
     "email": "alexkachan.lutsk@gmail.com",
     "location": "Toronto, ON, Canada"
   },
-  "bio_legacy": "Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.",
-  "bio": {
-    "introduction": "Hello there! I am a professional software engineer.",
-    "passionIntroduction": "I have 2 greatest passions:",
-    "passions": [
-      "Helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development",
-      "Helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages"
-    ],
-    "stackIntroduction": "I am an Enterprise Software Developer. Mainly I use 2 stacks of technologies:",
-    "techStacks": [
-      "MERN Stack (MongoDB, Express.js, React.js, Node.js)",
-      ".NET Stack (C#, ASP.NET, WPF, Win. Forms, WCF, MS SQL Server etc.)"
-    ]
-  },
+
   "projects": [
     {
+      "id": "spotify-app",
+      "teamSize": "4 people",
+      "partner": [
+        { "name": "Candy Digital", "url": "https://candydigital.co/" }
+      ],
+      "client": [
+        {
+          "name": "Spotify, Inc.",
+          "url": "https://www.spotify.com"
+        }
+      ],
       "projectType": "development",
-      "name": "AGW MES / WMS for automotive industry.",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for AGW system (which is the MES/WMS for manufacturing). Also I did deployment on new manufactories and support tickets.",
-      "tools": ["dotnet", "js", "mssql", "oracle"],
-      "fileName": "agw",
-      "alternativeImageText": "Automotive manufacturing",
-      "url": "http://olsom.net/agw-mes/",
-      "downloadText": "Go to product site"
+      "title": "Spotify Marketing Banners Management System",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558290981/portfolio/images/projects/spotify-app/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558291364/portfolio/images/projects/spotify-app/cover.png",
+      "shortStack": "React + Typescript + Firebase",
+      "longStack": [
+        "React",
+        "Typescript",
+        "Redux",
+        "Firebase",
+        "SASS",
+        "Bootstrap",
+        "Figma",
+        "Github",
+        "CircleCI",
+        "Heroku",
+        "Jira + Slack"
+      ],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "In tight collaboration with |bold|Candy Digital|-| I was working on a project for Spotify. The goal was to create a solution to automate marketing banners production process. In terms of measurable goals we had to reduce production time and effort."
+        },
+        {
+          "type": "string",
+          "content": "I had a team of 4 people (including me). I took a couple of roles in this team: |italic|Designer, Project Manager, Lead Developer|-|."
+        },
+        {
+          "type": "string",
+          "content": "Based on |italic|Spotify's|-| prcoesses descriptions I created |bold|low-fidelity prototype|-| in |italic|Figma|-|. After it being approved I started designing |bold|high-fidelity prototype|-|. At the final point we decided to leave prototype without changes, so it was a |bold|Final UI|-|."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/low-fidelity_prototype.png",
+              "alt": "Low-Fidelity Prototype in Figma"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/high-fidelity_prototype.png",
+              "alt": "High-Fidelity Prototype in Figma"
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "content": "I defined the following development workflow"
+        },
+        {
+          "type": "list",
+          "header": "Development Workflow",
+          "list": [
+            "Jira Ticket",
+            "JS & TS lintters, Prettier",
+            "Husky hooks",
+            "Github",
+            "CircleCI",
+            "Heroku"
+          ]
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558289892/portfolio/images/projects/spotify-app/banner-tool.png",
+          "content": "The main |bold|problem|-| was to create a |italic|photoshop-like|-| tool to design banners. On the image you can see the result of solving this problem - light-weight photoshop-like tool to design banners with predefined sizes."
+        }
+      ]
     },
     {
+      "id": "agw",
+      "teamSize": "> 10 people",
+      "partner": [{ "name": "OLSOM LLC", "url": "http://olsom.net/" }],
+      "client": [
+        {
+          "name": "Tesla, Inc.",
+          "url": "https://www.tesla.com/"
+        },
+        {
+          "name": "Hyundai Motor Company",
+          "url": "https://www.hyundai.com"
+        },
+        {
+          "name": "Varroc Group",
+          "url": "http://www.varrocgroup.com/"
+        },
+        {
+          "name": "Daimler Trucks North America LLC.",
+          "url": "https://daimler-trucksnorthamerica.com/"
+        }
+      ],
       "projectType": "development",
-      "name": "TDM (Tools Data Manager) for automotive industry.",
-      "description": "While working in OLSOM company I worked with some of the biggest automotive manufacturers. I was developing new features for TDM system. TDM - Tools Data Manager - solution that gets and analyse statistical data from automatic screwdrivers on production lines. Product was developed in collaboration with OLSOM L.L.C Catalyst Solutions Inc.",
-      "tools": ["dotnet", "js", "mssql", "oracle"],
-      "fileName": "tdm",
-      "alternativeImageText": "Automotive manufacturing",
-      "url": "http://www.catalystsi.com/index.php?option=com_content&view=article&id=8&Itemid=12",
-      "downloadText": "Go to product site"
+      "title": "AGW. Automitive Manufacturing Solution",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557516569/portfolio/images/projects/agw/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557517324/portfolio/images/projects/agw/cover.png",
+      "shortStack": ".NET Framework",
+      "longStack": [
+        ".NET Framework",
+        "C#",
+        "ASP.NET MVC",
+        "ASP.NET Web Forms",
+        "Javascript",
+        "jQuery",
+        "MS SQL Server",
+        "Oracle",
+        "Windows Service"
+      ],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "|italic|AGW|-| software addresses the challenges of |bold|workflow automation, real-time data collection, system integration|-| and business insight. It offers scalable, high-performance, reliable and |bold|flexible solutions|-| that meet the demand of intelligent process automation for manufacturers, 3PLs, distributors and other spheres of business."
+        },
+        {
+          "type": "string",
+          "content": "Ranging a wide set of solutions from a small tailored operator support systems or system integration platforms to powerful business decision-making support environments AGW offers scalable execution network for enterprise."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557523594/portfolio/images/projects/agw/agw_ip.jpg",
+          "content": "|italic|AGW IP|-| is a complex manufacturing environment that deals with significant volumes of heterogeneous design and production data. Efficient collection, consolidation, transformation and delivery of these data in secure and timely manner is a key task of manufacturing IT on the way of organization towards |bold|cloud infrastructure|-|. "
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "right",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557523623/portfolio/images/projects/agw/agw_mes.jpg",
+          "content": "|italic|AGW MES|-| is an |bold|ISA95|-| compliant |bold|web-based product|-| that provides a broad and flexible platform to optimize manufacturing operations. From simple to complex operations, |italic|AGW MES|-| manages the entire build process from start to finish providing operators detailed step-by-step directions and controlling their completion. |bold|Visualization|-| capabilities give you |bold|real-time visibility|-| and historical analytics over all manufacturing operations, enabling you to improve throughput, quality, agility and compliance. |italic|AGW MES|-| is a powerful, flexible and scalable |bold|Manufacturing Execution System|-| that is easily expanded with business requirements to maximize performance."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557523594/portfolio/images/projects/agw/agw_wms.jpg",
+          "content": "|italic|AGW WMS|-| provides control and visibility of your inventory from the time you receive a shipment until finished goods leave your warehouse. |italic|AGW WMS|-| is designed to |bold|optimize movement|-| of your inventory across your facility. From materials receiving down through the manufacturing process until packing and shipping to the customer |italic|AGW WMS|-| helps to direct your inventory in an optimal way providing |bold|up-to-the-minute information|-| on the quantity, location, status, and history of every item including work-in-process and finished goods."
+        },
+        {
+          "type": "string",
+          "content": "The project work consisted of two parallel streams: development and support."
+        },
+        {
+          "type": "list",
+          "header": "Development",
+          "list": [
+            "Implementing new features",
+            "Overriding / Supporting legacy code (transferring one of the services from ASP.NET Forms to ASP.NET MVC)",
+            "Implementing different settings storage methods (as xml configuration, as database entity)",
+            "Adjusting database structure"
+          ]
+        },
+        {
+          "type": "list",
+          "header": "Support",
+          "list": [
+            "Configuring & Deploying system on customer's side",
+            "Implementing 'on demand' customer-specific features (batch loading, specific production routing)",
+            "Fixing in-production bugs"
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "http://olsom.net/agw-mes/",
+          "name": "Product Page. AGW MES"
+        },
+        {
+          "url": "http://olsom.net/agw-wms/",
+          "name": "Product Page. AGW WMS"
+        },
+        {
+          "url": "http://olsom.net/agw-ip/",
+          "name": "Product Page. AGW IP"
+        },
+        {
+          "url": "http://olsom.net/",
+          "name": "Company Page. OLSOM LLC"
+        }
+      ]
     },
     {
-      "projectType": "design",
-      "name": "Hyperloop",
-      "description": "I was a volunteering member of rLoop team on SpaceX Hyperloop Contest. I was in System Team & Software Team. I took part in creating Final Design Resource document as a system engineer. UI development was lead by me. I created UI mockups and then in collaboration with one designer we created UI for ground station.",
-      "tools": ["visio", "illustrator", "photoshop"],
-      "fileName": "hyperloop",
-      "alternativeImageText": "Hyperloop",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/hyperloop.pdf",
-      "downloadText": "Open file with UI"
-    },
-    {
+      "id": "tdm",
+      "teamSize": "> 10 people",
+      "partner": [
+        { "name": "OLSOM LLC", "url": "http://olsom.net/" },
+        {
+          "name": "Catalyst Solutions Inc",
+          "url": "http://www.catalystsi.com/"
+        }
+      ],
+      "client": [
+        {
+          "name": "Tesla, Inc.",
+          "url": "https://www.tesla.com/"
+        },
+        {
+          "name": "Hyundai Motor Company",
+          "url": "https://www.hyundai.com"
+        },
+        {
+          "name": "Varroc Group",
+          "url": "http://www.varrocgroup.com/"
+        }
+      ],
       "projectType": "development",
-      "name": "Corrugated Cardboard Production System",
-      "description": "I did reverse engineering of corrugated industrial cardboard manufacturing system. System was created using ladder logic so I had to understand what is going on there and then create a bunch of technical documentation of how this system works. Project was done in collaboration with Agile Automation Technology L.L.C.",
-      "tools": ["visio"],
-      "fileName": "corrugatedCardboard",
-      "alternativeImageText": "Corrugated Cardboard",
-      "downloadText": ""
+      "title": "TDM (Tools Data Manager). Manufacturing data collection and management solution",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531546/portfolio/images/projects/tdm/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531547/portfolio/images/projects/tdm/cover.png",
+      "shortStack": ".NET Framework",
+      "longStack": [
+        ".NET Framework",
+        "C#",
+        "ASP.NET MVC",
+        "ASP.NET Web Forms",
+        "Javascript",
+        "jQuery",
+        "MS SQL Server",
+        "Windows Service"
+      ],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "|italic|Tools Data Manager (\"TDM\")|-| is an advanced manufacturing data collection and management solution that features comprehensive functionality for |bold|torque data capture|-| and management. |italic|TDM|-| is designed to simplify the challenge of connecting, extracting, associating, archiving, analyzing and mobilizing manufacturing data generated by localized shop-floor devices; such as, torque assembly systems, process PLCs, testing systems such as Labview, quality systems and etc. From |bold|quality & test data|-| to critical process data, |italic|TDM|-| aggregates all disparate localized manufacturing data into a single, central database and operating tool offering total control and collaboration."
+        },
+        {
+          "type": "string",
+          "content": "|italic|TDM|-| is one of the first commercially designed software tools that integrates the function of |bold|device connectivity|-| into the core software tool including connectivity, data selection, data identity and many other useful functions."
+        },
+        {
+          "type": "string",
+          "content": "The project work consisted of two parallel streams: development and support."
+        },
+        {
+          "type": "list",
+          "header": "Development",
+          "list": ["Implementing new features", "Adjusting database structure"]
+        },
+        {
+          "type": "list",
+          "header": "Support",
+          "list": [
+            "Configuring & Deploying system on customer's side",
+            "Implementing 'on demand' customer-specific features (implement agw-like routing)",
+            "Fixing in-production bugs"
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "http://www.catalystsi.com/index.php?option=com_content&view=article&id=8&Itemid=12",
+          "name": "Product Page"
+        },
+        {
+          "url": "http://olsom.net/",
+          "name": "Company Page. OLSOM LLC"
+        },
+        {
+          "url": "http://www.catalystsi.com/",
+          "name": "Company Page. Catalyst Solutions Inc"
+        }
+      ]
     },
     {
+      "id": "rpod",
+      "teamSize": "> 20 people",
+      "partner": [
+        { "name": "rLoop Incorporated", "url": "https://www.rloop.org/" }
+      ],
+      "projectType": "design",
+      "title": "Hyperloop rPod",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557599879/portfolio/images/projects/rpod/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557599880/portfolio/images/projects/rpod/cover.png",
+      "shortStack": "UI & UX Design & Development",
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "|bold|Hyperloop|-| is a conceptual, high-speed transportation system initially proposed by |bold|Elon Musk|-|. The concept consists of passenger and cargo pods being propelled at up to 760 mph in a low pressure tube using sustainable and cost-efficient energy. To accelerate its development, |bold|SpaceX|-| is hosted a competition for engineering teams to |bold|design|-| their own hyperloop pods and test them at their facility in |italic|Hawthorne, California|-|."
+        },
+        {
+          "type": "string",
+          "content": "rLoop is |bold|open-sourced|-|, |bold|crowd-sourced|-| & |bold|crowd-funded|-| |italic|community|-|. I was a member of 2 teams: |bold|Systems Team|-| & |bold|Software Team|-|."
+        },
+        {
+          "type": "list",
+          "header": "Software Team Member",
+          "list": [
+            "UX Research",
+            "Telemetry Station UI Design",
+            "Control Station UI Design",
+            "Network Nodes development",
+            "Leading small team < 5 people of designers & developers on UI/UX"
+          ]
+        },
+        {
+          "type": "list",
+          "header": "Systems Team Member",
+          "list": [
+            "Creating System Documentation",
+            "Writing Human-Machine Interface section for Telemetry and Control stations in System Design Document (SDD)"
+          ]
+        },
+        {
+          "type": "string",
+          "content": "I researched our processes and defined the sets of trackable data. Based on that I developed low-fidelity mock-ups."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557366977/portfolio/images/projects/rpod/telemetry_mock.svg",
+              "alt": "Telemetry Station low-fidelity mock-up"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557356129/portfolio/images/projects/rpod/telemetry_ui.jpg",
+              "alt": "Telemetry Station final UI"
+            }
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://rloop.org",
+          "name": "Official web site"
+        },
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557356132/portfolio/images/projects/rpod/telemetry_mock.png",
+          "name": "Telemetry Station low-fidelity mock-up"
+        },
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557356129/portfolio/images/projects/rpod/telemetry_ui.jpg",
+          "name": "Telemetry Station final UI"
+        }
+      ]
+    },
+    {
+      "id": "cardboard-prod",
+      "teamSize": "2 people",
+      "partner": [
+        { "name": "OLSOM LLC", "url": "http://olsom.net/" },
+        {
+          "name": "Agile Automation Technology LLC  ",
+          "url": "http://www.agileautomation.net/"
+        }
+      ],
       "projectType": "development",
-      "name": "FTP File Transfer Service",
-      "description": "I created FTP File Transfer Service - windows service that transfers files in multiple threads via FTP to remoter & local locations. Service uses .ini file with configuration",
-      "tools": ["dotnet", "windows", "linux"],
-      "fileName": "ftpService",
-      "alternativeImageText": "Two laptops and file transferring between them",
-      "downloadText": ""
+      "title": "Corrugated Cardboard Production System",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557529749/portfolio/images/projects/cardboard-prod/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557529541/portfolio/images/projects/cardboard-prod/cover.png",
+      "shortStack": "Ladder Logic",
+      "longStack": ["Ladder Logic", "Microsoft Visio"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "|bold|Reverse engineering|-| of |italic|ladder-logic|-| based corrugated industrial cardboard |bold|production software|-| to get a complete networking system. The System was developed using ladder logic so I had to understand what is going on there and then create some |bold|technical documentation|-| on how this system works."
+        }
+      ]
     },
     {
-      "projectType": "design",
-      "name": "Logo & Card Design",
-      "description": "My very first branding project was creating brand of myself. I defined 2 main colors, created logo, designed 2-side business card. Business card does not have title of person, because I do not want to put myself into frames of who I can be.",
-      "tools": ["photoshop"],
-      "fileName": "branding_oleksiiKachan",
-      "alternativeImageText": "Business cards",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_oleksiiKachan.pdf",
-      "downloadText": "Open presentation file"
+      "id": "ftp-serivce",
+      "teamSize": "2 people",
+      "partner": [{ "name": "OLSOM LLC", "url": "http://olsom.net/" }],
+      "projectType": "development",
+      "title": "FTP File Transfer Service",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534995/portfolio/images/projects/ftp-service/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557535138/portfolio/images/projects/ftp-service/cover.png",
+      "shortStack": ".NET Framework",
+      "longStack": [
+        ".NET Framework",
+        "C#",
+        "Windows Service",
+        "Windows OS",
+        "Linux OS"
+      ],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "|bold|Multi-threaded|-| Windows |italic|service|-| that transfers files locally and/or remotely via |bold|FTP|-| and is configured with *.ini file. All the service events, faults, warnings are logged in to the local txt file and |bold|Windows system log|-|."
+        }
+      ]
     },
     {
+      "id": "branding-oleksii-kachan",
+      "client": [
+        {
+          "name": "Oleksii Kachan"
+        }
+      ],
       "projectType": "design",
-      "name": "Logo & Card Design",
-      "description": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card.",
-      "tools": ["photoshop", "illustrator"],
-      "fileName": "branding_irynaKachan",
-      "alternativeImageText": "Business cards",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_irynaKachan.pdf",
-      "downloadText": "Open presentation file"
+      "title": "Logo & Card Design",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557600879/portfolio/images/projects/branding-oleksii-kachan/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557600879/portfolio/images/projects/branding-oleksii-kachan/cover.png",
+      "shortStack": "Personal Branding",
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "My very first branding project was creating a brand for myself. I defined 2 main colors, created logo, designed 2-side business card."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557601887/portfolio/images/projects/branding-oleksii-kachan/logo_versions.png",
+          "content": "I created 4 types of logo: |italic|horizontal, vertical, square and portrait|-|. Each of them exist in 2 versions: |bold|dark & light|-| (based on defined brand colors)."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557511177/portfolio/images/projects/branding-oleksii-kachan/adaptability.png",
+              "alt": "Logo on different backgrounds"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557511177/portfolio/images/projects/branding-oleksii-kachan/details.png",
+              "alt": "Logo process details"
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "content": "After finishing logo I switched to |bold|business card|-| design. I do not want to have |italic|position, title, profession|-| (no matter how you call it) to be on my card, so I have only previously designed |bold|horizontal logo|-| on |italic|front-side|-|. The most important contact information is on |italic|back-side|-|."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557627946/portfolio/images/projects/branding-oleksii-kachan/business_card-both_sides.png",
+              "alt": "Front an Back sides of the Business Card"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557628474/portfolio/images/projects/branding-oleksii-kachan/business_card-mock.png",
+              "alt": "Business Cards stacks mockup"
+            }
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557630136/portfolio/pdfs/presentation_oleksii_kachan.pdf",
+          "name": "Presentation File"
+        }
+      ]
     },
     {
+      "id": "branding-iryna-kachan",
+      "client": [
+        {
+          "name": "Iryna Kachan"
+        }
+      ],
       "projectType": "design",
-      "name": "Logo & Card Design",
-      "description": "I created brand for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations.",
-      "tools": ["photoshop", "illustrator"],
-      "fileName": "branding_oleksandrGorchakov",
-      "alternativeImageText": "Business cards",
-      "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1543467496/portfolio/downloadables/projects/branding_oleksandrGorchakov.pdf",
-      "downloadText": "Open presentation file"
+      "title": "Logo & Card Design",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557696111/portfolio/images/projects/branding-iryna-kachan/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557696327/portfolio/images/projects/branding-iryna-kachan/cover.png",
+      "shortStack": "Personal Branding",
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "I created brand for my mother as for financial services provider. I defined 2 main colors, created logo, designed 2-side business card."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557696842/portfolio/images/projects/branding-iryna-kachan/logo_square.png",
+          "content": "I created 2 versions of logo: |bold|dark & light|-| (based on defined brand colors)."
+        },
+        {
+          "type": "string",
+          "content": "After finishing logo I switched to |bold|business card|-| design."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557698625/portfolio/images/projects/branding-iryna-kachan/business_card-both_sides.png",
+              "alt": "Front an Back sides of the Business Card"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557698288/portfolio/images/projects/branding-iryna-kachan/business_card-mock.png",
+              "alt": "Business Cards stacks mockup"
+            }
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557698171/portfolio/pdfs/presentation_iryna_kachan.pdf",
+          "name": "Presentation File"
+        }
+      ]
+    },
+    {
+      "id": "branding-oleksandr-gorchakov",
+      "client": [
+        {
+          "name": "Oleksandr Gorchakov"
+        }
+      ],
+      "projectType": "design",
+      "title": "Logo & Card Design",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/cover.png",
+      "shortStack": "Personal Branding",
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "I created logo & business card for financial consultant from Ukraine. I defined 2 main colors, created logo, designed 2-side business card and created graphic candle-chart as visual element for business card. Candle-chart displays that person is connected with advanced financial operations."
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274609/portfolio/images/projects/branding-oleksandr-gorchakov/logo_square.png",
+          "content": "I created 2 versions of logo: |bold|dark & light|-| (based on defined brand colors)."
+        },
+        {
+          "type": "string",
+          "content": "After finishing logo I switched to |bold|business card|-| design."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/business_card-both_sides.png",
+              "alt": "Front an Back sides of the Business Card"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274610/portfolio/images/projects/branding-oleksandr-gorchakov/business_card-mock.png",
+              "alt": "Business Cards stacks mockup"
+            }
+          ]
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558274694/portfolio/pdfs/presentation_oleksandr_gorchakov.pdf",
+          "name": "Presentation File"
+        }
+      ]
+    },
+    {
+      "id": "elf-landing",
+      "client": [
+        {
+          "name": "Private Company \"Elf\""
+        }
+      ],
+      "projectType": "design",
+      "title": "Landing Page Design for agricultural machinery parts reseller",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534199/portfolio/images/projects/elf_landing/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534200/portfolio/images/projects/elf_landing/cover.png",
+      "shortStack": "Landing Page Design",
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "Company started it's way on digitalization and I was responsible for representation on the Internet inmprovement. After interviews with the company I desided to redesign company's brand site. Unfortunatelly, project is on pause due to other higher company's priorities."
+        }
+      ],
+      "externalResources": [
+        {
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534410/portfolio/pdfs/elf-landing_page_design.pdf",
+          "name": "Landing Page Design"
+        }
+      ]
     }
   ],
+
   "skills": [
     "UI/UX Design",
     "Prototyping",
@@ -118,75 +616,72 @@
     "Project Management",
     "Design Systems"
   ],
-  "languages": [
+  "experience": [
     {
-      "language": "English",
-      "stars": "4"
+      "id": "kontynium-treyd",
+      "companyTitle": "Ltd. \"Kontynium-Treyd\"",
+      "position": "Technician Programmer of administrative and economic department",
+      "dates": "2014",
+      "responsibilities": [
+        "System administration of the enterprise using 1C: Enterprise (ERP-like platform)",
+        "Maintenance of computers, peripheral and specialized equipment (common printers, Zebra printers, electronic scales, fiscal cash registers, etc.)"
+      ]
     },
     {
-      "language": "Ukrainian",
-      "stars": "5"
+      "id": "rloop",
+      "companyTitle": "rLoop Incorporated",
+      "position": "Software and Systems Engineer",
+      "dates": "2016-2017",
+      "responsibilities": [
+        "Software & System engineering",
+        "UI & UX Design & Development"
+      ],
+      "projects": [{ "id": "rpod", "title": "Hyperloop rPod" }]
     },
     {
-      "language": "Russian",
-      "stars": "5"
-    },
-    {
-      "language": "German",
-      "stars": "3"
-    },
-    {
-      "language": "Korean",
-      "stars": "1"
+      "id": "olsom",
+      "companyTitle": "OLSOM L.L.C",
+      "position": "Software Engineer",
+      "dates": "2017",
+      "responsibilities": [
+        "Development and support of the company's products: AGW Automitive Manufacturing Solution; TDM (Tools Data Manager) for automotive industry",
+        "Development and support of the client projects based on company's products (1-3-tier automotive manufacturers (Volkswagen, Opel, Tesla, etc.)",
+        "Development of outsourced minor projects",
+        "Development of internal tools"
+      ],
+      "projects": [
+        {
+          "id": "agw",
+          "title": "AGW. Automitive Manufacturing Solution"
+        },
+        {
+          "id": "tdm",
+          "title": "TDM (Tools Data Manager). Manufacturing data collection and management solution"
+        },
+        { "id": "ftp-service", "title": "FTP Transfer Service" },
+        {
+          "id": "cardboard-prod",
+          "title": "Corrugated Cardboard Production System"
+        }
+      ]
     }
   ],
-  "resources": [
+  "education": [
     {
-      "link": "http://www.linkedin.com/in/oleksiikachan",
-      "resource": "linkedin"
+      "id": "kpi",
+      "school": "National Technical University of Ukraine \"Kyiv Polytechnic Institute\"",
+      "degree": "Bachelor of Software Engineering",
+      "department": "Faculty of Informatics and Computer Science, Department of Technical Cybernetics",
+      "program": "Software Engineering",
+      "dates": "2013-2017"
     },
     {
-      "link": "https://github.com/OleksiiKachan",
-      "resource": "github"
-    },
-    {
-      "link": "https://www.facebook.com/oleksiikachan",
-      "resource": "facebook"
-    },
-    {
-      "link": "https://www.instagram.com/oleksii.kachan/",
-      "resource": "instagram"
-    },
-    {
-      "link": "https://vk.com/oleksiikachan",
-      "resource": "vk"
-    }
-  ],
-  "timeline": [
-    {
-      "time": "2014",
-      "title": "Technician Programmer of administrative and economic department",
-      "description": "Ltd. \"Kontynium-Treyd\""
-    },
-    {
-      "time": "2016-2017",
-      "title": "Software and Systems Engineer",
-      "description": "rLoop Incorporated"
-    },
-    {
-      "time": "2013-2017",
-      "title": "Bachelor of Software Engineering",
-      "description": "National Technical University of Ukraine \"Kyiv Polytechnic Institute\", Faculty of Information and Computer Science, Technical Cybernetics Department"
-    },
-    {
-      "time": "2017",
-      "title": "Software Engineer",
-      "description": "OLSOM L.L.C"
-    },
-    {
-      "time": "2017-2019",
-      "title": "Postgraduate Degree",
-      "description": "The Humber Institute of Technology and Advanced Learning,School of Media Studies & Information Technology, Information Technology Solutions"
+      "id": "humber",
+      "school": "The Humber Institute of Technology and Advanced Learning",
+      "degree": "Ontario Graduate Certificate",
+      "department": "School of Media Studies & Information Technology",
+      "program": "Information Technology Solutions",
+      "dates": "2017-2019"
     }
   ]
 }

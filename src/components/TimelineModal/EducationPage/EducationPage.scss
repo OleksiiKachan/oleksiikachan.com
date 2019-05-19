@@ -1,0 +1,47 @@
+@import '../../../assets/style/variables';
+
+.educationPage {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 3rem;
+
+  &__header {
+    font-size: 1.75rem;
+  }
+
+  &__subheader {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  &__label {
+    font-family: $head-font;
+    margin-right: 1rem;
+  }
+
+  &__value {
+    font-family: $body-font;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .educationPage {
+    padding: 2rem;
+    font-size: 0.8rem;
+
+    &__header {
+      font-size: 1rem;
+    }
+
+    &__subheader {
+      font-size: 0.7rem;
+    }
+  }
+}

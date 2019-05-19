@@ -1,24 +1,35 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import './Header.scss';
-import HeaderCover from '../HeaderCover';
+import { NavigationItemType } from '../../lib/types';
 import Navigation from '../Navigation';
+import './Header.scss';
 
 /*
-    <Header name='' title='' navigationItems=[]/>
+    <Header
+      navigationItems=[]
+      onLinkClick=() => {}
+      className=''
+    />
 */
-class Header extends Component<any, any> {
+
+type PropsType = {
+  navigationItems: Array<NavigationItemType>;
+  onLinkClick: (selectedItemKey: string) => void;
+  className?: string;
+};
+
+export default class Header extends Component<PropsType> {
   render() {
     return (
       <header
         id="header"
         className={classnames('header', this.props.className)}
       >
-        <HeaderCover name={this.props.name} title={this.props.title} />
-        <Navigation navigationItems={this.props.navigationItems} />
+        <Navigation
+          onLinkClick={this.props.onLinkClick}
+          navigationItems={this.props.navigationItems}
+        />
       </header>
     );
   }
 }
-
-export default Header;

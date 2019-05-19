@@ -1,0 +1,120 @@
+@import '../../../assets/style/keyframes';
+@import '../../../assets/style/variables';
+
+.timelineItem {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-start;
+  margin: 20px 0;
+  color: $color-grey;
+
+  &_left {
+    text-align: right;
+
+    .timelineItem__content {
+      align-items: flex-end;
+      left: 0;
+      transform: translateX(-100%);
+      opacity: 0;
+      animation: opacity 700ms ease-in-out forwards,
+        fromLeftToCenter 700ms ease-in-out forwards;
+    }
+  }
+
+  &_right {
+    .timelineItem__content {
+      right: -60%;
+      align-items: flex-start;
+      transform: translateX(100%);
+      opacity: 0;
+      animation: opacity 700ms ease-in-out forwards,
+        fromRightToCenter 700ms ease-in-out forwards;
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    position: relative;
+  }
+
+  &__circle {
+    width: 36px;
+    height: 36px;
+    background-color: $color-grey;
+    border: 8px solid $color-surface;
+    border-radius: 50%;
+    z-index: 1;
+    transform: scale(0);
+    position: relative;
+    left: calc(50% - 17px);
+    animation: pop 700ms ease-in-out forwards;
+  }
+
+  &__content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-size: 14pt;
+  }
+
+  &__subtitle {
+    font-size: 10pt;
+    margin: 24px 0;
+  }
+
+  &__dates {
+    font-weight: 100;
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .timelineItem {
+    margin: 60px 0;
+
+    &:first-child {
+      margin: 20px 0 60px 0;
+    }
+
+    &_left,
+    &_right {
+      text-align: left;
+
+      .timelineItem__content {
+        left: 25%;
+        align-items: flex-start;
+        transform: translateX(100%);
+        animation: opacity 700ms ease-in-out forwards,
+          fromRightToCenter 700ms ease-in-out forwards;
+      }
+    }
+
+    &__circle {
+      left: calc(15% - 17px);
+    }
+
+    &__content {
+      width: 60%;
+    }
+
+    &__title {
+      font-size: 10pt;
+    }
+
+    &__subtitle {
+      font-size: 10pt;
+    }
+
+    &__dates {
+      font-size: 10pt;
+    }
+  }
+}

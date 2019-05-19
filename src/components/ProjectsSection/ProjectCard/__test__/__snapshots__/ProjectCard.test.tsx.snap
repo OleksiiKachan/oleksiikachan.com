@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectCard Snapshot 1`] = `
+<div
+  className="projectCard"
+  style={
+    Object {
+      "backgroundImage": "url(undefined)",
+    }
+  }
+>
+  <div
+    className="projectCard__shader"
+  >
+    <div
+      className="projectCard__inner"
+    >
+      <div
+        className="projectCard__title"
+      >
+        AGW MES / WMS for automotive industry
+      </div>
+      <div
+        className="projectCard__stack"
+      >
+        .NET Framework
+      </div>
+      <Link
+        className="projectCard__button"
+        to="projects/undefined"
+      >
+        <_default
+          onClick={[Function]}
+          type="gold"
+        >
+          See More
+        </_default>
+      </Link>
+    </div>
+  </div>
+</div>
+`;

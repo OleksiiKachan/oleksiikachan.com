@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactInfoItem Snapshot 1`] = `
+<div
+  className="contactInfoItem"
+>
+  <img
+    alt="icon alternative text"
+    className="contactInfoItem__icon"
+    src="icon"
+  />
+  <p
+    className="contactInfoItem__content"
+  >
+    content
+  </p>
+</div>
+`;

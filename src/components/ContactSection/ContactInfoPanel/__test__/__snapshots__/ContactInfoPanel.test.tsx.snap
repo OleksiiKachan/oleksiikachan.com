@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactInfoPanel Snapshot 1`] = `
+<div
+  className="contactInfoPanel"
+>
+  <h3
+    className="contactInfoPanel__title"
+  >
+    Contacts
+  </h3>
+  <_default
+    content="phone number"
+    icon={
+      Object {
+        "ReactComponent": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "__esModule": true,
+        "default": "phone.svg",
+      }
+    }
+    iconAlt="Phone icon"
+    key="0"
+  />
+  <_default
+    content="email"
+    icon={
+      Object {
+        "ReactComponent": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "__esModule": true,
+        "default": "email.svg",
+      }
+    }
+    iconAlt="Envelope icon"
+    key="1"
+  />
+  <_default
+    content="location"
+    icon={
+      Object {
+        "ReactComponent": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+        "__esModule": true,
+        "default": "location.svg",
+      }
+    }
+    iconAlt="Compass icon"
+    key="2"
+  />
+</div>
+`;

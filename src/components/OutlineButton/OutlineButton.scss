@@ -1,0 +1,33 @@
+@import '../../assets/style/variables';
+
+.outlineButton {
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 25px;
+  font-weight: 300;
+  cursor: pointer;
+
+  &_gold {
+    border-color: $color-gold;
+    color: $color-white;
+
+    &:hover {
+      background: $color-gold;
+      color: $color-surface;
+    }
+  }
+
+  &_dark {
+    border-color: $color-grey;
+    color: $color-grey;
+
+    &:hover {
+      background: $color-grey;
+      color: $color-surface;
+    }
+  }
+
+  &:hover {
+    font-weight: 500;
+  }
+}

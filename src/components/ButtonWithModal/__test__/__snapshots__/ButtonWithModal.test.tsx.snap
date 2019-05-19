@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonWithModal Snapshot 1`] = `
+<Fragment>
+  <_default
+    onClick={[Function]}
+    type="dark"
+  >
+    See More
+  </_default>
+</Fragment>
+`;

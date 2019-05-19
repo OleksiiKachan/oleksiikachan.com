@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationLogo Snapshot 1`] = `
+<div
+  className="navigation__logoWrapper"
+>
+  <img
+    alt="Oleksii Kachan logo"
+    className="navigation__logoImage"
+    src="https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_horizontal_dark.svg"
+  />
+</div>
+`;

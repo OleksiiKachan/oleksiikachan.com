@@ -6,12 +6,8 @@ import ContactSection from '../../components/ContactSection';
 */
 class ContactContainer extends Component<any, any> {
   render() {
-    return (
-      <ContactSection
-        contacts={this.props.contacts}
-        className={this.props.className}
-      />
-    );
+    const dataStore = require('../../data.json');
+    return <ContactSection contacts={dataStore.contacts} />;
   }
 }
 

@@ -1,0 +1,70 @@
+@import '../../../assets/style/variables';
+
+.experiencePage {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 3rem;
+
+  &__header {
+    font-size: 1.75rem;
+  }
+
+  &__subheader {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+    &_list {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    font-family: $head-font;
+    margin-right: 1rem;
+
+    &_list {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  &__value {
+    font-family: $body-font;
+
+    &_list {
+      margin-left: 1rem;
+    }
+  }
+
+  &__link {
+    color: $color-link;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .experiencePage {
+    padding: 2rem;
+    font-size: 0.8rem;
+
+    &__header {
+      font-size: 1rem;
+    }
+
+    &__subheader {
+      font-size: 0.7rem;
+    }
+
+    &__value {
+      &_list {
+        margin-left: 0;
+      }
+    }
+  }
+}

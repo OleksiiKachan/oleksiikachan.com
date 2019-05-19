@@ -1,0 +1,29 @@
+@import '../../assets/style/variables';
+
+.aboutSection {
+  &__introduction {
+    margin: 3rem;
+  }
+
+  &__introductionParagraph {
+    margin: 1.5rem 0;
+    text-align: justify;
+  }
+
+  &__rightColumn {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__availabilityLabel {
+    font-size: 1.8rem;
+  }
+
+  &__availabilityDate {
+    font-size: 1.6rem;
+    font-style: italic;
+  }
+}

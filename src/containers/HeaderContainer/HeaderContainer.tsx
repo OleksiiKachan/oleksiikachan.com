@@ -1,91 +1,74 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
-import classnames from 'classnames';
+import { withRouter, RouteComponentProps } from 'react-router';
 
 /*
-    <HeaderContainer name='' title=''/>
+    <HeaderContainer />
 */
-class HeaderContainer extends Component<any, any> {
-  private navigationItems: Array<{
-    key: string;
-    title: string;
-    sectionId: string;
-    isSelected: boolean;
-  }>;
 
-  constructor(props: any) {
-    super(props);
+class HeaderContainer extends Component<RouteComponentProps> {
+  private navigationItems = [
+    {
+      key: 'mi_about',
+      title: 'About Me',
+      sectionUrl: '/about',
+      isSelected: true,
+    },
+    {
+      key: 'mi_projects',
+      title: 'Projects',
+      sectionUrl: '/projects',
+      isSelected: false,
+    },
+    {
+      key: 'mi_competencies',
+      title: 'Competencies',
+      sectionUrl: '/competencies',
+      isSelected: false,
+    },
+    {
+      key: 'mi_education',
+      title: 'Education & Experience',
+      sectionUrl: '/experience',
+      isSelected: false,
+    },
+    {
+      key: 'mi_contact',
+      title: 'Contact',
+      sectionUrl: '/contact',
+      isSelected: false,
+    },
+  ];
 
-    this.navigationItems = [
-      {
-        key: 'mi_about',
-        title: 'About Me',
-        sectionId: '#about',
-        isSelected: true,
-      },
-      {
-        key: 'mi_portfolio',
-        title: 'Portfolio',
-        sectionId: '#portfolio',
-        isSelected: false,
-      },
-      {
-        key: 'mi_competencies',
-        title: 'Competencies',
-        sectionId: '#competencies',
-        isSelected: false,
-      },
-      {
-        key: 'mi_education',
-        title: 'Education & Experience',
-        sectionId: '#education',
-        isSelected: false,
-      },
-      {
-        key: 'mi_contact',
-        title: 'Contact',
-        sectionId: '#contact',
-        isSelected: false,
-      },
-    ];
+  componentWillMount() {
+    const selected = this.props.location.pathname.split('/')[1] || 'about';
+    this.navigationItems = this.navigationItems.map(item => {
+      return item.sectionUrl === `/${selected}`
+        ? { ...item, isSelected: true }
+        : { ...item, isSelected: false };
+    });
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
+  onLinkClick = (selectedItemKey: string) => {
+    (document.getElementById(
+      'navigation__input'
+    )! as HTMLInputElement).checked = false;
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
-    if (document.body.clientWidth > 864) {
-      const headCover = document.getElementsByClassName('headCover')[0];
-      const headCoverHeight = headCover.clientHeight;
-
-      const headMenu = document.getElementsByClassName('navigation')[0];
-      const headMenuHeight = headMenu.clientHeight;
-
-      if (window.pageYOffset > headCoverHeight) {
-        headMenu.classList.add('headMenu_scrolled');
-        headMenu.classList.add('navigation_scrolled');
-      } else if (window.pageYOffset < headCoverHeight + headMenuHeight) {
-        headMenu.classList.remove('headMenu_scrolled');
-        headMenu.classList.remove('navigation_scrolled');
-      }
-    }
-  }
+    this.navigationItems = this.navigationItems.map(item => {
+      return item.key === selectedItemKey
+        ? { ...item, isSelected: true }
+        : { ...item, isSelected: false };
+    });
+  };
 
   render() {
     return (
       <Header
-        name={this.props.name}
-        title={this.props.title}
+        onLinkClick={this.onLinkClick}
         navigationItems={this.navigationItems}
-        className={classnames(this.props.className)}
       />
     );
   }
 }
 
-export default HeaderContainer;
+export default withRouter(HeaderContainer);

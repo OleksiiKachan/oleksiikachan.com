@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainLayout Snapshot 1`] = `
+<div
+  className="app"
+>
+  <withRouter(HeaderContainer) />
+  <main
+    className="app__mainContent"
+  >
+    content
+  </main>
+</div>
+`;

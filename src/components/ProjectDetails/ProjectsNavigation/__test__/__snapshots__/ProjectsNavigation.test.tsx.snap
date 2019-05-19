@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsNavigation Snapshot 1`] = `
+<div
+  className="projectsNavigation"
+>
+  <div
+    className="projectsNavigation__row"
+  >
+    <Link
+      className="projectsNavigation__link projectsNavigation__link_align-left"
+      to="/projects"
+    >
+      <img
+        className="projectsNavigation__linkArrow"
+        src={
+          Object {
+            "ReactComponent": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "__esModule": true,
+            "default": "icon_arrowBack-link.svg",
+          }
+        }
+      />
+      <span
+        className="projectsNavigation__linkCaption"
+      >
+        Back to Projects List
+      </span>
+    </Link>
+  </div>
+</div>
+`;

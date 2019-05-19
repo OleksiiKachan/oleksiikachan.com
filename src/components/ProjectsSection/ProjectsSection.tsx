@@ -1,13 +1,30 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import { ProjectType } from '../../lib/types';
+import ProjectCard from './ProjectCard';
+import ProjectsFilter from './ProjectsFilter/ProjectsFilter';
 import './ProjectsSection.scss';
-import ProjectCard from '../ProjectCard';
 
 /*
-    <ProjectsSection projects={} projectFilterMethod={}/>
+    <ProjectsSection
+      projects={} 
+      className=''
+    />
 */
-class ProjectsSection extends Component<any, any> {
-  constructor(props: any) {
+
+type PropsType = {
+  projects: Array<ProjectType>;
+  className?: string;
+};
+
+type StateType = {
+  previousProjectType: string;
+  projectType: string;
+  projects: Array<ProjectType>;
+};
+
+export default class ProjectsSection extends Component<PropsType, StateType> {
+  constructor(props: PropsType) {
     super(props);
 
     this.state = {
@@ -15,6 +32,8 @@ class ProjectsSection extends Component<any, any> {
       projectType: 'all',
       projects: this.props.projects,
     };
+
+    this.setProjectType = this.setProjectType.bind(this);
   }
 
   setProjectType = (newProjectType: string) => {
@@ -59,49 +78,26 @@ class ProjectsSection extends Component<any, any> {
         id="portfolio"
         className={classNames('projectsSection', this.props.className)}
       >
-        <h2 className={classNames('projectsSection__header')}>Portfolio</h2>
-        <ul className={classNames('projectsSection__projectsFilter')}>
-          <li
-            className={classNames(
-              'projectsSection__projectsFilterItem',
-              'projectsSection__projectsFilterItem_clicked'
-            )}
-          >
-            <button
-              id="projectsFilterButton_all"
-              onClick={() => this.setProjectType('all')}
-              className={classNames('projectsSection__projectsFilterButton')}
-            >
-              All Projects
-            </button>
-          </li>
-          <li className={classNames('projectsSection__projectsFilterItem')}>
-            <button
-              id="projectsFilterButton_development"
-              onClick={() => this.setProjectType('development')}
-              className={classNames('projectsSection__projectsFilterButton')}
-            >
-              Development
-            </button>
-          </li>
-          <li className={classNames('projectsSection__projectsFilterItem')}>
-            <button
-              id="projectsFilterButton_design"
-              onClick={() => this.setProjectType('design')}
-              className={classNames('projectsSection__projectsFilterButton')}
-            >
-              Design
-            </button>
-          </li>
-        </ul>
+        <h2 className={classNames('projectsSection__header')}>Projects</h2>
+
+        <ProjectsFilter
+          activeType={this.state.projectType}
+          onClick={this.setProjectType}
+        />
         <div className={classNames('projectsSection__content')}>
-          {this.state.projects.map((project: any) => {
-            return <ProjectCard project={project} />;
+          {this.state.projects.map((project: ProjectType) => {
+            return (
+              <ProjectCard
+                key={this.state.projects.indexOf(project)}
+                id={project.id}
+                title={project.title}
+                stack={project.shortStack}
+                cardImage={project.cardImage}
+              />
+            );
           })}
         </div>
       </div>
     );
   }
 }
-
-export default ProjectsSection;

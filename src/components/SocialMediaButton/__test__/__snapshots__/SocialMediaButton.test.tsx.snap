@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialMediaButton Snapshot 1`] = `
+<a
+  className="socialMediaButton"
+  href="github.com"
+  target="_blank"
+>
+  <i
+    className="socialMediaButton__icon socialMediaButton__icon-github"
+  />
+</a>
+`;
