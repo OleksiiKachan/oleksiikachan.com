@@ -1,27 +1,27 @@
 {
   "name": "Oleksii Kachan",
-  "title": "Full Stack Software Engineer & UI/UX Developer",
-  "photo": "../images/avatar.png",
-  "dob": "03 April 1996",
+  "title": "Full Stack Software Engineer & Graphic Designer",
+  "introduction": [
+    "Hello there! Welcome to my space...",
+    "My passion about IT industry is helping businesses to focus on customers & community. I do it by creating different types of affordable enterprise software (e.g. MES, ERP, CRM solutions).",
+    "I am sure that technologies are not as important as concepts & principles behind those technologies."
+  ],
+  "smContacts": [
+    { "type": "linkedin", "url": "http://www.linkedin.com/in/oleksiikachan" },
+    { "type": "github", "url": "https://github.com/OleksiiKachan" },
+    { "type": "instagram", "url": "https://www.instagram.com/oleksii.kachan/" },
+    { "type": "telegram", "url": "https://t.me/OleksiiKachan" },
+    { "type": "facebook", "url": "https://www.facebook.com/oleksiikachan" },
+    { "type": "vk", "url": "https://vk.com/oleksiikachan" }
+  ],
+  "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558297243/portfolio/pdfs/oleksii-kachan_resume.pdf",
+  "availabilityDate": "Summer 19'",
   "contacts": {
     "phone": "+1 (437) 778-5921",
     "email": "alexkachan.lutsk@gmail.com",
     "location": "Toronto, ON, Canada"
   },
-  "bio_legacy": "Hello there! I am a professional software engineer. My passion is helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development. Also helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages.",
-  "bio": {
-    "introduction": "Hello there! I am a professional software engineer.",
-    "passionIntroduction": "I have 2 greatest passions:",
-    "passions": [
-      "Helping business to focus only on business - enterprise automation on higher levels, e.g. MES & ERP System design & development",
-      "Helping business to improve business indicators by getting more customers & sales by implementing marketing projects, e.g. Landing pages"
-    ],
-    "stackIntroduction": "I am an Enterprise Software Developer. Mainly I use 2 stacks of technologies:",
-    "techStacks": [
-      "MERN Stack (MongoDB, Express.js, React.js, Node.js)",
-      ".NET Stack (C#, ASP.NET, WPF, Win. Forms, WCF, MS SQL Server etc.)"
-    ]
-  },
+
   "projects": [
     {
       "id": "spotify-app",
@@ -615,50 +615,6 @@
     "RDBS & NoSQL Databases",
     "Project Management",
     "Design Systems"
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "stars": "4"
-    },
-    {
-      "language": "Ukrainian",
-      "stars": "5"
-    },
-    {
-      "language": "Russian",
-      "stars": "5"
-    },
-    {
-      "language": "German",
-      "stars": "3"
-    },
-    {
-      "language": "Korean",
-      "stars": "1"
-    }
-  ],
-  "resources": [
-    {
-      "link": "http://www.linkedin.com/in/oleksiikachan",
-      "resource": "linkedin"
-    },
-    {
-      "link": "https://github.com/OleksiiKachan",
-      "resource": "github"
-    },
-    {
-      "link": "https://www.facebook.com/oleksiikachan",
-      "resource": "facebook"
-    },
-    {
-      "link": "https://www.instagram.com/oleksii.kachan/",
-      "resource": "instagram"
-    },
-    {
-      "link": "https://vk.com/oleksiikachan",
-      "resource": "vk"
-    }
   ],
   "experience": [
     {
