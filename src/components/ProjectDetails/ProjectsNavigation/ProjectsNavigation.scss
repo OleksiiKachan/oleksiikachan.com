@@ -27,3 +27,13 @@
     font-weight: 700;
   }
 }
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .projectsNavigation {
+    padding: 1rem 1rem;
+
+    &__linkArrow {
+      margin: 0 1rem 0 0;
+    }
+  }
+}
