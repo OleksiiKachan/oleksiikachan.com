@@ -22,6 +22,7 @@ exports[`ContactInfoPanel Snapshot 1`] = `
       }
     }
     iconAlt="Phone icon"
+    key="0"
   />
   <_default
     content="email"
@@ -36,6 +37,7 @@ exports[`ContactInfoPanel Snapshot 1`] = `
       }
     }
     iconAlt="Envelope icon"
+    key="1"
   />
   <_default
     content="location"
@@ -50,6 +52,7 @@ exports[`ContactInfoPanel Snapshot 1`] = `
       }
     }
     iconAlt="Compass icon"
+    key="2"
   />
 </div>
 `;

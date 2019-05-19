@@ -47,6 +47,7 @@ export default ({ contacts, className }: PropsType) => {
       {contactsData.map(contact => {
         return (
           <ContactInfoItem
+            key={contactsData.indexOf(contact)}
             icon={contact.icon}
             iconAlt={contact.iconAlt}
             content={contact.content}
