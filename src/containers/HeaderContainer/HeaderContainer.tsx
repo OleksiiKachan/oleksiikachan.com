@@ -41,7 +41,7 @@ class HeaderContainer extends Component<RouteComponentProps> {
   ];
 
   componentWillMount() {
-    const selected = this.props.location.pathname.split('/')[1];
+    const selected = this.props.location.pathname.split('/')[1] || 'about';
     this.navigationItems = this.navigationItems.map(item => {
       return item.sectionUrl === `/${selected}`
         ? { ...item, isSelected: true }
