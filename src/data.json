@@ -24,6 +24,86 @@
   },
   "projects": [
     {
+      "id": "spotify-app",
+      "teamSize": "4 people",
+      "partner": [
+        { "name": "Candy Digital", "url": "https://candydigital.co/" }
+      ],
+      "client": [
+        {
+          "name": "Spotify, Inc.",
+          "url": "https://www.spotify.com"
+        }
+      ],
+      "projectType": "development",
+      "title": "Spotify Marketing Banners Management System",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558290981/portfolio/images/projects/spotify-app/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558291364/portfolio/images/projects/spotify-app/cover.png",
+      "shortStack": "React + Typescript + Firebase",
+      "longStack": [
+        "React",
+        "Typescript",
+        "Redux",
+        "Firebase",
+        "SASS",
+        "Bootstrap",
+        "Figma",
+        "Github",
+        "CircleCI",
+        "Heroku",
+        "Jira + Slack"
+      ],
+      "projectDescription": [
+        {
+          "type": "string",
+          "content": "In tight collaboration with |bold|Candy Digital|-| I was working on a project for Spotify. The goal was to create a solution to automate marketing banners production process. In terms of measurable goals we had to reduce production time and effort."
+        },
+        {
+          "type": "string",
+          "content": "I had a team of 4 people (including me). I took a couple of roles in this team: |italic|Designer, Project Manager, Lead Developer|-|."
+        },
+        {
+          "type": "string",
+          "content": "Based on |italic|Spotify's|-| prcoesses descriptions I created |bold|low-fidelity prototype|-| in |italic|Figma|-|. After it being approved I started designing |bold|high-fidelity prototype|-|. At the final point we decided to leave prototype without changes, so it was a |bold|Final UI|-|."
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/low-fidelity_prototype.png",
+              "alt": "Low-Fidelity Prototype in Figma"
+            },
+            {
+              "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/high-fidelity_prototype.png",
+              "alt": "High-Fidelity Prototype in Figma"
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "content": "I defined the following development workflow"
+        },
+        {
+          "type": "list",
+          "header": "Development Workflow",
+          "list": [
+            "Jira Ticket",
+            "JS & TS lintters, Prettier",
+            "Husky hooks",
+            "Github",
+            "CircleCI",
+            "Heroku"
+          ]
+        },
+        {
+          "type": "imageWithText",
+          "alignment": "left",
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558289892/portfolio/images/projects/spotify-app/banner-tool.png",
+          "content": "The main |bold|problem|-| was to create a |italic|photoshop-like|-| tool to design banners. On the image you can see the result of solving this problem - light-weight photoshop-like tool to design banners with predefined sizes."
+        }
+      ]
+    },
+    {
       "id": "agw",
       "teamSize": "> 10 people",
       "partner": [{ "name": "OLSOM LLC", "url": "http://olsom.net/" }],
