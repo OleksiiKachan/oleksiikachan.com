@@ -88,7 +88,7 @@ export default class ProjectsSection extends Component<PropsType, StateType> {
           {this.state.projects.map((project: ProjectType) => {
             return (
               <ProjectCard
-                key={project.id}
+                key={this.state.projects.indexOf(project)}
                 id={project.id}
                 title={project.title}
                 stack={project.shortStack}

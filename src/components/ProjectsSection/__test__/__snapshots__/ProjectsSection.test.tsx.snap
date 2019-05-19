@@ -18,10 +18,12 @@ exports[`OutlineButton Snapshot 1`] = `
     className="projectsSection__content"
   >
     <_default
+      key="0"
       stack=".NET Framework"
       title="AGW MES / WMS for automotive industry"
     />
     <_default
+      key="1"
       stack=".NET Framework"
       title="AGW MES / WMS for automotive industry"
     />
