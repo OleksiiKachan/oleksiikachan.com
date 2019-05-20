@@ -18,7 +18,11 @@ type PropsType = {
 
 export default ({ type, url, className }: PropsType) => {
   return (
-    <a href={url} target="_blank" className={classNames('socialMediaButton')}>
+    <a
+      href={url}
+      target="_blank"
+      className={classNames('socialMediaButton', className)}
+    >
       <i
         className={classNames(
           'socialMediaButton__icon',
