@@ -2,6 +2,7 @@ import React, { Component, ReactNode } from 'react';
 import classNames from 'classnames';
 import HeaderContainer from '../../containers/HeaderContainer';
 import './MainLayout.scss';
+import FooterContainer from '../../containers/FooterContainer';
 
 /*
   <MainLayout
@@ -24,6 +25,7 @@ class MainLayout extends Component<PropsType> {
         <main className={classNames('app__mainContent', this.props.className)}>
           {this.props.children}
         </main>
+        <FooterContainer />
       </div>
     );
   }

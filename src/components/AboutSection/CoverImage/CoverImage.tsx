@@ -36,6 +36,7 @@ export default ({ name, title, resumeUrl, contacts, className }: PropsType) => {
               key={contacts.indexOf(item)}
               type={item.type}
               url={item.url}
+              className={classNames('coverImage__contactsItem')}
             />
           );
         })}
