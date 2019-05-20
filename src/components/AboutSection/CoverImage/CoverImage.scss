@@ -66,3 +66,14 @@
     margin: 0.5rem;
   }
 }
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .coverImage {
+    height: 25vh;
+
+    &__contacts,
+    &__text {
+      display: none;
+    }
+  }
+}
