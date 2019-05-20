@@ -29,11 +29,13 @@ exports[`CoverImage Snapshot 1`] = `
     className="coverImage__contacts"
   >
     <_default
+      className="coverImage__contactsItem"
       key="0"
       type="type1"
       url="url1"
     />
     <_default
+      className="coverImage__contactsItem"
       key="1"
       type="type2"
       url="url2"
