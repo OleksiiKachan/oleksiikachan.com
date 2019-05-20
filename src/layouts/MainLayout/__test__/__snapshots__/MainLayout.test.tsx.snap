@@ -10,5 +10,6 @@ exports[`MainLayout Snapshot 1`] = `
   >
     content
   </main>
+  <FooterContainer />
 </div>
 `;
