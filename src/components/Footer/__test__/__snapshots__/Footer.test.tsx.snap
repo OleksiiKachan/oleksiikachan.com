@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Snapshot 1`] = `
+<footer
+  className="footerWrapper"
+>
+  <div
+    className="footer"
+  >
+    <div
+      className="footer__logoWrapper"
+    >
+      <img
+        className="footer__logo"
+        src="https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_horizontal_dark.svg"
+      />
+    </div>
+    <div
+      className="footer__contacts"
+    >
+      <div
+        className="footer__smLinks"
+      >
+        <div
+          className="footer__smButton"
+          key="0"
+        >
+          <_default
+            type="type1"
+            url="url1"
+          />
+        </div>
+        <div
+          className="footer__smButton"
+          key="1"
+        >
+          <_default
+            type="type2"
+            url="url2"
+          />
+        </div>
+      </div>
+      <ul
+        className="footer__contactsList"
+      >
+        <li
+          className="footer__contactsItem"
+        >
+          email
+        </li>
+        <li
+          className="footer__contactsItem"
+        >
+          phone number
+        </li>
+        <li
+          className="footer__contactsItem"
+        >
+          location
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+`;
