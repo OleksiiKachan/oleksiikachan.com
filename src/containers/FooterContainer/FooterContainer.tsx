@@ -6,11 +6,9 @@ import Footer from '../../components/Footer';
 */
 class FooterContainer extends Component<any, any> {
   render() {
+    const dataStore = require('../../data.json');
     return (
-      <Footer
-        resources={this.props.resources}
-        className={this.props.className}
-      />
+      <Footer smContacts={dataStore.smContacts} contacts={dataStore.contacts} />
     );
   }
 }
