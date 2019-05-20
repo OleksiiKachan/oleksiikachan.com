@@ -26,4 +26,57 @@
     font-size: 1.6rem;
     font-style: italic;
   }
+
+  &__titleText {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .aboutSection {
+    &__titleText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 2rem 1rem;
+      text-align: right;
+    }
+    &__title {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+
+    &__resumeLink {
+      color: $color-link;
+      text-decoration: none;
+      display: flex;
+      align-items: flex-end;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin: 1rem 0;
+
+      &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/icons/icon_externalResource.svg');
+      }
+    }
+
+    &__introduction {
+      margin: 0 3rem;
+    }
+
+    &__availabilityLabel {
+      font-size: 1.4rem;
+    }
+  }
 }

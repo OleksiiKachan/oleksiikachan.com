@@ -28,6 +28,20 @@ export default ({ aboutInfo, className }: PropsType) => {
         resumeUrl={aboutInfo.resumeUrl}
         contacts={aboutInfo.smContacts}
       />
+
+      <div className={classNames('aboutSection__titleText')}>
+        <h1 className={classNames('aboutSection__title')}>{aboutInfo.name}</h1>
+        <h2 className={classNames('aboutSection__subtitle')}>
+          {aboutInfo.title}
+        </h2>
+        <a
+          href={aboutInfo.resumeUrl}
+          target="_blank"
+          className={classNames('aboutSection__resumeLink')}
+        >
+          Printable CV
+        </a>
+      </div>
       <div className={classNames('aboutSection__introduction', className)}>
         {aboutInfo.introduction.map(item => {
           return (

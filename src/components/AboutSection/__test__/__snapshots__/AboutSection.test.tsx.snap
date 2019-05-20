@@ -23,6 +23,27 @@ exports[`AboutSection Snapshot 1`] = `
     title="title"
   />
   <div
+    className="aboutSection__titleText"
+  >
+    <h1
+      className="aboutSection__title"
+    >
+      name
+    </h1>
+    <h2
+      className="aboutSection__subtitle"
+    >
+      title
+    </h2>
+    <a
+      className="aboutSection__resumeLink"
+      href="resume.url"
+      target="_blank"
+    >
+      Printable CV
+    </a>
+  </div>
+  <div
     className="aboutSection__introduction"
   >
     <p

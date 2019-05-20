@@ -20,12 +20,12 @@ class HeaderContainer extends Component<RouteComponentProps> {
       sectionUrl: '/projects',
       isSelected: false,
     },
-    {
-      key: 'mi_competencies',
-      title: 'Competencies',
-      sectionUrl: '/competencies',
-      isSelected: false,
-    },
+    // {
+    //   key: 'mi_competencies',
+    //   title: 'Competencies',
+    //   sectionUrl: '/competencies',
+    //   isSelected: false,
+    // },
     {
       key: 'mi_education',
       title: 'Education & Experience',
