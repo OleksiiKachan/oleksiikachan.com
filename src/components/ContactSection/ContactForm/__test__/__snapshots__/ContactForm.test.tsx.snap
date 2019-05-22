@@ -10,7 +10,6 @@ exports[`ContactForm Snapshot 1`] = `
     Contact Me
   </h2>
   <form
-    action="https://formspree.io/alexkachan.lutsk@gmail.com"
     autoComplete="off"
     className="contactForm__form"
     method="post"
