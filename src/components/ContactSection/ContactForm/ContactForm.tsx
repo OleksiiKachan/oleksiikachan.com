@@ -21,7 +21,6 @@ export default ({ className }: PropsType) => {
       <form
         className={classNames('contactForm__form')}
         autoComplete="off"
-        action="https://formspree.io/alexkachan.lutsk@gmail.com"
         method="post"
       >
         <div>
