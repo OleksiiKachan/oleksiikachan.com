@@ -64,14 +64,6 @@ exports[`TimelineContainer Snapshot 1`] = `
             "id": "tdm",
             "title": "TDM (Tools Data Manager). Manufacturing data collection and management solution",
           },
-          Object {
-            "id": "ftp-service",
-            "title": "FTP Transfer Service",
-          },
-          Object {
-            "id": "cardboard-prod",
-            "title": "Corrugated Cardboard Production System",
-          },
         ],
         "responsibilities": Array [
           "Development and support of the company's products: AGW Automitive Manufacturing Solution; TDM (Tools Data Manager) for automotive industry",
