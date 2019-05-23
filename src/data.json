@@ -367,48 +367,28 @@
       ]
     },
     {
-      "id": "cardboard-prod",
-      "teamSize": "2 people",
-      "partner": [
-        { "name": "OLSOM LLC", "url": "http://olsom.net/" },
+      "id": "elf-landing",
+      "client": [
         {
-          "name": "Agile Automation Technology LLC  ",
-          "url": "http://www.agileautomation.net/"
+          "name": "Private Company \"Elf\""
         }
       ],
-      "projectType": "development",
-      "title": "Corrugated Cardboard Production System",
-      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557529749/portfolio/images/projects/cardboard-prod/card.png",
-      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557529541/portfolio/images/projects/cardboard-prod/cover.png",
-      "shortStack": "Ladder Logic",
-      "longStack": ["Ladder Logic", "Microsoft Visio"],
+      "projectType": "design",
+      "title": "Landing Page Design for agricultural machinery parts reseller",
+      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558642091/portfolio/images/projects/elf_landing/card.png",
+      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534200/portfolio/images/projects/elf_landing/cover.png",
+      "shortStack": "Landing Page Design",
+      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
       "projectDescription": [
         {
           "type": "string",
-          "content": "|bold|Reverse engineering|-| of |italic|ladder-logic|-| based corrugated industrial cardboard |bold|production software|-| to get a complete networking system. The System was developed using ladder logic so I had to understand what is going on there and then create some |bold|technical documentation|-| on how this system works."
+          "content": "Company started it's way on digitalization and I was responsible for representation on the Internet inmprovement. After interviews with the company I desided to redesign company's brand site. Unfortunatelly, project is on pause due to other higher company's priorities."
         }
-      ]
-    },
-    {
-      "id": "ftp-serivce",
-      "teamSize": "2 people",
-      "partner": [{ "name": "OLSOM LLC", "url": "http://olsom.net/" }],
-      "projectType": "development",
-      "title": "FTP File Transfer Service",
-      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534995/portfolio/images/projects/ftp-service/card.png",
-      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557535138/portfolio/images/projects/ftp-service/cover.png",
-      "shortStack": ".NET Framework",
-      "longStack": [
-        ".NET Framework",
-        "C#",
-        "Windows Service",
-        "Windows OS",
-        "Linux OS"
       ],
-      "projectDescription": [
+      "externalResources": [
         {
-          "type": "string",
-          "content": "|bold|Multi-threaded|-| Windows |italic|service|-| that transfers files locally and/or remotely via |bold|FTP|-| and is configured with *.ini file. All the service events, faults, warnings are logged in to the local txt file and |bold|Windows system log|-|."
+          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534410/portfolio/pdfs/elf-landing_page_design.pdf",
+          "name": "Landing Page Design"
         }
       ]
     },
@@ -571,32 +551,6 @@
           "name": "Presentation File"
         }
       ]
-    },
-    {
-      "id": "elf-landing",
-      "client": [
-        {
-          "name": "Private Company \"Elf\""
-        }
-      ],
-      "projectType": "design",
-      "title": "Landing Page Design for agricultural machinery parts reseller",
-      "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534199/portfolio/images/projects/elf_landing/card.png",
-      "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534200/portfolio/images/projects/elf_landing/cover.png",
-      "shortStack": "Landing Page Design",
-      "longStack": ["Adobe Illustrator", "Adobe Photoshop"],
-      "projectDescription": [
-        {
-          "type": "string",
-          "content": "Company started it's way on digitalization and I was responsible for representation on the Internet inmprovement. After interviews with the company I desided to redesign company's brand site. Unfortunatelly, project is on pause due to other higher company's priorities."
-        }
-      ],
-      "externalResources": [
-        {
-          "url": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557534410/portfolio/pdfs/elf-landing_page_design.pdf",
-          "name": "Landing Page Design"
-        }
-      ]
     }
   ],
 
@@ -657,11 +611,6 @@
         {
           "id": "tdm",
           "title": "TDM (Tools Data Manager). Manufacturing data collection and management solution"
-        },
-        { "id": "ftp-service", "title": "FTP Transfer Service" },
-        {
-          "id": "cardboard-prod",
-          "title": "Corrugated Cardboard Production System"
         }
       ]
     }
