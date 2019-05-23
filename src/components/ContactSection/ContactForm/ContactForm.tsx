@@ -21,11 +21,17 @@ export default ({ className }: PropsType) => {
       <form
         className={classNames('contactForm__form')}
         autoComplete="off"
-        method="post"
+        action="https://formspree.io/alexkachan.lutsk@gmail.com"
+        method="POST"
       >
         <div>
           <Textbox fieldName="name" label="Your name" required />
-          <Textbox fieldName="email" label="Your email" type="email" required />
+          <Textbox
+            fieldName="_replyto"
+            label="Your email"
+            type="email"
+            required
+          />
         </div>
         <Textbox fieldName="message" label="Your message" required />
         <OutlineButton type="gold" onClick={() => {}} isSubmit>
