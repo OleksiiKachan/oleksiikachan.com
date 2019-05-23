@@ -10,9 +10,10 @@ exports[`ContactForm Snapshot 1`] = `
     Contact Me
   </h2>
   <form
+    action="https://formspree.io/alexkachan.lutsk@gmail.com"
     autoComplete="off"
     className="contactForm__form"
-    method="post"
+    method="POST"
   >
     <div>
       <_default
@@ -21,7 +22,7 @@ exports[`ContactForm Snapshot 1`] = `
         required={true}
       />
       <_default
-        fieldName="email"
+        fieldName="_replyto"
         label="Your email"
         required={true}
         type="email"
