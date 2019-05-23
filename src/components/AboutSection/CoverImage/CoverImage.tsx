@@ -37,6 +37,9 @@ export default ({ name, title, resumeUrl, contacts, className }: PropsType) => {
               type={item.type}
               url={item.url}
               className={classNames('coverImage__contactsItem')}
+              style={{
+                animationDelay: `${300 + contacts.indexOf(item) * 100}ms`,
+              }}
             />
           );
         })}
