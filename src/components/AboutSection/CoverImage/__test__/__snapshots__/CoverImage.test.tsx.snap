@@ -31,12 +31,22 @@ exports[`CoverImage Snapshot 1`] = `
     <_default
       className="coverImage__contactsItem"
       key="0"
+      style={
+        Object {
+          "animationDelay": "300ms",
+        }
+      }
       type="type1"
       url="url1"
     />
     <_default
       className="coverImage__contactsItem"
       key="1"
+      style={
+        Object {
+          "animationDelay": "400ms",
+        }
+      }
       type="type2"
       url="url2"
     />
