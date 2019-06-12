@@ -4,17 +4,11 @@ exports[`ImageField Snapshot 1`] = `
 <div
   className="imageField"
 >
-  <div
+  <img
     className="imageField__imageSlide"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
-  >
-    <div
-      className="imageField__imageShader"
-    />
-  </div>
+  />
+  <div
+    className="imageField__imageShader"
+  />
 </div>
 `;

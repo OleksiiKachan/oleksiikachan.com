@@ -1,10 +1,6 @@
 @import '../../assets/style/variables';
 
 .projectDetails {
-  &__images {
-    height: 50vh;
-  }
-
   &__content {
     padding: 3rem 6rem;
   }
@@ -55,10 +51,6 @@
 
 @media screen and (max-width: $breakpoint-tablet) {
   .projectDetails {
-    &__images {
-      height: 30vh;
-    }
-
     &__content {
       padding: 1rem 2rem;
     }
