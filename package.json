@@ -68,5 +68,18 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
