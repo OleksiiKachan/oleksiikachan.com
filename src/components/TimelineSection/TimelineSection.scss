@@ -1,4 +1,5 @@
 @import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .experienceTimelineSection {
   padding: 3rem 2rem;
@@ -16,6 +17,10 @@
     margin-bottom: 24px;
     color: $color-grey;
     font-size: 18pt;
+
+    @include respond(tablet) {
+      font-size: 15pt;
+    }
   }
 
   &__timeline {
@@ -32,6 +37,10 @@
     left: 50%;
     bottom: 150%;
     animation: timelineLine 1500ms ease-in-out forwards;
+
+    @include respond(tablet) {
+      left: 15%;
+    }
   }
 
   @keyframes timelineLine {
@@ -40,18 +49,6 @@
     }
     to {
       bottom: 0;
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .experienceTimelineSection {
-    &__title {
-      font-size: 15pt;
-    }
-
-    &__timeline::before {
-      left: 15%;
     }
   }
 }

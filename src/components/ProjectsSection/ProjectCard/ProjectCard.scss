@@ -1,4 +1,5 @@
 @import '../../../assets/style/variables';
+@import '../../../assets/style/mixins';
 
 .projectCard {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -10,8 +11,17 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @include respond(tablet) {
+    margin: 1rem;
+    animation: none;
+  }
+
   &:hover {
     animation: popOnHover-enter-15 400ms ease-in-out forwards;
+
+    @include respond(tablet) {
+      animation: none;
+    }
   }
 
   &__shader {
@@ -28,6 +38,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @include respond(tablet) {
+      opacity: 1;
+      background-color: rgba($color-black, 0.85);
+    }
+
     &:hover {
       animation: opacity 200ms ease-in-out forwards;
 
@@ -39,6 +54,14 @@
       }
       .projectCard__button {
         animation: fromBottomToCenter 500ms ease-in-out forwards;
+      }
+
+      @include respond(tablet) {
+        .projectCard__title,
+        .projectCard__stack,
+        .projectCard__button {
+          animation: none;
+        }
       }
     }
   }
@@ -55,6 +78,10 @@
     color: $color-black;
 
     transform: translateX(-100%);
+
+    @include respond(tablet) {
+      transform: translateX(0);
+    }
   }
 
   &__stack {
@@ -64,52 +91,17 @@
     text-align: center;
 
     transform: translateX(-100%);
+
+    @include respond(tablet) {
+      transform: translateX(0);
+    }
   }
 
   &__button {
     margin-bottom: 2rem;
 
     transform: translateY(100%);
-  }
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .projectCard {
-    margin: 1rem;
-    animation: none;
-
-    &:hover {
-      animation: none;
-    }
-
-    &__inner {
-      opacity: 1;
-      background-color: rgba($color-black, 0.85);
-
-      &:hover {
-        animation: none;
-
-        .projectCard__title {
-          animation: none;
-        }
-        .projectCard__stack {
-          animation: none;
-        }
-        .projectCard__button {
-          animation: none;
-        }
-      }
-    }
-
-    &__title {
-      transform: translateX(0);
-    }
-
-    &__stack {
-      transform: translateX(0);
-    }
-
-    &__button {
+    @include respond(tablet) {
       transform: translateY(0);
     }
   }

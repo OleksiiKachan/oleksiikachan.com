@@ -17,7 +17,7 @@ type PropsType = {
 export default ({ className }: PropsType) => {
   return (
     <div className={classNames('contactForm', className)}>
-      <h2 className={classNames('contactForm__title')}>Contact Me</h2>
+      <h3 className={classNames('contactForm__title')}>Contact Me</h3>
       <form
         className={classNames('contactForm__form')}
         autoComplete="off"

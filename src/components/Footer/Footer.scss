@@ -1,4 +1,5 @@
-@import '../../assets/style/_variables.scss';
+@import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .footerWrapper {
   box-sizing: border-box;
@@ -25,6 +26,17 @@
   align-items: center;
   padding: 2rem 5rem;
 
+  @include respond(tablet) {
+    padding: 2rem 0;
+    justify-content: center;
+  }
+
+  &__logoWrapper {
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+
   &__logo {
     width: 40%;
   }
@@ -41,6 +53,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+
+    @include respond(tablet) {
+      margin: 1rem;
+      align-items: center;
+    }
   }
 
   &__contactsItem {
@@ -55,21 +72,5 @@
 
   &__smButton {
     margin: 0 0.5rem;
-  }
-}
-
-@media (max-width: $breakpoint-tablet) {
-  .footer {
-    padding: 2rem 0;
-    justify-content: center;
-
-    &__logoWrapper {
-      display: none;
-    }
-
-    &__contactsList {
-      margin: 1rem;
-      align-items: center;
-    }
   }
 }

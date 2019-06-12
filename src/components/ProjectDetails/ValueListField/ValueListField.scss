@@ -1,4 +1,5 @@
 @import '../../../assets/style/variables';
+@import '../../../assets/style/mixins';
 
 .valueListField {
   &__label {
@@ -6,6 +7,10 @@
     margin-bottom: 1.5rem;
     font-weight: 700;
     font-size: 1.2em;
+
+    @include respond(tablet) {
+      font-size: 1rem;
+    }
   }
 
   &__list {
@@ -27,14 +32,6 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url('../../../assets/icons/icon_list-checked.svg');
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .valueListField {
-    &__label {
-      font-size: 1rem;
     }
   }
 }

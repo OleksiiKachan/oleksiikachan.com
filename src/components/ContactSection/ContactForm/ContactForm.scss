@@ -1,16 +1,14 @@
 @import '../../../assets/style/variables';
+@import '../../../assets/style/mixins';
 
 .contactForm {
   background: rgba(66, 66, 66, 0.8);
-  box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  padding: 25px 40px;
+  padding: 1.6rem 2rem;
 
   &__title {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #ddd;
-    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: $color-white;
   }
 
   &__form {
@@ -19,13 +17,5 @@
     justify-content: space-around;
     align-items: stretch;
     height: 85%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contactForm {
-    &__title {
-      font-size: 1rem;
-    }
   }
 }

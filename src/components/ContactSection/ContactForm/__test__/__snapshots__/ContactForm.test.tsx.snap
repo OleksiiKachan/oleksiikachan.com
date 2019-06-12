@@ -4,11 +4,11 @@ exports[`ContactForm Snapshot 1`] = `
 <div
   className="contactForm"
 >
-  <h2
+  <h3
     className="contactForm__title"
   >
     Contact Me
-  </h2>
+  </h3>
   <form
     action="https://formspree.io/alexkachan.lutsk@gmail.com"
     autoComplete="off"

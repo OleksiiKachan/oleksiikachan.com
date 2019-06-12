@@ -1,18 +1,32 @@
 @import '../../../assets/style/variables';
+@import '../../../assets/style/mixins';
 
 .educationPage {
   background-color: $color-black;
   color: $color-white;
   padding: 3rem;
 
+  @include respond(tablet) {
+    padding: 2rem;
+    font-size: 0.8rem;
+  }
+
   &__header {
     font-size: 1.75rem;
+
+    @include respond(tablet) {
+      font-size: 1rem;
+    }
   }
 
   &__subheader {
     display: flex;
     align-items: center;
     font-size: 0.9rem;
+
+    @include respond(tablet) {
+      font-size: 0.7rem;
+    }
   }
 
   &__field {
@@ -28,20 +42,5 @@
 
   &__value {
     font-family: $body-font;
-  }
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .educationPage {
-    padding: 2rem;
-    font-size: 0.8rem;
-
-    &__header {
-      font-size: 1rem;
-    }
-
-    &__subheader {
-      font-size: 0.7rem;
-    }
   }
 }

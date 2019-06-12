@@ -1,4 +1,5 @@
 @import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .contactSection {
   display: flex;
@@ -10,42 +11,35 @@
   background-position: center;
   background-attachment: fixed;
   box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
-.contactSection__title {
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
-
-.contactSection__content {
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  width: 80%;
-}
-
-.contactSection__contactColumn {
-  width: 40%;
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .contactSection {
+  @include respond(tablet) {
     padding: 1rem 0;
-    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .contactSection__title {
-    font-size: 1.2rem;
+  &__title {
+    margin-bottom: 2rem;
   }
 
-  .contactSection__content {
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 80%;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
   }
 
-  .contactSection__contactColumn {
-    width: 100%;
-    font-size: 0.8rem;
+  &__contactColumn {
+    width: 40%;
+
+    @include respond(tablet) {
+      width: 100%;
+      font-size: 0.8rem;
+    }
   }
 }

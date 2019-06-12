@@ -1,4 +1,5 @@
 @import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .textbox {
   position: relative;
@@ -33,12 +34,8 @@
     pointer-events: none;
     transition: all 0.5s ease-in-out;
     letter-spacing: 1px;
-  }
-}
 
-@media screen and (max-width: $breakpoint-tablet) {
-  .textbox {
-    &__label {
+    @include respond(tablet) {
       font-size: 0.7rem;
     }
   }
