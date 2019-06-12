@@ -24,6 +24,7 @@ export default ({ smContacts, contacts, className }: PropsType) => {
         <div className={classNames('footer__logoWrapper')}>
           <img
             src="https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_horizontal_dark.svg"
+            alt="Oleksii Kachan logo"
             className={classNames('footer__logo')}
           />
         </div>

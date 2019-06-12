@@ -43,6 +43,7 @@ export default ({
           });
           return { ...item, list };
         }
+        break;
       default:
         if (item.content) {
           const content = item.content

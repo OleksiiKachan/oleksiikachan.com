@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { RouteComponentProps, withRouter } from 'react-router';
+import { RouteComponentProps } from 'react-router';
 import { ProjectType } from '../../lib/types';
 import ProjectDetails from '../../components/ProjectDetails';
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import OutlineButton from '../../OutlineButton';
 import Textbox from '../../Textbox';

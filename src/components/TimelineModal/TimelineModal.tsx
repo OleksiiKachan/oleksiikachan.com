@@ -51,6 +51,7 @@ export default class TimelineModal extends Component<PropsType> {
         <section className="modal-main" ref={this.modalRef}>
           <img
             src={icon_close}
+            alt="close icon"
             onClick={this.props.handleClose}
             className={classNames('modal-closeButton')}
           />

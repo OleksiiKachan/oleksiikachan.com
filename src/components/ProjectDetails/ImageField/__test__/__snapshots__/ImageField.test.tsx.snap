@@ -5,6 +5,7 @@ exports[`ImageField Snapshot 1`] = `
   className="imageField"
 >
   <img
+    alt=""
     className="imageField__imageSlide"
   />
   <div

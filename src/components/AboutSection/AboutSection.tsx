@@ -37,6 +37,7 @@ export default ({ aboutInfo, className }: PropsType) => {
         <a
           href={aboutInfo.resumeUrl}
           target="_blank"
+          rel="noopener noreferrer"
           className={classNames('aboutSection__resumeLink')}
         >
           Printable CV

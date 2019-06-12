@@ -12,6 +12,7 @@ exports[`ProjectsNavigation Snapshot 1`] = `
       to="/projects"
     >
       <img
+        alt="Left looking arrow"
         className="projectsNavigation__linkArrow"
         src={
           Object {

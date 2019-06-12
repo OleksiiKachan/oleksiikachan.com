@@ -11,6 +11,7 @@ exports[`Footer Snapshot 1`] = `
       className="footer__logoWrapper"
     >
       <img
+        alt="Oleksii Kachan logo"
         className="footer__logo"
         src="https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_horizontal_dark.svg"
       />

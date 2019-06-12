@@ -38,6 +38,7 @@ exports[`AboutSection Snapshot 1`] = `
     <a
       className="aboutSection__resumeLink"
       href="resume.url"
+      rel="noopener noreferrer"
       target="_blank"
     >
       Printable CV

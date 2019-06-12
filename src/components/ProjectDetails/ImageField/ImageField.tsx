@@ -17,7 +17,11 @@ type PropsType = {
 export default ({ image, className }: PropsType) => {
   return (
     <div className={classNames('imageField', className)}>
-      <img src={image} className={classNames('imageField__imageSlide')} />
+      <img
+        src={image}
+        alt=""
+        className={classNames('imageField__imageSlide')}
+      />
       <div className={classNames('imageField__imageShader')} />
     </div>
   );
