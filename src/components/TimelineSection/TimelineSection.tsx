@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import TimelineItem from './TimelineItem';
 import './TimelineSection.scss';

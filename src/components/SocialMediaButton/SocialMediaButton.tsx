@@ -23,6 +23,7 @@ export default ({ type, url, className, style }: PropsType) => {
     <a
       href={url}
       target="_blank"
+      rel="noopener noreferrer"
       className={classNames('socialMediaButton', className)}
       style={style}
     >

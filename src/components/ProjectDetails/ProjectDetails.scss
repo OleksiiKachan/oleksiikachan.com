@@ -1,8 +1,13 @@
 @import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .projectDetails {
   &__content {
     padding: 3rem 6rem;
+
+    @include respond(tablet) {
+      padding: 1rem 2rem;
+    }
   }
 
   &__title {
@@ -21,6 +26,10 @@
   &__teamSize {
     font-size: 0.85rem;
     font-style: italic;
+
+    @include respond(tablet) {
+      font-size: 0.65rem;
+    }
   }
 
   &__listField {
@@ -34,7 +43,6 @@
 
   &__paragraphField {
     margin: 3rem 0;
-    text-align: justify;
     font-size: 1rem;
   }
 }
@@ -46,23 +54,5 @@
 
   &_italic {
     font-style: italic;
-  }
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .projectDetails {
-    &__content {
-      padding: 1rem 2rem;
-    }
-
-    &__title {
-      font-size: 1.2rem;
-    }
-    &__teamSize {
-      font-size: 0.65rem;
-    }
-    &__paragraphField {
-      font-size: 1rem;
-    }
   }
 }

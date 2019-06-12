@@ -4,6 +4,7 @@ exports[`SocialMediaButton Snapshot 1`] = `
 <a
   className="socialMediaButton"
   href="github.com"
+  rel="noopener noreferrer"
   target="_blank"
 >
   <i

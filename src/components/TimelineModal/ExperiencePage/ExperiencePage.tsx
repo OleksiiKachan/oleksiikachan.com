@@ -87,6 +87,7 @@ export default ({ item }: PropsType) => {
                   <li key={project.id}>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       className={classNames('experiencePage__link')}
                       href={`https://oleksiikachan.com/projects/${project.id}`}
                     >

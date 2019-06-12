@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import OutlineButton from '../../OutlineButton';
 import Textbox from '../../Textbox';
@@ -17,7 +17,7 @@ type PropsType = {
 export default ({ className }: PropsType) => {
   return (
     <div className={classNames('contactForm', className)}>
-      <h2 className={classNames('contactForm__title')}>Contact Me</h2>
+      <h3 className={classNames('contactForm__title')}>Contact Me</h3>
       <form
         className={classNames('contactForm__form')}
         autoComplete="off"

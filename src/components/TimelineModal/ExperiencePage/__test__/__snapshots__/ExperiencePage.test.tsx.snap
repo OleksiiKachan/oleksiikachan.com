@@ -90,6 +90,7 @@ exports[`ExperiencePage Snapshot 1`] = `
           <a
             className="experiencePage__link"
             href="https://oleksiikachan.com/projects/agw"
+            rel="noopener noreferrer"
             target="_blank"
           >
             AGW modular complex solution for automotive industry
@@ -101,6 +102,7 @@ exports[`ExperiencePage Snapshot 1`] = `
           <a
             className="experiencePage__link"
             href="https://oleksiikachan.com/projects/ftp-service"
+            rel="noopener noreferrer"
             target="_blank"
           >
             FTP Transfer Service
@@ -112,6 +114,7 @@ exports[`ExperiencePage Snapshot 1`] = `
           <a
             className="experiencePage__link"
             href="https://oleksiikachan.com/projects/tdm"
+            rel="noopener noreferrer"
             target="_blank"
           >
             TDM (Tools Data Manager) for automotive industry
@@ -123,6 +126,7 @@ exports[`ExperiencePage Snapshot 1`] = `
           <a
             className="experiencePage__link"
             href="https://oleksiikachan.com/projects/cardboard-prod"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Corrugated Cardboard Production System

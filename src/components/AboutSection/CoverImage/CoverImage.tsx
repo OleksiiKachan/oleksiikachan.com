@@ -24,6 +24,7 @@ export default ({ name, title, resumeUrl, contacts, className }: PropsType) => {
         <a
           href={resumeUrl}
           target="_blank"
+          rel="noopener noreferrer"
           className={classNames('coverImage__resumeLink')}
         >
           Printable CV

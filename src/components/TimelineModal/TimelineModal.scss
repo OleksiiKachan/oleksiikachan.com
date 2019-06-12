@@ -1,4 +1,5 @@
 @import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .modal {
   position: fixed;
@@ -23,18 +24,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.29);
+
+  @include respond(tablet) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+  }
 }
 
 .modal-closeButton {
   float: right;
   margin: 10px;
   cursor: pointer;
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .modal-main {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);
-  }
 }

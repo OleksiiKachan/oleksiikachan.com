@@ -43,6 +43,7 @@ export default ({
                 <a
                   href={item.url}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={classNames('urlListField__url')}
                 >
                   {item.name}

@@ -28,6 +28,7 @@ export default ({ className }: PropsType) => {
         >
           <img
             src={icon_arrowBack}
+            alt="Left looking arrow"
             className={classNames('projectsNavigation__linkArrow')}
           />
           <span className={classNames('projectsNavigation__linkCaption')}>

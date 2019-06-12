@@ -73,6 +73,7 @@ export default ({ content, className }: PropsType) => {
               >
                 <img
                   src={item.url}
+                  alt=""
                   className={classNames('imageWithTextSection__image')}
                 />
                 <p className={classNames('imageWithTextSection__description')}>
@@ -108,6 +109,8 @@ export default ({ content, className }: PropsType) => {
                   })}
               </div>
             );
+          default:
+            return '';
         }
       })}
     </div>

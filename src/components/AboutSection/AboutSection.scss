@@ -1,8 +1,24 @@
 @import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .aboutSection {
+  &__title {
+    @include respond(tablet) {
+      margin: 0.5rem 0;
+    }
+  }
+
+  &__subtitle {
+    @include respond(tablet) {
+    }
+  }
+
   &__introduction {
     margin: 3rem;
+
+    @include respond(tablet) {
+      margin: 0 3rem;
+    }
   }
 
   &__introductionParagraph {
@@ -20,6 +36,10 @@
 
   &__availabilityLabel {
     font-size: 1.8rem;
+
+    @include respond(tablet) {
+      font-size: 1.4rem;
+    }
   }
 
   &__availabilityDate {
@@ -29,12 +49,8 @@
 
   &__titleText {
     display: none;
-  }
-}
 
-@media screen and (max-width: $breakpoint-tablet) {
-  .aboutSection {
-    &__titleText {
+    @include respond(tablet) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -42,16 +58,10 @@
       padding: 2rem 1rem;
       text-align: right;
     }
-    &__title {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-    }
+  }
 
-    &__subtitle {
-      font-size: 1rem;
-    }
-
-    &__resumeLink {
+  &__resumeLink {
+    @include respond(tablet) {
       color: $color-link;
       text-decoration: none;
       display: flex;
@@ -69,14 +79,6 @@
         background-repeat: no-repeat;
         background-image: url('../../assets/icons/icon_externalResource.svg');
       }
-    }
-
-    &__introduction {
-      margin: 0 3rem;
-    }
-
-    &__availabilityLabel {
-      font-size: 1.4rem;
     }
   }
 }

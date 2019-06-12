@@ -8,6 +8,7 @@ exports[`TimelineModal Snapshot 1`] = `
     className="modal-main"
   >
     <img
+      alt="close icon"
       className="modal-closeButton"
       onClick={[Function]}
       src={

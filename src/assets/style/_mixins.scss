@@ -1,4 +1,24 @@
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
+@import './variables';
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $breakpoint-phone) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+  @if $breakpoint == giant {
+    @media only screen and (min-width: $breakpoint-giant) {
+      @content;
+    }
+  }
 }

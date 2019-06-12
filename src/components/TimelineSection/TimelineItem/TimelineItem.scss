@@ -1,5 +1,6 @@
 @import '../../../assets/style/keyframes';
 @import '../../../assets/style/variables';
+@import '../../../assets/style/mixins';
 
 .timelineItem {
   position: relative;
@@ -35,49 +36,7 @@
     }
   }
 
-  &__icon {
-    width: 48px;
-    position: relative;
-  }
-
-  &__circle {
-    width: 36px;
-    height: 36px;
-    background-color: $color-grey;
-    border: 8px solid $color-surface;
-    border-radius: 50%;
-    z-index: 1;
-    transform: scale(0);
-    position: relative;
-    left: calc(50% - 17px);
-    animation: pop 700ms ease-in-out forwards;
-  }
-
-  &__content {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  &__title {
-    margin-bottom: 8px;
-    font-size: 14pt;
-  }
-
-  &__subtitle {
-    font-size: 10pt;
-    margin: 24px 0;
-  }
-
-  &__dates {
-    font-weight: 100;
-    font-size: 11pt;
-  }
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .timelineItem {
+  @include respond(tablet) {
     margin: 60px 0;
 
     &:first-child {
@@ -96,24 +55,59 @@
           fromRightToCenter 700ms ease-in-out forwards;
       }
     }
+  }
 
-    &__circle {
+  &__icon {
+    width: 48px;
+    position: relative;
+  }
+
+  &__circle {
+    width: 36px;
+    height: 36px;
+    background-color: $color-grey;
+    border: 8px solid $color-surface;
+    border-radius: 50%;
+    z-index: 1;
+    transform: scale(0);
+    position: relative;
+    left: calc(50% - 17px);
+    animation: pop 700ms ease-in-out forwards;
+
+    @include respond(tablet) {
       left: calc(15% - 17px);
     }
+  }
 
-    &__content {
+  &__content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include respond(tablet) {
       width: 60%;
     }
+  }
 
-    &__title {
+  &__title {
+    margin-bottom: 8px;
+    font-size: 14pt;
+    @include respond(tablet) {
       font-size: 10pt;
     }
+  }
 
-    &__subtitle {
-      font-size: 10pt;
-    }
+  &__subtitle {
+    font-size: 10pt;
+    margin: 24px 0;
+  }
 
-    &__dates {
+  &__dates {
+    font-weight: 100;
+    font-size: 11pt;
+
+    @include respond(tablet) {
       font-size: 10pt;
     }
   }
