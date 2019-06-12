@@ -1,9 +1,11 @@
 @import './variables';
+@import './mixins';
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  outline: none;
   box-sizing: border-box;
 }
 
@@ -19,4 +21,16 @@ h1,
 h2,
 h3 {
   font-family: $head-font;
+}
+
+h1 {
+  @include respond(tablet) {
+    font-size: 1.2rem;
+  }
+}
+
+h2 {
+  @include respond(tablet) {
+    font-size: 1rem;
+  }
 }
