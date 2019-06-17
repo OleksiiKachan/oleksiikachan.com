@@ -1,0 +1,44 @@
+@import '../../../../assets/style/variables';
+@import '../../../../assets/style/mixins';
+
+.projectsFilter {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+  &__item {
+    margin: 0 10px;
+    padding: 10px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $color-link;
+      margin-top: 3px;
+      margin-top: 3px;
+    }
+
+    &_clicked {
+      &::after {
+        animation: widthGrow 300ms ease-in-out forwards;
+      }
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-link;
+    cursor: pointer;
+
+    @include respond(tablet) {
+      font-size: 0.8rem;
+    }
+  }
+}
