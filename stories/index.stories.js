@@ -4,20 +4,26 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { Button, Welcome } from '@storybook/react/demo';
+import { Welcome } from '@storybook/react/demo';
+import OutlineButton from '../src/components/OutlineButton';
+import Textbox from '../src/components/Textbox';
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
 ));
 
-storiesOf('Button', module)
-  .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+storiesOf('OutlineButton', module)
+  .add('Gold Button', () => (
+    <OutlineButton onClick={action('clicked')} type="gold">
+      Gold Button
+    </OutlineButton>
   ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
+  .add('Dark Button', () => (
+    <OutlineButton onClick={action('clicked')} type="dark">
+      Dark Button
+    </OutlineButton>
   ));
+
+storiesOf('Textbox', module).add('Default', () => (
+  <Textbox fieldName="fieldName" label="Field Label" required />
+));
