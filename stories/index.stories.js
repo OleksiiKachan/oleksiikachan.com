@@ -5,8 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
-import OutlineButton from '../src/components/OutlineButton';
-import Textbox from '../src/components/Textbox';
+import { OutlineButton, Textbox } from '../src/ui/elements';
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
