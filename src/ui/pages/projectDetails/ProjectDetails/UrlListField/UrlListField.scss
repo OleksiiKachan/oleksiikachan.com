@@ -1,0 +1,49 @@
+@import '../../../../assets/style/variables';
+
+.urlListField {
+  display: flex;
+
+  &_column {
+    flex-direction: column;
+
+    .urlListField__label {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__label {
+    color: $color-black;
+    margin-right: 2rem;
+    font-weight: 700;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__listItem {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  &__url {
+    color: $color-link;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      margin-left: 4px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../../../../assets/icons/icon_externalResource.svg');
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../../assets/style/variables';
+@import '../../../../assets/style/mixins';
+
+.projectsNavigation {
+  padding: 1rem 2rem;
+
+  @include respond(tablet) {
+    padding: 1rem 1rem;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_align-right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-link;
+    padding-bottom: 1rem;
+  }
+
+  &__linkArrow {
+    margin: 0 1rem;
+
+    @include respond(tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &__linkCaption {
+    font-weight: 700;
+  }
+}
