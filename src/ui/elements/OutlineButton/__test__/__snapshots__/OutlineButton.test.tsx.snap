@@ -1,8 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OutlineButton should render correctly in "debug" mode 1`] = `
+exports[`OutlineButton Dark button 1`] = `
 <button
-  className="outlineButton outlineButton_undefined"
+  className="outlineButton outlineButton_dark"
+  onClick={[Function]}
+  type="button"
+>
+  Caption
+</button>
+`;
+
+exports[`OutlineButton Gold button 1`] = `
+<button
+  className="outlineButton outlineButton_gold"
   onClick={[Function]}
   type="button"
 >

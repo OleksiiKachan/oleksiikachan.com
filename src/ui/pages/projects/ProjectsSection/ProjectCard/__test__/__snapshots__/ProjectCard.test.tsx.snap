@@ -5,7 +5,7 @@ exports[`ProjectCard Snapshot 1`] = `
   className="projectCard"
   style={
     Object {
-      "backgroundImage": "url(undefined)",
+      "backgroundImage": "url(imageUrl)",
     }
   }
 >
@@ -27,7 +27,7 @@ exports[`ProjectCard Snapshot 1`] = `
       </div>
       <Link
         className="projectCard__button"
-        to="projects/undefined"
+        to="projects/id"
       >
         <_default
           onClick={[Function]}
