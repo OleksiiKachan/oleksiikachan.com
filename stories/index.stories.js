@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
-import { OutlineButton, Textbox } from '../src/ui/elements';
+import { OutlineButton, Textbox, TechBadge } from '../src/ui/elements';
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
@@ -26,3 +26,11 @@ storiesOf('OutlineButton', module)
 storiesOf('Textbox', module).add('Default', () => (
   <Textbox fieldName="fieldName" label="Field Label" required />
 ));
+
+storiesOf('TechBadge', module)
+  .add('Light TechBadge', () => (
+    <TechBadge type="light">Light TechBadge</TechBadge>
+  ))
+  .add('Dark TechBadge', () => (
+    <TechBadge type="dark">Dark TechBadge</TechBadge>
+  ));
