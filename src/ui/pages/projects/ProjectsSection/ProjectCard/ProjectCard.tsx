@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { OutlineButton } from '../../../../elements';
+import { OutlineButton, TechBadge } from '../../../../elements';
 import './ProjectCard.scss';
 
 /*
@@ -16,30 +16,51 @@ import './ProjectCard.scss';
 type PropsType = {
   id: string;
   title: string;
-  stack: string;
+  stack: Array<string>;
   cardImage: string;
+  description: string;
+  settings: { color: string };
   className?: string;
 };
 
-export default ({ id, title, stack, cardImage, className }: PropsType) => {
+export default ({
+  id,
+  title,
+  stack,
+  cardImage,
+  description,
+  settings,
+  className,
+}: PropsType) => {
   return (
     <div
+      style={{ backgroundColor: settings.color }}
       className={classNames('projectCard', className)}
-      style={{ backgroundImage: `url(${cardImage})` }}
     >
-      <div className={classNames('projectCard__shader')}>
-        <div className={classNames('projectCard__inner')}>
-          <div className={classNames('projectCard__title')}>{title}</div>
-          <div className={classNames('projectCard__stack')}>{stack}</div>
-          <Link
-            to={`projects/${id}`}
-            className={classNames('projectCard__button')}
-          >
-            <OutlineButton type="gold" onClick={() => {}}>
-              See More
-            </OutlineButton>
-          </Link>
+      <img
+        src={cardImage}
+        alt=""
+        className={classNames('projectCard__coverImage')}
+      />
+      <div
+        style={{ backgroundColor: settings.color, color: '#fff' }}
+        className={classNames('projectCard__projectInfo')}
+      >
+        <h3 className={classNames('projectCard__title')}>{title}</h3>
+        <div className={classNames('projectCard__stackList')}>
+          {stack.map(item => {
+            return <TechBadge type="light">{item}</TechBadge>;
+          })}
         </div>
+        <p className={classNames('projectCard__description')}>{description}</p>
+        <Link
+          to={`projects/${id}`}
+          className={classNames('projectCard__button')}
+        >
+          <OutlineButton type="white" onClick={() => {}}>
+            See More
+          </OutlineButton>
+        </Link>
       </div>
     </div>
   );

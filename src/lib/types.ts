@@ -24,6 +24,7 @@ export type TimelineItemType = {
 };
 
 export type ProjectType = {
+  settings: { color: string };
   id: string;
   teamSize?: string;
   partner?: Array<{ name: string; url?: string }>;
@@ -32,7 +33,8 @@ export type ProjectType = {
   title: string;
   cardImage: string;
   coverImage: string;
-  shortStack: string;
+  shortStack: Array<string>;
+  shortDescription: string;
   longStack: Array<string>;
   projectDescription: Array<{
     type: string;
