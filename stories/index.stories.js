@@ -17,6 +17,11 @@ storiesOf('OutlineButton', module)
       Gold Button
     </OutlineButton>
   ))
+  .add('White Button', () => (
+    <OutlineButton onClick={action('clicked')} type="white">
+      White Button
+    </OutlineButton>
+  ))
   .add('Dark Button', () => (
     <OutlineButton onClick={action('clicked')} type="dark">
       Dark Button
