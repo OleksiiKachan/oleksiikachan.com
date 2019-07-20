@@ -32,6 +32,7 @@ exports[`ProjectCard Snapshot 1`] = `
       className="projectCard__stackList"
     >
       <_default
+        className="projectCard__stackItem"
         type="light"
       >
         .NET Framework
