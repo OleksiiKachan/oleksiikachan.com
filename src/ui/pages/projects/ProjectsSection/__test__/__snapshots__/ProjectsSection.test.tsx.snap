@@ -10,10 +10,6 @@ exports[`OutlineButton Snapshot 1`] = `
   >
     Projects
   </h2>
-  <_default
-    activeType="all"
-    onClick={[Function]}
-  />
   <div
     className="projectsSection__content"
   >

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechBadge Snapshot 1`] = `
+<span
+  className="techBadge techBadge_undefined"
+>
+  Tech Badge
+</span>
+`;

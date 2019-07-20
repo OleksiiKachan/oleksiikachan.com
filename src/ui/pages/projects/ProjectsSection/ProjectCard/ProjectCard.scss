@@ -2,107 +2,54 @@
 @import '../../../../assets/style/mixins';
 
 .projectCard {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 3rem;
-  height: 20rem;
-  width: 20rem;
   overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
 
-  @include respond(tablet) {
-    margin: 1rem;
-    animation: none;
+  &__coverImage {
+    height: 500px;
+    width: 500px;
   }
 
-  &:hover {
-    animation: popOnHover-enter-15 400ms ease-in-out forwards;
-
-    @include respond(tablet) {
-      animation: none;
-    }
-  }
-
-  &__shader {
-    height: 100%;
-    background-color: rgba($color-black, 0.15);
-  }
-
-  &__inner {
-    height: 100%;
-    opacity: 0;
-    background-color: $color-black;
+  &__projectInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-
-    @include respond(tablet) {
-      opacity: 1;
-      background-color: rgba($color-black, 0.85);
-    }
-
-    &:hover {
-      animation: opacity 200ms ease-in-out forwards;
-
-      .projectCard__title {
-        animation: fromLeftToCenter 500ms ease-in-out forwards;
-      }
-      .projectCard__stack {
-        animation: fromRightToCenter 500ms ease-in-out forwards;
-      }
-      .projectCard__button {
-        animation: fromBottomToCenter 500ms ease-in-out forwards;
-      }
-
-      @include respond(tablet) {
-        .projectCard__title,
-        .projectCard__stack,
-        .projectCard__button {
-          animation: none;
-        }
-      }
-    }
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    text-align: center;
   }
 
   &__title {
+    letter-spacing: 0.05ch;
+
+    @include respond(tablet) {
+      padding: 0;
+      font-size: 0.85rem;
+    }
+  }
+
+  &__stackList {
+    width: 100%;
     display: flex;
-    align-self: flex-start;
-    max-width: 85%;
-    background: rgba(221, 221, 221, 0.9);
-    border-radius: 0px 0px 50px 0px;
-    padding: 0.5rem 1.85rem 0.5rem 0.5rem;
-    font-size: 0.85rem;
-    font-weight: 300;
-    color: $color-black;
-
-    transform: translateX(-100%);
+    justify-content: center;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
 
     @include respond(tablet) {
-      transform: translateX(0);
+      display: none;
     }
   }
 
-  &__stack {
-    color: $color-white;
-    font-weight: 500;
-    padding: 20%;
-    text-align: center;
-
-    transform: translateX(-100%);
-
-    @include respond(tablet) {
-      transform: translateX(0);
-    }
+  &__stackItem {
+    margin: 0.2rem;
   }
 
-  &__button {
-    margin-bottom: 2rem;
-
-    transform: translateY(100%);
-    @include respond(tablet) {
-      transform: translateY(0);
-    }
+  &__description {
+    font-size: 1rem;
+    letter-spacing: 0.01ch;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 1.8rem 0;
   }
 }

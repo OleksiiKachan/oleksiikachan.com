@@ -6,6 +6,7 @@
   padding: 10px 25px;
   font-weight: 300;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
 
   &_gold {
     border-color: $color-gold;
@@ -14,6 +15,18 @@
     &:hover {
       background: $color-gold;
       color: $color-surface;
+    }
+  }
+
+  &_white {
+    border-color: $color-surface;
+    color: $color-surface;
+
+    &:hover {
+      border-color: $color-surface;
+      background: $color-surface;
+      color: $color-black;
+      font-weight: 400;
     }
   }
 
