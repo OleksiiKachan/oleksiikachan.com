@@ -6,49 +6,50 @@
   display: flex;
 
   &__coverImage {
-    height: 100%;
-    width: 60%;
+    height: 500px;
+    width: 500px;
   }
 
   &__projectInfo {
-    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    justify-content: space-evenly;
+    padding: 0 1rem;
     text-align: center;
   }
 
   &__title {
-    padding: 1rem 0;
     letter-spacing: 0.05ch;
 
     @include respond(tablet) {
       padding: 0;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
   }
 
   &__stackList {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
 
     @include respond(tablet) {
       display: none;
     }
   }
 
+  &__stackItem {
+    margin: 0.2rem;
+  }
+
   &__description {
     font-size: 1rem;
     letter-spacing: 0.01ch;
     font-weight: 400;
+    font-size: 0.8rem;
     padding: 1.8rem 0;
-  }
-
-  &__button {
-    padding-top: 3rem;
-    color: white;
   }
 }

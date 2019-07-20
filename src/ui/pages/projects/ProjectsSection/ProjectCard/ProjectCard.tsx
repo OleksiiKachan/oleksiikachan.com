@@ -49,7 +49,14 @@ export default ({
         <h3 className={classNames('projectCard__title')}>{title}</h3>
         <div className={classNames('projectCard__stackList')}>
           {stack.map(item => {
-            return <TechBadge type="light">{item}</TechBadge>;
+            return (
+              <TechBadge
+                type="light"
+                className={classNames('projectCard__stackItem')}
+              >
+                {item}
+              </TechBadge>
+            );
           })}
         </div>
         <p className={classNames('projectCard__description')}>{description}</p>
