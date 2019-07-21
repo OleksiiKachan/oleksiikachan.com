@@ -5,9 +5,18 @@
   overflow: hidden;
   display: flex;
 
+  @include respond(tablet) {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+  }
+
   &__coverImage {
-    height: 500px;
     width: 500px;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 
   &__projectInfo {
@@ -17,6 +26,10 @@
     justify-content: space-evenly;
     padding: 0 1rem;
     text-align: center;
+
+    @include respond(tablet) {
+      padding: 1rem;
+    }
   }
 
   &__title {
