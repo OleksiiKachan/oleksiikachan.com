@@ -16,6 +16,8 @@ describe('AboutSection', () => {
           ],
           resumeUrl: 'resume.url',
           availabilityDate: 'availability information',
+          portfolioStack: ['item1', 'item2'],
+          repository: 'project repo',
         }}
       />
     );

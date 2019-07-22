@@ -52,6 +52,7 @@ export default ({
             return (
               <TechBadge
                 type="light"
+                key={item}
                 className={classNames('projectCard__stackItem')}
               >
                 {item}

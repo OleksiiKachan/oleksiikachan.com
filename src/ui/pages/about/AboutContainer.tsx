@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AboutSection from './AboutSection/AboutSection';
 
 /*
-    <ProjectsContainer />
+    <AboutContainer />
 */
 
 export default class AboutContainer extends Component<{}> {

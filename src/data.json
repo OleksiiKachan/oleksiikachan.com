@@ -6,6 +6,17 @@
     "My passion about IT industry is to help businesses to focus on customers & community. I do it by creating different types of affordable enterprise software (e.g. MES, ERP, CRM solutions).",
     "I am sure that technologies are not as important as concepts & principles behind those technologies."
   ],
+  "portfolioStack": [
+    "React",
+    "Typescript",
+    "Javascript",
+    "SASS",
+    "Github",
+    "CircleCI",
+    "Figma",
+    "Netlify"
+  ],
+  "repository": "https://github.com/OleksiiKachan/oleksiikachan.com",
   "smContacts": [
     { "type": "linkedin", "url": "http://www.linkedin.com/in/oleksiikachan" },
     { "type": "github", "url": "https://github.com/OleksiiKachan" },
@@ -39,7 +50,7 @@
       "title": "Spotify Marketing Banners Management System",
       "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563610310/portfolio/images/projects/spotify-app/card.png",
       "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558291364/portfolio/images/projects/spotify-app/cover.png",
-      "shortStack": ["React", "Typescript", "Firebase"],
+      "shortStack": ["React", "Typescript", "SASS", "Firebase"],
       "shortDescription": "In tight collaboration with Candy Digital I was working on a concept project for Spotify. The goal was to create a solution to automate marketing banners production process. In terms of measurable goals we had to reduce production time and effort.",
       "longStack": [
         "React",
@@ -133,7 +144,7 @@
       "title": "AGW. Automitive Manufacturing Solution",
       "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563609352/portfolio/images/projects/agw/card.png",
       "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557517324/portfolio/images/projects/agw/cover.png",
-      "shortStack": [".NET Framework"],
+      "shortStack": [".NET Framework", "C#", "ASP.NET MVC", "Javascript"],
       "shortDescription": "As a part of the OLSOM team I was developing a solution for automotive production workflow automation, real-time data collection, system integration and business insights.",
       "longStack": [
         ".NET Framework",
@@ -247,7 +258,7 @@
       "title": "TDM. Manufacturing Data Collection & Management Solution",
       "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563610054/portfolio/images/projects/tdm/card.png",
       "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531547/portfolio/images/projects/tdm/cover.png",
-      "shortStack": [".NET Framework"],
+      "shortStack": [".NET Framework", "C#", "ASP.NET MVC", "Javascript"],
       "shortDescription": "As a part of the OLSOM team in collaboration with Catalyst Solutions I was developing a solution for advanced manufacturing data collection.",
       "longStack": [
         ".NET Framework",

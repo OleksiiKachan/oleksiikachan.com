@@ -4,7 +4,10 @@ import './AboutSection.scss';
 import CoverImage from '../CoverImage/CoverImage';
 
 /*
-    <ContactSection contacts={} className='' />
+    <AboutSection
+      aboutInfo={}
+      className=''
+    />
 */
 
 type PropsType = {
@@ -15,6 +18,8 @@ type PropsType = {
     smContacts: Array<{ type: string; url: string }>;
     resumeUrl: string;
     availabilityDate: string;
+    portfolioStack: Array<string>;
+    repository: string;
   };
   className?: string;
 };
@@ -43,7 +48,7 @@ export default ({ aboutInfo, className }: PropsType) => {
           Printable CV
         </a>
       </div>
-      <div className={classNames('aboutSection__introduction', className)}>
+      <div className={classNames('aboutSection__introduction')}>
         {aboutInfo.introduction.map(item => {
           return (
             <p
@@ -62,6 +67,18 @@ export default ({ aboutInfo, className }: PropsType) => {
             {aboutInfo.availabilityDate}
           </span>
         </p>
+      </div>
+      <div className={classNames('aboutSection__portfolioStack')}>
+        <p>This site is created using:</p>
+        <p>{aboutInfo.portfolioStack.join(', ')}</p>
+        <a
+          href={aboutInfo.repository}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classNames('aboutSection__portfolioRepository')}
+        >
+          {aboutInfo.repository}
+        </a>
       </div>
     </div>
   );
