@@ -87,6 +87,17 @@
     font-style: italic;
     font-weight: 200;
     text-align: center;
-    margin: 3rem;
+    margin: 3rem 0;
+
+    @include respond(tablet) {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__portfolioRepository {
+    color: $color-link;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 1rem 0;
   }
 }

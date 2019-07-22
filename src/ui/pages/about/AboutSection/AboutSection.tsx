@@ -19,6 +19,7 @@ type PropsType = {
     resumeUrl: string;
     availabilityDate: string;
     portfolioStack: Array<string>;
+    repository: string;
   };
   className?: string;
 };
@@ -68,12 +69,16 @@ export default ({ aboutInfo, className }: PropsType) => {
         </p>
       </div>
       <div className={classNames('aboutSection__portfolioStack')}>
-        <p className={classNames('portfolioStack__header')}>
-          This site is created using:
-        </p>
-        <p className={classNames('portfolioStack__list')}>
-          {aboutInfo.portfolioStack.join(', ')}
-        </p>
+        <p>This site is created using:</p>
+        <p>{aboutInfo.portfolioStack.join(', ')}</p>
+        <a
+          href={aboutInfo.repository}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classNames('aboutSection__portfolioRepository')}
+        >
+          {aboutInfo.repository}
+        </a>
       </div>
     </div>
   );
