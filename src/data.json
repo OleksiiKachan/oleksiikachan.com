@@ -144,7 +144,7 @@
       "title": "AGW. Automitive Manufacturing Solution",
       "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563609352/portfolio/images/projects/agw/card.png",
       "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557517324/portfolio/images/projects/agw/cover.png",
-      "shortStack": [".NET Framework"],
+      "shortStack": [".NET Framework", "C#", "ASP.NET MVC", "Javascript"],
       "shortDescription": "As a part of the OLSOM team I was developing a solution for automotive production workflow automation, real-time data collection, system integration and business insights.",
       "longStack": [
         ".NET Framework",
@@ -258,7 +258,7 @@
       "title": "TDM. Manufacturing Data Collection & Management Solution",
       "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563610054/portfolio/images/projects/tdm/card.png",
       "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1557531547/portfolio/images/projects/tdm/cover.png",
-      "shortStack": [".NET Framework"],
+      "shortStack": [".NET Framework", "C#", "ASP.NET MVC", "Javascript"],
       "shortDescription": "As a part of the OLSOM team in collaboration with Catalyst Solutions I was developing a solution for advanced manufacturing data collection.",
       "longStack": [
         ".NET Framework",
