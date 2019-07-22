@@ -75,5 +75,19 @@ exports[`AboutSection Snapshot 1`] = `
       </span>
     </p>
   </div>
+  <div
+    className="aboutSection__portfolioStack"
+  >
+    <p
+      className="portfolioStack__header"
+    >
+      This site is created using:
+    </p>
+    <p
+      className="portfolioStack__list"
+    >
+      item1, item2
+    </p>
+  </div>
 </div>
 `;

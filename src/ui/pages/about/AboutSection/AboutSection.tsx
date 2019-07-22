@@ -15,6 +15,7 @@ type PropsType = {
     smContacts: Array<{ type: string; url: string }>;
     resumeUrl: string;
     availabilityDate: string;
+    portfolioStack: Array<string>;
   };
   className?: string;
 };
@@ -43,7 +44,7 @@ export default ({ aboutInfo, className }: PropsType) => {
           Printable CV
         </a>
       </div>
-      <div className={classNames('aboutSection__introduction', className)}>
+      <div className={classNames('aboutSection__introduction')}>
         {aboutInfo.introduction.map(item => {
           return (
             <p
@@ -61,6 +62,14 @@ export default ({ aboutInfo, className }: PropsType) => {
           <span className={classNames('aboutSection__availabilityDate')}>
             {aboutInfo.availabilityDate}
           </span>
+        </p>
+      </div>
+      <div className={classNames('aboutSection__portfolioStack')}>
+        <p className={classNames('portfolioStack__header')}>
+          This site is created using:
+        </p>
+        <p className={classNames('portfolioStack__list')}>
+          {aboutInfo.portfolioStack.join(', ')}
         </p>
       </div>
     </div>
