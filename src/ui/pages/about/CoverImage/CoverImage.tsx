@@ -4,7 +4,13 @@ import './CoverImage.scss';
 import { SocialMediaButton } from '../../../elements';
 
 /*
-    <ContactSection contacts={} className='' />
+    <CoverImage
+      name=''
+      title=''
+      resumeUrl=''
+      contacts={}
+      className=''
+    />
 */
 
 type PropsType = {

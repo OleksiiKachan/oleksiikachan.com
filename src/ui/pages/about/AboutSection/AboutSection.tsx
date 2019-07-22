@@ -4,7 +4,10 @@ import './AboutSection.scss';
 import CoverImage from '../CoverImage/CoverImage';
 
 /*
-    <ContactSection contacts={} className='' />
+    <AboutSection
+      aboutInfo={}
+      className=''
+    />
 */
 
 type PropsType = {
