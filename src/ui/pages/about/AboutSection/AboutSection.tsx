@@ -20,6 +20,7 @@ type PropsType = {
     availabilityDate: string;
     portfolioStack: Array<string>;
     repository: string;
+    coverImage: string;
   };
   className?: string;
 };
@@ -32,6 +33,7 @@ export default ({ aboutInfo, className }: PropsType) => {
         title={aboutInfo.title}
         resumeUrl={aboutInfo.resumeUrl}
         contacts={aboutInfo.smContacts}
+        coverImage={aboutInfo.coverImage}
       />
 
       <div className={classNames('aboutSection__titleText')}>

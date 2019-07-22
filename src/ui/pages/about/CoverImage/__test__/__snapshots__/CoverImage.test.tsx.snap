@@ -3,6 +3,11 @@
 exports[`CoverImage Snapshot 1`] = `
 <div
   className="coverImage"
+  style={
+    Object {
+      "backgroundImage": "url(undefined)",
+    }
+  }
 >
   <div
     className="coverImage__text"
