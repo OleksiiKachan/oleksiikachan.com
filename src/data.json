@@ -39,7 +39,7 @@
       "title": "Spotify Marketing Banners Management System",
       "cardImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563610310/portfolio/images/projects/spotify-app/card.png",
       "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558291364/portfolio/images/projects/spotify-app/cover.png",
-      "shortStack": ["React", "Typescript", "Firebase"],
+      "shortStack": ["React", "Typescript", "SASS", "Firebase"],
       "shortDescription": "In tight collaboration with Candy Digital I was working on a concept project for Spotify. The goal was to create a solution to automate marketing banners production process. In terms of measurable goals we had to reduce production time and effort.",
       "longStack": [
         "React",
