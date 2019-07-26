@@ -9,6 +9,7 @@ import { SocialMediaButton } from '../../../elements';
       title=''
       resumeUrl=''
       contacts={}
+      coverImage=''
       className=''
     />
 */
@@ -18,12 +19,23 @@ type PropsType = {
   title: string;
   resumeUrl: string;
   contacts: Array<{ type: string; url: string }>;
+  coverImage: string;
   className?: string;
 };
 
-export default ({ name, title, resumeUrl, contacts, className }: PropsType) => {
+export default ({
+  name,
+  title,
+  resumeUrl,
+  contacts,
+  coverImage,
+  className,
+}: PropsType) => {
   return (
-    <div className={classNames('coverImage', className)}>
+    <div
+      style={{ backgroundImage: `url(${coverImage})` }}
+      className={classNames('coverImage', className)}
+    >
       <div className={classNames('coverImage__text')}>
         <h1 className={classNames('coverImage__title')}>{name}</h1>
         <h2 className={classNames('coverImage__subtitle')}>{title}</h2>
