@@ -26,7 +26,7 @@
     { "type": "facebook", "url": "https://www.facebook.com/oleksiikachan" },
     { "type": "vk", "url": "https://vk.com/oleksiikachan" }
   ],
-  "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1558578921/portfolio/pdfs/oleksii-kachan_resume.pdf",
+  "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1565113724/portfolio/pdfs/oleksii-kachan-resume-fullstack.pdf",
   "availabilityDate": "Summer 19'",
   "contacts": {
     "phone": "+1 (437) 778-5921",
@@ -69,7 +69,7 @@
       "projectDescription": [
         {
           "type": "string",
-          "content": "In tight collaboration with |bold|Candy Digital|-| I was working on a concept project for Spotify. The goal was to create a solution to automate marketing banners production process. In terms of measurable goals we had to reduce production time and effort."
+          "content": "In tight collaboration with |bold|Candy Digital|-|, I was working on a concept project for Spotify. The goal was to create a solution to automate marketing banners production process. In terms of measurable goals we had to reduce production time and effort."
         },
         {
           "type": "string",
