@@ -1,6 +1,6 @@
 {
   "name": "Oleksii Kachan",
-  "title": "React Developer & UI Designer",
+  "title": "Front-End Software Engineer & UI Designer",
   "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563796344/portfolio/images/header-w_photo.png",
   "introduction": [
     "Hello there! Welcome to my space...",
@@ -26,7 +26,7 @@
     { "type": "facebook", "url": "https://www.facebook.com/oleksiikachan" },
     { "type": "vk", "url": "https://vk.com/oleksiikachan" }
   ],
-  "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1565113724/portfolio/pdfs/oleksii-kachan-resume-fullstack.pdf",
+  "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1568403119/portfolio/pdfs/oleksii_kachan-resume-frontend.pdf",
   "availabilityDate": "Fall 19'",
   "contacts": {
     "phone": "+1 (437) 778-5921",

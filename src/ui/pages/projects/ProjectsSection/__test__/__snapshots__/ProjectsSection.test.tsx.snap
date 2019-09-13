@@ -16,11 +16,25 @@ exports[`OutlineButton Snapshot 1`] = `
     <_default
       key="0"
       stack=".NET Framework"
+      style={
+        Object {
+          "animation": "fromLeftToCenter-noPop 1s ease-in-out forwards",
+          "animationDelay": "0ms",
+          "transform": "translateX(-100%)",
+        }
+      }
       title="AGW MES / WMS for automotive industry"
     />
     <_default
       key="1"
       stack=".NET Framework"
+      style={
+        Object {
+          "animation": "fromRightToCenter-noPop 1s ease-in-out forwards",
+          "animationDelay": "66.66666666666666ms",
+          "transform": "translateX(100%)",
+        }
+      }
       title="AGW MES / WMS for automotive industry"
     />
   </div>
