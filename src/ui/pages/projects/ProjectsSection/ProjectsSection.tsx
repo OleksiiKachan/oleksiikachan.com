@@ -22,15 +22,27 @@ export default ({ projects, className }: PropsType) => {
       <h2 className={classNames('projectsSection__header')}>Projects</h2>
       <div className={classNames('projectsSection__content')}>
         {projects.map((project: ProjectType) => {
+          const index = projects.indexOf(project);
           return (
             <ProjectCard
-              key={projects.indexOf(project)}
+              key={index}
               id={project.id}
               title={project.title}
               stack={project.shortStack}
               cardImage={project.cardImage}
               description={project.shortDescription}
               settings={project.settings}
+              style={{
+                transform: `${
+                  index % 2 === 0 ? `translateX(-100%)` : `translateX(100%)`
+                }`,
+                animation: `${
+                  index % 2 === 0
+                    ? `fromLeftToCenter-noPop`
+                    : `fromRightToCenter-noPop`
+                } 1s ease-in-out forwards`,
+                animationDelay: `${(index / 1.5) * 100}ms`,
+              }}
             />
           );
         })}

@@ -20,6 +20,7 @@ type PropsType = {
   cardImage: string;
   description: string;
   settings: { color: string };
+  style?: any;
   className?: string;
 };
 
@@ -30,11 +31,12 @@ export default ({
   cardImage,
   description,
   settings,
+  style,
   className,
 }: PropsType) => {
   return (
     <div
-      style={{ backgroundColor: settings.color }}
+      style={{ ...style, backgroundColor: settings.color }}
       className={classNames('projectCard', className)}
     >
       <img
@@ -53,6 +55,10 @@ export default ({
               <TechBadge
                 type="light"
                 key={item}
+                style={{
+                  animationDelay: `${800 +
+                    (stack.indexOf(item) / 1.5) * 100}ms`,
+                }}
                 className={classNames('projectCard__stackItem')}
               >
                 {item}

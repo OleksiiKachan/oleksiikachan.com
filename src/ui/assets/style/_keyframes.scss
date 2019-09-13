@@ -19,6 +19,18 @@
   }
 }
 
+@keyframes pop-10 {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes popOnHover-enter-15 {
   0% {
     transform: scale(1);
@@ -73,9 +85,9 @@
   }
 }
 
-@keyframes fromRightToCenter-noPop {
+@keyframes fromLeftToCenter-noPop {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0);
@@ -94,12 +106,33 @@
   }
 }
 
+@keyframes fromRightToCenter-noPop {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @keyframes fromBottomToCenter {
   0% {
     transform: translateY(100%);
   }
   80% {
     transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromTopToCenter {
+  0% {
+    transform: translateY(-100%);
+  }
+  80% {
+    transform: translateY(10%);
   }
   100% {
     transform: translateY(0);

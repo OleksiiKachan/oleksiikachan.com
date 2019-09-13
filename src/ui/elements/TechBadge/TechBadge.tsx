@@ -9,12 +9,16 @@ import './TechBadge.scss';
 type PropsType = {
   children: ReactNode;
   type: string;
+  style?: any;
   className?: string;
 };
 
-export default ({ children, type, className }: PropsType) => {
+export default ({ children, type, style, className }: PropsType) => {
   return (
-    <span className={classNames('techBadge', `techBadge_${type}`, className)}>
+    <span
+      style={style}
+      className={classNames('techBadge', `techBadge_${type}`, className)}
+    >
       {children}
     </span>
   );
