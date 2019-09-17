@@ -13,19 +13,21 @@ import './ContactInfoItem.scss';
 type PropsType = {
   icon: string;
   iconAlt: string;
-  content: string;
+  content: { caption: string; url: string };
   className?: string;
 };
 
 export default ({ icon, iconAlt, content, className }: PropsType) => {
   return (
-    <div className={classNames('contactInfoItem', className)}>
+    <a href={content.url} className={classNames('contactInfoItem', className)}>
       <img
         className={classNames('contactInfoItem__icon')}
         src={icon}
         alt={iconAlt}
       />
-      <p className={classNames('contactInfoItem__content')}>{content}</p>
-    </div>
+      <p className={classNames('contactInfoItem__content')}>
+        {content.caption}
+      </p>
+    </a>
   );
 };

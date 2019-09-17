@@ -10,9 +10,9 @@ import SocialMediaButton from '../SocialMediaButton/SocialMediaButton';
 type PropsType = {
   smContacts: Array<{ type: string; url: string }>;
   contacts: {
-    phone: string;
-    email: string;
-    location: string;
+    phone: { caption: string; url: string };
+    email: { caption: string; url: string };
+    location: { caption: string; url: string };
   };
   className?: string;
 };
@@ -43,13 +43,31 @@ export default ({ smContacts, contacts, className }: PropsType) => {
           </div>
           <ul className={classNames('footer__contactsList')}>
             <li className={classNames('footer__contactsItem')}>
-              {contacts.email}
+              <a
+                href={contacts.email.url}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {contacts.email.caption}
+              </a>
             </li>
             <li className={classNames('footer__contactsItem')}>
-              {contacts.phone}
+              <a
+                href={contacts.phone.url}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {contacts.phone.caption}
+              </a>
             </li>
             <li className={classNames('footer__contactsItem')}>
-              {contacts.location}
+              <a
+                href={contacts.location.url}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {contacts.location.caption}
+              </a>
             </li>
           </ul>
         </div>

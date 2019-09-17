@@ -47,17 +47,26 @@ exports[`Footer Snapshot 1`] = `
         <li
           className="footer__contactsItem"
         >
-          email
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+          />
         </li>
         <li
           className="footer__contactsItem"
         >
-          phone number
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+          />
         </li>
         <li
           className="footer__contactsItem"
         >
-          location
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+          />
         </li>
       </ul>
     </div>

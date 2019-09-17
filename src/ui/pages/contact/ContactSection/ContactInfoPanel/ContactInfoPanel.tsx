@@ -16,9 +16,9 @@ const icon_location = require('../../../../assets/icons/location.svg');
 
 type PropsType = {
   contacts: {
-    phone: string;
-    email: string;
-    location: string;
+    phone: { caption: string; url: string };
+    email: { caption: string; url: string };
+    location: { caption: string; url: string };
   };
   className?: string;
 };
@@ -42,7 +42,7 @@ export default ({ contacts, className }: PropsType) => {
     },
   ];
   return (
-    <div className={classNames('contactInfoPanel', className)}>
+    <address className={classNames('contactInfoPanel', className)}>
       <h3 className={classNames('contactInfoPanel__title')}>Contacts</h3>
       {contactsData.map(contact => {
         return (
@@ -54,6 +54,6 @@ export default ({ contacts, className }: PropsType) => {
           />
         );
       })}
-    </div>
+    </address>
   );
 };

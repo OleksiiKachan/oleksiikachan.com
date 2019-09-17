@@ -13,9 +13,9 @@ import ContactInfoPanel from './ContactInfoPanel/ContactInfoPanel';
 
 type PropsType = {
   contacts: {
-    phone: string;
-    email: string;
-    location: string;
+    phone: { caption: string; url: string };
+    email: { caption: string; url: string };
+    location: { caption: string; url: string };
   };
   className?: string;
 };

@@ -1,6 +1,6 @@
 {
   "name": "Oleksii Kachan",
-  "title": "Front-End Software Engineer & UI Designer",
+  "title": "Software Engineer & UI Designer",
   "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563796344/portfolio/images/header-w_photo.png",
   "introduction": [
     "Hello there! Welcome to my space...",
@@ -29,9 +29,15 @@
   "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1568403119/portfolio/pdfs/oleksii_kachan-resume-frontend.pdf",
   "availabilityDate": "Fall 19'",
   "contacts": {
-    "phone": "+1 (437) 778-5921",
-    "email": "alexkachan.lutsk@gmail.com",
-    "location": "Toronto, ON, Canada"
+    "phone": { "caption": "+1 (437) 778-5921", "url": "tel:1-437-778-59-21" },
+    "email": {
+      "caption": "alexkachan.lutsk@gmail.com",
+      "url": "mailto:alexkachan.lutsk@gmail.com"
+    },
+    "location": {
+      "caption": "Toronto, ON, Canada",
+      "url": "https://www.google.com/maps/place/Toronto,+ON"
+    }
   },
 
   "projects": [

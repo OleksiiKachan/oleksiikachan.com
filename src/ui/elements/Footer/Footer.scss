@@ -63,6 +63,16 @@
   &__contactsItem {
     margin: 0.5rem;
     font-size: 0.8rem;
+
+    a {
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__smLinks {
