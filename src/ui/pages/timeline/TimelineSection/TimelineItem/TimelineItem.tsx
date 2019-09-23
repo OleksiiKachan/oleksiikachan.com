@@ -6,7 +6,9 @@ import {
   EducationType,
   ExperienceType,
 } from '../../../../../lib/types';
-import ButtonWithModal from '../../../../elements/ButtonWithModal/ButtonWithModal';
+import { OutlineButton, ModalTrigger } from '../../../../elements';
+import EducationPage from '../../EducationPage/EducationPage';
+import ExperiencePage from '../../ExperiencePage/ExperiencePage';
 
 /*
     <TimelineItem index=number item={} side='' className=''/>
@@ -38,7 +40,19 @@ export default ({ index, item, detailedItem, side, className }: PropsType) => {
         <h3 className={classNames('timelineItem__title')}>{item.title}</h3>
         <p className={classNames('timelineItem__dates')}>{item.dates}</p>
         <p className={classNames('timelineItem__subtitle')}>{item.subtitle}</p>
-        <ButtonWithModal item={detailedItem} type={item.type} />
+        <ModalTrigger
+          trigger={
+            <OutlineButton onClick={() => {}} type="dark">
+              See More
+            </OutlineButton>
+          }
+        >
+          {item.type === 'education' ? (
+            <EducationPage item={detailedItem as EducationType} />
+          ) : (
+            <ExperiencePage item={detailedItem as ExperienceType} />
+          )}
+        </ModalTrigger>
       </div>
     </div>
   );

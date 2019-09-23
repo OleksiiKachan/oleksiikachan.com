@@ -1,24 +1,13 @@
-@import '../../../assets/style/variables';
-@import '../../../assets/style/mixins';
+@import '../../assets/style/variables';
+@import '../../assets/style/mixins';
 
 .modal {
-  position: fixed;
-  display: inline-block;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.modal-main {
   max-height: 95vh;
   overflow: overlay;
   position: fixed;
   background-color: $color-black;
   color: $color-white;
-  min-width: 80%;
+  //min-width: 80%;
   height: auto;
   top: 50%;
   left: 50%;

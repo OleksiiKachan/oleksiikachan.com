@@ -4,7 +4,10 @@ import SocialMediaButton from './SocialMediaButton/SocialMediaButton';
 import TechBadge from './TechBadge/TechBadge';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
-import ButtonWithModal from './ButtonWithModal/ButtonWithModal';
+import Modal from './Modal/Modal';
+import ModalTrigger from './ModalTrigger/ModalTrigger';
+import Overlay from './Overlay/Overlay';
+import Portal from './Portal/Portal';
 
 export {
   OutlineButton,
@@ -13,5 +16,8 @@ export {
   TechBadge,
   Footer,
   Header,
-  ButtonWithModal,
+  Modal,
+  ModalTrigger,
+  Overlay,
+  Portal,
 };
