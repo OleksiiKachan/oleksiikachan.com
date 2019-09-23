@@ -35,9 +35,18 @@ exports[`TimelineItem Left side 1`] = `
     >
       Subtitle-left
     </p>
-    <ButtonWithModal
-      type="education"
-    />
+    <ModalTrigger
+      trigger={
+        <_default
+          onClick={[Function]}
+          type="dark"
+        >
+          See More
+        </_default>
+      }
+    >
+      <_default />
+    </ModalTrigger>
   </div>
 </div>
 `;
@@ -77,9 +86,18 @@ exports[`TimelineItem Right side 1`] = `
     >
       Subtitle-right
     </p>
-    <ButtonWithModal
-      type="education"
-    />
+    <ModalTrigger
+      trigger={
+        <_default
+          onClick={[Function]}
+          type="dark"
+        >
+          See More
+        </_default>
+      }
+    >
+      <_default />
+    </ModalTrigger>
   </div>
 </div>
 `;
