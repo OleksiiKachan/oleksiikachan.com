@@ -1,7 +1,7 @@
 import React, { Component, createRef, ReactNode } from 'react';
 import classNames from 'classnames';
 import './Modal.scss';
-import { Portal, Overlay } from '..';
+import { Portal, Overlay, IconButton } from '..';
 
 const icon_close = require('../../assets/icons/icon_close.svg');
 
@@ -42,11 +42,11 @@ export default class Modal extends Component<PropsType> {
       <Portal>
         <Overlay>
           <section className="modal" ref={this.modalRef}>
-            <img
-              src={icon_close}
-              alt="close icon"
+            <IconButton
+              icon={icon_close}
+              altCaption="close icon"
               onClick={this.props.handleClose}
-              className={classNames('modal-closeButton')}
+              className={classNames('modal__closeButton')}
             />
             {this.props.children}
           </section>
