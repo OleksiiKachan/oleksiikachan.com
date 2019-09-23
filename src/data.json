@@ -435,8 +435,12 @@
       "position": "Software and Systems Engineer",
       "dates": "2016-2017",
       "responsibilities": [
-        "Software & System engineering",
-        "UI & UX Design & Development"
+        "Software and Systems engineer in rLoop Inc as a team member for SpaceX Hyperloop Contest",
+        "Create & maintain design documentation (e.g. Final Design Report)",
+        "UX research",
+        "UI wireframing",
+        "Ground Station System design",
+        "Awards: Best Non-University team at the Design Weekend for SpaceX Hyperloop Competition, Pod Innovation Award"
       ],
       "projects": [{ "id": "rpod", "title": "Hyperloop rPod" }]
     },
