@@ -8,6 +8,7 @@ import Modal from './Modal/Modal';
 import ModalTrigger from './ModalTrigger/ModalTrigger';
 import Overlay from './Overlay/Overlay';
 import Portal from './Portal/Portal';
+import IconButton from './IconButton/IconButton';
 
 export {
   OutlineButton,
@@ -20,4 +21,5 @@ export {
   ModalTrigger,
   Overlay,
   Portal,
+  IconButton,
 };
