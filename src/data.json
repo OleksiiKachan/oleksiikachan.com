@@ -4,7 +4,8 @@
   "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563796344/portfolio/images/header-w_photo.png",
   "introduction": [
     "Hello there! Welcome to my space...",
-    "My passion about IT industry is to help businesses to focus on customers & community. I do it by creating different types of affordable enterprise software (e.g. MES, ERP, CRM solutions).",
+    "I am a |bold|software developer|-|. I enjoy developing |italic|web-based enterprise solutions|-|. But I can create |italic|landing page|-| as well. If you have any |bold|web projects|-| and are looking for a developer just |bold|contact me|-|. We can create something great together.",
+    "My passion about IT industry is to |italic|help businesses to focus|-| on |bold|customers & community|-|. I do it by creating different types of |bold|affordable|-| enterprise software (e.g. MES, ERP, CRM solutions).",
     "I am sure that technologies are not as important as concepts & principles behind those technologies."
   ],
   "portfolioStack": [
@@ -70,7 +71,7 @@
         "Github",
         "CircleCI",
         "Heroku",
-        "Jira + Slack"
+        "Jira"
       ],
       "projectDescription": [
         {
@@ -435,8 +436,12 @@
       "position": "Software and Systems Engineer",
       "dates": "2016-2017",
       "responsibilities": [
-        "Software & System engineering",
-        "UI & UX Design & Development"
+        "Software and Systems engineer in rLoop Inc as a team member for SpaceX Hyperloop Contest",
+        "Create & maintain design documentation (e.g. Final Design Report)",
+        "UX research",
+        "UI wireframing",
+        "Ground Station System design",
+        "Awards: Best Non-University team at the Design Weekend for SpaceX Hyperloop Competition, Pod Innovation Award"
       ],
       "projects": [{ "id": "rpod", "title": "Hyperloop rPod" }]
     },
