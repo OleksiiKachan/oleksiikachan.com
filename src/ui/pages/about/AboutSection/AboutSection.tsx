@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import './AboutSection.scss';
 import CoverImage from '../CoverImage/CoverImage';
+import { ParsedText } from '../../../elements';
 
 /*
     <AboutSection
@@ -53,12 +54,12 @@ export default ({ aboutInfo, className }: PropsType) => {
       <div className={classNames('aboutSection__introduction')}>
         {aboutInfo.introduction.map(item => {
           return (
-            <p
+            <ParsedText
               key={aboutInfo.introduction.indexOf(item)}
               className={classNames('aboutSection__introductionParagraph')}
             >
               {item}
-            </p>
+            </ParsedText>
           );
         })}
       </div>
