@@ -4,6 +4,7 @@
   "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563796344/portfolio/images/header-w_photo.png",
   "introduction": [
     "Hello there! Welcome to my space...",
+    "I am a web software developer. I enjoy developing web-based enterprise solutions. But I can create landing page as well. If you have any web projects and are looking for a developer just contact me. Let's create something greate together.",
     "My passion about IT industry is to help businesses to focus on customers & community. I do it by creating different types of affordable enterprise software (e.g. MES, ERP, CRM solutions).",
     "I am sure that technologies are not as important as concepts & principles behind those technologies."
   ],
@@ -70,7 +71,7 @@
         "Github",
         "CircleCI",
         "Heroku",
-        "Jira + Slack"
+        "Jira"
       ],
       "projectDescription": [
         {
