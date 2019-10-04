@@ -47,18 +47,18 @@ exports[`AboutSection Snapshot 1`] = `
   <div
     className="aboutSection__introduction"
   >
-    <p
+    <_default
       className="aboutSection__introductionParagraph"
       key="0"
     >
       introduction string 1
-    </p>
-    <p
+    </_default>
+    <_default
       className="aboutSection__introductionParagraph"
       key="1"
     >
       introduction string 2
-    </p>
+    </_default>
   </div>
   <div
     className="aboutSection__rightColumn"
