@@ -1,9 +1,8 @@
 import React, { Component, ReactNode } from 'react';
 import classNames from 'classnames';
 
-import './MainLayout.scss';
-
 import { HeaderContainer, FooterContainer } from '../../pages';
+import { GlobalStyle } from '../../assets/style';
 
 /*
   <MainLayout
@@ -22,6 +21,7 @@ class MainLayout extends Component<PropsType> {
   render() {
     return (
       <div className={classNames('app')}>
+        <GlobalStyle />
         <HeaderContainer />
         <main className={classNames('app__mainContent', this.props.className)}>
           {this.props.children}

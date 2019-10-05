@@ -13,10 +13,6 @@ import {
   TimelineContainer,
 } from './pages';
 
-// General styles
-import './assets/style/_fonts.scss';
-import './assets/style/index.scss';
-
 export default (
   <BrowserRouter>
     <Switch>
