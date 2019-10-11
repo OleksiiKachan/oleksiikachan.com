@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
-import './IconButton.scss';
+import styled from 'styled-components';
 
 /*
   <IconButton 
@@ -11,22 +9,6 @@ import './IconButton.scss';
   />
 */
 
-type PropsType = {
-  icon: string;
-  altCaption: string;
-  onClick: () => void;
-  className?: string;
-};
-
-export default class IconButton extends Component<PropsType> {
-  render() {
-    return (
-      <img
-        src={this.props.icon}
-        alt={this.props.altCaption}
-        onClick={this.props.onClick}
-        className={classNames('iconButton', this.props.className)}
-      />
-    );
-  }
-}
+export default styled.img`
+  cursor: pointer;
+`;

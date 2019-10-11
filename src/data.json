@@ -1,11 +1,14 @@
 {
   "name": "Oleksii Kachan",
-  "title": "Software Engineer & UI Designer",
+  "title": "Full Stack Software Engineer",
   "coverImage": "https://res.cloudinary.com/oleksiikachan/image/upload/v1563796344/portfolio/images/header-w_photo.png",
   "introduction": [
     "Hello there! Welcome to my space...",
-    "I am a |bold|software developer|-|. I enjoy developing |italic|web-based enterprise solutions|-|. But I can create |italic|landing page|-| as well. If you have any |bold|web projects|-| and are looking for a developer just |bold|contact me|-|. We can create something great together.",
-    "My passion about IT industry is to |italic|help businesses to focus|-| on |bold|customers & community|-|. I do it by creating different types of |bold|affordable|-| enterprise software (e.g. MES, ERP, CRM solutions).",
+    "I am a Full Stack Software Engineer. I help to automate your daily work to make it easier & improve your internet representation.",
+    "|bold|Details.|-| For that I create tools that can replace your spreadsheets and word documents. I can create landing pages for you, your company and/or your products. I use React, Javascript, in addition to HTML & CSS, so all of my products are web-based - you can just use it from your browser. ",
+    "|bold|When I can help.|-| I can help you if you are looking for developers for your new project or if you are expanding team for your current product.",
+    "|bold|When I cannot help.|-| I cannot help you if you need a developer for native mobile and desktop applications. But I have many friends in the industry, so contact me anyway and we can discuss your situation. ",
+    "My passion about IT industry is to help businesses to focus on customers & community. I do it by creating different types of affordable enterprise software (e.g. MES, ERP, CRM solutions).",
     "I am sure that technologies are not as important as concepts & principles behind those technologies."
   ],
   "portfolioStack": [
@@ -402,7 +405,6 @@
       }
     }
   ],
-
   "skills": [
     "UI/UX Design",
     "Prototyping",

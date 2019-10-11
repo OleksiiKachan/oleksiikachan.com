@@ -43,8 +43,8 @@ export default class Modal extends Component<PropsType> {
         <Overlay>
           <section className="modal" ref={this.modalRef}>
             <IconButton
-              icon={icon_close}
-              altCaption="close icon"
+              src={icon_close}
+              alt="close icon"
               onClick={this.props.handleClose}
               className={classNames('modal__closeButton')}
             />

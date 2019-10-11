@@ -31,7 +31,7 @@ exports[`ProjectCard Snapshot 1`] = `
     <div
       className="projectCard__stackList"
     >
-      <_default
+      <styled.span
         className="projectCard__stackItem"
         key=".NET Framework"
         style={
@@ -42,7 +42,7 @@ exports[`ProjectCard Snapshot 1`] = `
         type="light"
       >
         .NET Framework
-      </_default>
+      </styled.span>
     </div>
     <p
       className="projectCard__description"
