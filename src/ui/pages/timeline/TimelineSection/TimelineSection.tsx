@@ -21,7 +21,7 @@ type PropsType = {
 
 export default ({ experience, education, className }: PropsType) => {
   let previousSide = 'right';
-  const timeline = transformToTimeline(experience, education);
+  const timeline = transformToTimeline(experience, education).reverse();
   return (
     <div
       id="education"

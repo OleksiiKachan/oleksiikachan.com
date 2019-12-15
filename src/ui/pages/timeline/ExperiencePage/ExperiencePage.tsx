@@ -29,37 +29,40 @@ export default ({ item }: PropsType) => {
         <div className={classNames('experiencePage__label')}>Dates:</div>
         <div className={classNames('experiencePage__value')}>{item.dates}</div>
       </div>
-      <div
-        className={classNames(
-          'experiencePage__field',
-          'experiencePage__field_list'
-        )}
-      >
+
+      {item.responsibilities && (
         <div
           className={classNames(
-            'experiencePage__label',
-            'experiencePage__label_list'
+            'experiencePage__field',
+            'experiencePage__field_list'
           )}
         >
-          Responsibilities:
+          <div
+            className={classNames(
+              'experiencePage__label',
+              'experiencePage__label_list'
+            )}
+          >
+            Responsibilities:
+          </div>
+          <div
+            className={classNames(
+              'experiencePage__value',
+              'experiencePage__value_list'
+            )}
+          >
+            <ul>
+              {item.responsibilities.map(responsibility => {
+                return (
+                  <li key={item.responsibilities.indexOf(responsibility)}>
+                    {responsibility}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
-        <div
-          className={classNames(
-            'experiencePage__value',
-            'experiencePage__value_list'
-          )}
-        >
-          <ul>
-            {item.responsibilities.map(responsibility => {
-              return (
-                <li key={item.responsibilities.indexOf(responsibility)}>
-                  {responsibility}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
+      )}
       {item.projects && (
         <div
           className={classNames(
