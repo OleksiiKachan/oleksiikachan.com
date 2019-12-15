@@ -63,14 +63,16 @@ export default ({ aboutInfo, className }: PropsType) => {
           );
         })}
       </div>
-      <div className={classNames('aboutSection__rightColumn')}>
-        <p className={classNames('aboutSection__availabilityLabel')}>
-          Available for work:{' '}
-          <span className={classNames('aboutSection__availabilityDate')}>
-            {aboutInfo.availabilityDate}
-          </span>
-        </p>
-      </div>
+      {aboutInfo.availabilityDate && (
+        <div className={classNames('aboutSection__rightColumn')}>
+          <p className={classNames('aboutSection__availabilityLabel')}>
+            Available for work:{' '}
+            <span className={classNames('aboutSection__availabilityDate')}>
+              {aboutInfo.availabilityDate}
+            </span>
+          </p>
+        </div>
+      )}
       <div className={classNames('aboutSection__portfolioStack')}>
         <p>This site is created using:</p>
         <p>{aboutInfo.portfolioStack.join(', ')}</p>
