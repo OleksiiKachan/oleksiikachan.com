@@ -63,8 +63,6 @@
 
     @include respond(tablet) {
       width: 100%;
-      pointer-events: none;
-      animation: none;
     }
   }
 
@@ -72,12 +70,6 @@
     border-radius: 10px;
     padding: 5px;
     background-color: $color-surface;
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.29);
-      animation: popOnHover-enter-3 400ms ease-in-out forwards;
-    }
   }
 }
 
@@ -98,7 +90,6 @@
     width: 45%;
     border-radius: 10px;
     padding: 5px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,13 +98,6 @@
     @include respond(tablet) {
       width: 95%;
       margin-bottom: 0.5rem;
-      pointer-events: none;
-      animation: none;
-    }
-
-    &:hover {
-      box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.29);
-      animation: popOnHover-enter-3 400ms ease-in-out forwards;
     }
   }
 
