@@ -33,10 +33,10 @@
   "resumeUrl": "https://res.cloudinary.com/oleksiikachan/image/upload/v1568403119/portfolio/pdfs/oleksii_kachan-resume-frontend.pdf",
   "availabilityDate": "",
   "contacts": {
-    "phone": { "caption": "+1 (437) 778-5921", "url": "tel:1-437-778-59-21" },
+    "phone": { "caption": "+1 (647) 321-9771", "url": "tel:16573219771" },
     "email": {
-      "caption": "alexkachan.lutsk@gmail.com",
-      "url": "mailto:alexkachan.lutsk@gmail.com"
+      "caption": "oleksii@oleksiikachan.com",
+      "url": "mailto:oleksii@oleksiikachan.com"
     },
     "location": {
       "caption": "Toronto, ON, Canada",
