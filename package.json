@@ -1,95 +1,31 @@
 {
-  "name": "oleksiikachan.com",
-  "version": "3.2.1",
-  "author": "Oleksii Kachan <alexkachan.lutsk@gmail.com>",
-  "homepage": "https://oleksiikachan.com",
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OleksiiKachan/oleksiikachan.com"
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@types/classnames": "^2.2.10",
-    "@types/node": "^12.12.30",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
-    "@types/react-html-parser": "^2.0.1",
-    "@types/react-router-dom": "^5.1.3",
-    "@types/styled-components": "^4.4.3",
-    "axios": "^0.19.2",
-    "babel-plugin-styled-components": "^1.10.7",
-    "classnames": "^2.2.6",
-    "cross-env": "^6.0.3",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-html-parser": "^2.0.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.0",
-    "sass": "^1.26.3",
-    "styled-components": "^4.4.1",
-    "styled-components-modifiers": "^1.2.5",
-    "typescript": "^3.8.3"
+    "gatsby": "^2.19.45",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "coverage": "react-scripts test --env=jsdom --coverage",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "cross-env CI=true npm test"
-    }
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@commitlint/cli": "^8.3.5",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-links": "^5.3.17",
-    "@storybook/addons": "^5.3.17",
-    "@storybook/react": "^5.3.17",
-    "@types/enzyme": "^3.10.5",
-    "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jest": "^24.9.1",
-    "babel-loader": "^8.0.6",
-    "cz-customizable": "^6.2.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.4",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
+    "prettier": "^1.19.1"
   },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "config/git/commitizen.js"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
   },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5"
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
