@@ -1,95 +1,47 @@
 {
   "name": "oleksiikachan.com",
-  "version": "3.2.1",
-  "author": "Oleksii Kachan <alexkachan.lutsk@gmail.com>",
-  "homepage": "https://oleksiikachan.com",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OleksiiKachan/oleksiikachan.com"
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "pre-commit": "npm-run-all -p pre-commit:*",
+    "pre-commit:lint": "yarn lint --fix && yarn pretty-quick --staged",
+    "pre-commit:test": "cross-env jest --onlyChanged"
   },
   "dependencies": {
-    "@types/classnames": "^2.2.10",
-    "@types/node": "^12.12.30",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
-    "@types/react-html-parser": "^2.0.1",
-    "@types/react-router-dom": "^5.1.3",
-    "@types/styled-components": "^4.4.3",
-    "axios": "^0.19.2",
-    "babel-plugin-styled-components": "^1.10.7",
-    "classnames": "^2.2.6",
-    "cross-env": "^6.0.3",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-html-parser": "^2.0.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.0",
-    "sass": "^1.26.3",
-    "styled-components": "^4.4.1",
-    "styled-components-modifiers": "^1.2.5",
-    "typescript": "^3.8.3"
+    "framer-motion": "^7.3.5",
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5",
+    "wonder-engine": "0.0.33"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "coverage": "react-scripts test --env=jsdom --coverage",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "cross-env CI=true npm test"
-    }
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@commitlint/cli": "^8.3.5",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-links": "^5.3.17",
-    "@storybook/addons": "^5.3.17",
-    "@storybook/react": "^5.3.17",
-    "@types/enzyme": "^3.10.5",
-    "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jest": "^24.9.1",
-    "babel-loader": "^8.0.6",
-    "cz-customizable": "^6.2.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.4",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "config/git/commitizen.js"
-    }
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5"
+    "@testing-library/dom": "^8.17.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "cross-env": "^7.0.3",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.0.3",
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "typescript": "4.8.3"
   }
 }
