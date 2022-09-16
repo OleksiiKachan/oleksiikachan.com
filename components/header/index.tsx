@@ -1,19 +1,17 @@
 import { useState } from 'react';
-import { useWonderEngineContext } from 'wonder-engine';
 import { Container } from './styled';
 import NavButton from '../navigation-button';
 import Navigation from '../navigation';
 import Image from 'next/image';
+import { LinkContainer } from 'wonder-engine';
 
 const Header = () => {
-  const { Link } = useWonderEngineContext();
-
   const [_opened, setOpened] = useState(false);
 
   return (
     <Container>
       <Navigation opened={_opened} />
-      <Link href="/">
+      <LinkContainer href="/" component={`a`}>
         <a>
           <Image
             alt="Home"
@@ -22,7 +20,7 @@ const Header = () => {
             src={`https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_horizontal_dark.svg`}
           />
         </a>
-      </Link>
+      </LinkContainer>
       <NavButton opened={_opened} onClick={() => setOpened((prev) => !prev)} />
     </Container>
   );

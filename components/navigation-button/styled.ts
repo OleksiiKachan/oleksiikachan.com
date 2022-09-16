@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.button`
+export const Container = styled.button<{ $open: boolean }>`
   display: block;
   z-index: 2;
   width: 48px;

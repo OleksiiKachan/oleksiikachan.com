@@ -6,6 +6,8 @@ const GlobalStyle = createGlobalStyle`
     --color-gold: #FFD369;
     --color-grey: #8A8A8A;
     --color-white: #EEEEEE;
+
+    --content-max-width: 1440px;
   }
 
   html,

@@ -1,10 +1,8 @@
-import { useWonderEngineContext } from 'wonder-engine';
+import { LinkContainer } from 'wonder-engine';
 import { Container } from './styled';
 import { AnimatePresence } from 'framer-motion';
 
-const Navigation = ({ opened }) => {
-  const { Link } = useWonderEngineContext();
-
+const Navigation = ({ opened }: { opened: boolean }) => {
   return (
     <AnimatePresence>
       {opened && (
@@ -20,16 +18,24 @@ const Navigation = ({ opened }) => {
         >
           <ol>
             <li>
-              <Link href="/about">About me</Link>
+              <LinkContainer component="a" href="/about">
+                About me
+              </LinkContainer>
             </li>
             <li>
-              <Link href="/case">Case studies</Link>
+              <LinkContainer component="a" href="/case">
+                Case studies
+              </LinkContainer>
             </li>
             <li>
-              <Link href="/timeline">Timeline</Link>
+              <LinkContainer component="a" href="/timeline">
+                Timeline
+              </LinkContainer>
             </li>
             <li>
-              <Link href="/contact">Contact me</Link>
+              <LinkContainer component="a" href="/contact">
+                Contact me
+              </LinkContainer>
             </li>
           </ol>
         </Container>

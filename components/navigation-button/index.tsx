@@ -1,9 +1,13 @@
 import { Container } from './styled';
 import { motion } from 'framer-motion';
+import { FunctionComponent } from 'react';
 
 const transition = { type: 'tween', duration: 0.1 };
 
-const NavButton = ({ onClick, opened }) => {
+const NavButton: FunctionComponent<{
+  onClick: () => void;
+  opened: boolean;
+}> = ({ onClick, opened }) => {
   return (
     <Container $open={opened} onClick={onClick}>
       <motion.div
