@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <Container>
-      <Navigation opened={_opened} />
+      <Navigation opened={_opened} onClick={() => setOpened(false)} />
       <LinkContainer href="/" component={`a`}>
         <a>
           <Image
