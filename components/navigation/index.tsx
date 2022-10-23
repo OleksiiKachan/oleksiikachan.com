@@ -1,6 +1,13 @@
-import { LinkContainer } from 'wonder-engine';
+import { Link } from 'wonder-engine';
 import { Container } from './styled';
 import { AnimatePresence } from 'framer-motion';
+
+const menu = [
+  { caption: `About me`, href: '/about' },
+  { caption: `Case studies`, href: '/case' },
+  { caption: `Timeline`, href: '/timeline' },
+  { caption: `Contact me`, href: '/contact' },
+];
 
 const Navigation = ({
   opened,
@@ -13,6 +20,7 @@ const Navigation = ({
     <AnimatePresence>
       {opened && (
         <Container
+          key="navigaition"
           initial={{ y: '-100%' }}
           animate={{
             y: 0,
@@ -23,26 +31,13 @@ const Navigation = ({
           transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
         >
           <ol>
-            <li>
-              <LinkContainer component="a" href="/about" onClick={onClick}>
-                About me
-              </LinkContainer>
-            </li>
-            <li>
-              <LinkContainer component="a" href="/case" onClick={onClick}>
-                Case studies
-              </LinkContainer>
-            </li>
-            <li>
-              <LinkContainer component="a" href="/timeline" onClick={onClick}>
-                Timeline
-              </LinkContainer>
-            </li>
-            <li>
-              <LinkContainer component="a" href="/contact" onClick={onClick}>
-                Contact me
-              </LinkContainer>
-            </li>
+            {menu.map(({ caption, href }) => (
+              <li key={caption}>
+                <Link href={href} onClick={onClick}>
+                  {caption}
+                </Link>
+              </li>
+            ))}
           </ol>
         </Container>
       )}
