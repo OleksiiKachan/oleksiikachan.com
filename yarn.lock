@@ -4814,10 +4814,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-wonder-engine@^0.0.34:
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/wonder-engine/-/wonder-engine-0.0.34.tgz#3602b7d8951e49eebbdcf32e5248221ef6eead68"
-  integrity sha512-y8irMSL0LJcy1WrePVXQypum9xn6LBrP5nWuHtkDWAgAI5kKhYyU5XC7cZs4EYRk8x1VqT1fGT8Cu7I5JtaDLw==
+wonder-engine@^0.0.36:
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/wonder-engine/-/wonder-engine-0.0.36.tgz#68f930cceae8b2e9a5b8ea41e41df0b14d28f76d"
+  integrity sha512-NJlybv2czF09KxI67DJ8K+py+LtMlKJ44O+wJ+APkSW9xBCMAq2/LTYmiMjC1xQfDh/OerT3OVOAPFagguKyyQ==
 
 word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.3"
