@@ -3,8 +3,6 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     target-branch: 'v4'
-    registries:
-      - npm-github
     open-pull-requests-limit: 15
     schedule:
       interval: 'daily'
