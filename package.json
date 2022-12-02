@@ -13,7 +13,7 @@
     "pre-commit:test": "cross-env jest --onlyChanged"
   },
   "dependencies": {
-    "framer-motion": "^7.6.15",
+    "framer-motion": "^7.6.18",
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
