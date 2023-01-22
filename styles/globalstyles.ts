@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import breakpoints from './breakpoints';
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -12,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
+    font-size: 10px;
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -23,6 +25,18 @@ const GlobalStyle = createGlobalStyle`
   }
   * {
     box-sizing: border-box;
+  }
+
+  .desktop-min {
+    @media only screen and (max-width: ${breakpoints.tabletMax}) {
+      display: none;
+    }
+  }
+
+  .tablet-max {
+    @media only screen and (min-width: ${breakpoints.desktop}) {
+      display: none;
+    }
   }
 `;
 
