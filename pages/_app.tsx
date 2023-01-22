@@ -1,10 +1,10 @@
 import type { AppProps } from 'next/app';
-import AppScene from '../scenes/app';
+import Client from '../client';
 
 const App = ({ Component, pageProps }: AppProps) => (
-  <AppScene>
+  <Client>
     <Component {...pageProps} />
-  </AppScene>
+  </Client>
 );
 
 export default App;
