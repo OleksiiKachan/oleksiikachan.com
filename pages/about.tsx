@@ -6,6 +6,12 @@ export const getStaticProps = async () => {
   return {
     props: {
       data: {
+        meta: {
+          title: `Oleksii Kachan | Software Developer`,
+          description: `My name is Oleksii Kachan and I'm a software developer`,
+          image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1674426534/portfolio/images/main-photo.jpg`,
+          url: `oleksiikachan.com/about`,
+        },
         name: 'Oleksii Kachan',
         title: 'Full Stack Software Engineer',
         image:
