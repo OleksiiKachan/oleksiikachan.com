@@ -2,7 +2,7 @@ import { Container } from './styled';
 import { motion } from 'framer-motion';
 import { FunctionComponent } from 'react';
 
-const transition = { type: 'tween', duration: 0.1 };
+const transition = { type: `tween`, duration: 0.1 };
 
 const NavButton: FunctionComponent<{
   onClick: () => void;

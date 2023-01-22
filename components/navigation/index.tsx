@@ -3,10 +3,10 @@ import { Container } from './styled';
 import { AnimatePresence } from 'framer-motion';
 
 const menu = [
-  { caption: `About me`, href: '/about' },
-  { caption: `Case studies`, href: '/case' },
-  { caption: `Timeline`, href: '/timeline' },
-  { caption: `Contact me`, href: '/contact' },
+  { caption: `About me`, href: `/about` },
+  { caption: `Case studies`, href: `/case` },
+  { caption: `Timeline`, href: `/timeline` },
+  { caption: `Contact me`, href: `/contact` },
 ];
 
 const Navigation = ({
@@ -21,14 +21,14 @@ const Navigation = ({
       {opened && (
         <Container
           key="navigaition"
-          initial={{ y: '-100%' }}
+          initial={{ y: `-100%` }}
           animate={{
             y: 0,
           }}
           exit={{
-            y: '-100%',
+            y: `-100%`,
           }}
-          transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
+          transition={{ type: `spring`, bounce: 0, duration: 0.4 }}
         >
           <ol>
             {menu.map(({ caption, href }) => (

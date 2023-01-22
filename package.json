@@ -7,10 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "cross-env jest --no-cache --passWithNoTests",
     "prepare": "husky install",
     "pre-commit": "npm-run-all -p pre-commit:*",
     "pre-commit:lint": "yarn lint --fix && yarn pretty-quick --staged",
     "pre-commit:test": "cross-env jest --onlyChanged"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "jest-junit": {
+    "output": "./test-report.xml"
   },
   "dependencies": {
     "framer-motion": "^8.5.0",
@@ -33,9 +40,10 @@
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "cross-env": "^7.0.3",
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.4",
+    "eslint": "^8.32.0",
+    "eslint-config-next": "^13.1.4",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",

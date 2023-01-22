@@ -10,7 +10,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       data: {
-        title: 'Timeline',
+        title: `Timeline`,
       },
     },
   };
