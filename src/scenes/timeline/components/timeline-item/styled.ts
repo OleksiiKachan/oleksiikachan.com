@@ -150,6 +150,10 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
       transform: translateX(100%);
       animation: ${opacity} 700ms ease-in-out forwards,
         ${fromRightToCenter} 700ms ease-in-out forwards;
+
+      h2:after {
+        left: -8px;
+      }
     }
   }
 `;
