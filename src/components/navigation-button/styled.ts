@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.button<{ $open: boolean }>`
   display: block;
-  z-index: 2;
+  z-index: 3;
   width: 48px;
   height: 48px;
   padding: 0px;

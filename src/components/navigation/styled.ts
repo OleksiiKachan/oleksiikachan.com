@@ -14,7 +14,7 @@ export const Container = styled(motion.nav)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 
   ol {
     list-style: none;
