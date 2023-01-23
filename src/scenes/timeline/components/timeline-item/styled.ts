@@ -47,11 +47,14 @@ const fromLeftToCenter = keyframes`{
 }`;
 
 export const Content = styled.div`
-  width: 35%;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 40px 0;
+
+  @media only screen and (min-width: ${breakpoints.desktop}) {
+    padding: 40px 0;
+    width: 35%;
+  }
 
   @media only screen and (max-width: ${breakpoints.tabletMax}) {
     width: 60%;
