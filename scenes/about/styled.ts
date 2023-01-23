@@ -1,3 +1,4 @@
+import breakpoints from '../../styles/breakpoints';
 import styled from 'styled-components';
 
 export const Paragraph = styled.div`
@@ -9,6 +10,31 @@ export const Paragraph = styled.div`
 
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+  }
+`;
+
+export const SocialMedia = styled.ul`
+  list-style: none;
+  padding: 0 20px;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+
+  h3 {
+    font-size: 2.4rem;
+    margin: 0;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    @media only screen and (max-width: ${breakpoints.mobile}) {
+      &:first-child {
+        flex-grow: 1;
+      }
     }
   }
 `;

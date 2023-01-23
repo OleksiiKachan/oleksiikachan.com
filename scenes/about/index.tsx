@@ -1,8 +1,9 @@
 import Header from './components/header';
 import ReactMarkdown from 'react-markdown';
 
-import { Paragraph } from './styled';
+import { Paragraph, SocialMedia } from './styled';
 import Helmet, { MetaData } from '../../components/helmet';
+import SocialButton from '../../components/social-button';
 
 const About = ({
   data,
@@ -13,6 +14,7 @@ const About = ({
     title: string;
     image: string;
     intro: string;
+    links: Array<{ type: string; href: string }>;
   };
 }) => {
   return (
@@ -22,6 +24,16 @@ const About = ({
       <Paragraph>
         <ReactMarkdown>{data.intro}</ReactMarkdown>
       </Paragraph>
+      <SocialMedia>
+        <li>
+          <h3>{`Follow me:`}</h3>
+        </li>
+        {data.links.map((link) => (
+          <li key={link.type}>
+            <SocialButton type={link.type} href={link.href} />
+          </li>
+        ))}
+      </SocialMedia>
     </>
   );
 };

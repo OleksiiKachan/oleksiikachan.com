@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
     --color-grey: #8A8A8A;
     --color-white: #EEEEEE;
 
+    --svg-bg: transparent;
+    --svg-border: var(--color-black);
+
     --content-max-width: 1440px;
   }
 
