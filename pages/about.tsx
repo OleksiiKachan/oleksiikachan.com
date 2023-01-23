@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
         meta: {
           title: `Oleksii Kachan | Software Developer`,
           description: `My name is Oleksii Kachan and I'm a software developer`,
-          image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1674426534/portfolio/images/main-photo.jpg`,
+          image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_portrait_dark.svg`,
           url: `oleksiikachan.com/about`,
         },
         name: `Oleksii Kachan`,
