@@ -75,6 +75,7 @@ export const Content = styled.div`
       bottom: 0px;
       background-color: var(--color-gold);
       z-index: -1;
+      opacity: 0.7;
     }
   }
 
