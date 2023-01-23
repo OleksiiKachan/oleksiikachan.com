@@ -9,7 +9,7 @@ const NavButton: FunctionComponent<{
   opened: boolean;
 }> = ({ onClick, opened }) => {
   return (
-    <Container $open={opened} onClick={onClick}>
+    <Container $open={opened} onClick={onClick} aria-label="menu">
       <motion.div
         animate={{
           rotateZ: opened ? `45deg` : `0deg`,

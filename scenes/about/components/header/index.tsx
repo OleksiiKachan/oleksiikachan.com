@@ -16,6 +16,7 @@ const Header = ({
           height={240}
           alt=""
           role="presentation"
+          priority
         />
       </ImageWrapper>
       <hgroup>
