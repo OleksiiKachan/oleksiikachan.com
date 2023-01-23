@@ -11,7 +11,7 @@ const SocialButton = ({
   href: string;
   size?: number;
 }) => (
-  <Container href={href}>
+  <Container href={href} target="_blank">
     <Image
       src={`https://res.cloudinary.com/oleksiikachan/image/upload/v1674435285/portfolio/images/assets/icon-${type}.svg`}
       width={size}
