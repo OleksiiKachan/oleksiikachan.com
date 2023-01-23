@@ -1,6 +1,8 @@
-import { Container } from './styled';
 import { motion } from 'framer-motion';
-import { FunctionComponent } from 'react';
+
+import { Container } from './styled';
+
+import type { FunctionComponent } from 'react';
 
 const transition = { type: `tween`, duration: 0.1 };
 

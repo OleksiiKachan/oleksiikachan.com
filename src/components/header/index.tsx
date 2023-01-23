@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Container } from './styled';
-import NavButton from '../navigation-button';
-import Navigation from '../navigation';
 import Image from 'next/image';
 import { Link } from 'wonder-engine';
+
+import NavButton from 'components/navigation-button';
+import Navigation from 'components/navigation';
+
+import { Container } from './styled';
 
 const Header = () => {
   const [_opened, setOpened] = useState(false);

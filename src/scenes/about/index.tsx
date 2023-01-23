@@ -1,9 +1,10 @@
-import Header from './components/header';
 import ReactMarkdown from 'react-markdown';
 
+import Helmet, { MetaData } from 'components/helmet';
+import SocialButton from 'components/social-button';
+
+import Header from './components/header';
 import { Paragraph, SocialMedia } from './styled';
-import Helmet, { MetaData } from '../../components/helmet';
-import SocialButton from '../../components/social-button';
 
 const About = ({
   data,

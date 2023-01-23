@@ -1,5 +1,6 @@
-import breakpoints from '../../styles/breakpoints';
 import styled from 'styled-components';
+
+import breakpoints from 'styles/breakpoints';
 
 export const Paragraph = styled.div`
   font-size: 1.6rem;

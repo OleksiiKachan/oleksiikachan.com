@@ -1,6 +1,7 @@
 import { Link } from 'wonder-engine';
-import { Container } from './styled';
 import { AnimatePresence } from 'framer-motion';
+
+import { Container } from './styled';
 
 const menu = [
   { caption: `About me`, href: `/about` },

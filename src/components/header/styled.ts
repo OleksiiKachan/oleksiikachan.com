@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import breakpoints from '../../styles/breakpoints';
+
+import breakpoints from 'styles/breakpoints';
 
 export const Container = styled.header`
   padding: 16px 32px 16px 16px;

@@ -1,4 +1,4 @@
-import NotFoundScene from '../scenes/not-found';
+import NotFoundScene from 'scenes/not-found';
 
 const NotFound = NotFoundScene;
 

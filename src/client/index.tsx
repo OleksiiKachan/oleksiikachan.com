@@ -1,9 +1,11 @@
 import { FunctionComponent, ReactNode } from 'react';
 import { WonderEngineProvider } from 'wonder-engine';
-import GlobalStyle from '../styles/globalstyles';
-import { MainLayout, MainContent } from '../layout/main';
+
+import GlobalStyle from 'styles/globalstyles';
+import Header from 'components/header';
+import { MainLayout, MainContent } from 'layout/main';
+
 import engineConfig from './wonder-engine-config';
-import Header from '../components/header';
 
 const App: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
   return (

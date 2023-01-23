@@ -1,4 +1,4 @@
-import AboutScene from '../scenes/about';
+import AboutScene from 'scenes/about';
 
 const About = AboutScene;
 
