@@ -7,7 +7,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: [`res.cloudinary.com`],
+    domains: [`res.cloudinary.com`, `storage.googleapis.com`],
   },
   i18n: {
     locales: [`en`],
