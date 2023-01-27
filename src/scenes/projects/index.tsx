@@ -4,7 +4,7 @@ import { Link } from 'wonder-engine';
 
 import { Container, ProjectCard } from './styled';
 
-const CaseStudies = ({
+const Projects = ({
   data: { meta, title, projects },
 }: {
   data: {
@@ -37,7 +37,7 @@ const CaseStudies = ({
               <hgroup>
                 <h2>{item.title}</h2>
                 <p>{item.shortDescription}</p>
-                <Link href={`/case/${item.id}`}>{`Case study`}</Link>
+                <Link href={`/projects/${item.id}`}>{`See details`}</Link>
               </hgroup>
             </ProjectCard>
           </li>
@@ -47,4 +47,4 @@ const CaseStudies = ({
   );
 };
 
-export default CaseStudies;
+export default Projects;

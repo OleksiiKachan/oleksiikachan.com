@@ -1,6 +1,6 @@
-import CaseStudiesScene from 'scenes/case-studies';
+import ProjectsScene from 'scenes/projects';
 
-const CaseStudies = CaseStudiesScene;
+const Projects = ProjectsScene;
 
 export const getStaticProps = async () => {
   return {
@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
           image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_portrait_dark.svg`,
           url: `https://oleksiikachan.com/case`,
         },
-        title: `Case studies`,
+        title: `Projects`,
         projects: [
           {
             id: `nobul-web`,
@@ -56,4 +56,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default CaseStudies;
+export default Projects;

@@ -5,7 +5,7 @@ import { Container } from './styled';
 
 const menu = [
   { caption: `About me`, href: `/about` },
-  { caption: `Case studies`, href: `/case` },
+  { caption: `Projects`, href: `/projects` },
   { caption: `Timeline`, href: `/timeline` },
   { caption: `Contact me`, href: `/contact` },
 ];
