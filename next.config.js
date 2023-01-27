@@ -28,6 +28,11 @@ const nextConfig = {
         destination: `/about`,
         permanent: true,
       },
+      {
+        source: `/experience`,
+        destination: `/timeline`,
+        permanent: true,
+      },
     ];
   },
 };
