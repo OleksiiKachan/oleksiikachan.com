@@ -15,9 +15,9 @@ export const getStaticProps = async () => {
         title: `Case studies`,
         projects: [
           {
-            id: `nobul-next`,
-            title: `Nobul Web Next.js migration`,
-            shortDescription: `Migrated whole FE from vanilla react to next.js`,
+            id: `nobul-web`,
+            title: `Nobul Web Platform`,
+            shortDescription: `Feature development for Nobul marketplace`,
             image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1674521318/portfolio/images/projects/nobul-next.png`,
           },
           {
