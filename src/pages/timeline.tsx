@@ -83,7 +83,7 @@ export const getStaticProps = async () => {
             id: `nobul`,
             company: `Nobul Technologies`,
             position: `Software Developer`,
-            dates: `Since 2019`,
+            dates: `2019 - 2023`,
             responsibilities: [
               `Worked closely with the product team on new features`,
               `Created and implemented a custom A/B testing engine with strapi CMS and React`,
@@ -110,6 +110,13 @@ export const getStaticProps = async () => {
             company: `The Humber Institute of Technology and Advanced Learning`,
             position: `Part-Time Professor`,
             dates: `Since 2022`,
+            responsibilities: [`Teaching XML and JS course`],
+          },
+          {
+            id: `flowspace`,
+            company: `Flowspace`,
+            position: `Software Engineer`,
+            dates: `Since 2023`,
             responsibilities: [`Teaching XML and JS course`],
           },
         ],
