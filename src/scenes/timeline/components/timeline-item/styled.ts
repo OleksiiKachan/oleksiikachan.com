@@ -1,52 +1,8 @@
-import styled, { css, keyframes } from 'styled-components';
+import { motion } from 'framer-motion';
+import styled, { css } from 'styled-components';
 import breakpoints from 'styles/breakpoints';
 
-const opacity = keyframes`{
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}`;
-
-const pop = keyframes`{
-  0% {
-    transform: scale(0) translateY(-50%);
-  }
-  80% {
-    transform: scale(1.3) translateY(-50%);
-  }
-  100% {
-    transform: scale(1) translateY(-50%);
-  }
-}`;
-
-const fromRightToCenter = keyframes`{
-  0% {
-    transform: translateX(100%);
-  }
-  80% {
-    transform: translateX(-5%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}`;
-
-const fromLeftToCenter = keyframes`{
-  0% {
-    transform: translateX(-100%);
-  }
-  80% {
-    transform: translateX(5%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}`;
-
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -112,11 +68,6 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
       ${Content} {
         align-items: flex-end;
         left: 0;
-        transform: translateX(-100%);
-        opacity: 0;
-        animation:
-          ${opacity} 700ms ease-in-out forwards,
-          ${fromLeftToCenter} 700ms ease-in-out forwards;
 
         h2:after {
           right: -8px;
@@ -130,11 +81,6 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
       ${Content} {
         right: -60%;
         align-items: flex-start;
-        transform: translateX(100%);
-        opacity: 0;
-        animation:
-          ${opacity} 700ms ease-in-out forwards,
-          ${fromRightToCenter} 700ms ease-in-out forwards;
 
         h2:after {
           left: -8px;
@@ -153,10 +99,6 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
     ${Content} {
       left: 25%;
       align-items: flex-start;
-      transform: translateX(100%);
-      animation:
-        ${opacity} 700ms ease-in-out forwards,
-        ${fromRightToCenter} 700ms ease-in-out forwards;
 
       h2:after {
         left: -8px;
@@ -165,20 +107,19 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
   }
 `;
 
-export const Circle = styled.div`
+export const Circle = styled(motion.div)`
   width: 36px;
   height: 36px;
   background-color: var(--color-gold);
   border: 8px solid var(--color-bg);
   border-radius: 50%;
   z-index: 1;
-  transform: scale(0) translateY(-50%);
+  transform: translateY(-50%);
   top: 40%;
   position: absolute;
   left: calc(50% - 17px);
-  animation: ${pop} 700ms ease-in-out forwards;
 
   @media only screen and (max-width: ${breakpoints.tabletMax}) {
-    left: calc(10% - 17px);
+    left: calc(10% - 32px);
   }
 `;
