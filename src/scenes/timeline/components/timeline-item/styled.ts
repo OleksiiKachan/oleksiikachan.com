@@ -114,7 +114,8 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
         left: 0;
         transform: translateX(-100%);
         opacity: 0;
-        animation: ${opacity} 700ms ease-in-out forwards,
+        animation:
+          ${opacity} 700ms ease-in-out forwards,
           ${fromLeftToCenter} 700ms ease-in-out forwards;
 
         h2:after {
@@ -131,7 +132,8 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
         align-items: flex-start;
         transform: translateX(100%);
         opacity: 0;
-        animation: ${opacity} 700ms ease-in-out forwards,
+        animation:
+          ${opacity} 700ms ease-in-out forwards,
           ${fromRightToCenter} 700ms ease-in-out forwards;
 
         h2:after {
@@ -152,7 +154,8 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
       left: 25%;
       align-items: flex-start;
       transform: translateX(100%);
-      animation: ${opacity} 700ms ease-in-out forwards,
+      animation:
+        ${opacity} 700ms ease-in-out forwards,
         ${fromRightToCenter} 700ms ease-in-out forwards;
 
       h2:after {

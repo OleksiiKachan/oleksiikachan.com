@@ -11,7 +11,7 @@ const App: React.FunctionComponent<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
-    <StyleSheetManager disableVendorPrefixes>
+    <StyleSheetManager>
       <WonderEngineProvider config={engineConfig}>
         <GlobalStyle />
         <MainLayout>
