@@ -12,4 +12,14 @@ const breakpoints = {
   wideDesktop: `${wideDesktopBreakpoint}px`,
 };
 
+export const mobileMQ = `(max-width: ${breakpoints.mobile})`;
+export const tabletMQ = `(max-width: ${breakpoints.tabletMax}) and (min-width: ${breakpoints.tabletMin})`;
+export const desktopMQ = `(min-width: ${breakpoints.desktop})`;
+
+export const mediaQueries = {
+  [mobileMQ]: `mobile`,
+  [tabletMQ]: `tablet`,
+  [desktopMQ]: `desktop`,
+};
+
 export default breakpoints;

@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import Helmet, { MetaData } from 'components/helmet';
 import TimelineItem from './components/timeline-item';
 
-import { Container, TimelineContainer } from './styled';
+import { Container, TimelineContainer, Line } from './styled';
 
 interface EducationTimelineItem {
   id: string;
@@ -73,6 +73,10 @@ const Timeline = ({
       <Helmet data={meta} />
       <h1>{title}</h1>
       <TimelineContainer>
+        <Line
+          animate={{ bottom: [`150%`, `0%`] }}
+          transition={{ duration: 1.5 }}
+        />
         {list.map(({ side, ...item }, index) => (
           <TimelineItem key={item.id} item={item} side={side} index={index} />
         ))}

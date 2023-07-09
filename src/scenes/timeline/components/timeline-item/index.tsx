@@ -1,3 +1,4 @@
+import useSystemConfigContext from 'client/system-config-context';
 import { Container, Circle, Content } from './styled';
 
 const TimelineItem = ({
@@ -9,13 +10,20 @@ const TimelineItem = ({
   side: `right` | `left`;
   index: number;
 }) => {
+  const { breakpoint } = useSystemConfigContext();
   return (
     <Container $side={side}>
-      <Circle style={{ animationDelay: `${600 + (index / 1.5) * 100}ms` }} />
+      <Circle
+        animate={{ scale: [0, 1], y: `-50%` }}
+        transition={{ duration: 0.7, type: `spring`, delay: 0.4 + 0.1 * index }}
+      />
       <Content
-        style={{
-          animationDelay: `${400 + (index / 1.5) * 100}ms`,
-        }}
+        animate={
+          side === `left` && breakpoint === `desktop`
+            ? { opacity: [0, 1], x: [`-100%`, `0%`] }
+            : { opacity: [0, 1], x: [`100%`, `0%`] }
+        }
+        transition={{ duration: 0.7, type: `spring`, delay: 0.2 + 0.1 * index }}
       >
         <h2>{item.title}</h2>
         <p>{item.dates}</p>
