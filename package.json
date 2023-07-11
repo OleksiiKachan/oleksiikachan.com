@@ -38,7 +38,7 @@
     "react-dom": "18.2.0",
     "react-is": "^18.2.0",
     "react-markdown": "^8.0.7",
-    "sharp": "^0.32.1",
+    "sharp": "^0.32.2",
     "styled-components": "^6.0.3",
     "wonder-engine": "^0.0.36"
   },
