@@ -1,0 +1,65 @@
+version: 2.1
+
+parameters:
+  weekly_deployment:
+    default: false
+    type: boolean
+
+orbs:
+  node: circleci/node@5.0.2
+
+jobs:
+  setup:
+    executor: node/default
+    working_directory: ~/
+    steps:
+      - checkout
+      - restore_yarn_cache
+      - run:
+          name: Yarn Install
+          command: yarn install --check-files --frozen-lockfile
+      - save_yarn_cache
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+
+commands:
+  save_yarn_cache:
+    steps:
+      - save_cache:
+          name: Restore Yarn Cache
+          keys:
+            - node-packages-yarn-{{ .Environment.YARN_CACHE_VER }}-{{ checksum "yarn.lock" }}
+            - node-packages-yarn-{{ .Environment.YARN_CACHE_VER }}-
+          paths:
+            - ~/.cache/yarn
+            - ~/node_modules
+  restore_yarn_cache:
+    steps:
+      - restore_cache:
+          name: Save Yarn Cache
+          keys:
+            - node-packages-yarn-{{ .Environment.YARN_CACHE_VER }}-{{ checksum "yarn.lock" }}
+            - node-packages-yarn-{{ .Environment.YARN_CACHE_VER }}-
+  save_build_cache:
+    steps:
+      - save_cache:
+          name: Restore Next Build Cache
+          keys:
+            - webpack-build-{{ .Environment.BUILD_CACHE_VER }}-{{ .Revision }}
+            - webpack-build-{{ .Environment.BUILD_CACHE_VER }}-
+          paths:
+            - ~/.next/cache
+  restore_build_cache:
+    steps:
+      - restore_cache:
+          name: Restore Next Build Cache
+          keys:
+            - webpack-build-{{ .Environment.BUILD_CACHE_VER }}-{{ .Revision }}
+            - webpack-build-{{ .Environment.BUILD_CACHE_VER }}-
+
+workflows:
+  pr:
+    jobs:
+      - setup
