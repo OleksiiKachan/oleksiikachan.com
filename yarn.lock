@@ -2160,10 +2160,10 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/logrocket-react@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/logrocket-react/-/logrocket-react-3.0.0.tgz#88278ec2fe093ff55496d66aea9056fe1061ecea"
-  integrity sha512-bQ7LUwqwt2RNpRoco3vt8QBHy78nOQFF+KfFRol1PgKq8S1nIiLYA6Y0ZUAzqGw1viA0lyjAHlPQeTI+wl4wnw==
+"@types/logrocket-react@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/logrocket-react/-/logrocket-react-3.0.1.tgz#a89f5e01c3c52c3b853e3e21689b2450d92e8fd1"
+  integrity sha512-OwCtL6FV+BrbdAipM/VNvF938QIJduOrNorW6PV5gl2Qvm02NirFm3BVmnQBjcwaBoxWVjxYYkxTkvOsXjrw0A==
   dependencies:
     logrocket "1.0.1"
 
