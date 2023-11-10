@@ -10,7 +10,9 @@ orbs:
   
 jobs:
   setup:
-    executor: node/default
+    executor: 
+      name: node/default
+      tag: 18.18.2
     working_directory: ~/web
     steps:
       - checkout
@@ -24,7 +26,9 @@ jobs:
           paths:
             - node_modules
   build:
-    executor: node/default
+    executor: 
+      name: node/default
+      tag: 18.18.2
     working_directory: ~/web
     steps:
       - checkout
@@ -36,7 +40,9 @@ jobs:
           command: CI=true yarn build
       - save_build_cache
   test:
-    executor: node/default
+    executor: 
+      name: node/default
+      tag: 18.18.2
     working_directory: ~/web
     steps:
       - checkout
@@ -46,7 +52,9 @@ jobs:
           name: Run tests
           command: yarn test
   lint:
-    executor: node/default
+    executor: 
+      name: node/default
+      tag: 18.18.2
     working_directory: ~/web
     steps:
       - checkout
