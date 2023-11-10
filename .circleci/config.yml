@@ -6,8 +6,8 @@ parameters:
     type: boolean
 
 orbs:
-  node: circleci/node@5.0.2
-
+  node: circleci/node@5.1.0
+  
 jobs:
   setup:
     executor: node/default
