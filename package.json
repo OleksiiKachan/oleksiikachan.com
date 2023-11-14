@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "@sentry/nextjs": "^7.80.0",
+    "@sentry/nextjs": "^7.80.1",
     "@vercel/analytics": "^1.1.1",
     "framer-motion": "^10.16.4",
     "logrocket": "^6.0.2",
