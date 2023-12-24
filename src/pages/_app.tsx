@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import Client from 'client';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const isClient = () => typeof window !== `undefined`;
 
@@ -29,6 +30,7 @@ const App = ({ Component, pageProps }: AppProps) => (
           }}
         />
         <Analytics />
+        <SpeedInsights />
       </>
     )}
     <Client>

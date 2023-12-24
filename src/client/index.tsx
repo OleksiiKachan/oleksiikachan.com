@@ -1,6 +1,5 @@
 import { WonderEngineProvider } from 'wonder-engine';
 import { StyleSheetManager } from 'styled-components';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import GlobalStyle from 'styles/globalstyles';
 import Header from 'components/header';
@@ -14,7 +13,6 @@ const App: React.FunctionComponent<{ children: React.ReactNode }> = ({
 }) => {
   return (
     <StyleSheetManager>
-      <SpeedInsights />
       <WonderEngineProvider config={engineConfig}>
         <SystemConfigProvider>
           <GlobalStyle />
