@@ -12,7 +12,7 @@ jobs:
   setup:
     executor:
       name: node/default
-      tag: 18.18.2
+      tag: 20.10.0
     working_directory: ~/web
     steps:
       - checkout
@@ -28,7 +28,7 @@ jobs:
   build:
     executor:
       name: node/default
-      tag: 18.18.2
+      tag: 20.10.0
     working_directory: ~/web
     steps:
       - checkout
@@ -42,7 +42,7 @@ jobs:
   test:
     executor:
       name: node/default
-      tag: 18.18.2
+      tag: 20.10.0
     working_directory: ~/web
     steps:
       - checkout
@@ -54,7 +54,7 @@ jobs:
   lint:
     executor:
       name: node/default
-      tag: 18.18.2
+      tag: 20.10.0
     working_directory: ~/web
     steps:
       - checkout
