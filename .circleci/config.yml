@@ -6,11 +6,11 @@ parameters:
     type: boolean
 
 orbs:
-  node: circleci/node@5.1.0
-  
+  node: circleci/node@5.1.1
+
 jobs:
   setup:
-    executor: 
+    executor:
       name: node/default
       tag: 18.18.2
     working_directory: ~/web
@@ -26,7 +26,7 @@ jobs:
           paths:
             - node_modules
   build:
-    executor: 
+    executor:
       name: node/default
       tag: 18.18.2
     working_directory: ~/web
@@ -40,7 +40,7 @@ jobs:
           command: CI=true yarn build
       - save_build_cache
   test:
-    executor: 
+    executor:
       name: node/default
       tag: 18.18.2
     working_directory: ~/web
@@ -52,7 +52,7 @@ jobs:
           name: Run tests
           command: yarn test
   lint:
-    executor: 
+    executor:
       name: node/default
       tag: 18.18.2
     working_directory: ~/web
