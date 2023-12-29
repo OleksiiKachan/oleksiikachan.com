@@ -109,7 +109,7 @@ export const getStaticProps = async () => {
             id: `humber-prof`,
             company: `The Humber Institute of Technology and Advanced Learning`,
             position: `Part-Time Professor`,
-            dates: `Since 2022`,
+            dates: `2022-2023`,
             responsibilities: [`Teaching XML and JS course`],
           },
           {
