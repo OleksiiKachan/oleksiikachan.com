@@ -10,7 +10,13 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: [`res.cloudinary.com`, `storage.googleapis.com`],
+    remotePatterns: [
+      {
+        protocol: `https`,
+        hostname: `res.cloudinary.com`,
+        pathname: `/oleksiikachan/image/upload/**`,
+      },
+    ],
   },
   i18n: {
     locales: [`en`],
