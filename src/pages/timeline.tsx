@@ -117,7 +117,7 @@ export const getStaticProps = async () => {
             company: `Flowspace`,
             position: `Software Engineer`,
             dates: `Since 2023`,
-            responsibilities: [`Teaching XML and JS course`],
+            responsibilities: [],
           },
         ],
       },
