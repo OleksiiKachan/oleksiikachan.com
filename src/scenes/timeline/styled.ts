@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import breakpoints from 'styles/breakpoints';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   position: relative;
   padding: 40px 20px;
 
@@ -13,7 +13,7 @@ export const Container = styled.div`
   }
 `;
 
-export const TimelineContainer = styled.ol`
+export const TimelineContainer = styled(motion.ol)`
   list-style: none;
   margin: 0;
   padding: 25px 0;

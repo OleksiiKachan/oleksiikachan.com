@@ -50,6 +50,7 @@ const Timeline = ({
             title: item.company,
             subtitle: item.position,
             dates: item.dates,
+            responsibilities: item.responsibilities,
           }))
         )
         .sort((a, b) => a.dates.localeCompare(b.dates))

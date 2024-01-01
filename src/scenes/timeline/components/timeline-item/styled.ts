@@ -3,8 +3,6 @@ import styled, { css } from 'styled-components';
 import breakpoints from 'styles/breakpoints';
 
 export const Content = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
   position: relative;
 
   @media only screen and (min-width: ${breakpoints.desktop}) {
@@ -15,6 +13,17 @@ export const Content = styled(motion.div)`
   @media only screen and (max-width: ${breakpoints.tabletMax}) {
     width: 60%;
   }
+`;
+
+export const ContentHeader = styled.section<{ $clickable: boolean }>`
+  display: flex;
+  flex-direction: column;
+
+  ${({ $clickable }) =>
+    $clickable &&
+    css`
+      cursor: pointer;
+    `}
 
   h2 {
     margin: 0 0 8px;
@@ -48,6 +57,12 @@ export const Content = styled(motion.div)`
     font-size: 1.4rem;
     margin: 0 0 8px;
   }
+`;
+
+export const DescriptionList = styled.ol`
+  list-style: none;
+  margin: 0%;
+  padding: 0;
 `;
 
 export const Container = styled.li<{ $side: `left` | `right` }>`
