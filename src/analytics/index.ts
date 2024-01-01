@@ -31,6 +31,17 @@ const init = (client = false) => {
     replaysSessionSampleRate: 0.1,
 
     integrations,
+    ignoreErrors: [
+      `Hydration failed because the initial UI`,
+      `There was an error while hydrating`,
+      `Text content does not match server-rendered HTML`,
+      `?invariant=418`, // Hydration failed because the initial UI does not match what was rendered on the server.
+      `?invariant=419`, // The server could not finish this Suspense boundary, likely due to an error during server rendering. Switched to client rendering.
+      `?invariant=421`, // This Suspense boundary received an update before it finished hydrating...
+      `?invariant=422`, // There was an error while hydrating this Suspense boundary. Switched to client rendering.
+      `?invariant=423`, // There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root...
+      `?invariant=425`, // Text content does not match server-rendered HTML...
+    ],
   });
 
   if (client) {
