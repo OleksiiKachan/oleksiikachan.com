@@ -5404,10 +5404,10 @@ form-data@^4.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-framer-motion@^10.0.0, framer-motion@^10.16.16, framer-motion@^10.16.5, framer-motion@^10.17.3:
-  version "10.17.3"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.17.3.tgz#f40bd7a9143a3e8b7e77940f11eeb9bda5494c38"
-  integrity sha512-xgsIu+71zgpwBOPSyFI6ZL6L2Z2WK0gpd83FyBcoILEGty1Ka45+mpv5j6ZupgSMNv0OYBOf3sqtRjvy11K6Ew==
+framer-motion@^10.0.0, framer-motion@^10.16.16, framer-motion@^10.16.5, framer-motion@^10.17.5:
+  version "10.17.5"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.17.5.tgz#5dc639ce1a7220d38eb53a31cc666766a4c3cefa"
+  integrity sha512-xHtl95LReTpyyprgYOzeYJfXIEE2GLdiSJHzcLKJRLDWx8YKOS+boqj6uR/kZaXJN4awJOk731+OjIb78NFLZg==
   dependencies:
     tslib "^2.4.0"
   optionalDependencies:
