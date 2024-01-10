@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 
 const useToggle = (
   initialState = false
-): [boolean, (value?: unknown) => void] => {
+): [boolean, (value?: boolean | unknown) => void] => {
   const [_isVisible, setIsVisible] = useState<boolean>(initialState);
 
   const toggleVisibility = useCallback(

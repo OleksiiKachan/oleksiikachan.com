@@ -6,9 +6,7 @@ import SocialButton from 'components/social-button';
 import Header from './components/header';
 import { Paragraph, SocialMedia } from './styled';
 
-const About = ({
-  data,
-}: {
+const About: React.FC<{
   data: {
     meta: MetaData;
     name: string;
@@ -17,7 +15,7 @@ const About = ({
     intro: string;
     links: Array<{ type: string; href: string }>;
   };
-}) => {
+}> = ({ data }) => {
   return (
     <>
       <Helmet data={data.meta} />
