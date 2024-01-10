@@ -21,7 +21,8 @@ const NavButton: FunctionComponent<{
       />
       <motion.div
         animate={{
-          opacity: opened ? 0 : 1,
+          scaleX: opened ? 0 : 1,
+          originX: `50%`,
         }}
         transition={transition}
       />
