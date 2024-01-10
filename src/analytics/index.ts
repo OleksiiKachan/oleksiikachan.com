@@ -49,9 +49,6 @@ const init = (client = false) => {
     setupLogRocketReact(LogRocket);
     LogRocket.getSessionURL((sessionURL) => {
       Sentry.getCurrentScope().setExtra(`sessionURL`, sessionURL);
-      Sentry.configureScope((scope) => {
-        scope;
-      });
     });
   }
 };
