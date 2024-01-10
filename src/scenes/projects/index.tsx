@@ -4,9 +4,7 @@ import { Link } from 'wonder-engine';
 
 import { Container, ProjectCard } from './styled';
 
-const Projects = ({
-  data: { meta, title, projects },
-}: {
+const Projects: React.FC<{
   data: {
     meta: MetaData;
     title: string;
@@ -17,7 +15,7 @@ const Projects = ({
       image: string;
     }>;
   };
-}) => {
+}> = ({ data: { meta, title, projects } }) => {
   return (
     <Container>
       <Helmet data={meta} />

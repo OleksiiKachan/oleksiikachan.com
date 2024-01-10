@@ -10,40 +10,35 @@ const menu = [
   { caption: `Contact me`, href: `/contact` },
 ];
 
-const Navigation = ({
-  opened,
-  onClick,
-}: {
+const Navigation: React.FC<{
   opened: boolean;
   onClick: () => void;
-}) => {
-  return (
-    <AnimatePresence>
-      {opened && (
-        <Container
-          key="navigaition"
-          initial={{ y: `-100%` }}
-          animate={{
-            y: 0,
-          }}
-          exit={{
-            y: `-100%`,
-          }}
-          transition={{ type: `spring`, bounce: 0, duration: 0.4 }}
-        >
-          <ol>
-            {menu.map(({ caption, href }) => (
-              <li key={caption}>
-                <Link href={href} onClick={onClick}>
-                  {caption}
-                </Link>
-              </li>
-            ))}
-          </ol>
-        </Container>
-      )}
-    </AnimatePresence>
-  );
-};
+}> = ({ opened, onClick }) => (
+  <AnimatePresence>
+    {opened && (
+      <Container
+        key="navigaition"
+        initial={{ y: `-100%` }}
+        animate={{
+          y: 0,
+        }}
+        exit={{
+          y: `-100%`,
+        }}
+        transition={{ type: `spring`, bounce: 0, duration: 0.4 }}
+      >
+        <ol>
+          {menu.map(({ caption, href }) => (
+            <li key={caption}>
+              <Link href={href} onClick={onClick}>
+                {caption}
+              </Link>
+            </li>
+          ))}
+        </ol>
+      </Container>
+    )}
+  </AnimatePresence>
+);
 
 export default Navigation;

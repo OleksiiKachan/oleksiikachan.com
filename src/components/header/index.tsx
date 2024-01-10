@@ -1,18 +1,18 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import { Link } from 'wonder-engine';
 
 import NavButton from 'components/navigation-button';
 import Navigation from 'components/navigation';
+import useToggle from 'hooks/useToggle';
 
 import { Container } from './styled';
 
-const Header = () => {
-  const [_opened, setOpened] = useState(false);
+const Header: React.FC = () => {
+  const [_opened, toggleNavigation] = useToggle(false);
 
   return (
     <Container>
-      <Navigation opened={_opened} onClick={() => setOpened((prev) => !prev)} />
+      <Navigation opened={_opened} onClick={toggleNavigation} />
       <Link href="/">
         <Image
           alt="Home"
@@ -29,7 +29,7 @@ const Header = () => {
           className="tablet-max"
         />
       </Link>
-      <NavButton opened={_opened} onClick={() => setOpened((prev) => !prev)} />
+      <NavButton opened={_opened} onClick={toggleNavigation} />
     </Container>
   );
 };

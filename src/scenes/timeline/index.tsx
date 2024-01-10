@@ -23,16 +23,14 @@ interface ExperienceTimelineItem {
   projects: Array<{ id: string; title: string }>;
 }
 
-const Timeline = ({
-  data: { title, education, experience, meta },
-}: {
+const Timeline: React.FC<{
   data: {
     meta: MetaData;
     title: string;
     education: Array<EducationTimelineItem>;
     experience: Array<ExperienceTimelineItem>;
   };
-}) => {
+}> = ({ data: { title, education, experience, meta } }) => {
   const list = useMemo(
     () =>
       education
@@ -84,4 +82,5 @@ const Timeline = ({
     </Container>
   );
 };
+
 export default Timeline;

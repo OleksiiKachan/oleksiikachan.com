@@ -12,7 +12,7 @@ const isBot = () =>
     window.navigator.userAgent
   );
 
-const App = ({ Component, pageProps }: AppProps) => (
+const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>
     {isClient() && !isBot() && (
       <>
