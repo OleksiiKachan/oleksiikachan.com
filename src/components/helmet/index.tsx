@@ -7,13 +7,10 @@ export interface MetaData {
   url: string;
 }
 
-const Helmet = ({
-  data: { title, description, image, url },
-  children,
-}: {
+const Helmet: React.FC<{
   data: MetaData;
   children?: React.ReactNode;
-}) => (
+}> = ({ data: { title, description, image, url }, children }) => (
   <Head>
     <meta charSet="utf-8" />
     <meta property="og:type" content="website" />

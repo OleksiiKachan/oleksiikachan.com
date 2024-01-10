@@ -10,9 +10,7 @@ import { MainLayout, MainContent } from 'layout/main';
 import engineConfig from './wonder-engine-config';
 import { SystemConfigProvider } from './system-config-context';
 
-const App: React.FunctionComponent<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+const App: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
 
   const isSystem = useMemo(

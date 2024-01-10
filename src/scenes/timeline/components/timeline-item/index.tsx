@@ -1,16 +1,19 @@
 import useSystemConfigContext from 'client/system-config-context';
 import { Container, Circle, Content } from './styled';
 
-const TimelineItem = ({
-  item,
-  side,
-  index,
-}: {
-  item: any;
+type TimeLineItem = {
+  title: string;
+  dates: string;
+  subtitle: string;
+};
+
+const TimelineItem: React.FC<{
+  item: TimeLineItem;
   side: `right` | `left`;
   index: number;
-}) => {
+}> = ({ item, side, index }) => {
   const { breakpoint } = useSystemConfigContext();
+
   return (
     <Container $side={side}>
       <Circle

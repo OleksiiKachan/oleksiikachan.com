@@ -2,11 +2,9 @@ import Image from 'next/image';
 
 import { Container, ImageWrapper } from './styled';
 
-const Header = ({
-  data: { name, title, image },
-}: {
+const Header: React.FC<{
   data: { name: string; title: string; image: string };
-}) => {
+}> = ({ data: { name, title, image } }) => {
   return (
     <Container>
       <ImageWrapper>

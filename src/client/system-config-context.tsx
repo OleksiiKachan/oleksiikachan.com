@@ -4,10 +4,8 @@ import { mediaQueries } from 'styles/breakpoints';
 
 export const SystemConfigContext = createContext({ breakpoint: `desktop` });
 
-export const SystemConfigProvider = ({
+export const SystemConfigProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
-}: {
-  children: React.ReactNode;
 }) => {
   const [_breakpoint, setBreakpoint] = useState(`desktop`);
 
