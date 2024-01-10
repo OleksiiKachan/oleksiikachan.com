@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "@sanity/client": "^6.10.0",
+    "@sanity/client": "^6.11.1",
     "@sanity/icons": "^2.0",
     "@sanity/image-url": "1",
     "@sanity/types": "^3.19",
