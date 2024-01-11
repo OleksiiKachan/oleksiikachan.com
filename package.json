@@ -37,7 +37,7 @@
     "@sentry/nextjs": "^7.93.0",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
-    "framer-motion": "^10.17.12",
+    "framer-motion": "^10.18.0",
     "logrocket": "^7.0.0",
     "logrocket-react": "^6.0.3",
     "next": "^14.0",
