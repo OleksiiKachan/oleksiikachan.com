@@ -7291,10 +7291,10 @@ mkdirp@^0.5.1, mkdirp@^0.5.5:
   dependencies:
     minimist "^1.2.6"
 
-mnemonist@0.39.6:
-  version "0.39.6"
-  resolved "https://registry.yarnpkg.com/mnemonist/-/mnemonist-0.39.6.tgz#0b3c9b7381d9edf6ce1957e74b25a8ad25732f57"
-  integrity sha512-A/0v5Z59y63US00cRSLiloEIw3t5G+MiKz4BhX21FI+YBJXBOGW0ohFxTxO08dsOYlzxo87T7vGfZKYp2bcAWA==
+mnemonist@0.39.7:
+  version "0.39.7"
+  resolved "https://registry.yarnpkg.com/mnemonist/-/mnemonist-0.39.7.tgz#712eebb827a31c83c9711f17d6256d2670c87a30"
+  integrity sha512-ix3FwHWZgdXUt0dHM8bCrI4r1KMeYx8bCunPCYmvKXq4tn6gbNsqrsb4q0kDbDqbpIOvEaW5Sn+dmDwGydfrwA==
   dependencies:
     obliterator "^2.0.1"
 
@@ -8598,10 +8598,10 @@ sanity-diff-patch@^3.0.2:
   dependencies:
     "@sanity/diff-match-patch" "^3.0.0"
 
-sanity@^3.19:
-  version "3.23.4"
-  resolved "https://registry.yarnpkg.com/sanity/-/sanity-3.23.4.tgz#8f11e3c9f3fad2ff4da47481065ac05dd75e9b65"
-  integrity sha512-KUzyA4+1/bLiL24HQNBMYtOwzZOaKh/dGDZ/Y9FVPsUFr2iyr8Mer6T1e/UT/4Lw2iQB6myfF4IfnEaqdvuWJA==
+sanity@^3.24:
+  version "3.24.1"
+  resolved "https://registry.yarnpkg.com/sanity/-/sanity-3.24.1.tgz#ebd450a3ed5c3db803582583c936232391368999"
+  integrity sha512-/7X+s/vxsvkikxEIvxFpmypmnzyhNXXoO8Xl1ltDrQp9REZuIUIgpvpnqls6Sq7HuBAEC4s4M/JQfxq5WQ2yhA==
   dependencies:
     "@dnd-kit/core" "^6.0.5"
     "@dnd-kit/modifiers" "^6.0.0"
@@ -8612,27 +8612,27 @@ sanity@^3.19:
     "@rexxars/react-json-inspector" "^8.0.1"
     "@sanity/asset-utils" "^1.2.5"
     "@sanity/bifur-client" "^0.3.1"
-    "@sanity/block-tools" "3.23.4"
-    "@sanity/cli" "3.23.4"
+    "@sanity/block-tools" "3.24.1"
+    "@sanity/cli" "3.24.1"
     "@sanity/client" "^6.10.0"
     "@sanity/color" "3.0.0-beta.9"
-    "@sanity/diff" "3.23.4"
+    "@sanity/diff" "3.24.1"
     "@sanity/diff-match-patch" "^3.1.1"
     "@sanity/eventsource" "^5.0.0"
-    "@sanity/export" "3.23.4"
+    "@sanity/export" "3.24.1"
     "@sanity/generate-help-url" "^3.0.0"
     "@sanity/icons" "^2.8.0"
     "@sanity/image-url" "^1.0.2"
-    "@sanity/import" "3.23.4"
+    "@sanity/import" "3.24.1"
     "@sanity/logos" "^2.0.2"
-    "@sanity/mutator" "3.23.4"
-    "@sanity/portable-text-editor" "3.23.4"
-    "@sanity/presentation" "1.4.0"
-    "@sanity/schema" "3.23.4"
+    "@sanity/mutator" "3.24.1"
+    "@sanity/portable-text-editor" "3.24.1"
+    "@sanity/presentation" "1.5.0"
+    "@sanity/schema" "3.24.1"
     "@sanity/telemetry" "^0.7.5"
-    "@sanity/types" "3.23.4"
-    "@sanity/ui" "2.0.0-beta.13"
-    "@sanity/util" "3.23.4"
+    "@sanity/types" "3.24.1"
+    "@sanity/ui" "2.0.0-beta.16"
+    "@sanity/util" "3.24.1"
     "@sanity/uuid" "^3.0.1"
     "@tanstack/react-virtual" "3.0.0-beta.54"
     "@types/is-hotkey" "^0.1.7"
