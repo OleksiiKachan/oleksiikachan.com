@@ -7364,13 +7364,13 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-sanity@7.0.7:
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/next-sanity/-/next-sanity-7.0.7.tgz#41972ce01350d2a4ada189a2c295a0e687f2c1e2"
-  integrity sha512-LfWAw1HG7TblxsRARweBS328zAI0UdSoQ+9xMc31GqiOjI8mPgG2xZKtFnsp4DbCejToRRbWhMWsElZPwSmCRw==
+next-sanity@7.0.10:
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/next-sanity/-/next-sanity-7.0.10.tgz#a1c5bc75cd1a02833fe114eb8c8d1b76c554b3cf"
+  integrity sha512-2X7uq2mYYbzV+S2SuZWvhpzw1gMqpBawXzXG1edQ2m8K3h4vUy2H8glm4zEw8YDiO4OiNJXvPF2AwGab4wAyvQ==
   dependencies:
-    "@sanity/client" "^6.10.0"
-    "@sanity/preview-kit" "5.0.9"
+    "@sanity/client" "^6.11.1"
+    "@sanity/preview-kit" "5.0.11"
     "@sanity/webhook" "4.0.0"
     groq "^3.19"
 
