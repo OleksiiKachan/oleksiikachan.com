@@ -2297,10 +2297,18 @@
     rxjs "^7.8.1"
     typeid-js "^0.3.0"
 
-"@sanity/types@3.23.4", "@sanity/types@^3.19":
+"@sanity/types@3.23.4":
   version "3.23.4"
   resolved "https://registry.yarnpkg.com/@sanity/types/-/types-3.23.4.tgz#f7477583772d4c935457ba83c7879b3641a3b211"
   integrity sha512-v3EN73ECxlwHAScOhQhSnnfpZf62LX8vN62V3m6tY7+Umnc9XwKUoTtKiMQUKJy4XuZgarot3kM4/6GfB9Y3Mg==
+  dependencies:
+    "@sanity/client" "^6.10.0"
+    "@types/react" "^18.0.25"
+
+"@sanity/types@^3.24":
+  version "3.24.1"
+  resolved "https://registry.yarnpkg.com/@sanity/types/-/types-3.24.1.tgz#8643fa71bb5520cff06aa327eaf3880d45551f59"
+  integrity sha512-hbih87IjAQqdFHqPhggfHtaV5rxtCITZVVxHeerClABVdiYcdy5Yu10CJbKCXD3HzSkYhEeO3Fd8ljtFBoNmjg==
   dependencies:
     "@sanity/client" "^6.10.0"
     "@types/react" "^18.0.25"
