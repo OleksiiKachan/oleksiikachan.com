@@ -2317,10 +2317,10 @@
     framer-motion "^10.16.5"
     react-refractor "^2.1.7"
 
-"@sanity/ui@^2.0.0-beta.17":
-  version "2.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-2.0.0-beta.17.tgz#fb912fe62c2aa4339e1d18c7e9d6a8b536356c34"
-  integrity sha512-AUFlObpuewVOKDGQutijJFn3rKtXS85Nl/MsySHwcH5rzCNojJ2/Z4DKLhl8LSXlj/+pOXVj++AFT/hhNtJ6Wg==
+"@sanity/ui@^2.0.0-beta.18":
+  version "2.0.0-beta.18"
+  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-2.0.0-beta.18.tgz#0720e731b9f0b67cba7e04e3917a6d6154299872"
+  integrity sha512-/wqnw3u4WUxCpk2dh7p6+jzHduyxSWGWRlYQrTfYERd7z744lHKT8WhHhudOfCULG7WLLTGnCWWk//nYXO6M2A==
   dependencies:
     "@floating-ui/react-dom" "^2.0.4"
     "@sanity/color" "3.0.0-beta.9"
