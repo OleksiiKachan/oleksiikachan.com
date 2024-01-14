@@ -13,7 +13,7 @@ const About: React.FC<{
     title: string;
     image: string;
     intro: string;
-    links: Array<{ type: string; href: string }>;
+    links: Array<{ type: string; url: string }>;
   };
 }> = ({ data }) => {
   return (
@@ -29,7 +29,7 @@ const About: React.FC<{
         </li>
         {data.links.map((link) => (
           <li key={link.type}>
-            <SocialButton type={link.type} href={link.href} />
+            <SocialButton type={link.type} href={link.url} />
           </li>
         ))}
       </SocialMedia>
