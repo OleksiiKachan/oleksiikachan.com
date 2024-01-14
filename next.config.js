@@ -16,6 +16,7 @@ const nextConfig = {
         hostname: `res.cloudinary.com`,
         pathname: `/oleksiikachan/image/upload/**`,
       },
+      { protocol: `https`, hostname: `cdn.sanity.io`, pathname: `/images/**` },
     ],
   },
   i18n: {
