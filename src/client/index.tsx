@@ -1,5 +1,7 @@
+import { useMemo } from 'react';
 import { WonderEngineProvider } from 'wonder-engine';
 import { StyleSheetManager } from 'styled-components';
+import { usePathname } from 'next/navigation';
 
 import GlobalStyle from 'styles/globalstyles';
 import Header from 'components/header';
@@ -9,7 +11,16 @@ import engineConfig from './wonder-engine-config';
 import { SystemConfigProvider } from './system-config-context';
 
 const App: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return (
+  const pathname = usePathname();
+
+  const isSystem = useMemo(
+    () => [`/studio`].includes(pathname as string),
+    [pathname]
+  );
+
+  return isSystem ? (
+    children
+  ) : (
     <StyleSheetManager>
       <WonderEngineProvider config={engineConfig}>
         <SystemConfigProvider>
