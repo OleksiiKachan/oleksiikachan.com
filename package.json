@@ -71,5 +71,8 @@
     "prettier": "^3.2.5",
     "pretty-quick": "^4.0.0",
     "typescript": "5.3.3"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
   }
 }
