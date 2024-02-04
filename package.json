@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "test": "cross-env jest --no-cache --passWithNoTests",
-    "prepare": "husky install",
     "pre-commit": "npm-run-all -p pre-commit:*",
     "pre-commit:lint": "yarn lint --fix && yarn pretty-quick --staged",
     "pre-commit:test": "cross-env jest --onlyChanged"
