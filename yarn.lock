@@ -5429,10 +5429,10 @@ logrocket@1.0.1:
   resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-1.0.1.tgz#0555ec619d2db54a7b345c4e8df09baea835b176"
   integrity sha512-oPA0c5GzMKsWp/6p19OaujZQMzttluqVOI+989uHeciPAljPZvGEpZRbNO3Rr+jC/8jVLJdlMP9IHuyhKsASGA==
 
-logrocket@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-7.0.0.tgz#27b64bc0ee91c366d74f23a0a5013a868b23b073"
-  integrity sha512-IvM4RKYTAByljKTWCx/Q+58Nvt4Dmf/0PIHLfall3kqDtxiDSVKSzu3/bvGb3riHE/C7xY3wzLxy6v+Wui1NUQ==
+logrocket@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-8.0.0.tgz#153cffc6bf0c386189097f72495044eb181f0e9f"
+  integrity sha512-kuMdWvEvK3s3rnFiKJdnMfNtLux3QHaXOQ6YQa/mu323fY24rAQA5xA66WRzZsRdjgstR88C+aYfqQFm235Y5A==
 
 longest-streak@^3.0.0:
   version "3.1.0"
