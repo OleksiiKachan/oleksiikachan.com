@@ -4007,10 +4007,10 @@ form-data@^4.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-framer-motion@^11.0.3:
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.0.3.tgz#b2a87e7ae166a9e27da33da9cfb50a0db5f94fa7"
-  integrity sha512-6x2poQpIWBdbZwLd73w6cKZ1I9IEPIU94C6/Swp1Zt3LJ+sB5bPe1E2wC6EH5hSISXNkMJ4afH7AdwS7MrtkWw==
+framer-motion@^11.0.4:
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.0.4.tgz#16ea3457ec248a21d2a1902327ab82cef246d9c5"
+  integrity sha512-qfgDsWf0Ke9go/bxf6a1nvMmiyk0fBcshfASvSvEf0evS9zGDnlZvFpyFlPkA30xN/b87iQLpTJTUe+B9Zam1A==
   dependencies:
     tslib "^2.4.0"
   optionalDependencies:
