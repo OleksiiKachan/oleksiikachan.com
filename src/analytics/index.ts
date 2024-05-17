@@ -7,7 +7,7 @@ const init = (client = false) => {
 
   if (client) {
     integrations.push(
-      new Sentry.Replay({
+      Sentry.replayIntegration({
         // Additional Replay configuration goes in here, for example:
         maskAllText: true,
         blockAllMedia: true,
