@@ -21,8 +21,8 @@
   },
   "globals": { "React": true },
   "rules": {
-    "quotes": "off",
-    "@typescript-eslint/quotes": ["error", "backtick"],
+    // "quotes": "off",
+    // "@typescript-eslint/quotes": ["error", "backtick"],
     "comma-dangle": ["error", "only-multiline"],
     "react/display-name": 0,
     "import/no-anonymous-default-export": 0,
@@ -39,6 +39,7 @@
       }
     ],
     "@typescript-eslint/no-explicit-any": 0,
-    "no-use-before-define": ["error"]
+    "no-use-before-define": ["error"],
+    "@typescript-eslint/no-require-imports": 0
   }
 }
