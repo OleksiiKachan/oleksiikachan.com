@@ -17,3 +17,7 @@ updates:
         patterns:
           - '@eslint/js'
           - 'eslint'
+      next:
+        patterns:
+          - 'next'
+          - 'eslint-config-next'
