@@ -4715,10 +4715,10 @@ form-data@^4.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-framer-motion@^11.11.15:
-  version "11.11.15"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.11.15.tgz#f9a1c505adf84bf0184b6076e11464797cb86c02"
-  integrity sha512-fib+OpUe4nap4W1vhaDohnPU+42B5s1q+jNkNkb6TfzmDYtRhDyvn4mkRCAD5a2cQKOI3nJZP7yqGYtxnlmleg==
+framer-motion@^11.11.16:
+  version "11.11.16"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.11.16.tgz#832a137e884e5856b2c6e030d311ae6885e60120"
+  integrity sha512-PAK9NkCdRuwNTkKh9chSHokvEkwLJ/JyePNG/Fgmk4ygeQmth8wneITlxQAykOeYWgRvetk1i22PcMiG/VRuWg==
   dependencies:
     tslib "^2.4.0"
 
