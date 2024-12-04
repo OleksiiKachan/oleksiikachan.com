@@ -57,7 +57,7 @@
     "@typescript-eslint/parser": "^8.5.0",
     "babel-plugin-add-react-displayname": "^0.0.5",
     "cross-env": "^7.0.3",
-    "cz-customizable": "^7.2.1",
+    "cz-customizable": "^7.3.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.0.3",
     "eslint-config-prettier": "^9.1.0",
