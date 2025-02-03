@@ -4631,10 +4631,10 @@ forwarded-parse@2.1.2:
   resolved "https://registry.yarnpkg.com/forwarded-parse/-/forwarded-parse-2.1.2.tgz#08511eddaaa2ddfd56ba11138eee7df117a09325"
   integrity sha512-alTFZZQDKMporBH77856pXgzhEzaUVmLCDk+egLgIgHst3Tpndzz8MnKe+GzRJRfvVdn69HhpW7cmXzvtLvJAw==
 
-framer-motion@^12.0.6:
-  version "12.0.6"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.0.6.tgz#4ec8b9225ead4d0d7d4ff00ade6e76a83e6d0c99"
-  integrity sha512-LmrXbXF6Vv5WCNmb+O/zn891VPZrH7XbsZgRLBROw6kFiP+iTK49gxTv2Ur3F0Tbw6+sy9BVtSqnWfMUpH+6nA==
+framer-motion@^12.0.10:
+  version "12.0.10"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.0.10.tgz#7f79cadd477dee4985947e4c00f34af750a6cf8d"
+  integrity sha512-k7fC05VWZr5/NBzoGWo+MGviFEemZIKALAxdCeip98ouaB1OLVsp46UzAoA7Sb5jWZVEI47edyEJb6UJZoe0ww==
   dependencies:
     motion-dom "^12.0.0"
     motion-utils "^12.0.0"
