@@ -39,7 +39,7 @@
     "react-is": "^19.0.0",
     "react-markdown": "^9.0.3",
     "sharp": "^0.33.5",
-    "styled-components": "^6.1.14",
+    "styled-components": "^6.1.15",
     "wonder-engine": "^0.0.36"
   },
   "devDependencies": {
