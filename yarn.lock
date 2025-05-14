@@ -4739,12 +4739,12 @@ forwarded-parse@2.1.2:
   resolved "https://registry.yarnpkg.com/forwarded-parse/-/forwarded-parse-2.1.2.tgz#08511eddaaa2ddfd56ba11138eee7df117a09325"
   integrity sha512-alTFZZQDKMporBH77856pXgzhEzaUVmLCDk+egLgIgHst3Tpndzz8MnKe+GzRJRfvVdn69HhpW7cmXzvtLvJAw==
 
-framer-motion@^12.11.0:
-  version "12.11.0"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.11.0.tgz#d85a50e25a8660c528e37f8e49401b062d9c51f7"
-  integrity sha512-BaBPmkhaC2l0n619Kt1nQaxSdUdyyz5V1Z7EKJ1CcraOTZitgVx0RTbL8lmg2XesaFi6o8MPBIhkWDIvzDpGaQ==
+framer-motion@^12.11.3:
+  version "12.11.3"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.11.3.tgz#5ea783ca4e464664a524ec5e3840fec5f9ee14a5"
+  integrity sha512-ksUtDFBZtrbQFt4bEMFrFgo7camhmXcLeuylKQxEYSd9czkZ4tZmFROxWczWeu51WqC2m91ifpvgGCBLd0uviQ==
   dependencies:
-    motion-dom "^12.11.0"
+    motion-dom "^12.11.2"
     motion-utils "^12.9.4"
     tslib "^2.4.0"
 
@@ -6680,10 +6680,10 @@ module-details-from-path@^1.0.3:
   resolved "https://registry.yarnpkg.com/module-details-from-path/-/module-details-from-path-1.0.3.tgz#114c949673e2a8a35e9d35788527aa37b679da2b"
   integrity sha512-ySViT69/76t8VhE1xXHK6Ch4NcDd26gx0MzKXLO+F7NOtnqH68d9zF94nT8ZWSxXh8ELOERsnJO/sWt1xZYw5A==
 
-motion-dom@^12.11.0:
-  version "12.11.0"
-  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.11.0.tgz#64b6244b513761fa0ec439546ec1db449f4ea685"
-  integrity sha512-CItkGYJenn5ZsbzTX0D9mE0UWdjdd9r535FrxEXhzR8Kwa9I2dLr1uhEJgQPWbgaIJ6i0sNFnf2T9NvVDWQVBw==
+motion-dom@^12.11.2:
+  version "12.11.2"
+  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.11.2.tgz#0e38eed78288ce36c35f1dc62fdf837f12d26ade"
+  integrity sha512-wZ396XNNTI9GOkyrr80wFSbZc1JbIHSHTbLdririSbkEgahWWKmsHzsxyxqBBvuBU/iaQWVu1YCjdpXYNfo2yQ==
   dependencies:
     motion-utils "^12.9.4"
 
