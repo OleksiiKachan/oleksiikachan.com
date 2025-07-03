@@ -21,6 +21,10 @@ updates:
         patterns:
           - 'next'
           - 'eslint-config-next'
+      jest:
+        patterns:
+          - 'jest'
+          - 'jest-environment-jsdom'
     ignore:
       - dependency-name: '@typescript-eslint/eslint-plugin'
       - dependency-name: '@typescript-eslint/parser'
