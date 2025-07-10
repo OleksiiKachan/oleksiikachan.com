@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion, type Transition } from 'framer-motion';
 
 import { Container } from './styled';
 
-const transition = { type: `tween`, duration: 0.1 };
+const transition = { type: `tween`, duration: 0.1 } as Transition;
 
 const NavButton: React.FC<{
   onClick: () => void;
