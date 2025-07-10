@@ -1,6 +1,6 @@
 import Helmet, { MetaData } from 'components/helmet';
 import Image from 'next/image';
-import { Link } from 'wonder-engine';
+import Link from 'next/link';
 
 import { Container, ProjectCard } from './styled';
 

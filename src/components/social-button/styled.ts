@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'wonder-engine';
+import Link from 'next/link';
 
 export const Container = styled(Link)`
   img {

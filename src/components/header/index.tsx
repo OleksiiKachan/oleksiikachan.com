@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Link } from 'wonder-engine';
+import Link from 'next/link';
 
 import NavButton from 'components/navigation-button';
 import Navigation from 'components/navigation';
