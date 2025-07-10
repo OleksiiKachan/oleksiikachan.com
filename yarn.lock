@@ -9253,10 +9253,10 @@ which@^2.0.1, which@^2.0.2:
   dependencies:
     isexe "^2.0.0"
 
-wonder-engine@^0.0.36:
-  version "0.0.36"
-  resolved "https://registry.yarnpkg.com/wonder-engine/-/wonder-engine-0.0.36.tgz#68f930cceae8b2e9a5b8ea41e41df0b14d28f76d"
-  integrity sha512-NJlybv2czF09KxI67DJ8K+py+LtMlKJ44O+wJ+APkSW9xBCMAq2/LTYmiMjC1xQfDh/OerT3OVOAPFagguKyyQ==
+wonder-engine@^0.0.37:
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/wonder-engine/-/wonder-engine-0.0.37.tgz#7284df4c29a91917bf8944ff7d211fe4af85c938"
+  integrity sha512-rdbV6HXum/bBuRJxSiY1uEw9MCowTshH0BB1F/IFbtL/E25M+65AHGNtbRTFZax048KZNTpksGfAxe/p775Ilw==
 
 word-wrap@^1.2.3:
   version "1.2.5"

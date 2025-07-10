@@ -40,7 +40,7 @@
     "react-markdown": "^10.1.0",
     "sharp": "^0.34.3",
     "styled-components": "^6.1.19",
-    "wonder-engine": "^0.0.36"
+    "wonder-engine": "^0.0.37"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
