@@ -9,7 +9,7 @@ export const SystemConfigProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [_breakpoint, setBreakpoint] = useState(`desktop`);
 
-  const currentBreakpoint = useRef<string>();
+  const currentBreakpoint = useRef<string>(undefined);
 
   /**
    * Fix for 100vh for iOS
