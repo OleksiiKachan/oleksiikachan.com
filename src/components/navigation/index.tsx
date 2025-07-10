@@ -1,4 +1,4 @@
-import { Link } from 'wonder-engine';
+import Link from 'next/link';
 import { AnimatePresence } from 'framer-motion';
 
 import { Container } from './styled';
