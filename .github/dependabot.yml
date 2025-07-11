@@ -12,7 +12,7 @@ updates:
     groups:
       react:
         patterns:
-          - 'react
+          - 'react'
           - 'react-dom'
           - '@types/react'
           - '@types/react-dom'
