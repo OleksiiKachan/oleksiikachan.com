@@ -10,6 +10,12 @@ updates:
     reviewers:
       - 'OleksiiKachan'
     groups:
+      react:
+        patterns:
+          - 'react
+          - 'react-dom'
+          - '@types/react'
+          - '@types/react-dom'
       typescript-eslint:
         patterns:
           - '*typescript-eslint*'
