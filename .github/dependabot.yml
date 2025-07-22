@@ -25,7 +25,7 @@ updates:
           - 'eslint'
       prettier:
         patterns:
-          - 'prettier*'
+          - '*prettier*'
       next:
         patterns:
           - 'next'
