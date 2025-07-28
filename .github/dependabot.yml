@@ -34,6 +34,9 @@ updates:
         patterns:
           - 'jest'
           - 'jest-environment-jsdom'
+      testing-library:
+        patterns:
+          - '@testing-library/*'
     ignore:
       - dependency-name: '@typescript-eslint/eslint-plugin'
       - dependency-name: '@typescript-eslint/parser'
