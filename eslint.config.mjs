@@ -1,20 +1,11 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { FlatCompat } from '@eslint/eslintrc';
 import typescriptEslint from 'typescript-eslint';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import prettierPlugin from 'eslint-plugin-prettier';
 import eslintCommentsPlugin from 'eslint-plugin-eslint-comments';
 import stylisticPlugin from '@stylistic/eslint-plugin';
+import nextVitals from 'eslint-config-next/core-web-vitals';
 import globals from 'globals';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
 
 const eslintConfig = [
   {
@@ -28,7 +19,7 @@ const eslintConfig = [
       `jest.config.js`, // Ignore config files that use CommonJS
     ],
   },
-  ...compat.extends(`next/core-web-vitals`),
+  ...nextVitals,
   ...typescriptEslint.configs.recommended,
   {
     plugins: {
@@ -111,6 +102,21 @@ const eslintConfig = [
       // React hooks
       'react-hooks/exhaustive-deps': `error`,
       'react-hooks/rules-of-hooks': `error`,
+
+      // Next.js specific rules
+      '@next/next/google-font-display': `warn`,
+      '@next/next/google-font-preconnect': `warn`,
+      '@next/next/next-script-for-ga': `warn`,
+      '@next/next/no-before-interactive-script-outside-document': `warn`,
+      '@next/next/no-css-tags': `warn`,
+      '@next/next/no-head-element': `warn`,
+      '@next/next/no-html-link-for-pages': `warn`,
+      '@next/next/no-img-element': `warn`,
+      '@next/next/no-page-custom-font': `warn`,
+      '@next/next/no-styled-jsx-in-document': `warn`,
+      '@next/next/no-title-in-document-head': `warn`,
+      '@next/next/no-typos': `warn`,
+      '@next/next/no-unwanted-polyfillio': `warn`,
 
       // ESLint comments rules for better code quality
       'eslint-comments/disable-enable-pair': `error`,
