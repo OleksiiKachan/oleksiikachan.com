@@ -1,18 +1,5 @@
-import type { Metadata } from 'next';
-import ProjectsScene from 'scenes/projects';
-
-export const metadata: Metadata = {
-  title: `Oleksii Kachan | Case Studies`,
-  description: `Selected projects`,
-  openGraph: {
-    title: `Oleksii Kachan | Case Studies`,
-    description: `Selected projects`,
-    images: [
-      `https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_portrait_dark.svg`,
-    ],
-    url: `https://oleksiikachan.com/case`,
-  },
-};
+import { notFound } from 'next/navigation';
+import ProjectDetails from '../../../scenes/project-details';
 
 // This function can be named anything
 async function getProjectsData() {
@@ -127,6 +114,20 @@ async function getProjectsData() {
           { url: `https://candydigital.co/`, name: `Candy Digital` },
           { url: `https://www.spotify.com`, name: `Spotify` },
         ],
+        additionalImages: [
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/low-fidelity_prototype.png`,
+            alt: `Low-Fidelity Prototype in Figma`,
+          },
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/high-fidelity_prototype.png`,
+            alt: `High-Fidelity Prototype in Figma`,
+          },
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1558289892/portfolio/images/projects/spotify-app/banner-tool.png`,
+            alt: `Banner Tool Interface`,
+          },
+        ],
       },
       {
         id: `agw`,
@@ -165,6 +166,20 @@ async function getProjectsData() {
           { url: `http://olsom.net/agw-wms/`, name: `Product Page. AGW WMS` },
           { url: `http://olsom.net/agw-ip/`, name: `Product Page. AGW IP` },
           { url: `http://olsom.net/`, name: `Company Page. OLSOM LLC` },
+        ],
+        additionalImages: [
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1557523594/portfolio/images/projects/agw/agw_ip.jpg`,
+            alt: `AGW IP - Manufacturing Environment`,
+          },
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1557523623/portfolio/images/projects/agw/agw_mes.jpg`,
+            alt: `AGW MES - Manufacturing Execution System`,
+          },
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1557523594/portfolio/images/projects/agw/agw_wms.jpg`,
+            alt: `AGW WMS - Warehouse Management System`,
+          },
         ],
       },
       {
@@ -230,13 +245,51 @@ async function getProjectsData() {
         externalResources: [
           { url: `https://rloop.org`, name: `Official web site` },
         ],
+        additionalImages: [
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1557366977/portfolio/images/projects/rpod/telemetry_mock.svg`,
+            alt: `Telemetry Station low-fidelity mock-up`,
+          },
+          {
+            url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1557356129/portfolio/images/projects/rpod/telemetry_ui.jpg`,
+            alt: `Telemetry Station final UI`,
+          },
+        ],
       },
     ],
   };
 }
 
-export default async function ProjectsPage() {
-  const data = await getProjectsData();
+interface Project {
+  id: string;
+  title: string;
+  shortDescription: string;
+  longDescription: string;
+  image: string;
+  coverImage: string;
+  shortStack: string[];
+  longStack: string[];
+  teamSize: string;
+  client: Array<{ name: string; url: string }>;
+  partner?: Array<{ name: string; url: string }>;
+  projectType: string;
+  settings: { color: string };
+  externalResources: Array<{ url: string; name: string }>;
+  additionalImages?: Array<{ url: string; alt: string }>;
+}
 
-  return <ProjectsScene data={data} />;
+export default async function ProjectDetailsPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const data = await getProjectsData();
+  const project = data.projects.find((p: Project) => p.id === id);
+
+  if (!project) {
+    notFound();
+  }
+
+  return <ProjectDetails project={project} />;
 }
