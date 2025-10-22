@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styles from './main.module.scss';
 
-export const MainLayout = styled.div``;
+export const MainLayout: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => <div className={styles.mainLayout}>{children}</div>;
 
-export const MainContent = styled.main`
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-  padding: 0;
-`;
+export const MainContent: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => <main className={styles.mainContent}>{children}</main>;

@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
-import { Container } from './styled';
+import styles from './navigation.module.scss';
 
 const menu = [
   { caption: `About me`, href: `/about` },
@@ -16,8 +16,9 @@ const Navigation: React.FC<{
 }> = ({ opened, onClick }) => (
   <AnimatePresence>
     {opened && (
-      <Container
+      <motion.nav
         key="navigaition"
+        className={styles.container}
         initial={{ y: `-100%` }}
         animate={{
           y: 0,
@@ -36,7 +37,7 @@ const Navigation: React.FC<{
             </li>
           ))}
         </ol>
-      </Container>
+      </motion.nav>
     )}
   </AnimatePresence>
 );

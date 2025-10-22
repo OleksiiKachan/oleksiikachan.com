@@ -1,8 +1,6 @@
-import styled from 'styled-components';
+@use '../../styles/breakpoints.scss' as bp;
 
-import breakpoints from 'styles/breakpoints';
-
-export const Paragraph = styled.div`
+.paragraph {
   font-size: 1.6rem;
   padding: 0 20px;
 
@@ -13,9 +11,9 @@ export const Paragraph = styled.div`
       margin-bottom: 20px;
     }
   }
-`;
+}
 
-export const SocialMedia = styled.ul`
+.socialMedia {
   list-style: none;
   padding: 0 20px;
   margin: 40px 0;
@@ -32,10 +30,10 @@ export const SocialMedia = styled.ul`
       margin-right: 15px;
     }
 
-    @media only screen and (max-width: ${breakpoints.mobile}) {
+    @media only screen and (max-width: #{bp.$mobile-breakpoint}) {
       &:first-child {
         flex-grow: 1;
       }
     }
   }
-`;
+}

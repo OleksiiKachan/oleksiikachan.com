@@ -1,5 +1,7 @@
+import { motion } from 'framer-motion';
 import useSystemConfigContext from 'client/system-config-context';
-import { Container, Circle, Content } from './styled';
+
+import styles from './timeline-item.module.scss';
 
 type TimeLineItem = {
   title: string;
@@ -15,12 +17,14 @@ const TimelineItem: React.FC<{
   const { breakpoint } = useSystemConfigContext();
 
   return (
-    <Container $side={side}>
-      <Circle
+    <li className={`${styles.container} ${styles[side]}`}>
+      <motion.div
+        className={styles.circle}
         animate={{ scale: [0, 1], y: `-50%` }}
         transition={{ duration: 0.7, type: `spring`, delay: 0.4 + 0.1 * index }}
       />
-      <Content
+      <motion.div
+        className={styles.content}
         animate={
           side === `left` && breakpoint === `desktop`
             ? { opacity: [0, 1], x: [`-100%`, `0%`] }
@@ -31,8 +35,8 @@ const TimelineItem: React.FC<{
         <h2>{item.title}</h2>
         <p>{item.dates}</p>
         <h3>{item.subtitle}</h3>
-      </Content>
-    </Container>
+      </motion.div>
+    </li>
   );
 };
 

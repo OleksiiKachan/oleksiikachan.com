@@ -1,0 +1,31 @@
+@use '../../styles/breakpoints.scss' as bp;
+
+.container {
+  position: relative;
+  padding: 40px 20px;
+
+  h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0 0 40px;
+  }
+}
+
+.timelineContainer {
+  list-style: none;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  background-color: var(--color-black);
+  top: 100px;
+  left: 50%;
+  bottom: 150%;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    left: 10%;
+  }
+}

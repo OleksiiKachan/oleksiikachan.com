@@ -1,18 +1,16 @@
-import { motion } from 'framer-motion';
-import styled, { css } from 'styled-components';
-import breakpoints from 'styles/breakpoints';
+@use '../../../../styles/breakpoints.scss' as bp;
 
-export const Content = styled(motion.div)`
+.content {
   display: flex;
   flex-direction: column;
   position: relative;
 
-  @media only screen and (min-width: ${breakpoints.desktop}) {
+  @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
     padding: 40px 0;
     width: 35%;
   }
 
-  @media only screen and (max-width: ${breakpoints.tabletMax}) {
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
     width: 60%;
   }
 
@@ -21,7 +19,7 @@ export const Content = styled(motion.div)`
     font-size: 2.4rem;
     position: relative;
 
-    @media only screen and (max-width: ${breakpoints.tabletMax}) {
+    @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
       font-size: 1.6rem;
     }
 
@@ -48,9 +46,9 @@ export const Content = styled(motion.div)`
     font-size: 1.4rem;
     margin: 0 0 8px;
   }
-`;
+}
 
-export const Container = styled.li<{ $side: `left` | `right` }>`
+.container {
   position: relative;
   width: 100%;
   display: flex;
@@ -60,44 +58,24 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
   margin: 20px 0;
   color: var(--color-black);
 
-  ${(props) =>
-    props.$side === `left` &&
-    css`
-      text-align: right;
+  // Left side styling
+  &.left {
+    text-align: right;
 
-      ${Content} {
-        align-items: flex-end;
-        left: 0;
+    .content {
+      align-items: flex-end;
+      left: 0;
 
-        h2:after {
-          right: -8px;
-        }
+      h2:after {
+        right: -8px;
       }
-    `};
-
-  ${(props) =>
-    props.$side === `right` &&
-    css`
-      ${Content} {
-        right: -60%;
-        align-items: flex-start;
-
-        h2:after {
-          left: -8px;
-        }
-      }
-    `};
-
-  @media only screen and (max-width: ${breakpoints.tabletMax}) {
-    margin: 60px 0;
-    text-align: left;
-
-    &:first-child {
-      margin: 20px 0 60px 0;
     }
+  }
 
-    ${Content} {
-      left: 25%;
+  // Right side styling
+  &.right {
+    .content {
+      right: -60%;
       align-items: flex-start;
 
       h2:after {
@@ -105,9 +83,44 @@ export const Container = styled.li<{ $side: `left` | `right` }>`
       }
     }
   }
-`;
 
-export const Circle = styled(motion.div)`
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    margin: 60px 0;
+    text-align: left;
+
+    &:first-child {
+      margin: 20px 0 60px 0;
+    }
+
+    // Override left side styles for mobile
+    &.left {
+      text-align: left;
+
+      .content {
+        left: 25%;
+        align-items: flex-start;
+
+        h2:after {
+          left: -8px;
+        }
+      }
+    }
+
+    // Override right side styles for mobile
+    &.right {
+      .content {
+        left: 25%;
+        align-items: flex-start;
+
+        h2:after {
+          left: -8px;
+        }
+      }
+    }
+  }
+}
+
+.circle {
   width: 36px;
   height: 36px;
   background-color: var(--color-gold);
@@ -119,7 +132,7 @@ export const Circle = styled(motion.div)`
   position: absolute;
   left: calc(50% - 17px);
 
-  @media only screen and (max-width: ${breakpoints.tabletMax}) {
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
     left: calc(10% - 32px);
   }
-`;
+}
