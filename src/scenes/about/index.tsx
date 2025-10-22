@@ -1,6 +1,5 @@
 import ReactMarkdown from 'react-markdown';
 
-import Helmet, { MetaData } from 'components/helmet';
 import SocialButton from 'components/social-button';
 
 import Header from './components/header';
@@ -8,7 +7,6 @@ import styles from './about.module.scss';
 
 const About: React.FC<{
   data: {
-    meta: MetaData;
     name: string;
     title: string;
     image: string;
@@ -18,7 +16,6 @@ const About: React.FC<{
 }> = ({ data }) => {
   return (
     <>
-      <Helmet data={data.meta} />
       <Header data={data} />
       <div className={styles.paragraph}>
         <ReactMarkdown>{data.intro}</ReactMarkdown>

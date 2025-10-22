@@ -1,4 +1,3 @@
-import Helmet, { MetaData } from 'components/helmet';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -6,7 +5,6 @@ import styles from './projects.module.scss';
 
 const Projects: React.FC<{
   data: {
-    meta: MetaData;
     title: string;
     projects: Array<{
       id: string;
@@ -15,10 +13,9 @@ const Projects: React.FC<{
       image: string;
     }>;
   };
-}> = ({ data: { meta, title, projects } }) => {
+}> = ({ data: { title, projects } }) => {
   return (
     <div className={styles.container}>
-      <Helmet data={meta} />
       <h1>{title}</h1>
       <ol>
         {projects.map((item) => (
