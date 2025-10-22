@@ -1,3 +1,5 @@
+'use client';
+
 import { motion, type Transition } from 'framer-motion';
 
 import styles from './navigation-button.module.scss';

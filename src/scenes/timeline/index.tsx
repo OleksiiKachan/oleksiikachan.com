@@ -1,7 +1,8 @@
+'use client';
+
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
-import Helmet, { MetaData } from 'components/helmet';
 import TimelineItem from './components/timeline-item';
 
 import styles from './timeline.module.scss';
@@ -21,17 +22,16 @@ interface ExperienceTimelineItem {
   position: string;
   dates: string;
   responsibilities: Array<string>;
-  projects: Array<{ id: string; title: string }>;
+  projects?: Array<{ id: string; title: string }>;
 }
 
 const Timeline: React.FC<{
   data: {
-    meta: MetaData;
     title: string;
     education: Array<EducationTimelineItem>;
     experience: Array<ExperienceTimelineItem>;
   };
-}> = ({ data: { title, education, experience, meta } }) => {
+}> = ({ data: { title, education, experience } }) => {
   const list = useMemo(
     () =>
       education
@@ -69,7 +69,6 @@ const Timeline: React.FC<{
 
   return (
     <div className={styles.container}>
-      <Helmet data={meta} />
       <h1>{title}</h1>
       <ol className={styles.timelineContainer}>
         <motion.div
