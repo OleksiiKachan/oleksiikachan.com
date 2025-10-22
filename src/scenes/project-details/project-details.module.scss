@@ -1,0 +1,263 @@
+@use '../../styles/breakpoints.scss' as bp;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    padding: 20px;
+  }
+}
+
+.backLink {
+  margin-bottom: 40px;
+
+  a {
+    color: var(--color-grey);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--color-black);
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 60px;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    margin-bottom: 40px;
+  }
+}
+
+.heroImage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    height: 150px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    z-index: 1;
+  }
+}
+
+.heroContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: var(--color-white);
+  padding: 40px;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    padding: 20px;
+  }
+}
+
+.projectMeta {
+  margin-bottom: 16px;
+
+  .projectType {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.projectTitle {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0 0 16px;
+  line-height: 1.1;
+  position: relative;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    font-size: 2.4rem;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 6px;
+    background: var(--color-gold);
+    z-index: -1;
+  }
+}
+
+.projectDescription {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+  opacity: 0.9;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    font-size: 1.4rem;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.mainContent {
+  .section {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin: 0 0 20px;
+      color: var(--color-black);
+      position: relative;
+
+      @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+        font-size: 2rem;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 40px;
+        height: 4px;
+        background: var(--color-gold);
+        z-index: -1;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: var(--color-grey);
+      margin: 0;
+    }
+  }
+}
+
+.techGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techItem {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--color-gold);
+    color: var(--color-black);
+  }
+}
+
+.imageGallery {
+  display: grid;
+  gap: 20px;
+}
+
+.galleryImage {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.sidebar {
+  .section {
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 0 0 16px;
+      color: var(--color-black);
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background: var(--color-gold);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+.externalLink {
+  color: var(--color-grey);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-black);
+  }
+}

@@ -1,11 +1,11 @@
 @use '../../styles/breakpoints.scss' as bp;
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
 
-  @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
     padding: 40px 20px;
   }
 
@@ -13,6 +13,7 @@
     text-align: center;
     font-size: 2.4rem;
     margin: 0 0 40px;
+    color: var(--color-black);
   }
 
   > ol {
@@ -20,104 +21,124 @@
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 10px;
+    gap: 30px;
 
     @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
-      gap: 40px;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
 
 .projectCard {
+  background: var(--color-white);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.projectImage {
   position: relative;
+  height: 200px;
+  overflow: hidden;
 
   img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .projectCard:hover & img {
+    transform: scale(1.05);
   }
 
   &:before {
     content: '';
-    display: block;
     position: absolute;
     top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
     background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.2) 100%
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.6) 100%
     );
+    z-index: 1;
+  }
+}
+
+.projectBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.projectTitle {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    font-size: 1.4rem;
   }
 
-  hgroup {
+  &:after {
+    content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
-    z-index: 1;
-    color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    width: 30px;
+    height: 3px;
+    background: var(--color-gold);
+  }
+}
 
-    @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
-      padding: 20px;
-    }
+.projectContent {
+  padding: 20px;
+  background: var(--color-white);
 
-    @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
-      padding: 80px 60px;
-    }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-grey);
+    margin: 0 0 16px;
+  }
+}
 
-    h2 {
-      font-size: 4.2rem;
-      margin: 0;
+.viewButton {
+  display: inline-block;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 
-      @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
-        font-size: 2.4rem;
-      }
-    }
-
-    p {
-      margin: 15px 0;
-      font-size: 1.6rem;
-    }
-
-    a {
-      font-size: 1.6rem;
-      font-weight: bold;
-      padding: 10px 15px;
-      transition: all 0.3s ease-in-out;
-      position: relative;
-
-      &:before {
-        position: absolute;
-        border: 2px solid var(--color-gold);
-        display: block;
-        content: '';
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        transition: all 0.3s ease-in-out;
-      }
-
-      &:hover {
-        background-color: var(--color-gold);
-        color: var(--color-black);
-
-        &:before {
-          border: 2px solid var(--color-grey);
-          transform: scaleX(1.1) scaleY(0.8) translateX(4px);
-          transform: translateX(4px) translateY(4px);
-          transform-origin: left top;
-        }
-      }
-    }
+  &:hover {
+    background: var(--color-gold);
+    color: var(--color-black);
   }
 }
