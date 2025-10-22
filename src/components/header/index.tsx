@@ -5,13 +5,13 @@ import NavButton from 'components/navigation-button';
 import Navigation from 'components/navigation';
 import useToggle from 'hooks/useToggle';
 
-import { Container } from './styled';
+import styles from './header.module.scss';
 
 const Header: React.FC = () => {
   const [_opened, toggleNavigation] = useToggle(false);
 
   return (
-    <Container>
+    <header className={styles.container}>
       <Navigation opened={_opened} onClick={toggleNavigation} />
       <Link href="/">
         <Image
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         />
       </Link>
       <NavButton opened={_opened} onClick={toggleNavigation} />
-    </Container>
+    </header>
   );
 };
 

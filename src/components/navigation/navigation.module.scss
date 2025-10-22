@@ -1,7 +1,4 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-
-export const Container = styled(motion.nav)`
+.container {
   position: absolute;
   top: 0;
   right: 0;
@@ -41,4 +38,4 @@ export const Container = styled(motion.nav)`
       }
     }
   }
-`;
+}

@@ -1,0 +1,59 @@
+@use './breakpoints.scss' as bp;
+
+:root {
+  --color-black: #222831;
+  --color-gold: #ffd369;
+  --color-grey: #8a8a8a;
+  --color-white: #eeeeee;
+
+  --color-bg: #fff;
+
+  --svg-bg: transparent;
+  --svg-border: var(--color-black);
+
+  --content-max-width: 1440px;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+html,
+body {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.desktop-min {
+  @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
+    display: none;
+  }
+}
+
+.tablet-max {
+  @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
+    display: none;
+  }
+}

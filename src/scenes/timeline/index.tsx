@@ -1,9 +1,10 @@
 import { useMemo } from 'react';
+import { motion } from 'framer-motion';
 
 import Helmet, { MetaData } from 'components/helmet';
 import TimelineItem from './components/timeline-item';
 
-import { Container, TimelineContainer, Line } from './styled';
+import styles from './timeline.module.scss';
 
 interface EducationTimelineItem {
   id: string;
@@ -67,19 +68,20 @@ const Timeline: React.FC<{
   );
 
   return (
-    <Container>
+    <div className={styles.container}>
       <Helmet data={meta} />
       <h1>{title}</h1>
-      <TimelineContainer>
-        <Line
+      <ol className={styles.timelineContainer}>
+        <motion.div
+          className={styles.line}
           animate={{ bottom: [`150%`, `0%`] }}
           transition={{ duration: 1.5 }}
         />
         {list.map(({ side, ...item }, index) => (
           <TimelineItem key={item.id} item={item} side={side} index={index} />
         ))}
-      </TimelineContainer>
-    </Container>
+      </ol>
+    </div>
   );
 };
 

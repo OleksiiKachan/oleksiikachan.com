@@ -1,8 +1,6 @@
-import styled from 'styled-components';
+@use '../../../../styles/breakpoints.scss' as bp;
 
-import breakpoints from 'styles/breakpoints';
-
-export const Container = styled.div`
+.container {
   padding: 40px 20px;
   display: flex;
   align-items: center;
@@ -37,7 +35,7 @@ export const Container = styled.div`
     margin: 0;
   }
 
-  @media only screen and (max-width: ${breakpoints.mobile}) {
+  @media only screen and (max-width: #{bp.$mobile-breakpoint}) {
     flex-direction: column;
     padding: 20px 0;
 
@@ -54,12 +52,12 @@ export const Container = styled.div`
       font-size: 2.4rem;
     }
   }
-`;
+}
 
-export const ImageWrapper = styled.div`
+.imageWrapper {
   overflow: hidden;
 
-  @media only screen and (max-width: ${breakpoints.mobile}) {
+  @media only screen and (max-width: #{bp.$mobile-breakpoint}) {
     width: 100%;
 
     img {
@@ -68,8 +66,8 @@ export const ImageWrapper = styled.div`
     }
   }
 
-  @media only screen and (min-width: ${breakpoints.tabletMin}) {
+  @media only screen and (min-width: #{bp.$tablet-min-breakpoint}) {
     border-radius: 10px;
     margin-right: 150px;
   }
-`;
+}

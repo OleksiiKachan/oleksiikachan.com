@@ -1,12 +1,11 @@
-import styled from 'styled-components';
-import breakpoints from 'styles/breakpoints';
+@use '../../styles/breakpoints.scss' as bp;
 
-export const Container = styled.div`
+.container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 
-  @media only screen and (min-width: ${breakpoints.desktop}) {
+  @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
     padding: 40px 20px;
   }
 
@@ -23,14 +22,14 @@ export const Container = styled.div`
     display: grid;
     gap: 10px;
 
-    @media only screen and (min-width: ${breakpoints.desktop}) {
+    @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
       gap: 40px;
       grid-template-columns: repeat(2, 1fr);
     }
   }
-`;
+}
 
-export const ProjectCard = styled.article`
+.projectCard {
   position: relative;
 
   img {
@@ -67,11 +66,11 @@ export const ProjectCard = styled.article`
     justify-content: flex-end;
     align-items: flex-start;
 
-    @media only screen and (max-width: ${breakpoints.tabletMax}) {
+    @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
       padding: 20px;
     }
 
-    @media only screen and (min-width: ${breakpoints.desktop}) {
+    @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
       padding: 80px 60px;
     }
 
@@ -79,7 +78,7 @@ export const ProjectCard = styled.article`
       font-size: 4.2rem;
       margin: 0;
 
-      @media only screen and (max-width: ${breakpoints.tabletMax}) {
+      @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
         font-size: 2.4rem;
       }
     }
@@ -121,4 +120,4 @@ export const ProjectCard = styled.article`
       }
     }
   }
-`;
+}

@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import { Container, ImageWrapper } from './styled';
+import styles from './header.module.scss';
 
 const Header: React.FC<{
   data: { name: string; title: string; image: string };
 }> = ({ data: { name, title, image } }) => {
   return (
-    <Container>
-      <ImageWrapper>
+    <div className={styles.container}>
+      <div className={styles.imageWrapper}>
         <Image
           src={image}
           width={240}
@@ -16,12 +16,12 @@ const Header: React.FC<{
           role="presentation"
           priority
         />
-      </ImageWrapper>
+      </div>
       <hgroup>
         <h1>{name}</h1>
         <h2>{title}</h2>
       </hgroup>
-    </Container>
+    </div>
   );
 };
 

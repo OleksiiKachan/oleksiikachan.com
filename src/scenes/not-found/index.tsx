@@ -1,9 +1,9 @@
-import { Container } from './styled';
+import styles from './not-found.module.scss';
 
 const NotFound: React.FC = () => (
-  <Container>
+  <div className={styles.container}>
     <h1>This page is under construction</h1>
-  </Container>
+  </div>
 );
 
 export default NotFound;

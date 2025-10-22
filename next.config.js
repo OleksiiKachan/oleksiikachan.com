@@ -4,9 +4,6 @@ const { withSentryConfig } = require(`@sentry/nextjs`);
 const nextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
-  compiler: {
-    styledComponents: true,
-  },
   images: {
     remotePatterns: [
       {

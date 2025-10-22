@@ -1,63 +1,9 @@
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-} from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
-import Script from 'next/script';
+import Document, { Html, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const sheet = new ServerStyleSheet();
-    const originalRenderPage = ctx.renderPage;
-
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        });
-
-      const initialProps = await Document.getInitialProps(ctx);
-      return {
-        ...initialProps,
-        styles: [initialProps.styles, sheet.getStyleElement()],
-      };
-    } finally {
-      sheet.seal();
-    }
-  }
-
   render() {
     return (
       <Html>
-        <Head>
-          {process.env.NODE_ENV === `development` && (
-            <Script
-              id="disable-error-overlay"
-              strategy="beforeInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `const handler = (event) => {
-                if (event?.error?.message) {
-                  const message = event.error.message.toLowerCase();
-                      if (
-                      message.match(
-                      /firebase|hydration|hydrating|rendered|cancelled|rendering/i
-                      )
-                      ) {
-                        event.stopImmediatePropagation();
-                  }
-                }
-              };
-
-              window.addEventListener('error', handler);
-              window.addEventListener('unhandledrejection', handler);`,
-              }}
-            />
-          )}
-        </Head>
         <body id="root">
           <noscript>
             <iframe

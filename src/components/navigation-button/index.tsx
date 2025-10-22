@@ -1,6 +1,6 @@
 import { motion, type Transition } from 'framer-motion';
 
-import { Container } from './styled';
+import styles from './navigation-button.module.scss';
 
 const transition = { type: `tween`, duration: 0.1 } as Transition;
 
@@ -9,7 +9,11 @@ const NavButton: React.FC<{
   opened: boolean;
 }> = ({ onClick, opened }) => {
   return (
-    <Container $open={opened} onClick={onClick} aria-label="menu">
+    <button
+      className={`${styles.container} ${opened ? styles.open : ``}`}
+      onClick={onClick}
+      aria-label="menu"
+    >
       <motion.div
         animate={{
           rotateZ: opened ? `45deg` : `0deg`,
@@ -31,7 +35,7 @@ const NavButton: React.FC<{
         }}
         transition={transition}
       />
-    </Container>
+    </button>
   );
 };
 

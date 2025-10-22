@@ -4,6 +4,8 @@ import Client from 'client';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
+import 'styles/globals.scss';
+
 const isClient = () => typeof window !== `undefined`;
 
 const isBot = () =>

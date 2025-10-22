@@ -1,8 +1,6 @@
-import styled from 'styled-components';
+@use '../../styles/breakpoints.scss' as bp;
 
-import breakpoints from 'styles/breakpoints';
-
-export const Container = styled.header`
+.container {
   padding: 16px 32px 16px 16px;
   display: flex;
   justify-content: space-between;
@@ -17,8 +15,8 @@ export const Container = styled.header`
     padding-left: 10px;
     padding: 8px;
 
-    @media only screen and (max-width: ${breakpoints.tabletMax}) {
+    @media only screen and (max-width: #{bp.$tablet-max-breakpoint}) {
       height: 48px;
     }
   }
-`;
+}
