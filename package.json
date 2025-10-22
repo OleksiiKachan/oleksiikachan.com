@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "cross-env jest --no-cache --passWithNoTests",
+    "test:unit": "cross-env jest --no-cache --passWithNoTests",
     "check-types": "tsc --noEmit",
     "pre-commit": "npm-run-all -p pre-commit:*",
     "pre-commit:lint": "yarn lint --fix && yarn pretty-quick --staged",
