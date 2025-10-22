@@ -38,6 +38,8 @@ export const SystemConfigProvider: React.FC<{ children: React.ReactNode }> = ({
           .toString();
 
         currentBreakpoint.current = initialBreakpoint;
+
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- Initial state setup is required for proper media query initialization
         setBreakpoint(initialBreakpoint);
       }
 

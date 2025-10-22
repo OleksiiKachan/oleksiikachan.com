@@ -2,13 +2,10 @@ version: 2
 updates:
   - package-ecosystem: 'npm'
     directory: '/'
-    open-pull-requests-limit: 15
     schedule:
       interval: 'daily'
       time: '09:00'
       timezone: 'America/Toronto'
-    reviewers:
-      - 'OleksiiKachan'
     groups:
       react:
         patterns:
@@ -16,28 +13,23 @@ updates:
           - 'react-dom'
           - '@types/react'
           - '@types/react-dom'
-      typescript-eslint:
+      testing-library:
         patterns:
-          - '*typescript-eslint*'
+          - '*testing-library*'
+      jest:
+        patterns:
+          - '*jest*'
       eslint:
         patterns:
           - '@eslint/js'
           - 'eslint'
+          - 'typescript-eslint'
       prettier:
         patterns:
-          - '*prettier*'
+          - 'eslint-config-prettier'
+          - 'eslint-plugin-prettier'
+          - 'prettier'
       next:
         patterns:
           - 'next'
           - 'eslint-config-next'
-      jest:
-        patterns:
-          - 'jest'
-          - 'jest-environment-jsdom'
-      testing-library:
-        patterns:
-          - '*testing-library*'
-    ignore:
-      - dependency-name: '@typescript-eslint/eslint-plugin'
-      - dependency-name: '@typescript-eslint/parser'
-      - dependency-name: 'eslint'
