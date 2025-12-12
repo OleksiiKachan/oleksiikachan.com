@@ -34,7 +34,7 @@
     "framer-motion": "^12.23.26",
     "logrocket": "^10.1.1",
     "logrocket-react": "^6.0.3",
-    "next": "16.0.8",
+    "next": "16.0.9",
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "react-markdown": "^10.1.0",
