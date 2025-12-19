@@ -6766,10 +6766,10 @@ log-update@^6.1.0:
     strip-ansi "^7.1.0"
     wrap-ansi "^9.0.0"
 
-logrocket-react@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/logrocket-react/-/logrocket-react-6.0.3.tgz#62c2ce18b9197058f5ba60e54e3f2b084d6588ee"
-  integrity sha512-mU2QMFy5lfogXeAb+djy5XcAL5lAxPovRiN62lb4EzeuvuYmXJJmArniK3K2P9Gu02auWTiSwKHISFS0JH+eyA==
+logrocket-react@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/logrocket-react/-/logrocket-react-7.0.0.tgz#b05761ebf0cdccf40310669c049a58fde0d8b0e9"
+  integrity sha512-Z401yGYBeugdwl4mpM8ICz5HFNpTtG2eE0LX7q1FpCo1CxxO/GHM6B0/IyM9HzBBWzwnkyiMkcYKKXKV/7MLWw==
 
 logrocket@1.0.1:
   version "1.0.1"
