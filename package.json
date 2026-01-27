@@ -72,7 +72,7 @@
     "pretty-quick": "^4.2.2",
     "sass": "^1.97.3",
     "typescript": "5.9.3",
-    "typescript-eslint": "^8.53.1"
+    "typescript-eslint": "^8.54.0"
   },
   "resolutions": {
     "@types/react": "19.2.10",
