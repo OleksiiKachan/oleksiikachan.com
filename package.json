@@ -14,7 +14,7 @@
     "pre-commit:test": "cross-env jest --onlyChanged"
   },
   "engines": {
-    "node": "22"
+    "node": "24"
   },
   "jest-junit": {
     "output": "./test-report.xml"
