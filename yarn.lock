@@ -4134,17 +4134,17 @@ csstype@^3.2.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.2.3.tgz#ec48c0f3e993e50648c86da559e2610995cf989a"
   integrity sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==
 
-cz-customizable@^7.5.1:
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/cz-customizable/-/cz-customizable-7.5.1.tgz#177824994b047ed6608ab14083b67bbc67dbaf28"
-  integrity sha512-eGUfpyD6/YdnPomAMMbbwmofeHAR9D4OsXS5Kmr9+uEOxdop32tdmHy6sx4Bhpms6V8HohQ17p/fYvlIllrdmQ==
+cz-customizable@^7.5.4:
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/cz-customizable/-/cz-customizable-7.5.4.tgz#9eb7c689c81f2a2a5a507e6a85b50a8aa6d809a3"
+  integrity sha512-vkNc7kLrWYBkr8VQKSZdDfy8athDZ2huIAWJwVxCrymBXRhB7q8hamkKd6JwAoLPwReS8fKi/kAjRpmy7VvL2w==
   dependencies:
     editor "1.0.0"
     find-config "^1.0.0"
     inquirer "^6.3.1"
-    lodash "^4.17.19"
-    temp "^0.9.0"
-    word-wrap "^1.2.3"
+    lodash "^4.17.23"
+    temp "^0.9.4"
+    word-wrap "^1.2.5"
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
@@ -6798,7 +6798,7 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-lodash@^4.17.12, lodash@^4.17.19:
+lodash@^4.17.12, lodash@^4.17.23:
   version "4.17.23"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
   integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
@@ -9028,7 +9028,7 @@ tapable@^2.2.0:
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
-temp@^0.9.0:
+temp@^0.9.4:
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/temp/-/temp-0.9.4.tgz#cd20a8580cb63635d0e4e9d4bd989d44286e7620"
   integrity sha512-yYrrsWnrXMcdsnu/7YMYAofM1ktpL5By7vZhf15CrXijWWrEYZks5AXBudalfSWJLlnen/QUJUB5aoB0kqZUGA==
@@ -9676,7 +9676,7 @@ which@^2.0.1, which@^2.0.2:
   dependencies:
     isexe "^2.0.0"
 
-word-wrap@^1.2.3:
+word-wrap@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.5.tgz#d2c45c6dd4fbce621a66f136cbe328afd0410b34"
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
