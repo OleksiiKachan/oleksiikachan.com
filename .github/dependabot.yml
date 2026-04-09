@@ -21,14 +21,14 @@ updates:
           - '*jest*'
       eslint:
         patterns:
-          - '@eslint/js'
-          - 'eslint'
-          - 'typescript-eslint'
-      prettier:
-        patterns:
+          - '*eslint*'
+        exclude-patterns:
+          - 'eslint-config-next'
           - 'eslint-config-prettier'
           - 'eslint-plugin-prettier'
-          - 'prettier'
+      prettier:
+        patterns:
+          - '*prettier*'
       next:
         patterns:
           - 'next'

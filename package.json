@@ -3,6 +3,7 @@
   "version": "4.0.0",
   "private": true,
   "scripts": {
+    "prepare": "husky",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,7 +12,7 @@
     "check-types": "tsc --noEmit",
     "pre-commit": "npm-run-all -p pre-commit:*",
     "pre-commit:lint": "yarn lint --fix && yarn pretty-quick --staged",
-    "pre-commit:test": "cross-env jest --onlyChanged"
+    "pre-commit:test": "cross-env jest --onlyChanged --passWithNoTests"
   },
   "engines": {
     "node": "24"
@@ -41,6 +42,7 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
+    "@eslint/compat": "^2.0.5",
     "@eslint/eslintrc": "^3.3.5",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@svgr/webpack": "^8.1.0",
@@ -55,7 +57,7 @@
     "babel-plugin-add-react-displayname": "^0.0.5",
     "cross-env": "^10.1.0",
     "cz-customizable": "^7.5.4",
-    "eslint": "^9.39.2",
+    "eslint": "^10.2.0",
     "eslint-config-next": "16.2.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-eslint-comments": "^3.2.0",
@@ -71,8 +73,9 @@
     "prettier": "^3.8.1",
     "pretty-quick": "^4.2.2",
     "sass": "^1.99.0",
+    "shimmer": "^1.2.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "^8.54.0"
+    "typescript-eslint": "^8.58.1"
   },
   "resolutions": {
     "@types/react": "19.2.14",
