@@ -3,7 +3,6 @@
   "version": "4.0.0",
   "private": true,
   "scripts": {
-    "prepare": "husky",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -74,7 +73,7 @@
     "pretty-quick": "^4.2.2",
     "sass": "^1.99.0",
     "shimmer": "^1.2.1",
-    "typescript": "5.9.3",
+    "typescript": "6.0.2",
     "typescript-eslint": "^8.58.1"
   },
   "resolutions": {
