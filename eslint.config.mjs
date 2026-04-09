@@ -1,3 +1,4 @@
+import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
 import typescriptEslint from 'typescript-eslint';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -19,15 +20,14 @@ const eslintConfig = [
       `jest.config.js`, // Ignore config files that use CommonJS
     ],
   },
-  ...nextVitals,
-  ...typescriptEslint.configs.recommended,
+  ...fixupConfigRules([...nextVitals, ...typescriptEslint.configs.recommended]),
   {
     plugins: {
-      react: reactPlugin,
-      'react-hooks': reactHooksPlugin,
-      prettier: prettierPlugin,
-      'eslint-comments': eslintCommentsPlugin,
-      '@stylistic': stylisticPlugin,
+      react: fixupPluginRules(reactPlugin),
+      'react-hooks': fixupPluginRules(reactHooksPlugin),
+      prettier: fixupPluginRules(prettierPlugin),
+      'eslint-comments': fixupPluginRules(eslintCommentsPlugin),
+      '@stylistic': fixupPluginRules(stylisticPlugin),
     },
 
     languageOptions: {
