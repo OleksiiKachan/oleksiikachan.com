@@ -1,19 +1,12 @@
 import ReactMarkdown from 'react-markdown';
 
 import SocialButton from 'components/social-button';
+import type { AboutData } from 'data/about';
 
 import Header from './components/header';
 import styles from './about.module.scss';
 
-const About: React.FC<{
-  data: {
-    name: string;
-    title: string;
-    image: string;
-    intro: string;
-    links: Array<{ type: string; href: string }>;
-  };
-}> = ({ data }) => {
+const About: React.FC<{ data: AboutData }> = ({ data }) => {
   return (
     <>
       <Header data={data} />
