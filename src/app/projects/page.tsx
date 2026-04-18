@@ -1,6 +1,5 @@
 import { buildMetadata } from 'lib/metadata';
-import { getProjects } from 'data/projects';
-import ProjectsScene from 'scenes/projects';
+import NotFoundScene from 'scenes/not-found';
 
 export const metadata = buildMetadata({
   suffix: `Case Studies`,
@@ -8,10 +7,5 @@ export const metadata = buildMetadata({
   path: `/projects`,
 });
 
-const ProjectsPage = async () => {
-  const projects = getProjects();
-
-  return <ProjectsScene data={{ title: `Projects`, projects }} />;
-};
-
+const ProjectsPage = () => <NotFoundScene />;
 export default ProjectsPage;
