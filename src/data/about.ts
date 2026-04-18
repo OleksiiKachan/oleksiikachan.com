@@ -9,6 +9,12 @@ export type Certification = {
   name: string;
   issuer: string;
   year: number;
+  category: `tech` | `other`;
+};
+
+export type Role = {
+  title: string;
+  org: string;
 };
 
 export type AboutData = {
@@ -18,9 +24,10 @@ export type AboutData = {
   location: string;
   image: string;
   intro: string;
-  skills: readonly string[];
-  certifications: readonly Certification[];
-  links: readonly SocialLink[];
+  skills: ReadonlyArray<string>;
+  certifications: ReadonlyArray<Certification>;
+  roles: ReadonlyArray<Role>;
+  links: ReadonlyArray<SocialLink>;
 };
 
 export const about: AboutData = {
@@ -41,13 +48,18 @@ export const about: AboutData = {
     `GraphQL`,
   ],
   certifications: [
-    { name: `Apollo Graph Developer – Associate`, issuer: `Apollo GraphQL`, year: 2025 },
-    { name: `Google Advanced Data Analytics Certificate`, issuer: `Google`, year: 2025 },
-    { name: `Meta Front-End Developer Certificate`, issuer: `Meta`, year: 2024 },
-    { name: `Finance & Quantitative Modeling`, issuer: `University of Pennsylvania`, year: 2023 },
-    { name: `Google Data Analytics Certificate`, issuer: `Google`, year: 2023 },
-    { name: `PADI Open Water Diver`, issuer: `PADI`, year: 2022 },
-    { name: `WADA Coaching Certificate`, issuer: `WADA`, year: 2022 },
+    { name: `Apollo Graph Developer – Associate`, issuer: `Apollo GraphQL`, year: 2025, category: `tech` },
+    { name: `Google Advanced Data Analytics Certificate`, issuer: `Google`, year: 2025, category: `tech` },
+    { name: `Meta Front-End Developer Certificate`, issuer: `Meta`, year: 2024, category: `tech` },
+    { name: `Finance & Quantitative Modeling`, issuer: `University of Pennsylvania`, year: 2023, category: `tech` },
+    { name: `Google Data Analytics Certificate`, issuer: `Google`, year: 2023, category: `tech` },
+    { name: `PADI Open Water Diver`, issuer: `PADI`, year: 2022, category: `other` },
+    { name: `WADA Coaching Certificate`, issuer: `WADA`, year: 2022, category: `other` },
+  ],
+  roles: [
+    { title: `JavaScript Instructor`, org: `Humber College` },
+    { title: `VP of Technical`, org: `WushuCanada` },
+    { title: `VP of Competition`, org: `WushuOntario` },
   ],
   links: [
     { type: `linkedin`, href: `https://www.linkedin.com/in/oleksiikachan/` },

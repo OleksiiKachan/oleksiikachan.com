@@ -1,7 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { about, type SocialLinkType } from './about';
 
-
 describe(`about`, () => {
   it(`name is a non-empty string`, () => {
     expect(typeof about.name).toBe(`string`);
@@ -24,7 +23,11 @@ describe(`about`, () => {
   });
 
   it(`links contains linkedin, github and instagram entries`, () => {
-    const validTypes: SocialLinkType[] = [`linkedin`, `github`, `instagram`];
+    const validTypes: Array<SocialLinkType> = [
+      `linkedin`,
+      `github`,
+      `instagram`,
+    ];
     const linkTypes = about.links.map((l) => l.type);
     expect(linkTypes).toEqual(expect.arrayContaining(validTypes));
   });
@@ -54,7 +57,7 @@ describe(`about`, () => {
     });
   });
 
-  it(`certifications is a non-empty array with name, issuer, and year`, () => {
+  it(`certifications is a non-empty array with name, issuer, year, and category`, () => {
     expect(Array.isArray(about.certifications)).toBe(true);
     expect(about.certifications.length).toBeGreaterThan(0);
     about.certifications.forEach((cert) => {
@@ -64,6 +67,24 @@ describe(`about`, () => {
       expect(cert.issuer.length).toBeGreaterThan(0);
       expect(typeof cert.year).toBe(`number`);
       expect(cert.year).toBeGreaterThan(2000);
+      expect([`tech`, `other`]).toContain(cert.category);
+    });
+  });
+
+  it(`certifications include both tech and other categories`, () => {
+    const categories = about.certifications.map((c) => c.category);
+    expect(categories).toContain(`tech`);
+    expect(categories).toContain(`other`);
+  });
+
+  it(`roles is a non-empty array with title and org`, () => {
+    expect(Array.isArray(about.roles)).toBe(true);
+    expect(about.roles.length).toBeGreaterThan(0);
+    about.roles.forEach((role) => {
+      expect(typeof role.title).toBe(`string`);
+      expect(role.title.length).toBeGreaterThan(0);
+      expect(typeof role.org).toBe(`string`);
+      expect(role.org.length).toBeGreaterThan(0);
     });
   });
 });
