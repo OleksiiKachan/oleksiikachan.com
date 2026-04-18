@@ -1,24 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from './projects.module.scss';
+import type { Project } from 'data/projects';
 
-interface Project {
-  id: string;
-  title: string;
-  shortDescription: string;
-  longDescription: string;
-  image: string;
-  coverImage: string;
-  shortStack: string[];
-  longStack: string[];
-  teamSize: string;
-  client: Array<{ name: string; url: string }>;
-  partner?: Array<{ name: string; url: string }>;
-  projectType: string;
-  settings: { color: string };
-  externalResources: Array<{ url: string; name: string }>;
-}
+import styles from './projects.module.scss';
 
 const Projects: React.FC<{
   data: {

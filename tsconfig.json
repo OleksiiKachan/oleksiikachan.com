@@ -28,11 +28,20 @@
       "components/*": [
         "./src/components/*"
       ],
+      "config/*": [
+        "./src/config/*"
+      ],
+      "data/*": [
+        "./src/data/*"
+      ],
       "hooks/*": [
         "./src/hooks/*"
       ],
       "layout/*": [
         "./src/layout/*"
+      ],
+      "lib/*": [
+        "./src/lib/*"
       ],
       "scenes/*": [
         "./src/scenes/*"
