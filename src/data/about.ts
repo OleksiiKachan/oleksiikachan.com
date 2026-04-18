@@ -53,7 +53,8 @@ export const about: AboutData = {
     { name: `Meta Front-End Developer Certificate`, issuer: `Meta`, year: 2024, category: `tech` },
     { name: `Finance & Quantitative Modeling`, issuer: `University of Pennsylvania`, year: 2023, category: `tech` },
     { name: `Google Data Analytics Certificate`, issuer: `Google`, year: 2023, category: `tech` },
-    { name: `PADI Open Water Diver`, issuer: `PADI`, year: 2022, category: `other` },
+    { name: `PADI Advanced Open Water Diver`, issuer: `PADI`, year: 2022, category: `other` },
+    { name: `PADI Rescue Diver`, issuer: `PADI`, year: 2022, category: `other` },
     { name: `WADA Coaching Certificate`, issuer: `WADA`, year: 2022, category: `other` },
   ],
   roles: [
