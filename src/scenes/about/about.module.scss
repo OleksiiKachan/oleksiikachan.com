@@ -1,5 +1,22 @@
 @use '../../styles/breakpoints.scss' as bp;
 
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+
+  @media only screen and (min-width: #{bp.$desktop-breakpoint}) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 0;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+
 .paragraph {
   font-size: 1.6rem;
   padding: 0 20px;

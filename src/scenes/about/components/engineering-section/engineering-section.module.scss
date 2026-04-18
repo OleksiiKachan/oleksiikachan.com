@@ -1,15 +1,10 @@
 @use '../../../../styles/breakpoints.scss' as bp;
 
 .panel {
-  margin: 20px;
   padding: 24px;
   background-color: rgba(255, 211, 105, 0.08);
   border: 1px solid rgba(255, 211, 105, 0.2);
   border-radius: 8px;
-
-  @media only screen and (min-width: #{bp.$tablet-min-breakpoint}) {
-    margin: 20px 0;
-  }
 }
 
 .eyebrow {

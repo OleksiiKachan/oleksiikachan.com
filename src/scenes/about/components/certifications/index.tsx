@@ -2,7 +2,7 @@ import type { Certification } from 'data/about';
 import styles from './certifications.module.scss';
 
 type CertificationsProps = {
-  certifications: readonly Certification[];
+  certifications: ReadonlyArray<Certification>;
 };
 
 const Certifications = ({ certifications }: CertificationsProps) => {
@@ -13,7 +13,9 @@ const Certifications = ({ certifications }: CertificationsProps) => {
         {certifications.map((cert) => (
           <li key={cert.name}>
             <span>{cert.name}</span>
-            <span className={styles.meta}>{`${cert.issuer} · ${cert.year}`}</span>
+            <span
+              className={styles.meta}
+            >{`${cert.issuer} · ${cert.year}`}</span>
           </li>
         ))}
       </ul>

@@ -1,7 +1,7 @@
 import styles from './skills.module.scss';
 
 type SkillsProps = {
-  skills: readonly string[];
+  skills: ReadonlyArray<string>;
 };
 
 const Skills = ({ skills }: SkillsProps) => {

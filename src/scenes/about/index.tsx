@@ -19,8 +19,10 @@ const About = ({ data }: AboutProps) => {
       <div className={styles.paragraph}>
         <ReactMarkdown>{data.intro}</ReactMarkdown>
       </div>
-      <EngineeringSection skills={data.skills} certifications={data.certifications} />
-      <BeyondCodeSection roles={data.roles} certifications={data.certifications} />
+      <div className={styles.sections}>
+        <EngineeringSection skills={data.skills} certifications={data.certifications} />
+        <BeyondCodeSection roles={data.roles} certifications={data.certifications} />
+      </div>
       <ul className={styles.socialMedia}>
         <li>
           <h3>{`Follow me:`}</h3>

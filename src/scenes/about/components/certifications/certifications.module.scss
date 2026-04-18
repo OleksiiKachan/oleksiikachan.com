@@ -1,7 +1,7 @@
 @use '../../../../styles/breakpoints.scss' as bp;
 
 .container {
-  padding: 20px;
+  padding: 0;
 
   h3 {
     font-size: 2rem;
@@ -30,9 +30,6 @@
     }
   }
 
-  @media only screen and (min-width: #{bp.$tablet-min-breakpoint}) {
-    padding: 20px 20px 0;
-  }
 }
 
 .meta {
