@@ -1,1 +1,1 @@
-yarn check-types && yarn pre-commit
+pnpm check-types && pnpm pre-commit

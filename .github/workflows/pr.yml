@@ -13,18 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Set node version
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-          cache: yarn
-      - uses: actions/cache@v4
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
+          cache: pnpm
       - name: Install dependencies
-        run: yarn install --immutable --frozen-lockfile
+        run: pnpm install --frozen-lockfile
         shell: bash
   static-test:
     name: test:static
@@ -32,61 +30,61 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Set node version
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-          cache: yarn
-      - name: Get node_modules
-        uses: actions/cache@v4
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        shell: bash
       - name: Run static tests
-        run: yarn lint
+        run: pnpm lint
       - name: Run type check
-        run: yarn check-types
+        run: pnpm check-types
   unit-test:
     name: test:unit
     needs: static-test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Set node version
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-          cache: yarn
-      - name: Get node_modules
-        uses: actions/cache@v4
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        shell: bash
       - name: Run unit tests
-        run: yarn test:unit
+        run: pnpm test:unit
   build:
     needs: static-test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Set node version
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-          cache: yarn
-      - name: Get node_modules
-        uses: actions/cache@v4
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        shell: bash
       - name: Get next cache
         uses: actions/cache@v4
         with:
           path: ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          restore-keys: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
       - name: Build
-        run: CI=true yarn build
+        run: CI=true pnpm build

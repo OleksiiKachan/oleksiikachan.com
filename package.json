@@ -2,6 +2,7 @@
   "name": "oleksiikachan.com",
   "version": "4.0.0",
   "private": true,
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +11,7 @@
     "test:unit": "cross-env jest --no-cache --passWithNoTests",
     "check-types": "tsc --noEmit",
     "pre-commit": "npm-run-all -p pre-commit:*",
-    "pre-commit:lint": "yarn lint --fix && yarn pretty-quick --staged",
+    "pre-commit:lint": "pnpm lint --fix && pnpm pretty-quick --staged",
     "pre-commit:test": "cross-env jest --onlyChanged --passWithNoTests"
   },
   "engines": {
@@ -69,8 +70,10 @@
     "typescript": "6.0.3",
     "typescript-eslint": "^8.58.2"
   },
-  "resolutions": {
-    "@types/react": "19.2.14",
-    "@types/react-dom": "19.2.3"
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.2.14",
+      "@types/react-dom": "19.2.3"
+    }
   }
 }
