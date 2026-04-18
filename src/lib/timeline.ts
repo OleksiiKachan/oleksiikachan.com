@@ -11,7 +11,7 @@ export type TimelineEntry = {
   linkedProjects: Array<{ id: ProjectId; title: string }>;
 };
 
-export const buildTimeline = (): TimelineEntry[] => {
+export const buildTimeline = (): Array<TimelineEntry> => {
   const projectIndex = new Map(getProjects().map((p) => [p.id, p.title]));
 
   const educationEntries = education.map((item) => ({
@@ -44,7 +44,7 @@ export const buildTimeline = (): TimelineEntry[] => {
     .reverse();
 
   return sorted.reduce<{
-    list: TimelineEntry[];
+    list: Array<TimelineEntry>;
     previousSide: `left` | `right`;
   }>(
     ({ previousSide, list }, item) => {

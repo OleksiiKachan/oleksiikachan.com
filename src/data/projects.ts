@@ -14,8 +14,8 @@ export type Project = {
   longDescription: string;
   image: string;
   coverImage: string;
-  shortStack: string[];
-  longStack: string[];
+  shortStack: Array<string>;
+  longStack: Array<string>;
   teamSize: string;
   client: Array<{ name: string; url: string }>;
   partner?: Array<{ name: string; url: string }>;
@@ -25,7 +25,7 @@ export type Project = {
   additionalImages?: Array<{ url: string; alt: string }>;
 };
 
-const PROJECTS: Project[] = [
+const PROJECTS: Array<Project> = [
   {
     id: `nobul-web`,
     title: `Nobul Web Platform`,
@@ -268,7 +268,7 @@ const PROJECTS: Project[] = [
   },
 ];
 
-export const getProjects = (): Project[] => PROJECTS;
+export const getProjects = (): Array<Project> => PROJECTS;
 
 export const getProjectById = (id: string): Project | undefined =>
   PROJECTS.find((p) => p.id === id);

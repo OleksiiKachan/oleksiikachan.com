@@ -14,11 +14,11 @@ export type ExperienceEntry = {
   company: string;
   position: string;
   dates: string;
-  responsibilities: string[];
-  projectIds?: ProjectId[];
+  responsibilities: Array<string>;
+  projectIds?: Array<ProjectId>;
 };
 
-export const education: readonly EducationEntry[] = [
+export const education: ReadonlyArray<EducationEntry> = [
   {
     id: `kpi`,
     school: `National Technical University of Ukraine "Kyiv Polytechnic Institute"`,
@@ -37,7 +37,7 @@ export const education: readonly EducationEntry[] = [
   },
 ];
 
-export const experience: readonly ExperienceEntry[] = [
+export const experience: ReadonlyArray<ExperienceEntry> = [
   {
     id: `kontynium-treyd`,
     company: `Ltd. "Kontynium-Treyd"`,

@@ -7,7 +7,7 @@ export type NavItem = {
   href: Route;
 };
 
-export const NAV_ITEMS: readonly NavItem[] = [
+export const NAV_ITEMS: ReadonlyArray<NavItem> = [
   { caption: `About me`, href: `/about` },
   { caption: `Projects`, href: `/projects` },
   { caption: `Timeline`, href: `/timeline` },

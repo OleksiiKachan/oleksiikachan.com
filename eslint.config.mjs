@@ -96,6 +96,7 @@ const eslintConfig = [
           },
         },
       ],
+      '@typescript-eslint/array-type': [`error`, { default: `generic` }],
       '@typescript-eslint/no-explicit-any': `off`,
       '@typescript-eslint/ban-ts-comment': `error`,
       '@typescript-eslint/no-require-imports': `off`,

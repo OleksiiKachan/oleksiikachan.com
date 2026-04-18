@@ -10,7 +10,7 @@ import styles from './timeline.module.scss';
 
 type TimelineProps = {
   title: string;
-  entries: TimelineEntry[];
+  entries: Array<TimelineEntry>;
 };
 
 const Timeline = ({ title, entries }: TimelineProps) => {
