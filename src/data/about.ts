@@ -57,7 +57,7 @@ export const about: AboutData = {
     { name: `WADA Coaching Certificate`, issuer: `WADA`, year: 2022, category: `other` },
   ],
   roles: [
-    { title: `JavaScript Instructor`, org: `Humber College` },
+    { title: `Part-time Faculty`, org: `Humber College` },
     { title: `VP of Technical`, org: `WushuCanada` },
     { title: `VP of Competition`, org: `WushuOntario` },
   ],
