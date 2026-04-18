@@ -19,9 +19,6 @@
     "jsx": "react-jsx",
     "incremental": true,
     "paths": {
-      "analytics": [
-        "./src/analytics"
-      ],
       "client": [
         "./src/client"
       ],
