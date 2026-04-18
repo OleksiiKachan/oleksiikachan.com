@@ -1,6 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { renderHook } from '@testing-library/react';
-import type { ReactNode } from 'react';
 
 vi.mock(`./use-breakpoint`, () => ({ useBreakpoint: vi.fn() }));
 vi.mock(`./use-ios-vh-fix`, () => ({ useIosVhFix: vi.fn() }));
@@ -12,7 +11,7 @@ const mockBreakpoint = (value: `mobile` | `tablet` | `desktop`) => {
   vi.mocked(useBreakpoint).mockReturnValue(value);
 };
 
-const wrapper = ({ children }: { children: ReactNode }) => (
+const wrapper = ({ children }: { children: React.ReactNode }) => (
   <BreakpointProvider>{children}</BreakpointProvider>
 );
 

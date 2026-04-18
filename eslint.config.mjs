@@ -72,6 +72,17 @@ const eslintConfig = [
       'comma-dangle': [`error`, `only-multiline`],
       'no-dupe-args': [`error`],
       'no-duplicate-imports': [`error`],
+      'no-restricted-syntax': [
+        `error`,
+        {
+          selector: `ImportDeclaration[source.value='react'][importKind='type']`,
+          message: `Use React.* instead of importing types from 'react' (e.g., React.ReactNode).`,
+        },
+        {
+          selector: `ImportDeclaration[source.value='react'] ImportSpecifier[importKind='type']`,
+          message: `Use React.* instead of importing types from 'react' (e.g., React.ReactNode).`,
+        },
+      ],
       'no-undef': `off`, // Disabled for TypeScript
       'no-use-before-define': [`error`],
 
