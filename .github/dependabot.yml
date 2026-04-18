@@ -16,9 +16,12 @@ updates:
       testing-library:
         patterns:
           - '*testing-library*'
-      jest:
+      vitest:
         patterns:
-          - '*jest*'
+          - 'vitest'
+          - '@vitest/*'
+          - '@vitejs/plugin-react'
+          - 'vite-tsconfig-paths'
       eslint:
         patterns:
           - '*eslint*'
