@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import useSystemConfigContext from 'client/system-config-context';
+import { useBreakpointContext } from 'client/breakpoints';
 
 import styles from './timeline-item.module.scss';
 
@@ -14,7 +14,7 @@ const TimelineItem: React.FC<{
   side: `right` | `left`;
   index: number;
 }> = ({ item, side, index }) => {
-  const { breakpoint } = useSystemConfigContext();
+  const { isDesktop } = useBreakpointContext();
 
   return (
     <li className={`${styles.container} ${styles[side]}`}>
@@ -26,7 +26,7 @@ const TimelineItem: React.FC<{
       <motion.div
         className={styles.content}
         animate={
-          side === `left` && breakpoint === `desktop`
+          side === `left` && isDesktop
             ? { opacity: [0, 1], x: [`-100%`, `0%`] }
             : { opacity: [0, 1], x: [`100%`, `0%`] }
         }
