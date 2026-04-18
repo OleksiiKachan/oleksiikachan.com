@@ -7,7 +7,6 @@ export type TimelineEntry = {
   title: string;
   subtitle: string;
   dates: string;
-  side: `left` | `right`;
   responsibilities: Array<string>;
   linkedProjects: Array<{ id: ProjectId; title: string }>;
 };
@@ -42,22 +41,7 @@ export const buildTimeline = (): Array<TimelineEntry> => {
     };
   });
 
-  const sorted = [...educationEntries, ...experienceEntries]
+  return [...educationEntries, ...experienceEntries]
     .sort((a, b) => a.dates.localeCompare(b.dates))
     .reverse();
-
-  return sorted.reduce<{
-    list: Array<TimelineEntry>;
-    previousSide: `left` | `right`;
-  }>(
-    ({ previousSide, list }, item) => {
-      const side: `left` | `right` =
-        previousSide === `right` ? `left` : `right`;
-      return {
-        list: [...list, { ...item, side }],
-        previousSide: side,
-      };
-    },
-    { list: [], previousSide: `right` }
-  ).list;
 };

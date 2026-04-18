@@ -11,13 +11,6 @@ describe(`buildTimeline`, () => {
     }
   });
 
-  it(`sides alternate left/right with first item on left`, () => {
-    const entries = buildTimeline();
-    entries.forEach((entry, index) => {
-      expect(entry.side).toBe(index % 2 === 0 ? `left` : `right`);
-    });
-  });
-
   it(`resolves project titles for entries with projectIds`, () => {
     const entries = buildTimeline();
     const rloop = entries.find((e) => e.id === `rloop`);

@@ -23,8 +23,8 @@ const Timeline = ({ title, entries }: TimelineProps) => {
           animate={keyframes.timelineLine.animate}
           transition={transitions.timelineLine}
         />
-        {entries.map(({ side, ...item }, index) => (
-          <TimelineItem key={item.id} item={item} side={side} index={index} />
+        {entries.map((item, index) => (
+          <TimelineItem key={item.id} item={item} index={index} />
         ))}
       </ol>
     </div>

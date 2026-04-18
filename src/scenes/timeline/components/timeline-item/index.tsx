@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { useBreakpointContext } from 'client/breakpoints';
 
 import type { TimelineEntry } from 'lib/timeline';
 import { keyframes, transitions, stagger } from 'config/animations';
@@ -13,30 +12,15 @@ type TimeLineItem = Pick<
 
 type TimelineItemProps = {
   item: TimeLineItem;
-  side: `right` | `left`;
   index: number;
 };
 
-const TimelineItem = ({ item, side, index }: TimelineItemProps) => {
-  const { isDesktop } = useBreakpointContext();
-
+const TimelineItem = ({ item, index }: TimelineItemProps) => {
   return (
-    <li className={`${styles.container} ${styles[side]}`}>
+    <li className={styles.container}>
       <motion.div
-        className={styles.circle}
-        animate={keyframes.timelineCircle.animate}
-        transition={{
-          ...transitions.timelineItem,
-          delay: stagger.circleBase + stagger.step * index,
-        }}
-      />
-      <motion.div
-        className={styles.content}
-        animate={
-          side === `left` && isDesktop
-            ? keyframes.timelineContentLeft.animate
-            : keyframes.timelineContentRight.animate
-        }
+        className={styles.info}
+        animate={keyframes.timelineInfo.animate}
         transition={{
           ...transitions.timelineItem,
           delay: stagger.contentBase + stagger.step * index,
@@ -45,6 +29,25 @@ const TimelineItem = ({ item, side, index }: TimelineItemProps) => {
         <h2>{item.title}</h2>
         <p>{item.dates}</p>
         <h3>{item.subtitle}</h3>
+      </motion.div>
+
+      <motion.div
+        className={styles.circle}
+        animate={keyframes.timelineCircle.animate}
+        transition={{
+          ...transitions.timelineItem,
+          delay: stagger.circleBase + stagger.step * index,
+        }}
+      />
+
+      <motion.div
+        className={styles.details}
+        animate={keyframes.timelineDetails.animate}
+        transition={{
+          ...transitions.timelineItem,
+          delay: stagger.contentBase + stagger.step * index,
+        }}
+      >
         {item.responsibilities.length > 0 && (
           <ul className={styles.responsibilities}>
             {item.responsibilities.map((r) => (

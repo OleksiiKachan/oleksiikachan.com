@@ -15,8 +15,8 @@ export const keyframes = {
   },
   timelineLine: { animate: { bottom: [`150%`, `0%`] } },
   timelineCircle: { animate: { scale: [0, 1], y: `-50%` } },
-  timelineContentLeft: { animate: { opacity: [0, 1], x: [`-100%`, `0%`] } },
-  timelineContentRight: { animate: { opacity: [0, 1], x: [`100%`, `0%`] } },
+  timelineInfo: { animate: { opacity: [0, 1], x: [`-100%`, `0%`] } },
+  timelineDetails: { animate: { opacity: [0, 1], x: [`100%`, `0%`] } },
 };
 
 export const stagger = {

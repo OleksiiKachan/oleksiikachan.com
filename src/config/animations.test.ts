@@ -41,15 +41,15 @@ describe(`keyframes`, () => {
     });
   });
 
-  it(`timelineContentLeft animates opacity and x from left`, () => {
-    expect(keyframes.timelineContentLeft.animate).toEqual({
+  it(`timelineInfo animates opacity and x from left`, () => {
+    expect(keyframes.timelineInfo.animate).toEqual({
       opacity: [0, 1],
       x: [`-100%`, `0%`],
     });
   });
 
-  it(`timelineContentRight animates opacity and x from right`, () => {
-    expect(keyframes.timelineContentRight.animate).toEqual({
+  it(`timelineDetails animates opacity and x from right`, () => {
+    expect(keyframes.timelineDetails.animate).toEqual({
       opacity: [0, 1],
       x: [`100%`, `0%`],
     });
