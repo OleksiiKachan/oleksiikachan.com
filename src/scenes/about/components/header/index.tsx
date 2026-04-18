@@ -3,10 +3,10 @@ import Image from 'next/image';
 import styles from './header.module.scss';
 
 type HeaderProps = {
-  data: { name: string; title: string; image: string };
+  data: { name: string; title: string; company: string; location: string; image: string };
 };
 
-const Header = ({ data: { name, title, image } }: HeaderProps) => {
+const Header = ({ data: { name, title, company, location, image } }: HeaderProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageWrapper}>
@@ -22,6 +22,7 @@ const Header = ({ data: { name, title, image } }: HeaderProps) => {
       <hgroup>
         <h1>{name}</h1>
         <h2>{title}</h2>
+        <p className={styles.meta}>{`${company} · ${location}`}</p>
       </hgroup>
     </div>
   );

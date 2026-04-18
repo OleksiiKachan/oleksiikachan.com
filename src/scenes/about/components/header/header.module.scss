@@ -35,6 +35,12 @@
     margin: 0;
   }
 
+  .meta {
+    font-size: 1.6rem;
+    color: var(--color-grey);
+    margin: 8px 0 0;
+  }
+
   @media only screen and (max-width: #{bp.$mobile-breakpoint}) {
     flex-direction: column;
     padding: 20px 0;
