@@ -8,11 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test:unit": "cross-env jest --no-cache --passWithNoTests",
+    "test:unit": "vitest run",
     "check-types": "tsc --noEmit",
     "pre-commit": "npm-run-all -p pre-commit:*",
     "pre-commit:lint": "pnpm lint --fix && pnpm pretty-quick --staged",
-    "pre-commit:test": "cross-env jest --onlyChanged --passWithNoTests"
+    "pre-commit:test": "vitest run --changed"
   },
   "engines": {
     "node": "24"
@@ -47,7 +47,8 @@
     "@types/node": "25.6.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "babel-plugin-add-react-displayname": "^0.0.5",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@vitest/coverage-v8": "^3.2.0",
     "cross-env": "^10.1.0",
     "cz-customizable": "^7.5.4",
     "eslint": "^10.2.0",
@@ -59,8 +60,6 @@
     "eslint-plugin-react-hooks": "^7.1.0",
     "globals": "^17.5.0",
     "husky": "^9.1.7",
-    "jest": "^30.3.0",
-    "jest-environment-jsdom": "^30.3.0",
     "lint-staged": "^16.4.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.8.3",
@@ -68,7 +67,9 @@
     "sass": "^1.99.0",
     "shimmer": "^1.2.1",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.58.2"
+    "typescript-eslint": "^8.58.2",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.0"
   },
   "pnpm": {
     "overrides": {

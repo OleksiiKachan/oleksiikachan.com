@@ -17,7 +17,7 @@ const eslintConfig = [
       `build/**`,
       `next-env.d.ts`,
       `coverage/**`,
-      `jest.config.js`, // Ignore config files that use CommonJS
+      `vitest.config.ts`, // Ignore config files outside src
     ],
   },
   ...fixupConfigRules([...nextVitals, ...typescriptEslint.configs.recommended]),
@@ -33,7 +33,7 @@ const eslintConfig = [
     languageOptions: {
       globals: {
         ...globals.browser,
-        ...globals.jest,
+        ...globals.vitest,
         ...globals.node,
         ...globals.react,
       },
