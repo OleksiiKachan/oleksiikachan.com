@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 
 import type { TimelineEntry } from 'lib/timeline';
+import { keyframes, transitions } from 'config/animations';
 import TimelineItem from './components/timeline-item';
 
 import styles from './timeline.module.scss';
@@ -17,8 +18,8 @@ const Timeline: React.FC<{
       <ol className={styles.timelineContainer}>
         <motion.div
           className={styles.line}
-          animate={{ bottom: [`150%`, `0%`] }}
-          transition={{ duration: 1.5 }}
+          animate={keyframes.timelineLine.animate}
+          transition={transitions.timelineLine}
         />
         {entries.map(({ side, ...item }, index) => (
           <TimelineItem key={item.id} item={item} side={side} index={index} />

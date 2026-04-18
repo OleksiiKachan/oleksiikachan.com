@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useBreakpointContext } from 'client/breakpoints';
 
+import { keyframes, transitions, stagger } from 'config/animations';
+
 import styles from './timeline-item.module.scss';
 
 type TimeLineItem = {
@@ -20,17 +22,23 @@ const TimelineItem: React.FC<{
     <li className={`${styles.container} ${styles[side]}`}>
       <motion.div
         className={styles.circle}
-        animate={{ scale: [0, 1], y: `-50%` }}
-        transition={{ duration: 0.7, type: `spring`, delay: 0.4 + 0.1 * index }}
+        animate={keyframes.timelineCircle.animate}
+        transition={{
+          ...transitions.timelineItem,
+          delay: stagger.circleBase + stagger.step * index,
+        }}
       />
       <motion.div
         className={styles.content}
         animate={
           side === `left` && isDesktop
-            ? { opacity: [0, 1], x: [`-100%`, `0%`] }
-            : { opacity: [0, 1], x: [`100%`, `0%`] }
+            ? keyframes.timelineContentLeft.animate
+            : keyframes.timelineContentRight.animate
         }
-        transition={{ duration: 0.7, type: `spring`, delay: 0.2 + 0.1 * index }}
+        transition={{
+          ...transitions.timelineItem,
+          delay: stagger.contentBase + stagger.step * index,
+        }}
       >
         <h2>{item.title}</h2>
         <p>{item.dates}</p>

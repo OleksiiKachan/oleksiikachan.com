@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { NAV_ITEMS, isNavItemActive } from 'config/navigation';
+import { keyframes, transitions } from 'config/animations';
 
 import styles from './navigation.module.scss';
 
@@ -20,14 +21,10 @@ const Navigation: React.FC<{
         <motion.nav
           key="navigaition"
           className={styles.container}
-          initial={{ y: `-100%` }}
-          animate={{
-            y: 0,
-          }}
-          exit={{
-            y: `-100%`,
-          }}
-          transition={{ type: `spring`, bounce: 0, duration: 0.4 }}
+          initial={keyframes.navSlide.initial}
+          animate={keyframes.navSlide.animate}
+          exit={keyframes.navSlide.exit}
+          transition={transitions.navSlide}
         >
           <ol>
             {NAV_ITEMS.map(({ caption, href }) => (
