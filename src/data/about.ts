@@ -58,7 +58,7 @@ export const about: AboutData = {
   ],
   roles: [
     { title: `Part-time Faculty`, org: `Humber College` },
-    { title: `VP of Technical`, org: `WushuCanada` },
+    { title: `VP of Technical, Board of Directors`, org: `WushuCanada` },
     { title: `VP of Competition`, org: `WushuOntario` },
   ],
   links: [
