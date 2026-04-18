@@ -5,19 +5,50 @@ export type SocialLink = {
   href: string;
 };
 
+export type Certification = {
+  name: string;
+  issuer: string;
+  year: number;
+};
+
 export type AboutData = {
   name: string;
   title: string;
+  company: string;
+  location: string;
   image: string;
   intro: string;
+  skills: readonly string[];
+  certifications: readonly Certification[];
   links: readonly SocialLink[];
 };
 
 export const about: AboutData = {
   name: `Oleksii Kachan`,
   title: `Full Stack Software Engineer`,
+  company: `Flowspace`,
+  location: `Toronto, Canada`,
   image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1674426534/portfolio/images/main-photo.jpg`,
-  intro: `Hello there! Welcome to my space...\n\nMy name is **Oleksii Kachan** and I'm a software developer with experience in both **B2C** and **B2B** technologies. My expertise lies in **Javascript**, **SQL**, and a little bit of **Python**. I'm deeply involved in both the product and engineering sides of web development; all the ways that users interact with your company, your product and your brand is my speciality.\n\nAdditionally, I **teach** Javascript at **Humber College** in Toronto, ON, where I have been helping the next generation of developers hone their skills.\n\nWith an eye on the future, I am constantly learning and striving to bring fresh, new approaches to all my projects.`,
+  intro: `Hi, I'm **Oleksii Kachan** — a full stack software engineer based in Toronto.\n\nI currently work at **Flowspace**, building scalable tools for logistics and warehouse management. My expertise spans **TypeScript**, **React**, **SQL**, and **Node.js**, with experience across both B2C and enterprise products.\n\nBeyond engineering, I teach **JavaScript** at **Humber College** — helping the next generation of developers sharpen their skills. Outside work, I'm VP of Technical at **WushuCanada** and VP of Competition at **WushuOntario**, where I bring the same systems-thinking approach to sports administration.`,
+  skills: [
+    `TypeScript`,
+    `JavaScript`,
+    `React`,
+    `Next.js`,
+    `Node.js`,
+    `SQL`,
+    `Python`,
+    `GraphQL`,
+  ],
+  certifications: [
+    { name: `Apollo Graph Developer – Associate`, issuer: `Apollo GraphQL`, year: 2025 },
+    { name: `Google Advanced Data Analytics Certificate`, issuer: `Google`, year: 2025 },
+    { name: `Meta Front-End Developer Certificate`, issuer: `Meta`, year: 2024 },
+    { name: `Finance & Quantitative Modeling`, issuer: `University of Pennsylvania`, year: 2023 },
+    { name: `Google Data Analytics Certificate`, issuer: `Google`, year: 2023 },
+    { name: `PADI Open Water Diver`, issuer: `PADI`, year: 2022 },
+    { name: `WADA Coaching Certificate`, issuer: `WADA`, year: 2022 },
+  ],
   links: [
     { type: `linkedin`, href: `https://www.linkedin.com/in/oleksiikachan/` },
     { type: `github`, href: `https://github.com/OleksiiKachan` },
