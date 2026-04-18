@@ -39,3 +39,6 @@ next-env.d.ts
 .sentryclirc
 
 .env
+
+# local notes (not for public repo)
+/notes
