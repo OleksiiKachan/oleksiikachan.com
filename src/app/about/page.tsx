@@ -1,28 +1,14 @@
-import type { Metadata } from 'next';
+import { buildMetadata } from 'lib/metadata';
 import AboutScene from 'scenes/about';
 
-export const metadata: Metadata = {
-  title: `Oleksii Kachan | Software Developer`,
+export const metadata = buildMetadata({
+  suffix: `Software Developer`,
   description: `My name is Oleksii Kachan and I'm a software developer`,
-  openGraph: {
-    title: `Oleksii Kachan | Software Developer`,
-    description: `My name is Oleksii Kachan and I'm a software developer`,
-    images: [
-      `https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_portrait_dark.svg`,
-    ],
-    url: `https://oleksiikachan.com/about`,
-  },
-};
+  path: `/about`,
+});
 
-// This function can be named anything
-async function getAboutData() {
-  return {
-    meta: {
-      title: `Oleksii Kachan | Software Developer`,
-      description: `My name is Oleksii Kachan and I'm a software developer`,
-      image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_portrait_dark.svg`,
-      url: `https://oleksiikachan.com/about`,
-    },
+const AboutPage = async () => {
+  const data = {
     name: `Oleksii Kachan`,
     title: `Full Stack Software Engineer`,
     image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1674426534/portfolio/images/main-photo.jpg`,
@@ -39,10 +25,8 @@ async function getAboutData() {
       },
     ],
   };
-}
-
-export default async function AboutPage() {
-  const data = await getAboutData();
 
   return <AboutScene data={data} />;
-}
+};
+
+export default AboutPage;

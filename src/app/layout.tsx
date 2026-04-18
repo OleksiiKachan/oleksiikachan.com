@@ -1,8 +1,8 @@
-import type { Metadata } from 'next';
 import Script from 'next/script';
 import Client from 'client';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { buildMetadata } from 'lib/metadata';
 
 import 'styles/globals.scss';
 
@@ -14,18 +14,11 @@ const isBot = () =>
     window.navigator.userAgent
   );
 
-export const metadata: Metadata = {
-  title: `Oleksii Kachan | Software Developer`,
+export const metadata = buildMetadata({
+  suffix: `Software Developer`,
   description: `My name is Oleksii Kachan and I'm a software developer`,
-  openGraph: {
-    title: `Oleksii Kachan | Software Developer`,
-    description: `My name is Oleksii Kachan and I'm a software developer`,
-    images: [
-      `https://res.cloudinary.com/oleksiikachan/image/upload/v1546142703/portfolio/images/logo/logo_portrait_dark.svg`,
-    ],
-    url: `https://oleksiikachan.com`,
-  },
-};
+  path: ``,
+});
 
 export default function RootLayout({
   children,
