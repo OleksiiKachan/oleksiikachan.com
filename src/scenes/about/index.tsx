@@ -3,9 +3,9 @@ import ReactMarkdown from 'react-markdown';
 import SocialButton from 'components/social-button';
 import type { AboutData } from 'data/about';
 
-import Certifications from './components/certifications';
+import BeyondCodeSection from './components/beyond-code-section';
+import EngineeringSection from './components/engineering-section';
 import Header from './components/header';
-import Skills from './components/skills';
 import styles from './about.module.scss';
 
 type AboutProps = {
@@ -19,8 +19,8 @@ const About = ({ data }: AboutProps) => {
       <div className={styles.paragraph}>
         <ReactMarkdown>{data.intro}</ReactMarkdown>
       </div>
-      <Skills skills={data.skills} />
-      <Certifications certifications={data.certifications} />
+      <EngineeringSection skills={data.skills} certifications={data.certifications} />
+      <BeyondCodeSection roles={data.roles} certifications={data.certifications} />
       <ul className={styles.socialMedia}>
         <li>
           <h3>{`Follow me:`}</h3>

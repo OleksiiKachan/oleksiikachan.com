@@ -3,8 +3,8 @@ import { render, screen } from '@testing-library/react';
 import Certifications from './index';
 
 const mockCerts = [
-  { name: `Apollo Graph Developer`, issuer: `Apollo GraphQL`, year: 2025 },
-  { name: `Meta Front-End Developer`, issuer: `Meta`, year: 2024 },
+  { name: `Apollo Graph Developer`, issuer: `Apollo GraphQL`, year: 2025, category: `tech` as const },
+  { name: `Meta Front-End Developer`, issuer: `Meta`, year: 2024, category: `tech` as const },
 ];
 
 describe(`Certifications`, () => {
