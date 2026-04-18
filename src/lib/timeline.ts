@@ -8,6 +8,7 @@ export type TimelineEntry = {
   subtitle: string;
   dates: string;
   side: `left` | `right`;
+  responsibilities: Array<string>;
   linkedProjects: Array<{ id: ProjectId; title: string }>;
 };
 
@@ -20,6 +21,7 @@ export const buildTimeline = (): Array<TimelineEntry> => {
     title: item.school,
     subtitle: item.degree,
     dates: item.dates,
+    responsibilities: [] as Array<string>,
     linkedProjects: [] as Array<{ id: ProjectId; title: string }>,
   }));
 
@@ -35,6 +37,7 @@ export const buildTimeline = (): Array<TimelineEntry> => {
       title: item.company,
       subtitle: item.position,
       dates: item.dates,
+      responsibilities: item.responsibilities,
       linkedProjects,
     };
   });

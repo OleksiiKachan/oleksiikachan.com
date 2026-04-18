@@ -2,7 +2,6 @@ export type ProjectId =
   | `nobul-web`
   | `nobul-plumber`
   | `nobul-ab-testing`
-  | `spotify-app`
   | `agw`
   | `tdm`
   | `rpod`;
@@ -95,51 +94,6 @@ const PROJECTS: Array<Project> = [
     projectType: `development`,
     settings: { color: `#9c27b0` },
     externalResources: [{ url: `https://strapi.io`, name: `Strapi CMS` }],
-  },
-  {
-    id: `spotify-app`,
-    title: `Marketing Automation Tool`,
-    shortDescription: `Automated marketing banner production system for Spotify in collaboration with Candy Digital.`,
-    longDescription: `In tight collaboration with Candy Digital, I was working on a concept project for Spotify. The goal was to create a solution to automate marketing banners production process. In terms of measurable goals we had to reduce production time and effort. I had a team of 4 people (including me). I took a couple of roles in this team: Designer, Project Manager, Lead Developer.`,
-    image: `https://res.cloudinary.com/oleksiikachan/image/upload/v1563610310/portfolio/images/projects/spotify-app/card.png`,
-    coverImage: `https://res.cloudinary.com/oleksiikachan/image/upload/v1558291364/portfolio/images/projects/spotify-app/cover.png`,
-    shortStack: [`React`, `Typescript`, `SASS`, `Firebase`],
-    longStack: [
-      `React`,
-      `Typescript`,
-      `Redux`,
-      `Firebase`,
-      `SASS`,
-      `Bootstrap`,
-      `Figma`,
-      `Github`,
-      `CircleCI`,
-      `Heroku`,
-      `Jira`,
-    ],
-    teamSize: `4 people`,
-    partner: [{ name: `Candy Digital`, url: `https://candydigital.co/` }],
-    client: [{ name: `Spotify, Inc.`, url: `https://www.spotify.com` }],
-    projectType: `development`,
-    settings: { color: `#1DB954` },
-    externalResources: [
-      { url: `https://candydigital.co/`, name: `Candy Digital` },
-      { url: `https://www.spotify.com`, name: `Spotify` },
-    ],
-    additionalImages: [
-      {
-        url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/low-fidelity_prototype.png`,
-        alt: `Low-Fidelity Prototype in Figma`,
-      },
-      {
-        url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1558288804/portfolio/images/projects/spotify-app/high-fidelity_prototype.png`,
-        alt: `High-Fidelity Prototype in Figma`,
-      },
-      {
-        url: `https://res.cloudinary.com/oleksiikachan/image/upload/v1558289892/portfolio/images/projects/spotify-app/banner-tool.png`,
-        alt: `Banner Tool Interface`,
-      },
-    ],
   },
   {
     id: `agw`,

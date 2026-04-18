@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { getProjects, getProjectById } from 'data/projects';
 
 describe(`getProjects`, () => {
-  it(`returns all 7 projects`, () => {
-    expect(getProjects()).toHaveLength(7);
+  it(`returns all 6 projects`, () => {
+    expect(getProjects()).toHaveLength(6);
   });
 
   it(`each project has required fields`, () => {

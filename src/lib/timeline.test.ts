@@ -27,6 +27,29 @@ describe(`buildTimeline`, () => {
     expect(rloop?.linkedProjects[0].title).toBe(`Hyperloop rPod`);
   });
 
+  it(`includes responsibilities for work entries`, () => {
+    const entries = buildTimeline();
+    const flowspace = entries.find((e) => e.id === `flowspace`);
+    expect(flowspace).toBeDefined();
+    expect(flowspace?.responsibilities).toHaveLength(4);
+  });
+
+  it(`education entries have empty responsibilities`, () => {
+    const entries = buildTimeline();
+    const kpi = entries.find((e) => e.id === `kpi`);
+    expect(kpi?.responsibilities).toEqual([]);
+  });
+
+  it(`resolves all 3 nobul project titles`, () => {
+    const entries = buildTimeline();
+    const nobul = entries.find((e) => e.id === `nobul`);
+    expect(nobul).toBeDefined();
+    expect(nobul?.linkedProjects).toHaveLength(3);
+    expect(nobul?.linkedProjects.map((p) => p.id)).toEqual(
+      expect.arrayContaining([`nobul-web`, `nobul-plumber`, `nobul-ab-testing`])
+    );
+  });
+
   it(`entry with no projectIds has empty linkedProjects`, () => {
     const entries = buildTimeline();
     const flowspace = entries.find((e) => e.id === `flowspace`);

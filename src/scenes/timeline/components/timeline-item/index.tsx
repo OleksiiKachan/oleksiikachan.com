@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import { useBreakpointContext } from 'client/breakpoints';
 
+import type { TimelineEntry } from 'lib/timeline';
 import { keyframes, transitions, stagger } from 'config/animations';
 
 import styles from './timeline-item.module.scss';
 
-type TimeLineItem = {
-  title: string;
-  dates: string;
-  subtitle: string;
-};
+type TimeLineItem = Pick<
+  TimelineEntry,
+  'title' | 'dates' | 'subtitle' | 'responsibilities' | 'linkedProjects'
+>;
 
 type TimelineItemProps = {
   item: TimeLineItem;
@@ -45,6 +45,22 @@ const TimelineItem = ({ item, side, index }: TimelineItemProps) => {
         <h2>{item.title}</h2>
         <p>{item.dates}</p>
         <h3>{item.subtitle}</h3>
+        {item.responsibilities.length > 0 && (
+          <ul className={styles.responsibilities}>
+            {item.responsibilities.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+        )}
+        {item.linkedProjects.length > 0 && (
+          <ul className={styles.projects}>
+            {item.linkedProjects.map((p) => (
+              <li key={p.id} className={styles.projectTag}>
+                {p.title}
+              </li>
+            ))}
+          </ul>
+        )}
       </motion.div>
     </li>
   );

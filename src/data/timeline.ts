@@ -90,6 +90,7 @@ export const experience: ReadonlyArray<ExperienceEntry> = [
       `Sole owner/developer for out CMS - Strapi`,
       `Developed, maintained, and integrated all the analytics tools - Universal GA, GA4, GTM, Fullstory, Sentry, Criteo, Google Ads, Facebook Pixel, Twitter Pixel, Quora Pixel, Qualaroo, Trustpilot`,
     ],
+    projectIds: [`nobul-web`, `nobul-plumber`, `nobul-ab-testing`],
   },
   {
     id: `humber-prof`,
@@ -101,8 +102,13 @@ export const experience: ReadonlyArray<ExperienceEntry> = [
   {
     id: `flowspace`,
     company: `Flowspace`,
-    position: `Software Engineer`,
+    position: `Senior Software Engineer`,
     dates: `Since 2023`,
-    responsibilities: [],
+    responsibilities: [
+      `Full-stack feature development across React/TypeScript frontend and Ruby on Rails backend`,
+      `System architecture design and cross-team technical planning`,
+      `Led migrations and codebase refactors to improve maintainability and developer experience`,
+      `Performance improvements and infrastructure optimization`,
+    ],
   },
 ];
