@@ -3,7 +3,7 @@ import Script from 'next/script';
 import { GTM_ID } from './config';
 import { isBot } from './bot-detection';
 
-const GtmScript: React.FC = async () => {
+const GtmScript = async () => {
   const headersList = await headers();
   const userAgent = headersList.get(`user-agent`) ?? ``;
 

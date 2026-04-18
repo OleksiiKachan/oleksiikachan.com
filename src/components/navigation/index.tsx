@@ -9,10 +9,12 @@ import { keyframes, transitions } from 'config/animations';
 
 import styles from './navigation.module.scss';
 
-const Navigation: React.FC<{
+type NavigationProps = {
   opened: boolean;
   onClick: () => void;
-}> = ({ opened, onClick }) => {
+};
+
+const Navigation = ({ opened, onClick }: NavigationProps) => {
   const pathname = usePathname();
 
   return (

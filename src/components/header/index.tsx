@@ -10,7 +10,7 @@ import { useBreakpointContext } from 'client/breakpoints';
 
 import styles from './header.module.scss';
 
-const Header: React.FC = () => {
+const Header = () => {
   const [_opened, toggleNavigation] = useToggle(false);
   const { isDesktop } = useBreakpointContext();
 

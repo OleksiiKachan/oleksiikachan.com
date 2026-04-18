@@ -11,11 +11,13 @@ type TimeLineItem = {
   subtitle: string;
 };
 
-const TimelineItem: React.FC<{
+type TimelineItemProps = {
   item: TimeLineItem;
   side: `right` | `left`;
   index: number;
-}> = ({ item, side, index }) => {
+};
+
+const TimelineItem = ({ item, side, index }: TimelineItemProps) => {
   const { isDesktop } = useBreakpointContext();
 
   return (

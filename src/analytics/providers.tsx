@@ -1,7 +1,7 @@
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-const AnalyticsProviders: React.FC = () => (
+const AnalyticsProviders = () => (
   <>
     <Analytics />
     <SpeedInsights />

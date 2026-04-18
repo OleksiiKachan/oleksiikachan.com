@@ -10,7 +10,11 @@ export const metadata = buildMetadata({
   path: ``,
 });
 
-const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+type RootLayoutProps = {
+  children: React.ReactNode;
+};
+
+const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang="en">
     <body id="root">
       <GtmScript />

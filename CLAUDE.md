@@ -6,4 +6,5 @@ Portfolio site with no API routes — all data is currently hardcoded in page fi
 
 - Use `type` over `interface` for all type definitions
 - Use arrow functions over the `function` keyword
+- Do not use `React.FC` or `React.FunctionComponent`. Type props explicitly: `type FooProps = { bar: string }; const Foo = ({ bar }: FooProps) => ...`
 - Do not use type imports from `react`. Use the global `React.*` namespace instead (e.g., `React.ReactNode`, not `import type { ReactNode } from 'react'`)

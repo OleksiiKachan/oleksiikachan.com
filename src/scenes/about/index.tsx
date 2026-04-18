@@ -6,7 +6,11 @@ import type { AboutData } from 'data/about';
 import Header from './components/header';
 import styles from './about.module.scss';
 
-const About: React.FC<{ data: AboutData }> = ({ data }) => {
+type AboutProps = {
+  data: AboutData;
+};
+
+const About = ({ data }: AboutProps) => {
   return (
     <>
       <Header data={data} />

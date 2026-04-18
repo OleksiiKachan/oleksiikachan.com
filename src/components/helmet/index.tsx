@@ -1,16 +1,21 @@
 import Head from 'next/head';
 
-export interface MetaData {
+export type MetaData = {
   title: string;
   description: string;
   image: string;
   url: string;
-}
+};
 
-const Helmet: React.FC<{
+type HelmetProps = {
   data: MetaData;
   children?: React.ReactNode;
-}> = ({ data: { title, description, image, url }, children }) => (
+};
+
+const Helmet = ({
+  data: { title, description, image, url },
+  children,
+}: HelmetProps) => (
   <Head>
     <meta charSet="utf-8" />
     <meta property="og:type" content="website" />

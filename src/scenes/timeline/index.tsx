@@ -8,10 +8,12 @@ import TimelineItem from './components/timeline-item';
 
 import styles from './timeline.module.scss';
 
-const Timeline: React.FC<{
+type TimelineProps = {
   title: string;
   entries: TimelineEntry[];
-}> = ({ title, entries }) => {
+};
+
+const Timeline = ({ title, entries }: TimelineProps) => {
   return (
     <div className={styles.container}>
       <h1>{title}</h1>

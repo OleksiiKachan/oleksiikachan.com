@@ -2,9 +2,11 @@ import Image from 'next/image';
 
 import styles from './header.module.scss';
 
-const Header: React.FC<{
+type HeaderProps = {
   data: { name: string; title: string; image: string };
-}> = ({ data: { name, title, image } }) => {
+};
+
+const Header = ({ data: { name, title, image } }: HeaderProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageWrapper}>

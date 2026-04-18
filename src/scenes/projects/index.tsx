@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import styles from './projects.module.scss';
 
-const Projects: React.FC<{
+type ProjectsProps = {
   data: {
     title: string;
     projects: Array<{
@@ -13,7 +13,9 @@ const Projects: React.FC<{
       image: string;
     }>;
   };
-}> = ({ data: { title, projects } }) => {
+};
+
+const Projects = ({ data: { title, projects } }: ProjectsProps) => {
   return (
     <div className={styles.container}>
       <h1>{title}</h1>

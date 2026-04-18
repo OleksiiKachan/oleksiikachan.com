@@ -87,6 +87,15 @@ const eslintConfig = [
       'no-use-before-define': [`error`],
 
       // TypeScript and React rules
+      '@typescript-eslint/no-restricted-types': [
+        `error`,
+        {
+          types: {
+            'React.FC': `Use explicit prop types: type FooProps = {...}; const Foo = (props: FooProps) => ...`,
+            'React.FunctionComponent': `Use explicit prop types: type FooProps = {...}; const Foo = (props: FooProps) => ...`,
+          },
+        },
+      ],
       '@typescript-eslint/no-explicit-any': `off`,
       '@typescript-eslint/ban-ts-comment': `error`,
       '@typescript-eslint/no-require-imports': `off`,

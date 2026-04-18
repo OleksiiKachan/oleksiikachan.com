@@ -1,9 +1,13 @@
 import styles from './main.module.scss';
 
-export const MainLayout: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => <div className={styles.mainLayout}>{children}</div>;
+type LayoutChildrenProps = {
+  children: React.ReactNode;
+};
 
-export const MainContent: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => <main className={styles.mainContent}>{children}</main>;
+export const MainLayout = ({ children }: LayoutChildrenProps) => (
+  <div className={styles.mainLayout}>{children}</div>
+);
+
+export const MainContent = ({ children }: LayoutChildrenProps) => (
+  <main className={styles.mainContent}>{children}</main>
+);

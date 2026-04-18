@@ -6,10 +6,12 @@ import { transitions } from 'config/animations';
 
 import styles from './navigation-button.module.scss';
 
-const NavButton: React.FC<{
+type NavButtonProps = {
   onClick: () => void;
   opened: boolean;
-}> = ({ onClick, opened }) => {
+};
+
+const NavButton = ({ onClick, opened }: NavButtonProps) => {
   return (
     <button
       className={`${styles.container} ${opened ? styles.open : ``}`}

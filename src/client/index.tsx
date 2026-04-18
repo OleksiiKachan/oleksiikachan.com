@@ -5,7 +5,11 @@ import { MainLayout, MainContent } from 'layout/main';
 
 import { BreakpointProvider } from './breakpoints';
 
-const App: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+type AppProps = {
+  children: React.ReactNode;
+};
+
+const App = ({ children }: AppProps) => {
   return (
     <BreakpointProvider>
       <MainLayout>

@@ -3,11 +3,13 @@ import Link from 'next/link';
 
 import styles from './social-button.module.scss';
 
-const SocialButton: React.FC<{
+type SocialButtonProps = {
   type: string;
   href: string;
   size?: number;
-}> = ({ type, href, size = 48 }) => (
+};
+
+const SocialButton = ({ type, href, size = 48 }: SocialButtonProps) => (
   <Link href={href} target="_blank" className={styles.container}>
     <Image
       src={`https://res.cloudinary.com/oleksiikachan/image/upload/v1674435285/portfolio/images/assets/icon-${type}.svg`}

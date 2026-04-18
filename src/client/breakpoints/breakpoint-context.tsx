@@ -16,9 +16,11 @@ const BreakpointContext = createContext<BreakpointContextValue>({
   isDesktop: true,
 });
 
-export const BreakpointProvider: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+type BreakpointProviderProps = {
+  children: React.ReactNode;
+};
+
+export const BreakpointProvider = ({ children }: BreakpointProviderProps) => {
   const breakpoint = useBreakpoint();
   useIosVhFix(breakpoint);
 
