@@ -16,7 +16,7 @@ updates:
       testing-library:
         patterns:
           - '*testing-library*'
-      vite-vitest:
+      vite:
         patterns:
           - 'vite'
           - 'vitest'
