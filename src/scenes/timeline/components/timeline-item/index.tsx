@@ -7,7 +7,7 @@ import styles from './timeline-item.module.scss';
 
 type TimeLineItem = Pick<
   TimelineEntry,
-  'title' | 'dates' | 'subtitle' | 'responsibilities' | 'linkedProjects'
+  `title` | `dates` | `subtitle` | `responsibilities` | `linkedProjects`
 >;
 
 type TimelineItemProps = {
