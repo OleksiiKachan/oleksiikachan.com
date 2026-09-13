@@ -16,8 +16,9 @@ updates:
       testing-library:
         patterns:
           - '*testing-library*'
-      vitest:
+      vite-vitest:
         patterns:
+          - 'vite'
           - 'vitest'
           - '@vitest/*'
           - '@vitejs/plugin-react'
