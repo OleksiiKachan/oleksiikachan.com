@@ -6,6 +6,7 @@ updates:
       interval: 'daily'
       time: '09:00'
       timezone: 'America/Toronto'
+    open-pull-requests-limit: 15
     groups:
       react:
         patterns:
@@ -44,3 +45,4 @@ updates:
       interval: 'daily'
       time: '09:00'
       timezone: 'America/Toronto'
+    open-pull-requests-limit: 15
