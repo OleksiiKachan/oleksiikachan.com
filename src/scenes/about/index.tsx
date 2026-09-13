@@ -20,8 +20,14 @@ const About = ({ data }: AboutProps) => {
         <ReactMarkdown>{data.intro}</ReactMarkdown>
       </div>
       <div className={styles.sections}>
-        <EngineeringSection skills={data.skills} certifications={data.certifications} />
-        <BeyondCodeSection roles={data.roles} certifications={data.certifications} />
+        <EngineeringSection
+          skills={data.skills}
+          certifications={data.certifications}
+        />
+        <BeyondCodeSection
+          roles={data.roles}
+          certifications={data.certifications}
+        />
       </div>
       <ul className={styles.socialMedia}>
         <li>

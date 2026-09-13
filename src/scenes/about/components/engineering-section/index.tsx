@@ -9,7 +9,10 @@ type EngineeringSectionProps = {
   certifications: ReadonlyArray<Certification>;
 };
 
-const EngineeringSection = ({ skills, certifications }: EngineeringSectionProps) => {
+const EngineeringSection = ({
+  skills,
+  certifications,
+}: EngineeringSectionProps) => {
   const techCerts = certifications.filter((c) => c.category === `tech`);
 
   return (

@@ -8,7 +8,10 @@ type BeyondCodeSectionProps = {
   certifications: ReadonlyArray<Certification>;
 };
 
-const BeyondCodeSection = ({ roles, certifications }: BeyondCodeSectionProps) => {
+const BeyondCodeSection = ({
+  roles,
+  certifications,
+}: BeyondCodeSectionProps) => {
   const otherCerts = certifications.filter((c) => c.category === `other`);
 
   return (
@@ -16,7 +19,9 @@ const BeyondCodeSection = ({ roles, certifications }: BeyondCodeSectionProps) =>
       <p className={styles.eyebrow}>{`BEYOND CODE`}</p>
       <ul className={styles.roles}>
         {roles.map((role) => (
-          <li key={`${role.title}-${role.org}`}>{`${role.title} — ${role.org}`}</li>
+          <li
+            key={`${role.title}-${role.org}`}
+          >{`${role.title} — ${role.org}`}</li>
         ))}
       </ul>
       <Certifications certifications={otherCerts} />
