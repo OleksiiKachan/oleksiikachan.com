@@ -37,3 +37,10 @@ updates:
         patterns:
           - 'next'
           - 'eslint-config-next'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+      time: '09:00'
+      timezone: 'America/Toronto'
