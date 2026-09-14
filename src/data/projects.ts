@@ -1,10 +1,5 @@
 export type ProjectId =
-  | `nobul-web`
-  | `nobul-plumber`
-  | `nobul-ab-testing`
-  | `agw`
-  | `tdm`
-  | `rpod`;
+  `nobul-web` | `nobul-plumber` | `nobul-ab-testing` | `agw` | `tdm` | `rpod`;
 
 export type Project = {
   id: ProjectId;
